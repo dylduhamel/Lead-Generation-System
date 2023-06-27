@@ -1,3 +1,5 @@
+## Class of the lead owner
+
 class Owner:
      def __init__(self, name="", address="", phone="", doc_type=""):
         self.name = name
