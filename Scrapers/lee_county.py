@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from database import OwnerLead, Session
+from owner_info import Owner
 
 class LeeCountyScraper():
      def __init__(self, url, curr_date, past_date):
@@ -13,13 +14,13 @@ class LeeCountyScraper():
           # Window of time to search for documents [Choose month, set to 3]
           self.CURRENT_DATE = curr_date
           self.PAST_DATE = past_date
-          selfowner_list = []
+          self.owner_list = []
 
           ## Initialization
-          #self.document_search = webdriver.Chrome()
-          #self.document_search.get(url)
-          # document_information = webdriver.Chrome()
-          # document_information.get("https://www.leepa.org/")
+          self.document_search = webdriver.Chrome()
+          self.document_search.get(url)
+          document_information = webdriver.Chrome()
+          document_information.get("https://www.leepa.org/")
 
           ## Database
           self.session = Session()
@@ -91,6 +92,7 @@ class LeeCountyScraper():
           except NoSuchElementException:
                print("Element not found")
 
+          ## For each row call the below function 
           ### THEN CALL THE GET_DOCUMENT_INFO
 
      def get_document_info(self, driver, owner_list):
@@ -110,13 +112,14 @@ class LeeCountyScraper():
                owner_address += address.text()
 
           owner = Owner(name=owner_name, address=owner_address)
-          owner_list.append(owner)
+          # add new owner lead to database 
+          self.add_to_database(owner)
           print(owner_name)
           print(owner_address)
 
-     def add_to_database(self):
+     def add_to_database(self, owner):
           try:
-               new_home = OwnerLead(owner_name="mike", home_style="awesome", address="4518")
+               new_home = OwnerLead(owner_name=owner.name, address=owner.address, document_type=owner.doc_type, phone_number=owner.phone_number)
                self.session.add(new_home)
                self.session.commit()
           except Exception as e:
