@@ -10,8 +10,9 @@ class OwnerLead(Base):
 
      id = Column(Integer, primary_key=True)
      owner_name = Column(String(100), unique=True)
-     home_style = Column(String(50))
      address = Column(String(200))
+     document_type = Column(String(50))
+     phone_number = Column(String(100))
 
 # Replace the following with your own details
 db_endpoint = "test.cynbkamcrdki.eu-north-1.rds.amazonaws.com"

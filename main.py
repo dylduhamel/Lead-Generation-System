@@ -35,6 +35,5 @@ if __name__ == "__main__":
     # Here we would call each scraper. This would execute once a day. Compute the time it takes to execute as well as output general infomation to stdout
     lee_county = LeeCountyScraper("https://or.leeclerk.org/LandMarkWeb/home/index", curr_date(), past_month_date(3, curr_date()))
     #lee_county.scrape()
-
     # Database testing
-    lee_county.add_to_database()
+    #lee_county.add_to_database()
