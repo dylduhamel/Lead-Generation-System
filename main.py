@@ -3,9 +3,10 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from database import OwnerLead, Session
+#from database import OwnerLead, Session
 from owner_info import Owner
 from Scrapers.lee_county import LeeCountyScraper
+from Scrapers.lee_county_Enf import LeeCountyEnf
 import datetime
 import pytz
 
@@ -23,8 +24,6 @@ def past_month_date(months_back, current_date):
 
 ## Main
 if __name__ == "__main__":
-    # Here we would call each scraper. This would execute once a day. Compute the time it takes to execute as well as output general infomation to stdout
-    lee_county = LeeCountyScraper("https://or.leeclerk.org/LandMarkWeb/home/index", curr_date(), past_month_date(3, curr_date()))
-    #lee_county.scrape()
-    # Database testing
-    #lee_county.add_to_database()
+    #lee_county_enf = LeeCountyEnf()
+    #lee_county_enf.start()
+    pass
