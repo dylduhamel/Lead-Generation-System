@@ -25,7 +25,7 @@ class LeeCountyScraper():
           ## Database
           self.session = Session()
 
-     def scrape(self):
+     def start(self):
           ## Home Page
           # Access the document search page
           self.document_search.find_element(By.XPATH, "/html/body/div[5]/div/div/div[2]/div/div[2]/a/img").click()
