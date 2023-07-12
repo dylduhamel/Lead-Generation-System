@@ -21,7 +21,7 @@ yesterday = (datetime.now() - timedelta(1)).strftime('%Y-%m-%dT00:00:00.000')
 
 # Make a request to the API and get the results
 # Filter results for records with an 'entered_date' from yesterday and limit to 2000 results
-results = client.get("cncm-znd6", where="entered_date=2023-05-18T00:00:00.000", limit=2000)
+results = client.get("cncm-znd6", where="entered_date=2023-05-18", limit=2000)
 
 # Convert results into a pandas DataFrame
 df = pd.DataFrame.from_records(results)
