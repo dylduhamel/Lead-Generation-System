@@ -21,16 +21,7 @@ def past_month_date(months_back, current_date):
     formatted_date = past_date.strftime("%m/%d/%Y")
     return formatted_date
 
-
-# Wait to see current page
-# try:
-#     element = WebDriverWait(document_search, 100).until(
-#         EC.presence_of_element_located((By.ID, "myDynamicElement"))
-#     )
-# finally:
-#     document_search.quit()
-
-
+## Main
 if __name__ == "__main__":
     # Here we would call each scraper. This would execute once a day. Compute the time it takes to execute as well as output general infomation to stdout
     lee_county = LeeCountyScraper("https://or.leeclerk.org/LandMarkWeb/home/index", curr_date(), past_month_date(3, curr_date()))

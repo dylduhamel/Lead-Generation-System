@@ -2,3 +2,6 @@ selenium==4.10.0
 pytz==2021.1
 SQLAlchemy==2.0.16
 PyMySQL==1.0.3
+python-dotenv==1.0.0
+sodapy==2.2.0
+pandas==2.0.3

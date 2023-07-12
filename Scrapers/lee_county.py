@@ -3,7 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from database import OwnerLead, Session
+from database import Lead, Session
 from owner_info import Owner
 
 class LeeCountyScraper():
@@ -119,7 +119,7 @@ class LeeCountyScraper():
 
      def add_to_database(self, owner):
           try:
-               new_home = OwnerLead(owner_name=owner.name, address=owner.address, document_type=owner.doc_type, phone_number=owner.phone_number)
+               new_home = Lead(owner_name=owner.name, address=owner.address, document_type=owner.doc_type, phone_number=owner.phone_number)
                self.session.add(new_home)
                self.session.commit()
           except Exception as e:
