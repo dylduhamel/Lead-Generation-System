@@ -1,4 +1,4 @@
-Web scraping tool using Selenium for Python.
+Acuritas Consulting Lead Generation Software
 
 To install the required packages, run 
 
