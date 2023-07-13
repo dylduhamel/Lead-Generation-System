@@ -1,0 +1,506 @@
+[
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2253 PARK AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "545 FINDLAY ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "210 KLOTTER AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "210 KLOTTER AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3434 ANACONDA DR"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Zoning Enforcement",
+        "city_id": "CINC",
+        "full_address": "3003 COSTELLO AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "810 GRAND AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1535 CEDAR AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2330 KENILWORTH AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "2680 MONTANA AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2349 KENILWORTH AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "4931 ROANOKE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "5710 MADISON RD"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "2724 WOODBURN AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "4908 ROANOKE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1431 REPUBLIC ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Abandoned Vehicles",
+        "city_id": "CINC",
+        "full_address": "1510 CEDAR AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": null,
+        "city_id": "SYCM",
+        "full_address": "8481 BEECH AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3053 WESTKNOLLS LN"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "7159 EASTLAWN DR"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "26 GLENWOOD AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "705 STATE AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2357 KENILWORTH AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3107 DURRELL AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3318 MCHENRY AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "5709 LUHN AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "6014 RIDGE AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3514 KELLOGG AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "4056 W 8TH ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "944 ELBERON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1510 CEDAR AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "4928 LE BLOND AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2202 KENILWORTH AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "3637 ALASKA AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1514 CEDAR AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1514 CEDAR AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "34 GREEN ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Vacated and Condemned Buildings",
+        "city_id": "CINC",
+        "full_address": "1724 ESMONDE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Vacated and Condemned Buildings",
+        "city_id": "CINC",
+        "full_address": "1724 ESMONDE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1843 JOSEPHINE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1843 JOSEPHINE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1514 CEDAR AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3755 KENILWORTH PL"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2361 KENILWORTH AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "7851 DALY RD"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "2552 HARRISON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "4527 FOREST AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "6745 GRACELY DR"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "557 E 13TH ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "557 E 13TH ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "949 OLIVE AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1532 ELKTON PL"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Vacated and Condemned Buildings",
+        "city_id": "CINC",
+        "full_address": "2045 HARRISON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Vacated and Condemned Buildings",
+        "city_id": "CINC",
+        "full_address": "2045 HARRISON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "1317 PURCELL AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "124 E MCMICKEN AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Zoning Enforcement",
+        "city_id": "CINC",
+        "full_address": "4592 HAMILTON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3672 GROVEDALE PL"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "2917 LAFEUILLE AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "2902 MINTO AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1875 JONTE AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2205 PARK AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1532 ELKTON PL"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3217 ORION AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Vacated and Condemned Buildings",
+        "city_id": "CINC",
+        "full_address": "2071 HARRISON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "557 E 13TH ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "557 E 13TH ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "NOR",
+        "full_address": "2263 PARK AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1571 TREMONT ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Zoning Enforcement",
+        "city_id": "CINC",
+        "full_address": "1532 ELKTON PL"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "2792 SHAFFER AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "963 FAIRBANKS AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "2571 MONTANA AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "818 LIVINGSTON ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "818 LIVINGSTON ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "4908 ROANOKE ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "5709 LUHN AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1191 NANCY LEE LN"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "3045 WORTHINGTON AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "1618 NEILSON PL"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "450 FAIRBANKS AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Vacated and Condemned Buildings",
+        "city_id": "CINC",
+        "full_address": "815 LIVINGSTON ST"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Building Enforcement",
+        "city_id": "CINC",
+        "full_address": "224 ROCKDALE AV"
+    },
+    {
+        "work_type": "CODE ENFORCEMENT",
+        "work_subtype": "Property Enforcement",
+        "city_id": "CINC",
+        "full_address": "3053 WESTKNOLLS LN"
+    }
+]

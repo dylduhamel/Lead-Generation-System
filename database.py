@@ -12,13 +12,21 @@ Base = declarative_base()
 
 ## Database structure
 class Lead(Base):
+     # The name of the database
      __tablename__ = 'leads'
 
      id = Column(Integer, primary_key=True)
      owner_name = Column(String(100), unique=True)
-     address = Column(String(200))
+     property_address = Column(String(200))
+     property_city = Column(String(200))
+     property_state = Column(String(200))
+     property_zipcode = Column(String(200))
      document_type = Column(String(50))
-     phone_number = Column(String(100))
+     phone_number_1 = Column(String(100))
+     phone_number_1_type = Column(String(100))
+     phone_number_2 = Column(String(100))
+     phone_number_2_type = Column(String(100))
+     email = Column(String(200))
 
 ## Database credentials
 db_endpoint = os.getenv('DB_ENDPOINT')
