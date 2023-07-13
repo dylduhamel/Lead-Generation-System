@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import logging
 
-class LeeCountyEnf():
+class LeeCountyCodeEnf():
     def __init__(self):
         # Set up logging
         logging.basicConfig(filename='processing.log', level=logging.INFO)

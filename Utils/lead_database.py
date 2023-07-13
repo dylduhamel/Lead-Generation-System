@@ -22,11 +22,26 @@ class Lead(Base):
      property_state = Column(String(200))
      property_zipcode = Column(String(200))
      document_type = Column(String(50))
+     document_subtype = Column(String(50))
      phone_number_1 = Column(String(100))
      phone_number_1_type = Column(String(100))
      phone_number_2 = Column(String(100))
      phone_number_2_type = Column(String(100))
      email = Column(String(200))
+
+     # Printing representation for testing
+     def __repr__(self):
+        return (f"Lead(document_type={self.document_type}, "
+                f"document_subtype={self.document_subtype}, "
+                f"property_address={self.property_address}, "
+                f"property_city={self.property_city}, "
+                f"property_state={self.property_state}, "
+                f"property_zipcode={self.property_zipcode}, "
+                f"phone_number_1={self.phone_number_1}, "
+                f"phone_number_1_type={self.phone_number_1_type}, "
+                f"phone_number_2={self.phone_number_2}, "
+                f"phone_number_2_type={self.phone_number_2_type}, "
+                f"email={self.email})")
 
 ## Database credentials
 db_endpoint = os.getenv('DB_ENDPOINT')

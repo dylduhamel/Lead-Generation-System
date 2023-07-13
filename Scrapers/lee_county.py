@@ -3,8 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from database import Lead, Session
-from owner_info import Owner
+from Utils.lead_database import Lead, Session
 
 class LeeCountyScraper():
      def __init__(self, url, curr_date, past_date):
@@ -111,11 +110,10 @@ class LeeCountyScraper():
           for address in address_list:
                owner_address += address.text()
 
-          owner = Owner(name=owner_name, address=owner_address)
           # add new owner lead to database 
-          self.add_to_database(owner)
-          print(owner_name)
-          print(owner_address)
+          # self.add_to_database(owner)
+          # print(owner_name)
+          # print(owner_address)
 
      def add_to_database(self, owner):
           try:
