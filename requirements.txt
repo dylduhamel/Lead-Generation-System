@@ -5,3 +5,4 @@ PyMySQL==1.0.3
 python-dotenv==1.0.0
 sodapy==2.2.0
 pandas==2.0.3
+splinter

@@ -14,7 +14,7 @@ from Utils.lead_database import Lead
 from Utils.lead_database_operations import add_lead_to_database
 from Utils.geo_location import get_zipcode
 
-class CinciCodeEnf():
+class CinciCodeEnfAPI():
     def __init__(self):
         ## Load environment variables from .env file
         load_dotenv()
@@ -29,6 +29,7 @@ class CinciCodeEnf():
                         password=os.getenv("CINCI_API_PASSWORD"))
 
         # Calculate yesterday's date
+        # CHANGE DELTA BACK TO 1
         self.yesterday = (datetime.now() - timedelta(8)).strftime('%Y-%m-%dT00:00:00.000')
 
     def start(self):
@@ -86,6 +87,6 @@ class CinciCodeEnf():
 
             # add lead to database
             print(lead, '\n')
-            add_lead_to_database(lead)
+            #add_lead_to_database(lead)
 
 
