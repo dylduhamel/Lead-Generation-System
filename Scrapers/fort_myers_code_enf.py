@@ -32,7 +32,7 @@ class FortMeyersEnf():
                     "vacant", "damaged roof", "damage", "parts", "trees", "utilities", "refridgerator", "graffiti"]
 
         # List of keywords to exclude
-        self.exclusions = [ "stop work", "construction", "gvwr", "builder", "commercial", "btr", "business"]
+        self.exclusions = [ "gvwr", "commercial", "btr", "business"]
 
 
     def start(self):
@@ -69,16 +69,13 @@ class FortMeyersEnf():
         selected_rows = pd.DataFrame(columns=df.columns)
 
             
-        selected_rows = df[df['Description'].str.contains(self.keywords)]
+        keywords_pattern = '|'.join(self.keywords)
+        selected_rows = df[df['Description'].str.contains(keywords_pattern, case=False, na=False)]
 
-        selected_rows.to_json("data.json", orient="records")        
         # Remove rows where an exclusion keyword is found
+        exclusions_pattern = '|'.join(self.exclusions)
+        selected_rows = selected_rows[~selected_rows['Description'].str.contains(exclusions_pattern, case=False, na=False)]
         
-        #selected_rows = selected_rows[~selected_rows['Description'].str.contains(self.exclusions.lower())]
-
-        #lead.property_address = selected_rows["Address"]    
-        
-        #print(lead)
-        
+        selected_rows.to_json("data.json", orient="records")  
         
 
