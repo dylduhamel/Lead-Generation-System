@@ -41,7 +41,7 @@ class CinciCodeEnf():
 
         try:
             # Select only the desired columns
-            df = df[['work_type', 'work_subtype', 'city_id', 'latitude', 'longitude', 'full_address']]
+            df = df[['work_type', 'work_subtype', 'city_id', 'latitude', 'longitude', 'full_address','status_class','data_status_display']]
         except KeyError:
             print(f"No new records on {self.yesterday} for Cinci code enforcments.\n")
 
