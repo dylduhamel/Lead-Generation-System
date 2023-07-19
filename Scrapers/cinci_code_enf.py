@@ -22,8 +22,9 @@ class CinciCodeEnf():
         # Initialization
         self.url = "https://cagismaps.hamilton-co.org/PropertyActivity/propertyMaintenance"
         self.driver = webdriver.Chrome()
-        self.filename = "PropertyActivity.csv"
+        self.file_name = "PropertyActivity.csv"
         self.file_path = "/home/dylan/Downloads"
+        self.read_file = ""
 
     def download_dataset(self):
         # Start driver
@@ -83,18 +84,17 @@ class CinciCodeEnf():
             print("Can not find download button.")
 
         # Wait for the file to be downloaded
-        while not os.path.exists(os.path.join(self.file_path, self.filename)): 
+        while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
             time.sleep(1)
 
         # Relinquish resources
         self.driver.quit()
 
-        # DELETE FILE FOR NEXT TIMe
+        # DELETE FILE FOR NEXT TIME
 
     def start(self):
         #format for local data set 
-        
-        self.read_file = r'C:\Users\Jake\Documents\LISTS\PropertyActivity (7).csv' 
+        self.read_file = self.file_path + "/" + self.file_name
 
         # List of keywords to search for
         self.keywords = ["code enforcement - buildings with residences", "trash/litter/tall grass complaint", "zoning code enforcement - residential uses", "abandoned vehicle code enforcement", "health environmental code enforcement"]
@@ -108,17 +108,15 @@ class CinciCodeEnf():
         try:
             df= df[["COMP_TYPE_DESC", "X_COORD", "Y_COORD", "YN_ACTIVITY_REPORT", "STREET_NO", "STREET_DIRECTION", "STREET_NAME", "COMP_TYPE_DESC", "WORK_TYPE"]] 
         except KeyError:
-            print(f"No new records on  for Cinci code enforcments.\n")
+            print(f"No new records for Cinci code enforcments.\n")
 
-
-        # Handle empty or missing values
+        # Drop rows with empty values
         df = df.dropna(subset=[ "X_COORD", "Y_COORD", "STREET_NAME"])
 
-        # Convert the keywords list into a regex pattern
         # Drop the second occurrence of the "COMP_TYPE_DESC" column
         df = df.loc[:, ~df.columns.duplicated()]
 
-       # Convert the keywords list into a regex pattern
+        # Convert the keywords list into a regex pattern
         keywords_pattern = '|'.join(self.keywords)
 
         # Check the "COMP_TYPE_DESC" column for the keywords
@@ -132,7 +130,12 @@ class CinciCodeEnf():
 
         # Filter the DataFrame based on the combined mask
         selected_rows = df[combined_mask]
+        
+        records = selected_rows.to_dict("records")
 
-        # Output the filtered DataFrame as a JSON file
-        selected_rows.to_json("data.json", orient="records")
+        for record in records:
+            # Create new lead
+            lead = Lead()
+
+            
 

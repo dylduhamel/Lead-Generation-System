@@ -54,6 +54,7 @@ class CinciCodeEnfAPI():
 
         # Print the records
         for record in records:
+            # Create new lead
             lead = Lead()
 
             # API call to obtain zipcode from coords

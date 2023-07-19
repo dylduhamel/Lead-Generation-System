@@ -15,7 +15,8 @@ if __name__ == "__main__":
     Each script will add all available lead info to database
     """
     cinci_code_enf = CinciCodeEnf()
-    cinci_code_enf.download_dataset()
+    #cinci_code_enf.download_dataset()
+    cinci_code_enf.start()
 
 
     """
