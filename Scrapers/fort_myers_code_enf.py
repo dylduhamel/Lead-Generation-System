@@ -24,7 +24,7 @@ class FortMeyersEnf():
         self.read_file = r'C:\Users\Jake\Documents\LISTS\test_code_enf_FM.csv' 
 
         # Calculate yesterday's date
-        self.yesterday = (datetime.now() - timedelta(8)).strftime('%Y-%m-%dT00:00:00.000')
+        
 
         # List of keywords to search for
         self.keywords = ["nuisance accumulation", "junk", "trash", "lot mow", "plywood", "inoperable", 
