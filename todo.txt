@@ -1,5 +1,0 @@
-Figure out if I want the addtodatabase to be its own file and Functions
-Will I need the owner_info.py? Can I just use leads?
-
-Add a data added column for the database
-4125 CLEVELAND AVE Unit: 1125 FORT MYERS FL 33901
