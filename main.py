@@ -6,26 +6,20 @@ from selenium.webdriver.support import expected_conditions as EC
 from Utils.lead_database import Lead, Session
 from Scrapers.lee_county import LeeCountyScraper
 from Scrapers.lee_county_code_enf import LeeCountyCodeEnf
-from Scrapers.cinci_code_enforcement import CinciCodeEnf
-import datetime
-import pytz
-
-## Functions
-def curr_date():
-    current_date = datetime.datetime.now(pytz.timezone('America/New_York'))
-    formatted_date = current_date.strftime("%m/%d/%Y")
-    return formatted_date
-
-def past_month_date(months_back, current_date):
-    date_obj = datetime.datetime.strptime(current_date, "%m/%d/%Y")
-    past_date = date_obj - datetime.timedelta(days=months_back*30)
-    formatted_date = past_date.strftime("%m/%d/%Y")
-    return formatted_date
+from Scrapers.cinci_code_enf import CinciCodeEnf
 
 ## Main
 if __name__ == "__main__":
-    #lee_county_enf = LeeCountyEnf()
-    #lee_county_enf.start()
-    
+    """
+    All daily calls to "lead generating scripts"
+    Each script will add all available lead info to database
+    """
     cinci_code_enf = CinciCodeEnf()
-    cinci_code_enf.start()
+    cinci_code_enf.download_dataset()
+
+
+    """
+    Method call to BatchData API
+    Completes the missing info for each lead in database
+    """
+    
