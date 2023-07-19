@@ -16,6 +16,7 @@ class Lead(Base):
      __tablename__ = 'leads'
 
      id = Column(Integer, primary_key=True)
+     date_added = Column(String(199))
      owner_name = Column(String(100), unique=True)
      property_address = Column(String(200))
      property_city = Column(String(200))
