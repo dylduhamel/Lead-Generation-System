@@ -7,6 +7,7 @@ from Utils.lead_database import Lead, Session
 from Scrapers.lee_county import LeeCountyScraper
 from Scrapers.lee_county_code_enf import LeeCountyCodeEnf
 from Scrapers.cinci_code_enf import CinciCodeEnf
+from BatchData_services.skiptrace import skiptrace_leads
 
 ## Main
 if __name__ == "__main__":
@@ -23,4 +24,8 @@ if __name__ == "__main__":
     Method call to BatchData API
     Completes the missing info for each lead in database
     """
-    
+    #skiptrace_leads
+
+    """
+    Twilio API to send out SMS/Email messages 
+    """

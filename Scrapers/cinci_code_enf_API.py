@@ -1,8 +1,6 @@
-"""
-FIX:
-
-Do we know when the dataset is published? We are currently checking for yesterdays but that might be making us late to the game?
-"""
+'''
+Incomplete
+'''
 
 import os
 import math
