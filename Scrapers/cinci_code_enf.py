@@ -1,3 +1,9 @@
+'''
+Incomplete
+
+Note: This does not return the zipcode. Only the street, city, state
+'''
+
 import os
 import time
 import math
@@ -6,29 +12,46 @@ import logging
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from Utils.lead_database import Lead
+from Utils.lead_database import Lead, Session
 from Utils.lead_database_operations import add_lead_to_database
 from Utils.geo_location import get_zipcode
+from Utils.date import curr_date
+from Utils.status import status_print
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.options import Options
 
 
 class CinciCodeEnf():
     def __init__(self):
         # Initialization
+
+        # This is used for status tracking
+        self.scraper_name = "cinci_code_enf.py"
         self.url = "https://cagismaps.hamilton-co.org/PropertyActivity/propertyMaintenance"
+
+        # Set options for headless mode
+        #options = Options()
+        #options.add_argument('--headless')
+
+        # Initialize the browser (assumes Chrome here)
         self.driver = webdriver.Chrome()
+
         self.file_name = "PropertyActivity.csv"
         self.file_path = "/home/dylan/Downloads"
         self.read_file = ""
 
+        status_print(f"Initialized variables -- {self.scraper_name}")
+
     def download_dataset(self):
         # Start driver
         self.driver.get(self.url)
+
+        status_print(f"Chrome driver created. Beginning scraping -- {self.scraper_name}")
 
         try:
             # Wait for a specific element to be present
@@ -46,6 +69,10 @@ class CinciCodeEnf():
         except NoSuchElementException:
             print("Can not find record details button.")
 
+
+        # Wait for page to load completely
+        time.sleep(10)
+        
         # Download page
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "exportButton")))
@@ -69,16 +96,20 @@ class CinciCodeEnf():
         except NoSuchElementException:
             print("Can not find dropdown.")
 
+        time.sleep(3)
+
         # Limit records checkbox
         try:
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[7]/div/div/div[2]/div[2]/div/div/div[4]/ul/li/div/label")))
-            self.driver.find_element(By.XPATH, "/html/body/div[7]/div/div/div[2]/div[2]/div/div/div[4]/ul/li/div/label").click()
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "limitedToView")))
+            self.driver.find_element(By.ID, "limitedToView").click()
         except NoSuchElementException:
             print("Can not find checkbox.")
 
+        time.sleep(3)
+
         # Download csv
         try:
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "exportDataSubmitBtn")))
+            WebDriverWait(self.driver, 25).until(EC.presence_of_element_located((By.ID, "exportDataSubmitBtn")))
             self.driver.find_element(By.ID, "exportDataSubmitBtn").click()
         except NoSuchElementException:
             print("Can not find download button.")
@@ -90,9 +121,14 @@ class CinciCodeEnf():
         # Relinquish resources
         self.driver.quit()
 
-        # DELETE FILE FOR NEXT TIME
+        status_print(f"Scraping complete. Driver relinquished -- {self.scraper_name}")
 
     def start(self):
+        status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
+
+        # Create a new Session
+        session = Session()
+
         #format for local data set 
         self.read_file = self.file_path + "/" + self.file_name
 
@@ -133,9 +169,42 @@ class CinciCodeEnf():
         
         records = selected_rows.to_dict("records")
 
-        for record in records:
-            # Create new lead
-            lead = Lead()
+        # for record in records:
+        record = records[0]
+        # Create new lead
+        lead = Lead()
 
-            
+        # Date added to DB
+        time_stamp = curr_date()
+        lead.date_added = time_stamp
 
+        # Document type
+        lead.document_type = record["WORK_TYPE"]
+
+        # Document subtype & description
+        lead.document_subtype = record["COMP_TYPE_DESC"]
+
+        # Append street_no to street_name
+        street_num = str(int(record["STREET_NO"]))
+        address = street_num + " " + record["STREET_NAME"]
+        # Clean the address of abnormal formatting
+        cleaned_address = ' '.join(address.split())
+        lead.property_address = cleaned_address
+
+        # City and State
+        lead.property_city = "Cincinnati"
+        lead.property_state = "OH"
+
+        print(lead)
+
+        session.add(lead)
+
+        # Add new session to DB
+        session.commit()
+        # Relinquish resources
+        session.close()
+
+        # Delete the file so it can be run again
+        os.remove(os.path.join(self.file_path, self.file_name))
+
+        status_print(f"DB committed and {self.file_name} removed -- {self.scraper_name}")
