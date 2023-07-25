@@ -2,23 +2,53 @@
 Incomplete
 '''
 
+import os
+import time
+import math
+import datetime
+import pytz
 import pandas as pd
-import numpy as np
 import logging
-from splinter import Browser
+from sodapy import Socrata
+from datetime import datetime, timedelta
+from dotenv import load_dotenv
+from Utils.lead_database import Lead, Session
+from Utils.lead_database_operations import add_lead_to_database
+from Utils.geo_location import get_zipcode
+from Utils.date import curr_date
+from Utils.status import status_print
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.options import Options
+
 
 class LeeCountyCodeEnf():
     def __init__(self):
         # Set up logging
         logging.basicConfig(filename='processing.log', level=logging.INFO)
         
-        self.read_file = input("Enter file to be used (include.csv)")
-        self.read_file = r'C:\Users\Jake\Documents\LISTS\\' + self.read_file 
+        self.scrapper_name = "lee_county_code_enf.py"
+        self.url = "https://accelaaca.leegov.com/aca/Cap/CapHome.aspx?module=CodeEnforcement&TabName=CodeEnforcement"
+        
+        # Set options for headless mode
+        #options = Options()
+        #options.add_argument('--headless')
+
+        self.driver = webdriver.Chrome()
+
+        # Format date for file name
+        current_date = datetime.datetime.now(pytz.timezone('America/New_York'))
+        formatted_date = current_date.strftime("%Y%m%d")
+        
+
+
+        self.file_name = "RecordList" + formatted_date + ".csv"
+        self.file_path = "/home/dylan/Downloads"
+        self.read_file = ""
 
         # List of keywords to search for
         self.keywords = ["Nuisance Accumulation", "junk", "trash", "lot mow", "plywood", "Inoperable", 
@@ -27,15 +57,62 @@ class LeeCountyCodeEnf():
 
         # List of keywords to exclude
         self.exclusions = ["Permit", "construction", "GVWR", "Builder", "commercial"]
+
+        status_print(f"Initialized variables -- {self.scrapper_name}")
     
+    def download_dataset(self):
+        #Start driver
+        self.driver.get(self.url)
+
+        status_print(f"Chrome driver created. Beginning scraping -- {self.scrapper_name}")
+
+        try:
+            #wait for a specific element to be present
+            element = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            )
+        except TimeoutException:
+            print("Timeout, element not found")
+
+        #Search 
+        try:
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_btnNewSearch")))
+            self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_btnNewSearch").click()
+        except NoSuchElementException:
+            print("Can not find search button")
+
+        # Wait for page to load 
+        time.sleep(10)
+
+        # Download csv
+        try:
+            WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_dgvPermitList_gdvPermitList_gdvPermitListtop4btnExport")))
+            self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_dgvPermitList_gdvPermitList_gdvPermitListtop4btnExport").click()
+        except NoSuchElementException:
+            print("Can not find download button.")    
+
+        # Wait for the file to be downloaded 
+
+        while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
+            time.sleep(1)
+
+        # Relinquish resources
+        self.driver.quit()
+
+        status_print(f"Scraping complete. Driver relinquished -- {self.scrapper_name}")
+        
     def start(self):
+
         try:
             # Load the csv file into a DataFrame
             df = pd.read_csv(self.read_file)
         except Exception as e:
             logging.error(f"Failed to load CSV file: {e}")
             exit()
-
+        
+        # Create a new Session
+        session = Session()
+        
         # Convert the Description to lowercase for case-insensitive matching 
         df['Description'] = df['Description'].str.lower()
 
@@ -71,13 +148,46 @@ class LeeCountyCodeEnf():
         # Reorder the columns
         selected_rows = selected_rows[['Address', 'City', 'State', 'Zip', 'Description']]
 
-        # Save the selected rows to a new CSV file
-        file_name = input("ENTER file name (include .csv): ")
-        file_path = r'C:\Users\Jake\Documents\LISTS\\' + file_name
-
         # Remove duplicates based on 'Address'
         selected_rows = selected_rows.drop_duplicates(subset='Address')
 
-        selected_rows.to_csv(file_path , index=False)
+        records = selected_rows.to_dict("records")
 
-        
+        record = records[0]
+
+        # Create new lead
+        lead = Lead()
+
+        # Date added to DB
+        time_stamp = curr_date()
+        lead.date_added = time_stamp
+
+        # Document type
+        lead.document_type = "Code Enforcement"
+
+        # Document subtype & description
+        lead.document_subtype = record["Description"]
+
+        # Document address 
+        lead.property_address = record["Address"]
+
+        # Document Zip
+        lead.property_zipcode = record["Zip"]
+
+        # City and State
+        lead.property_city = record["City"]
+        lead.property_state = record["State"]
+
+        print(lead)
+
+        session.add(lead)
+
+        # Add new session to DB
+        session.commit()
+        # Relinquish resources
+        session.close()
+
+        # Delete the file so it can be run again
+        os.remove(os.path.join(self.file_path, self.file_name))
+
+        status_print(f"DB committed and {self.file_name} removed -- {self.scrapper_name}")
