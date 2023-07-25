@@ -169,35 +169,34 @@ class CinciCodeEnf():
         
         records = selected_rows.to_dict("records")
 
-        # for record in records:
-        record = records[0]
-        # Create new lead
-        lead = Lead()
+        for record in records:
+            # Create new lead
+            lead = Lead()
 
-        # Date added to DB
-        time_stamp = curr_date()
-        lead.date_added = time_stamp
+            # Date added to DB
+            time_stamp = curr_date()
+            lead.date_added = time_stamp
 
-        # Document type
-        lead.document_type = record["WORK_TYPE"]
+            # Document type
+            lead.document_type = record["WORK_TYPE"]
 
-        # Document subtype & description
-        lead.document_subtype = record["COMP_TYPE_DESC"]
+            # Document subtype & description
+            lead.document_subtype = record["COMP_TYPE_DESC"]
 
-        # Append street_no to street_name
-        street_num = str(int(record["STREET_NO"]))
-        address = street_num + " " + record["STREET_NAME"]
-        # Clean the address of abnormal formatting
-        cleaned_address = ' '.join(address.split())
-        lead.property_address = cleaned_address
+            # Append street_no to street_name
+            street_num = str(int(record["STREET_NO"]))
+            address = street_num + " " + record["STREET_NAME"]
+            # Clean the address of abnormal formatting
+            cleaned_address = ' '.join(address.split())
+            lead.property_address = cleaned_address
 
-        # City and State
-        lead.property_city = "Cincinnati"
-        lead.property_state = "OH"
+            # City and State
+            lead.property_city = "Cincinnati"
+            lead.property_state = "OH"
 
-        print(lead)
+            print(lead)
 
-        session.add(lead)
+            session.add(lead)
 
         # Add new session to DB
         session.commit()

@@ -17,7 +17,7 @@ if __name__ == "__main__":
     """
     cinci_code_enf = CinciCodeEnf()
     cinci_code_enf.download_dataset()
-    #cinci_code_enf.start()
+    cinci_code_enf.start()
 
 
     """
