@@ -12,11 +12,9 @@ import logging
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from Utils.lead_database import Lead, Session
-from Utils.lead_database_operations import add_lead_to_database
-from Utils.geo_location import get_zipcode
-from Utils.date import curr_date
-from Utils.status import status_print
+from Utility.lead_database import Lead, Session
+from Utility.lead_database_operations import add_lead_to_database
+from Utility.util import get_zipcode, curr_date, status_print, clean_string
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -40,6 +38,15 @@ class CinciCodeEnf():
 
         # Initialize the browser (assumes Chrome here)
         self.driver = webdriver.Chrome()
+
+        # Compute yesterdays date for getting recent entries
+        today = datetime.now()
+
+        # Calculate yesterday's date
+        self.yesterday = today - timedelta(days=6)
+
+        # Format the date in the desired format (month/day/year) with no leading zero
+        self.formatted_date = self.yesterday.strftime("%-m/%-d/%Y")
 
         self.file_name = "PropertyActivity.csv"
         self.file_path = "/home/dylan/Downloads"
@@ -126,14 +133,16 @@ class CinciCodeEnf():
     def start(self):
         status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
 
-        # Create a new Session
+        # Create a new database Session
         session = Session()
 
-        #format for local data set 
+        # Path to downloaded CSV
+        # Format for local data set 
         self.read_file = self.file_path + "/" + self.file_name
 
         # List of keywords to search for
-        self.keywords = ["code enforcement - buildings with residences", "trash/litter/tall grass complaint", "zoning code enforcement - residential uses", "abandoned vehicle code enforcement", "health environmental code enforcement"]
+        #self.keywords = ["code enforcement - buildings with residences", "trash/litter/tall grass complaint", "zoning code enforcement - residential uses", "abandoned vehicle code enforcement", "health environmental code enforcement"]
+        self.keywords = [""]
 
         try:
             df = pd.read_csv(self.read_file)
@@ -142,7 +151,7 @@ class CinciCodeEnf():
             exit()
         
         try:
-            df= df[["COMP_TYPE_DESC", "X_COORD", "Y_COORD", "YN_ACTIVITY_REPORT", "STREET_NO", "STREET_DIRECTION", "STREET_NAME", "COMP_TYPE_DESC", "WORK_TYPE"]] 
+            df= df[["COMP_TYPE_DESC", "X_COORD", "Y_COORD", "YN_ACTIVITY_REPORT", "STREET_NO", "STREET_DIRECTION", "STREET_NAME", "COMP_TYPE_DESC", "WORK_TYPE", "ENTERED_DATE"]] 
         except KeyError:
             print(f"No new records for Cinci code enforcments.\n")
 
@@ -169,39 +178,46 @@ class CinciCodeEnf():
         
         records = selected_rows.to_dict("records")
 
+        count = 0
+
+        status_print(f"Adding records to database -- {self.scraper_name}")
+
+        # Iterate through records
         for record in records:
-            # Create new lead
-            lead = Lead()
+            if record["ENTERED_DATE"] == self.formatted_date:
+                # Create new lead
+                lead = Lead()
 
-            # Date added to DB
-            time_stamp = curr_date()
-            lead.date_added = time_stamp
+                # Date added to DB
+                time_stamp = curr_date()
+                lead.date_added = time_stamp
 
-            # Document type
-            lead.document_type = record["WORK_TYPE"]
+                # Document type
+                lead.document_type = record["WORK_TYPE"]
 
-            # Document subtype & description
-            lead.document_subtype = record["COMP_TYPE_DESC"]
+                # Document subtype & description
+                lead.document_subtype = record["COMP_TYPE_DESC"]
 
-            # Append street_no to street_name
-            street_num = str(int(record["STREET_NO"]))
-            address = street_num + " " + record["STREET_NAME"]
-            # Clean the address of abnormal formatting
-            cleaned_address = ' '.join(address.split())
-            lead.property_address = cleaned_address
+                # Append street_no to street_name
+                street_num = str(int(record["STREET_NO"]))
+                address = street_num + " " + record["STREET_NAME"]
+                lead.property_address = clean_string(address)
 
-            # City and State
-            lead.property_city = "Cincinnati"
-            lead.property_state = "OH"
+                # City and State
+                lead.property_city = "Cincinnati"
+                lead.property_state = "OH"
 
-            print(lead)
+                print(lead)
+                print("\n")
 
-            session.add(lead)
+                count += 1
+                #session.add(lead)
 
+        print(f"\n The total number of entries on {self.yesterday} for cinci code enf is: {count}")
         # Add new session to DB
-        session.commit()
+        #session.commit()
         # Relinquish resources
-        session.close()
+        #session.close()
 
         # Delete the file so it can be run again
         os.remove(os.path.join(self.file_path, self.file_name))

@@ -1,4 +1,4 @@
-from Utils.lead_database import Lead, Session
+from Utility.lead_database import Lead, Session
 
 def add_lead_to_database(lead):
     session = Session()

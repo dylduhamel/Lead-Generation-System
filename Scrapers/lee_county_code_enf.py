@@ -12,11 +12,9 @@ import logging
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from Utils.lead_database import Lead, Session
-from Utils.lead_database_operations import add_lead_to_database
-from Utils.geo_location import get_zipcode
-from Utils.date import curr_date
-from Utils.status import status_print
+from Utility.lead_database import Lead, Session
+from Utility.lead_database_operations import add_lead_to_database
+from Utility.util import get_zipcode, curr_date, status_print, clean_string
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -25,13 +23,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 
-
 class LeeCountyCodeEnf():
     def __init__(self):
+        # Initialization
+    
         # Set up logging
         logging.basicConfig(filename='processing.log', level=logging.INFO)
         
-        self.scrapper_name = "lee_county_code_enf.py"
+        self.scraper_name = "lee_county_code_enf.py"
         self.url = "https://accelaaca.leegov.com/aca/Cap/CapHome.aspx?module=CodeEnforcement&TabName=CodeEnforcement"
         
         # Set options for headless mode
@@ -41,10 +40,9 @@ class LeeCountyCodeEnf():
         self.driver = webdriver.Chrome()
 
         # Format date for file name
-        current_date = datetime.datetime.now(pytz.timezone('America/New_York'))
+        current_date = datetime.now(pytz.timezone('America/New_York'))
         formatted_date = current_date.strftime("%Y%m%d")
         
-
 
         self.file_name = "RecordList" + formatted_date + ".csv"
         self.file_path = "/home/dylan/Downloads"
@@ -56,15 +54,15 @@ class LeeCountyCodeEnf():
                     "vacant", "damaged roof", "damage", "parts"]
 
         # List of keywords to exclude
-        self.exclusions = ["Permit", "construction", "GVWR", "Builder", "commercial"]
+        self.exclusions = ["Permit", "construction", "GVWR", "Builder"]
 
-        status_print(f"Initialized variables -- {self.scrapper_name}")
+        status_print(f"Initialized variables -- {self.scraper_name}")
     
     def download_dataset(self):
         #Start driver
         self.driver.get(self.url)
 
-        status_print(f"Chrome driver created. Beginning scraping -- {self.scrapper_name}")
+        status_print(f"Chrome driver created. Beginning scraping -- {self.scraper_name}")
 
         try:
             #wait for a specific element to be present
@@ -99,9 +97,17 @@ class LeeCountyCodeEnf():
         # Relinquish resources
         self.driver.quit()
 
-        status_print(f"Scraping complete. Driver relinquished -- {self.scrapper_name}")
+        status_print(f"Scraping complete. Driver relinquished -- {self.scraper_name}")
         
     def start(self):
+        status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
+
+        # Create a new database Session
+        session = Session()
+        
+        # Path to downloaded CSV
+        # Format for local data set 
+        self.read_file = self.file_path + "/" + self.file_name
 
         try:
             # Load the csv file into a DataFrame
@@ -109,9 +115,6 @@ class LeeCountyCodeEnf():
         except Exception as e:
             logging.error(f"Failed to load CSV file: {e}")
             exit()
-        
-        # Create a new Session
-        session = Session()
         
         # Convert the Description to lowercase for case-insensitive matching 
         df['Description'] = df['Description'].str.lower()
@@ -134,7 +137,7 @@ class LeeCountyCodeEnf():
         selected_rows[['Address', 'City_State_Zip']] = selected_rows['Address'].str.split(',', n=1, expand=True)
 
         # Split the 'City_State_Zip' field into separate 'City', 'State_Zip' fields
-        selected_rows[['City', 'State_Zip']] = selected_rows['City_State_Zip'].str.split(' FL', n=1, expand=True)
+        selected_rows[['City', 'State_Zip']] = selected_rows['City_State_Zip'].str.split('FL', n=1, expand=True)
 
         # Split the 'State_Zip' field into separate 'State', 'Zip' fields
         selected_rows[['State', 'Zip']] = selected_rows['State_Zip'].str.split(' ', n=1, expand=True)
@@ -153,41 +156,46 @@ class LeeCountyCodeEnf():
 
         records = selected_rows.to_dict("records")
 
-        record = records[0]
+        status_print(f"Adding records to database -- {self.scraper_name}")
 
-        # Create new lead
-        lead = Lead()
+        print(len(records))
 
-        # Date added to DB
-        time_stamp = curr_date()
-        lead.date_added = time_stamp
+        # Iterate through records
+        for record in records:
+            # Create new lead
+            lead = Lead()
 
-        # Document type
-        lead.document_type = "Code Enforcement"
+            # Date added to DB
+            time_stamp = curr_date()
+            lead.date_added = time_stamp
 
-        # Document subtype & description
-        lead.document_subtype = record["Description"]
+            # Document type
+            lead.document_type = "Code Enforcement"
 
-        # Document address 
-        lead.property_address = record["Address"]
+            # Document subtype & description
+            lead.document_subtype = record["Description"]
 
-        # Document Zip
-        lead.property_zipcode = record["Zip"]
+            # Document address 
+            lead.property_address = clean_string(record["Address"])
 
-        # City and State
-        lead.property_city = record["City"]
-        lead.property_state = record["State"]
+            # Document Zip
+            lead.property_zipcode = clean_string(record["Zip"])
 
-        print(lead)
+            # City and State
+            lead.property_city = clean_string(record["City"])
+            lead.property_state = clean_string(record["State"])
 
-        session.add(lead)
+            print(lead)
+            print("\n")
+
+            #session.add(lead)
 
         # Add new session to DB
-        session.commit()
+        #session.commit()
         # Relinquish resources
-        session.close()
+        #session.close()
 
         # Delete the file so it can be run again
-        os.remove(os.path.join(self.file_path, self.file_name))
+        #os.remove(os.path.join(self.file_path, self.file_name))
 
-        status_print(f"DB committed and {self.file_name} removed -- {self.scrapper_name}")
+        status_print(f"DB committed and {self.file_name} removed -- {self.scraper_name}")

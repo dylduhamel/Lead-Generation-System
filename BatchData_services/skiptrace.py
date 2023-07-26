@@ -12,7 +12,7 @@ import os
 import requests
 import json
 from sqlalchemy import update
-from Utils.lead_database import Lead, Session
+from Utility.lead_database import Lead, Session
 
 def skiptrace_leads():
     # API call function
