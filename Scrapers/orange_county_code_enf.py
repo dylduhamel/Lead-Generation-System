@@ -134,7 +134,7 @@ class OrangeCountyCodeEnf():
             lead.document_type = "Code Enforcement"
 
             # Document subtype & description
-            lead.document_subtype = record["Incident Type"]
+            lead.document_subtype = clean_string(record["Incident Type"])
 
             # Document address 
             lead.property_address = clean_string(record["Incident Address"])
