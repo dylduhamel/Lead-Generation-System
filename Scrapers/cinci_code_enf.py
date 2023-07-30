@@ -43,7 +43,7 @@ class CinciCodeEnf():
         today = datetime.now()
 
         # Calculate yesterday's date
-        self.yesterday = today - timedelta(days=6)
+        self.yesterday = today - timedelta(days=2)
 
         # Format the date in the desired format (month/day/year) with no leading zero
         self.formatted_date = self.yesterday.strftime("%-m/%-d/%Y")
@@ -159,22 +159,22 @@ class CinciCodeEnf():
         df = df.dropna(subset=[ "X_COORD", "Y_COORD", "STREET_NAME"])
 
         # Drop the second occurrence of the "COMP_TYPE_DESC" column
-        df = df.loc[:, ~df.columns.duplicated()]
+        #df = df.loc[:, ~df.columns.duplicated()]
 
         # Convert the keywords list into a regex pattern
-        keywords_pattern = '|'.join(self.keywords)
+        #keywords_pattern = '|'.join(self.keywords)
 
         # Check the "COMP_TYPE_DESC" column for the keywords
-        mask_keywords = df['COMP_TYPE_DESC'].astype(str).str.contains(keywords_pattern, case=False, na=False)
+        #mask_keywords = df['COMP_TYPE_DESC'].astype(str).str.contains(keywords_pattern, case=False, na=False)
 
         # Check the "YN_ACTIVITY_REPORT" column for the value "Y"
         mask_activity = df['YN_ACTIVITY_REPORT'] == 'Y'
 
         # Combine the two masks using the & operator to ensure both conditions are met
-        combined_mask = mask_keywords & mask_activity
+        #combined_mask = mask_keywords & mask_activity
 
         # Filter the DataFrame based on the combined mask
-        selected_rows = df[combined_mask]
+        selected_rows = df[mask_activity]
         
         records = selected_rows.to_dict("records")
 
@@ -211,15 +211,17 @@ class CinciCodeEnf():
                 print("\n")
 
                 count += 1
-                #session.add(lead)
+
+                session.add(lead)
 
         print(f"\n The total number of entries on {self.yesterday} for cinci code enf is: {count}")
+
         # Add new session to DB
-        #session.commit()
+        session.commit()
         # Relinquish resources
-        #session.close()
+        session.close()
 
         # Delete the file so it can be run again
-        os.remove(os.path.join(self.file_path, self.file_name))
+        #os.remove(os.path.join(self.file_path, self.file_name))
 
         status_print(f"DB committed and {self.file_name} removed -- {self.scraper_name}")

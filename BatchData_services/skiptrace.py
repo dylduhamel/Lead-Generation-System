@@ -32,7 +32,7 @@ def skiptrace_leads():
                     "city": lead.property_city,
                     "street": lead.property_address,
                     "state": lead.property_state,
-                    "zip": lead.property_zipcode
+                    #"zip": lead.property_zipcode
                 }
             })
 
@@ -56,11 +56,15 @@ def skiptrace_leads():
     # Create a session
     session = Session()
 
-    # Query the database
+    # Query the database (WHERE WE EXTRACT JUST YESTERDAYS DATE)
     leads = session.query(Lead).all()
 
     # Make a single API call for all leads
     results = api_call(leads)
+
+    # Export json to data.json
+    with open('data.json', 'w') as file:
+        json.dump(results, file)
 
     for lead, result in zip(leads, results):
         try:
