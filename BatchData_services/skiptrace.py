@@ -27,14 +27,21 @@ def skiptrace_leads():
         data = {"requests": []}
 
         for lead in lead_list:
-            data["requests"].append({
+            # Create a base data object
+            data_object = {
                 "propertyAddress": {
                     "city": lead.property_city,
                     "street": lead.property_address,
-                    "state": lead.property_state,
-                    #"zip": lead.property_zipcode
+                    "state": lead.property_state
                 }
-            })
+            }
+
+            # Add zipcode if it's not None
+            if lead.property_zipcode is not None:
+                data_object["propertyAddress"]["zip"] = lead.property_zipcode
+
+            # Append to the requests list
+            data["requests"].append(data_object)
 
         try:
             response = requests.post('https://api.batchdata.com/api/v1/property/skip-trace', headers=headers, data=json.dumps(data))
@@ -67,16 +74,22 @@ def skiptrace_leads():
         json.dump(results, file)
 
     for lead, result in zip(leads, results):
-        try:
-            owner_first_name = result["name"]["first"]
-            owner_last_name = result["name"]["last"]
-            phone_number_1 = result["phoneNumbers"][0]["number"]
-            phone_number_1_type = result["phoneNumbers"][0]["type"]
-            phone_number_2 = result["phoneNumbers"][1]["number"]
-            phone_number_2_type = result["phoneNumbers"][1]["type"]
-            email = result["emails"][0]["email"] if "emails" in result and result["emails"] else None
-        except KeyError as err:
-            print("KeyError: The key", err, "does not exist in the result")
+        owner_first_name = result.get("name", {}).get("first")
+        owner_last_name = result.get("name", {}).get("last")
+
+        # Check if "phoneNumbers" key exists and its associated list is not empty
+        phone_numbers = result.get("phoneNumbers", [])
+        if phone_numbers:
+            phone_number_1 = phone_numbers[0].get("number")
+            phone_number_1_type = phone_numbers[0].get("type")
+
+            if len(phone_numbers) > 1:
+                phone_number_2 = phone_numbers[1].get("number")
+                phone_number_2_type = phone_numbers[1].get("type")
+        else:
+            phone_number_1 = phone_number_1_type = phone_number_2 = phone_number_2_type = None
+
+        email = result.get("emails", [{}])[0].get("email") if result.get("emails") else None
 
         # Update the fields in the database
         lead.owner_name = owner_first_name + ' ' + owner_last_name if owner_first_name and owner_last_name else lead.owner_name

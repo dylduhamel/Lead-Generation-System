@@ -1,5 +1,7 @@
 '''
-Incomplete
+Complete
+
+Notes: Can also pull cinci building inspections 
 '''
 
 import os
@@ -8,14 +10,19 @@ import pandas as pd
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from Utils.lead_database import Lead
-from Utils.lead_database_operations import add_lead_to_database
-from Utils.geo_location import get_zipcode
+from Utility.lead_database import Lead, Session
+from Utility.lead_database_operations import add_lead_to_database
+from Utility.util import status_print, curr_date, get_address_from_lat_lng
 
 class CinciCodeEnfAPI():
     def __init__(self):
-        ## Load environment variables from .env file
+        # Initialization
+
+        #  Load environment variables from .env file
         load_dotenv()
+
+        self.scraper_name = "cinci_code_enf.py"
+        self.county_website = "Cincinnati Code Enforcement API"
 
         # App token for authenticated requests
         MyAppToken = os.getenv("CINCI_API_TOKEN")
@@ -25,12 +32,18 @@ class CinciCodeEnfAPI():
                         MyAppToken,
                         username=os.getenv("CINCI_API_USERNAME"),
                         password=os.getenv("CINCI_API_PASSWORD"))
+        
+        status_print(f"Initialized variables -- {self.scraper_name}")
+
+    def start(self, days):
+        status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
+
+        # Create a new database Session
+        session = Session()
 
         # Calculate yesterday's date
-        # CHANGE DELTA BACK TO 1
-        self.yesterday = (datetime.now() - timedelta(8)).strftime('%Y-%m-%dT00:00:00.000')
+        self.yesterday = (datetime.now() - timedelta(days)).strftime('%Y-%m-%dT00:00:00.000')
 
-    def start(self):
         # Make a request to the API and get the results
         # Filter results for records with an 'entered_date' from yesterday and limit to 2000 results
         results = self.client.get("cncm-znd6", entered_date=self.yesterday, limit=2000)
@@ -43,6 +56,10 @@ class CinciCodeEnfAPI():
             df = df[['work_type', 'work_subtype', 'city_id', 'latitude', 'longitude', 'full_address','status_class','data_status_display']]
         except KeyError:
             print(f"No new records on {self.yesterday} for Cinci code enforcments.\n")
+            return
+
+        # Filter out rows with 'Building Enforcement' in the 'work_subtype' column
+        df = df[df['work_subtype'] != 'Building Enforcement']
 
         # Convert the DataFrame to JSON and save to a file
         df.to_json('data.json', orient='records')
@@ -50,13 +67,24 @@ class CinciCodeEnfAPI():
         # Convert the DataFrame to a list of dictionaries (for each row)
         records = df.to_dict('records')
 
+        status_print(f"Adding records to database -- {self.scraper_name}")
+
         # Print the records
         for record in records:
             # Create new lead
             lead = Lead()
 
-            # API call to obtain zipcode from coords
-            zipcode = get_zipcode(record["latitude"], record["longitude"])
+            # Date added to DB
+            time_stamp = curr_date()
+            lead.date_added = time_stamp
+
+            # Get property address from google api
+            full_address = get_address_from_lat_lng(record["latitude"], record["longitude"])
+            try:
+                street_address = full_address.split(',')[0].strip()
+                lead.property_address = street_address
+            except:
+                print("Was not able to add property address\n")
             
             # Check if document_type is nan
             if isinstance(record["work_type"], float) and math.isnan(record["work_type"]):
@@ -69,23 +97,23 @@ class CinciCodeEnfAPI():
                 lead.document_subtype = None
             else:
                 lead.document_subtype = record["work_subtype"]
-                
-            # Check if full_address is nan
-            if isinstance(record["full_address"], float) and math.isnan(record["full_address"]):
-                lead.property_address = None
-            else:
-                lead.property_address = record["full_address"]
             
-            if isinstance(zipcode, float) and math.isnan(zipcode):
-                lead.property_zipcode = None
-            else:
-                lead.property_zipcode = zipcode
-                
+            # City and State 
             lead.property_city = "Cincinnati"
-            lead.property_state = "OH"
+            lead.property_state = "Ohio"
 
-            # add lead to database
-            print(lead, '\n')
-            #add_lead_to_database(lead)
+            # Website tracking
+            lead.county_website = self.county_website
 
+            #print(lead, '\n')
+
+            # Add lead to database
+            session.add(lead)
+
+        # Add new session to DB
+        session.commit()
+        # Relinquish resources
+        session.close()
+
+        status_print(f"DB committed -- {self.scraper_name}")
 

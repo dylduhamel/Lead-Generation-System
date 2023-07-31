@@ -1,3 +1,7 @@
+'''
+Complete
+'''
+
 import os
 import time
 import math
@@ -28,20 +32,21 @@ class OrangeCountyCodeEnf():
         logging.basicConfig(filename='processing.log', level=logging.INFO)
         
         self.scraper_name = "orange_county_code_enf.py"
+        self.county_website = "Orange County Code Enforcement"
         self.url = "https://netapps.ocfl.net/CETitleViolationSearch/"
         
         # Set options for headless mode
         #options = Options()
         #options.add_argument('--headless')
 
+        # Scraper driver
         self.driver = webdriver.Chrome()
 
         # Format date for file name
         current_date = datetime.now(pytz.timezone('America/New_York'))
         formatted_date = current_date.strftime("%m%d%Y")
-        
 
-        self.file_name = "OpenActiveCodeEnforcementCases_" + formatted_date + ".csv"
+        self.file_name = "OpenActiveCodeEnforcementCases_" + formatted_date + ".xlsx"
         self.file_path = "/home/dylan/Downloads"
         self.read_file = ""
 
@@ -51,7 +56,7 @@ class OrangeCountyCodeEnf():
         status_print(f"Initialized variables -- {self.scraper_name}")
     
     def download_dataset(self):
-        #Start driver
+        # Start driver
         self.driver.get(self.url)
 
         status_print(f"Chrome driver created. Beginning scraping -- {self.scraper_name}")
@@ -80,46 +85,65 @@ class OrangeCountyCodeEnf():
 
         status_print(f"Scraping complete. Driver relinquished -- {self.scraper_name}")
     
-    def start(self):
+    def start(self, days):
         status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
+
+        # Compute yesterdays date for getting recent entries
+        today = datetime.now()
+
+        # Calculate yesterday's date
+        yesterday = today - timedelta(days=days)
+
+        # Format the date in the desired format (month/day/year) with no leading zero
+        formatted_date = yesterday.strftime("%m-%d-%Y")
 
         # Create a new database Session
         session = Session()
         
-        # Path to downloaded CSV
+        # Path to downloaded xlsx
         # Format for local data set 
         self.read_file = self.file_path + "/" + self.file_name
 
+        # Load the xlsx file into a DataFrame
         try:
-            # Load the csv file into a DataFrame
-            df = pd.read_csv(self.read_file)
+            df = pd.read_excel(self.read_file, skiprows=4)
+            df.columns = ["Incident ID", "Parcel ID", "Incident Address", "Incident Type", "Incident Status", "Violation Recorded Date"]
         except Exception as e:
-            logging.error(f"Failed to load CSV file: {e}")
+            logging.error(f"Failed to load excel file: {e}")
             exit()
 
-         # Convert the Description to lowercase for case-insensitive matching 
+        # Convert the 'Violation Recorded Date' column to datetime format
+        df['Violation Recorded Date'] = pd.to_datetime(df['Violation Recorded Date'])
+
+        # Filter rows based on a specific date
+        specific_date = pd.to_datetime(formatted_date) 
+        df = df[df['Violation Recorded Date'] == specific_date]
+
+        # Convert 'Violation Recorded Date' to string in YYYY-MM-DD format
+        df['Violation Recorded Date'] = df['Violation Recorded Date'].dt.strftime('%m/%d/%Y')
+
+        # Convert the Incident Type to lowercase for case-insensitive matching 
         df["Incident Type"] = df["Incident Type"].str.lower()
 
         # Handle empty or missing values 
         df = df.dropna(subset=['Incident Address'])
-        
-        # Create new data frame where a keyword is found 
-        selected_rows = pd.DataFrame(columns=df.columns)
 
+        # Handle NaN values in 'Incident Type' column
+        df["Incident Type"] = df["Incident Type"].fillna("")
+
+        # Filter rows based on exclusions and date
         for exclusion in self.exclusions:
-            selected_rows = selected_rows[~selected_rows['Incident Type'].str.contains(exclusion.lower())]
+            df = df[~df['Incident Type'].str.contains(exclusion.lower())]
 
         # Reorder the columns
-        selected_rows = selected_rows[['Incident Address', 'Incident Type']]
+        df = df[['Incident Address', 'Incident Type', 'Violation Recorded Date']]  # Include 'Violation Recorded Date'
 
         # Remove duplicates based on 'Address'
-        selected_rows = selected_rows.drop_duplicates(subset='Incident Address')
+        df = df.drop_duplicates(subset='Incident Address')
 
-        records = selected_rows.to_dict("records")
+        records = df.to_dict("records")
 
         status_print(f"Adding records to database -- {self.scraper_name}")
-
-        print(len(records))
 
         # Iterate through records
         for record in records:
@@ -142,6 +166,9 @@ class OrangeCountyCodeEnf():
             # City and State
             lead.property_city = "Orlando"
             lead.property_state = "Florida"
+
+            # Website tracking
+            lead.county_website = self.county_website
 
             print(lead)
             print("\n")

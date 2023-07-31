@@ -9,6 +9,28 @@ from dotenv import load_dotenv
 ## Load environment variables from .env file
 load_dotenv()
 
+def get_address_from_lat_lng(lat, lng):
+    # API Key
+    api_key = os.getenv("GOOGLECLOUD_API_TOKEN")
+    # Define the endpoint URL.
+    endpoint_url = f"https://maps.googleapis.com/maps/api/geocode/json?latlng={lat},{lng}&key={api_key}"
+
+    # Send a GET request to the Google Maps API.
+    response = requests.get(endpoint_url)
+
+    # Check that the request was successful.
+    if response.status_code == 200:
+        data = response.json()
+        if data['status'] == 'OK':
+            # Extract the formatted address from the response.
+            formatted_address = data['results'][0]['formatted_address']
+            return formatted_address
+        else:
+            return "Error: The API returned status: {}".format(data['status'])
+    else:
+        return "Error: The request was unsuccessful. Status code: {}".format(response.status_code)
+
+
 # Get current date
 def curr_date():
     current_date = datetime.datetime.now(pytz.timezone('America/New_York'))

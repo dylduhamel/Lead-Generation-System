@@ -29,6 +29,7 @@ class Lead(Base):
      phone_number_2 = Column(String(100))
      phone_number_2_type = Column(String(100))
      email = Column(String(200))
+     county_website = Column(String(100))
 
      # Printing representation for testing
      def __repr__(self):
@@ -42,7 +43,8 @@ class Lead(Base):
                 f"phone_number_1_type={self.phone_number_1_type}, "
                 f"phone_number_2={self.phone_number_2}, "
                 f"phone_number_2_type={self.phone_number_2_type}, "
-                f"email={self.email})")
+                f"email={self.email}, "
+                f"county_website={self.county_website})")
 
 ## Database credentials
 db_endpoint = os.getenv('DB_ENDPOINT')

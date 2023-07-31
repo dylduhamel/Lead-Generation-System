@@ -1,5 +1,5 @@
 '''
-Incomplete
+Complete
 
 Note: This does not return the zipcode. Only the street, city, state
 '''
@@ -30,23 +30,15 @@ class CinciCodeEnf():
 
         # This is used for status tracking
         self.scraper_name = "cinci_code_enf.py"
+        self.county_website = "Cincinnati Code Enforcement"
         self.url = "https://cagismaps.hamilton-co.org/PropertyActivity/propertyMaintenance"
 
         # Set options for headless mode
-        #options = Options()
-        #options.add_argument('--headless')
+        # options = Options()
+        # options.add_argument('--headless')
 
         # Initialize the browser (assumes Chrome here)
         self.driver = webdriver.Chrome()
-
-        # Compute yesterdays date for getting recent entries
-        today = datetime.now()
-
-        # Calculate yesterday's date
-        self.yesterday = today - timedelta(days=2)
-
-        # Format the date in the desired format (month/day/year) with no leading zero
-        self.formatted_date = self.yesterday.strftime("%-m/%-d/%Y")
 
         self.file_name = "PropertyActivity.csv"
         self.file_path = "/home/dylan/Downloads"
@@ -97,7 +89,7 @@ class CinciCodeEnf():
 
             # Wait for the options to be visible and click the desired option
             dropdown_option = WebDriverWait(self.driver, 10).until(
-                EC.visibility_of_element_located((By.XPATH, '/html/body/div[7]/div/div/div[2]/div[2]/div/div/div[2]/ul/li[8]/a'))  # Replace 'Option Text' with your option
+                EC.visibility_of_element_located((By.XPATH, '/html/body/div[7]/div/div/div[2]/div[2]/div/div/div[2]/ul/li[8]/a')) 
             )
             dropdown_option.click()
         except NoSuchElementException:
@@ -130,8 +122,17 @@ class CinciCodeEnf():
 
         status_print(f"Scraping complete. Driver relinquished -- {self.scraper_name}")
 
-    def start(self):
+    def start(self, days):
         status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
+
+        # Compute yesterdays date for getting recent entries
+        today = datetime.now()
+
+        # Calculate yesterday's date
+        self.yesterday = today - timedelta(days=days)
+
+        # Format the date in the desired format (month/day/year) with no leading zero
+        self.formatted_date = self.yesterday.strftime("%-m/%-d/%Y")
 
         # Create a new database Session
         session = Session()
@@ -159,7 +160,7 @@ class CinciCodeEnf():
         df = df.dropna(subset=[ "X_COORD", "Y_COORD", "STREET_NAME"])
 
         # Drop the second occurrence of the "COMP_TYPE_DESC" column
-        #df = df.loc[:, ~df.columns.duplicated()]
+        df = df.loc[:, ~df.columns.duplicated()]
 
         # Convert the keywords list into a regex pattern
         #keywords_pattern = '|'.join(self.keywords)
@@ -177,8 +178,6 @@ class CinciCodeEnf():
         selected_rows = df[mask_activity]
         
         records = selected_rows.to_dict("records")
-
-        count = 0
 
         status_print(f"Adding records to database -- {self.scraper_name}")
 
@@ -205,21 +204,22 @@ class CinciCodeEnf():
 
                 # City and State
                 lead.property_city = "Cincinnati"
-                lead.property_state = "OH"
+                lead.property_state = "Ohio"
 
-                print(lead)
-                print("\n")
+                # Website tracking
+                lead.county_website = self.county_website
 
-                count += 1
+                #print(lead)
+                #print("\n")
 
-                session.add(lead)
+                #session.add(lead)
 
         print(f"\n The total number of entries on {self.yesterday} for cinci code enf is: {count}")
 
         # Add new session to DB
-        session.commit()
+        #session.commit()
         # Relinquish resources
-        session.close()
+        #session.close()
 
         # Delete the file so it can be run again
         #os.remove(os.path.join(self.file_path, self.file_name))

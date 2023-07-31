@@ -1,5 +1,5 @@
 '''
-Incomplete
+Complete
 '''
 
 import os
@@ -22,6 +22,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import Select
 
 class LeeCountyCodeEnf():
     def __init__(self):
@@ -31,6 +32,7 @@ class LeeCountyCodeEnf():
         logging.basicConfig(filename='processing.log', level=logging.INFO)
         
         self.scraper_name = "lee_county_code_enf.py"
+        self.county_website = "Lee County Code Enforcement"
         self.url = "https://accelaaca.leegov.com/aca/Cap/CapHome.aspx?module=CodeEnforcement&TabName=CodeEnforcement"
         
         # Set options for headless mode
@@ -58,29 +60,60 @@ class LeeCountyCodeEnf():
 
         status_print(f"Initialized variables -- {self.scraper_name}")
     
-    def download_dataset(self):
-        #Start driver
-        self.driver.get(self.url)
-
+    def download_dataset(self, days):
         status_print(f"Chrome driver created. Beginning scraping -- {self.scraper_name}")
 
+        # Compute yesterdays date for getting recent entries
+        today = datetime.now()
+
+        # Calculate yesterday's date
+        yesterday = today - timedelta(days=days)
+
+        # Format the date in the desired format (month/day/year) with no leading zero
+        formatted_date = yesterday.strftime("%m/%d/%Y")
+
+        # Start driver
+        self.driver.get(self.url)
+
         try:
-            #wait for a specific element to be present
+            # Wait for a specific element to be present
             element = WebDriverWait(self.driver, 15).until(
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
             )
         except TimeoutException:
             print("Timeout, element not found")
 
-        #Search 
+        # Date dropdown selection
+        try:
+            select = Select(self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_ddlGSPermitType"))
+
+            # Select the option by its value
+            select.select_by_value("CodeEnforcement/Complaint/NA/NA")
+        except NoSuchElementException:
+            print("Can not find dropdown.")
+
+        time.sleep(1)
+
+        # Time input
+        try:
+            # Change the search date range
+            curr_date_input = self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_txtGSStartDate")
+            # Use JavaScript to set the value of the element
+            self.driver.execute_script("""
+            arguments[0].value = arguments[1];
+            arguments[0].dispatchEvent(new Event('change'));
+            """, curr_date_input, formatted_date)
+        except NoSuchElementException:
+            print("Can not input box.")
+
+        time.sleep(1)
+
+        # Search 
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_btnNewSearch")))
             self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_btnNewSearch").click()
         except NoSuchElementException:
             print("Can not find search button")
-
-        # Wait for page to load 
-        time.sleep(10)
 
         # Download csv
         try:
@@ -90,7 +123,6 @@ class LeeCountyCodeEnf():
             print("Can not find download button.")    
 
         # Wait for the file to be downloaded 
-
         while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
             time.sleep(1)
 
@@ -158,8 +190,6 @@ class LeeCountyCodeEnf():
 
         status_print(f"Adding records to database -- {self.scraper_name}")
 
-        print(len(records))
-
         # Iterate through records
         for record in records:
             # Create new lead
@@ -185,8 +215,11 @@ class LeeCountyCodeEnf():
             lead.property_city = clean_string(record["City"])
             lead.property_state = clean_string(record["State"])
 
-            print(lead)
-            print("\n")
+            # Website tracking
+            lead.county_website = self.county_website
+
+            # print(lead)
+            # print("\n")
 
             #session.add(lead)
 

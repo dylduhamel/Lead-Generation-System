@@ -55,11 +55,8 @@ class FortMeyersEnf():
         except KeyError:
             print(f"No new records on {self.yesterday} for Cinci code enforcments.\n")
 
-        
-
         #df = df.to_dict("records")
 
-        
         #Convert the Address and Description to lowercase for case-insensitive matching
         df["Address"] = df["Address"].str.lower()
         df["Description"] = df["Description"].str.lower()
