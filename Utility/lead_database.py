@@ -16,7 +16,7 @@ class Lead(Base):
      __tablename__ = 'leads'
 
      id = Column(Integer, primary_key=True)
-     date_added = Column(String(199))
+     date_added = Column(String(100))
      owner_name = Column(String(100), unique=True)
      property_address = Column(String(200))
      property_city = Column(String(200))
@@ -33,7 +33,9 @@ class Lead(Base):
 
      # Printing representation for testing
      def __repr__(self):
-        return (f"Lead(document_type={self.document_type}, "
+        return (f"Lead(date_added={self.date_added}, "
+                f"owner_name={self.owner_name}, "
+                f"document_type={self.document_type}, "
                 f"document_subtype={self.document_subtype}, "
                 f"property_address={self.property_address}, "
                 f"property_city={self.property_city}, "

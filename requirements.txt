@@ -7,3 +7,5 @@ sodapy==2.2.0
 pandas==2.0.3
 splinter==1.26.16
 openpyxl==3.1.2
+twilio==8.5.0
+sendgrid==6.10.0

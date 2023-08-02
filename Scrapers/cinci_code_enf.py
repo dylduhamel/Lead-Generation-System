@@ -209,17 +209,15 @@ class CinciCodeEnf():
                 # Website tracking
                 lead.county_website = self.county_website
 
-                #print(lead)
-                #print("\n")
+                # print(lead)
+                # print("\n")
 
-                #session.add(lead)
-
-        print(f"\n The total number of entries on {self.yesterday} for cinci code enf is: {count}")
+                session.add(lead)
 
         # Add new session to DB
-        #session.commit()
+        session.commit()
         # Relinquish resources
-        #session.close()
+        session.close()
 
         # Delete the file so it can be run again
         #os.remove(os.path.join(self.file_path, self.file_name))

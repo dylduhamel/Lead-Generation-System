@@ -1,0 +1,377 @@
+id,date_added,owner_name,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
+1,07/31/2023,Robert Coffey,190 Monitor Ave,Cincinnati,OH,45233,CODE ENFORCEMENT,Zoning Code Enforcement - Commercial Uses,5133288848,Mobile,6062565252,Land Line,robertcoffey@att.net,Cincinnati Code Enforcement
+2,07/31/2023,Mary Martin,3471 Fernside Pl,Cincinnati,OH,45207,CODE ENF / INSPECTION,Health Environmental Code Enforcement,5132814892,Land Line,5132812973,Land Line,,Cincinnati Code Enforcement
+3,07/31/2023,Mary Suttles,2245 Beechmont Ave,Cincinnati,OH,45230,CODE ENFORCEMENT,Zoning Code Enforcement - Commercial Uses,5137321570,Land Line,5133820048,Mobile,,Cincinnati Code Enforcement
+4,07/31/2023,JOSEPH BRICKLER,1717 Berkley Ave,Cincinnati,OH,45237,CODE ENFORCEMENT,Trash/Litter/Tall Grass Complaint,5135578664,Mobile,5132429900,Mobile,JOEBRICKLER@ORIPROPERTIES.NET,Cincinnati Code Enforcement
+5,07/31/2023,Christina Pretzinger,1780 William Howard Taft Rd,Cincinnati,OH,45206,CODE ENFORCEMENT,Trash/Litter/Tall Grass Cleaning,5135359367,Mobile,5137450594,Land Line,christy@writergirl.com,Cincinnati Code Enforcement
+6,07/31/2023,Kathleen Nicholson,1999 Madison Rd,Cincinnati,OH,45208,CODE ENFORCEMENT,Trash/Litter/Tall Grass Cleaning,5137935887,Land Line,5138347074,Land Line,antiques@one.net,Cincinnati Code Enforcement
+7,07/31/2023,Darlene Anderson,1256 Elsinore Ave,Cincinnati,OH,45202,CODE ENFORCEMENT,Trash/Litter/Tall Grass Cleaning,5132718788,Land Line,5054663657,Land Line,,Cincinnati Code Enforcement
+8,07/31/2023,Thomas Kilcoyne,1260 Elsinore Ave,Cincinnati,OH,45202,CODE ENFORCEMENT,Trash/Litter/Tall Grass Cleaning,5136042648,Mobile,5138711814,Land Line,thomas.kilcoyne@worldnet.att.net,Cincinnati Code Enforcement
+9,07/31/2023,Maydean Snow,Boal St,Cincinnati,OH,45202,CODE ENFORCEMENT,Trash/Litter/Tall Grass Cleaning,5024845721,Land Line,5138711814,Land Line,,Cincinnati Code Enforcement
+10,07/31/2023,Nancy Schneider,2678 Morrow Pl,Cincinnati,OH,45204,CODE ENFORCEMENT,Zoning Code Enforcement - Residential Uses,8598037764,Mobile,5132512632,Land Line,nschneider@comcast.net,Cincinnati Code Enforcement
+11,07/31/2023,JOSEPH BRICKLER,1717 Berkley Ave,Cincinnati,OH,45237,CODE ENFORCEMENT,Trash/Litter/Tall Grass Complaint,5135578664,Mobile,5132429900,Mobile,JOEBRICKLER@ORIPROPERTIES.NET,Cincinnati Code Enforcement
+12,07/31/2023,Nancy Schneider,2678 Morrow Pl,Cincinnati,OH,45204,CODE ENFORCEMENT,Zoning Code Enforcement - Residential Uses,8598037764,Mobile,5132512632,Land Line,nschneider@comcast.net,Cincinnati Code Enforcement
+13,07/31/2023,PHAT LU,1215 Laidlaw Ave,Cincinnati,OH,45237,CODE ENF / INSPECTION,Health Environmental Code Enforcement,5202485606,Mobile,5132512632,Land Line,KVNWU1150@GMAIL.COM,Cincinnati Code Enforcement
+14,07/31/2023,Mary Jackson,400 W 9th St,Cincinnati,OH,45203,CODE ENF / INSPECTION,Health Environmental Code Enforcement,5133811933,Land Line,5137515099,Land Line,,Cincinnati Code Enforcement
+15,07/31/2023,Christopher Andrews,3131 Hackberry St,Cincinnati,OH,45207,CODE ENFORCEMENT,Trash/Litter/Tall Grass Complaint,5132583507,Mobile,5134674776,Land Line,,Cincinnati Code Enforcement
+16,07/31/2023,Joey Fulton,1932 Kentucky Ave,Cincinnati,OH,45223,CODE ENFORCEMENT,Code Enforcement - Buildings with Residences,9373830594,Land Line,9377287772,Mobile,joeywallawalla@gmail.com,Cincinnati Code Enforcement
+17,07/31/2023,Janet Warman,5807 Lester Rd,Cincinnati,OH,45213,CODE ENFORCEMENT,Code Enforcement - Buildings with Residences,5133516382,Land Line,5136317439,Land Line,,Cincinnati Code Enforcement
+18,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+19,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+20,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+21,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+22,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+23,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,3057633201,Mobile,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+24,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+25,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+26,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+27,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+28,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+29,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+30,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,3057633201,Mobile,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+31,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+32,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+33,07/31/2023,Alberto Leal,438 Rajah St,Lehigh Acres,FL,33974,Code Enforcement,trash and nuisance. inoperable vehicles around the,3052272235,Land Line,3052163679,Mobile,drialys@bellsouth.net,Lee County Code Enforcement
+34,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+35,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+36,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+37,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+38,07/31/2023,Diane Vanpolen,10458 Trotwood Ave,Saint James City,FL,33956,Code Enforcement,complaint of lot mow.,2315905723,Mobile,2318258323,Land Line,dvanpolen@blackplanet.com,Lee County Code Enforcement
+39,07/31/2023,Thelma Alston,7704 Grande Pine Rd,Bokeelia,FL,33922,Code Enforcement,complaint of lot mow.,6175418443,Land Line,8572053985,Mobile,minniethelma07@yahoo.com,Lee County Code Enforcement
+40,07/31/2023,GAYLE BELL,906 San Carlos Dr,Fort Myers Beach,FL,33931,Code Enforcement,person living on a boat.,2397657894,Land Line,4197657894,Mobile,,Lee County Code Enforcement
+41,07/31/2023,Ryan Springer,434 Lorraine Dr,Fort Myers,FL,33905,Code Enforcement,overgrown grass,9412665636,Mobile,9413426668,Land Line,ryanspringer1984@gmail.com,Lee County Code Enforcement
+42,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,9413426668,Land Line,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+43,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+44,07/31/2023,William Walker,6420 Maytree Cir,Fort Myers,FL,33905,Code Enforcement,nuisance accumulation. recurring issue,2395672724,Mobile,2395654578,Mobile,stinyschild@aol.com,Lee County Code Enforcement
+45,07/31/2023,Merri Shallow,10588 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation.,2394438024,Mobile,2395654578,Mobile,,Lee County Code Enforcement
+46,07/31/2023,Amanda Chapman,10574 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation,2395737086,Land Line,2392838482,Land Line,mommys3littlefrogs@yahoo.com,Lee County Code Enforcement
+47,07/31/2023,Lena Vieira,18354 Ostego Dr,Fort Myers,FL,33967,Code Enforcement,trash and nuisance accumulation inthe yard,2392650019,Mobile,2396719950,Mobile,lviera@gmail.com,Lee County Code Enforcement
+48,07/31/2023,AMES BOLLA,677 Chestnut St E,Lehigh Acres,FL,33974,Code Enforcement,junk and back yard it's a eye sore,2398871222,Mobile,2399801375,Mobile,SHRINERJIM@HOTMAIL.COM,Lee County Code Enforcement
+49,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+50,07/31/2023,Alberto Leal,438 Rajah St,Lehigh Acres,FL,33974,Code Enforcement,trash and nuisance. inoperable vehicles around the,3052272235,Land Line,3052163679,Mobile,drialys@bellsouth.net,Lee County Code Enforcement
+51,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+52,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+53,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+54,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+55,07/31/2023,Diane Vanpolen,10458 Trotwood Ave,Saint James City,FL,33956,Code Enforcement,complaint of lot mow.,2315905723,Mobile,2318258323,Land Line,dvanpolen@blackplanet.com,Lee County Code Enforcement
+56,07/31/2023,Thelma Alston,7704 Grande Pine Rd,Bokeelia,FL,33922,Code Enforcement,complaint of lot mow.,6175418443,Land Line,8572053985,Mobile,minniethelma07@yahoo.com,Lee County Code Enforcement
+57,07/31/2023,GAYLE BELL,906 San Carlos Dr,Fort Myers Beach,FL,33931,Code Enforcement,person living on a boat.,2397657894,Land Line,4197657894,Mobile,,Lee County Code Enforcement
+58,07/31/2023,Ryan Springer,434 Lorraine Dr,Fort Myers,FL,33905,Code Enforcement,overgrown grass,9412665636,Mobile,9413426668,Land Line,ryanspringer1984@gmail.com,Lee County Code Enforcement
+59,07/31/2023,Florence Mcmaken,1179 Palm Ave,North Fort Myers,FL,33903,Code Enforcement,overgrown grass.,2399975832,Land Line,2392872229,Mobile,fmcmaken@webtv.net,Lee County Code Enforcement
+60,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,2392872229,Mobile,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+61,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+62,07/31/2023,William Walker,6420 Maytree Cir,Fort Myers,FL,33905,Code Enforcement,nuisance accumulation. recurring issue,2395672724,Mobile,2395654578,Mobile,stinyschild@aol.com,Lee County Code Enforcement
+63,07/31/2023,Merri Shallow,10588 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation.,2394438024,Mobile,2395654578,Mobile,,Lee County Code Enforcement
+64,07/31/2023,Amanda Chapman,10574 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation,2395737086,Land Line,2392838482,Land Line,mommys3littlefrogs@yahoo.com,Lee County Code Enforcement
+65,07/31/2023,Lena Vieira,18354 Ostego Dr,Fort Myers,FL,33967,Code Enforcement,trash and nuisance accumulation inthe yard,2392650019,Mobile,2396719950,Mobile,lviera@gmail.com,Lee County Code Enforcement
+66,07/31/2023,David Rahill,304 Broadview Dr,Fort Myers,FL,33905,Code Enforcement,"trash and nuisance accumulation, green pool.",9414476109,Mobile,9418304576,Mobile,drahill@charter.net,Lee County Code Enforcement
+67,07/31/2023,,601 Sunnyside Ct,Fort Myers,FL,33919,Code Enforcement,"nuisance accumulation, commercial equipment, lot m",2396334852,Mobile,2394813337,Mobile,DBALLANTINE@EARTHLINK.NET,Lee County Code Enforcement
+68,07/31/2023,,11760 Iona Rd,Fort Myers,FL,33908,Code Enforcement,lot mow & nuisance accumulation,,,,,,Lee County Code Enforcement
+69,07/31/2023,Craig Haines,11750 Iona Rd,Fort Myers,FL,33908,Code Enforcement,lot mow & nuisance accumulation,2392184124,Mobile,6144516529,Land Line,craighaines@aol.com,Lee County Code Enforcement
+70,07/31/2023,Sue Mayhood,1235 Gramac Dr,North Fort Myers,FL,33917,Code Enforcement,"overgrown grass, trash and nuisance accumulation. ",9419921375,Land Line,2399921375,Land Line,DMAYHOOD@CS.COM,Lee County Code Enforcement
+71,07/31/2023,AMES BOLLA,677 Chestnut St E,Lehigh Acres,FL,33974,Code Enforcement,junk and back yard it's a eye sore,2398871222,Mobile,2399801375,Mobile,SHRINERJIM@HOTMAIL.COM,Lee County Code Enforcement
+72,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+73,07/31/2023,Alberto Leal,438 Rajah St,Lehigh Acres,FL,33974,Code Enforcement,trash and nuisance. inoperable vehicles around the,3052272235,Land Line,3052163679,Mobile,drialys@bellsouth.net,Lee County Code Enforcement
+74,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+75,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+76,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+77,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+78,07/31/2023,Diane Vanpolen,10458 Trotwood Ave,Saint James City,FL,33956,Code Enforcement,complaint of lot mow.,2315905723,Mobile,2318258323,Land Line,dvanpolen@blackplanet.com,Lee County Code Enforcement
+79,07/31/2023,Thelma Alston,7704 Grande Pine Rd,Bokeelia,FL,33922,Code Enforcement,complaint of lot mow.,6175418443,Land Line,8572053985,Mobile,minniethelma07@yahoo.com,Lee County Code Enforcement
+80,07/31/2023,Andreas Visilias,3733 10th St W,Lehigh Acres,FL,33971,Code Enforcement,complaint of lot mow.,8622225478,Mobile,8572053985,Mobile,,Lee County Code Enforcement
+81,07/31/2023,Alexander Taveras,70 Lynne St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,9736531874,Mobile,8572053985,Mobile,alexandercanario17@hotmail.com,Lee County Code Enforcement
+82,07/31/2023,GAYLE BELL,906 San Carlos Dr,Fort Myers Beach,FL,33931,Code Enforcement,person living on a boat.,2397657894,Land Line,4197657894,Mobile,,Lee County Code Enforcement
+83,07/31/2023,Jonathan Shivers,6107 Island Park Ct,Fort Myers,FL,33908,Code Enforcement,"yard and brush is overgrown, boats and stuff all o",3525146076,Mobile,3052320181,Land Line,,Lee County Code Enforcement
+84,07/31/2023,Ryan Springer,434 Lorraine Dr,Fort Myers,FL,33905,Code Enforcement,overgrown grass,9412665636,Mobile,9413426668,Land Line,ryanspringer1984@gmail.com,Lee County Code Enforcement
+85,07/31/2023,Florence Mcmaken,1179 Palm Ave,North Fort Myers,FL,33903,Code Enforcement,overgrown grass.,2399975832,Land Line,2392872229,Mobile,fmcmaken@webtv.net,Lee County Code Enforcement
+86,07/31/2023,Mary Kelley,1879 Queen Ct,North Fort Myers,FL,33917,Code Enforcement,complaint of horticultural debris.,2392020924,Land Line,2399952895,Land Line,mkelley2123@adelphia.net,Lee County Code Enforcement
+87,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,2399952895,Land Line,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+88,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+89,07/31/2023,William Walker,6420 Maytree Cir,Fort Myers,FL,33905,Code Enforcement,nuisance accumulation. recurring issue,2395672724,Mobile,2395654578,Mobile,stinyschild@aol.com,Lee County Code Enforcement
+90,07/31/2023,Merri Shallow,10588 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation.,2394438024,Mobile,2395654578,Mobile,,Lee County Code Enforcement
+91,07/31/2023,Amanda Chapman,10574 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation,2395737086,Land Line,2392838482,Land Line,mommys3littlefrogs@yahoo.com,Lee County Code Enforcement
+92,07/31/2023,Lena Vieira,18354 Ostego Dr,Fort Myers,FL,33967,Code Enforcement,trash and nuisance accumulation inthe yard,2392650019,Mobile,2396719950,Mobile,lviera@gmail.com,Lee County Code Enforcement
+93,07/31/2023,David Rahill,304 Broadview Dr,Fort Myers,FL,33905,Code Enforcement,"trash and nuisance accumulation, green pool.",9414476109,Mobile,9418304576,Mobile,drahill@charter.net,Lee County Code Enforcement
+94,07/31/2023,,601 Sunnyside Ct,Fort Myers,FL,33919,Code Enforcement,"nuisance accumulation, commercial equipment, lot m",2396334852,Mobile,2394813337,Mobile,DBALLANTINE@EARTHLINK.NET,Lee County Code Enforcement
+95,07/31/2023,,11760 Iona Rd,Fort Myers,FL,33908,Code Enforcement,lot mow & nuisance accumulation,,,,,,Lee County Code Enforcement
+96,07/31/2023,Craig Haines,11750 Iona Rd,Fort Myers,FL,33908,Code Enforcement,lot mow & nuisance accumulation,2392184124,Mobile,6144516529,Land Line,craighaines@aol.com,Lee County Code Enforcement
+97,07/31/2023,Sue Mayhood,1235 Gramac Dr,North Fort Myers,FL,33917,Code Enforcement,"overgrown grass, trash and nuisance accumulation. ",9419921375,Land Line,2399921375,Land Line,DMAYHOOD@CS.COM,Lee County Code Enforcement
+98,07/31/2023,CHAD TACCO,739 Alamo St E,Lehigh Acres,FL,33974,Code Enforcement,complaint of nuisance accumulation on unimproved r,3059264834,Mobile,7863958807,Mobile,CATEVOL@AOL.COM,Lee County Code Enforcement
+99,07/31/2023,AMES BOLLA,677 Chestnut St E,Lehigh Acres,FL,33974,Code Enforcement,junk and back yard it's a eye sore,2398871222,Mobile,2399801375,Mobile,SHRINERJIM@HOTMAIL.COM,Lee County Code Enforcement
+100,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+101,07/31/2023,Alberto Leal,438 Rajah St,Lehigh Acres,FL,33974,Code Enforcement,trash and nuisance. inoperable vehicles around the,3052272235,Land Line,3052163679,Mobile,drialys@bellsouth.net,Lee County Code Enforcement
+102,07/31/2023,Kendall Abbott,17297 Lee Rd,Fort Myers,FL,33967,Code Enforcement,the house was vacated and there is trash left all ,2292694435,Land Line,5084787584,Land Line,cinabb2003@bellsouth.net,Lee County Code Enforcement
+103,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+104,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+105,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+106,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+107,07/31/2023,Diane Vanpolen,10458 Trotwood Ave,Saint James City,FL,33956,Code Enforcement,complaint of lot mow.,2315905723,Mobile,2318258323,Land Line,dvanpolen@blackplanet.com,Lee County Code Enforcement
+108,07/31/2023,Thelma Alston,7704 Grande Pine Rd,Bokeelia,FL,33922,Code Enforcement,complaint of lot mow.,6175418443,Land Line,8572053985,Mobile,minniethelma07@yahoo.com,Lee County Code Enforcement
+109,07/31/2023,Andreas Visilias,3733 10th St W,Lehigh Acres,FL,33971,Code Enforcement,complaint of lot mow.,8622225478,Mobile,8572053985,Mobile,,Lee County Code Enforcement
+110,07/31/2023,Alexander Taveras,70 Lynne St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,9736531874,Mobile,8572053985,Mobile,alexandercanario17@hotmail.com,Lee County Code Enforcement
+111,07/31/2023,Trenton Edwards,9033 Frank Rd,Fort Myers,FL,33967,Code Enforcement,lot mow,2565578647,Mobile,2569275440,Land Line,,Lee County Code Enforcement
+112,07/31/2023,Edward Nyette,106 Stetson St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,6178527533,Mobile,9784092350,Land Line,enyette@adelphia.net,Lee County Code Enforcement
+113,07/31/2023,Eva Pugh,204 E 3rd St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,3524892923,Land Line,9784092350,Land Line,evapugh@juno.com,Lee County Code Enforcement
+114,07/31/2023,Mary Lorenz,14161 Caribbean Blvd,Fort Myers,FL,33905,Code Enforcement,lot mow,8606632625,Land Line,2034674474,Land Line,dlorenz@snet.net,Lee County Code Enforcement
+115,07/31/2023,Hugh Nuckolls,3739 Liberty Sq,Fort Myers,FL,33908,Code Enforcement,complaint of lot mow.,2394640996,Mobile,2393343400,Land Line,,Lee County Code Enforcement
+116,07/31/2023,GAYLE BELL,906 San Carlos Dr,Fort Myers Beach,FL,33931,Code Enforcement,person living on a boat.,2397657894,Land Line,4197657894,Mobile,,Lee County Code Enforcement
+117,07/31/2023,Jonathan Shivers,6107 Island Park Ct,Fort Myers,FL,33908,Code Enforcement,"yard and brush is overgrown, boats and stuff all o",3525146076,Mobile,3052320181,Land Line,,Lee County Code Enforcement
+118,07/31/2023,Ryan Springer,434 Lorraine Dr,Fort Myers,FL,33905,Code Enforcement,overgrown grass,9412665636,Mobile,9413426668,Land Line,ryanspringer1984@gmail.com,Lee County Code Enforcement
+119,07/31/2023,Florence Mcmaken,1179 Palm Ave,North Fort Myers,FL,33903,Code Enforcement,overgrown grass.,2399975832,Land Line,2392872229,Mobile,fmcmaken@webtv.net,Lee County Code Enforcement
+120,07/31/2023,Raymond Leonard,713 Zendor Ave,Fort Myers,FL,33913,Code Enforcement,complaint of overgrown grass on improved residenti,2399087725,Mobile,2396769643,Land Line,jayakannan_2002@yahoo.com,Lee County Code Enforcement
+121,07/31/2023,,3010 19th St W,Lehigh Acres,FL,33971,Code Enforcement,"there is overgrown grass on property, has not been",,,,,,Lee County Code Enforcement
+122,07/31/2023,John Howard,1251 Romano Key CIR,Punta Gorda,FL,33955,Code Enforcement,overgrown grass,3052153902,Mobile,7862066092,Land Line,eric@hmsgaming.com,Lee County Code Enforcement
+123,07/31/2023,Mary Kelley,1879 Queen Ct,North Fort Myers,FL,33917,Code Enforcement,complaint of horticultural debris.,2392020924,Land Line,2399952895,Land Line,mkelley2123@adelphia.net,Lee County Code Enforcement
+124,07/31/2023,Alan Romain,16500 Slater Rd,North Fort Myers,FL,33917,Code Enforcement,lot 76. complaint of debris all in front yard.,4143313744,Mobile,4144427018,Land Line,ajr2cook4u@sbcglobal.net,Lee County Code Enforcement
+125,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,4144427018,Land Line,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+126,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+127,07/31/2023,William Walker,6420 Maytree Cir,Fort Myers,FL,33905,Code Enforcement,nuisance accumulation. recurring issue,2395672724,Mobile,2395654578,Mobile,stinyschild@aol.com,Lee County Code Enforcement
+128,07/31/2023,Merri Shallow,10588 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation.,2394438024,Mobile,2395654578,Mobile,,Lee County Code Enforcement
+129,07/31/2023,Amanda Chapman,10574 Tipton Dr,Bokeelia,FL,33922,Code Enforcement,trash and nuisance accumulation,2395737086,Land Line,2392838482,Land Line,mommys3littlefrogs@yahoo.com,Lee County Code Enforcement
+130,07/31/2023,Lena Vieira,18354 Ostego Dr,Fort Myers,FL,33967,Code Enforcement,trash and nuisance accumulation inthe yard,2392650019,Mobile,2396719950,Mobile,lviera@gmail.com,Lee County Code Enforcement
+131,07/31/2023,David Rahill,304 Broadview Dr,Fort Myers,FL,33905,Code Enforcement,"trash and nuisance accumulation, green pool.",9414476109,Mobile,9418304576,Mobile,drahill@charter.net,Lee County Code Enforcement
+132,07/31/2023,,601 Sunnyside Ct,Fort Myers,FL,33919,Code Enforcement,"nuisance accumulation, commercial equipment, lot m",2396334852,Mobile,2394813337,Mobile,DBALLANTINE@EARTHLINK.NET,Lee County Code Enforcement
+133,07/31/2023,,11760 Iona Rd,Fort Myers,FL,33908,Code Enforcement,lot mow & nuisance accumulation,,,,,,Lee County Code Enforcement
+134,07/31/2023,Craig Haines,11750 Iona Rd,Fort Myers,FL,33908,Code Enforcement,lot mow & nuisance accumulation,2392184124,Mobile,6144516529,Land Line,craighaines@aol.com,Lee County Code Enforcement
+135,07/31/2023,Sue Mayhood,1235 Gramac Dr,North Fort Myers,FL,33917,Code Enforcement,"overgrown grass, trash and nuisance accumulation. ",9419921375,Land Line,2399921375,Land Line,DMAYHOOD@CS.COM,Lee County Code Enforcement
+136,07/31/2023,CHAD TACCO,739 Alamo St E,Lehigh Acres,FL,33974,Code Enforcement,complaint of nuisance accumulation on unimproved r,3059264834,Mobile,7863958807,Mobile,CATEVOL@AOL.COM,Lee County Code Enforcement
+137,07/31/2023,Claudia Castano,105 Alan Ave N,Lehigh Acres,FL,33971,Code Enforcement,"overgrown grass, nuisance accumulation.",9545484196,Mobile,8609660884,Mobile,cxcastano@yahoo.com,Lee County Code Enforcement
+138,07/31/2023,AMES BOLLA,677 Chestnut St E,Lehigh Acres,FL,33974,Code Enforcement,junk and back yard it's a eye sore,2398871222,Mobile,2399801375,Mobile,SHRINERJIM@HOTMAIL.COM,Lee County Code Enforcement
+139,07/31/2023,Elshan Gurbanov,1173 Cherokee Ave,Lehigh Acres,FL,33936,Code Enforcement,there is a huge fifth wheel trailer sitting on thi,2393319975,Mobile,2393319985,Mobile,,Lee County Code Enforcement
+140,07/31/2023,Brian Swartz,5851 Luloma Ln,Bokeelia,FL,33922,Code Enforcement,"accumulated junk, debris and boats in yard. severa",9545611084,Land Line,2398262461,Mobile,buche486@gmail.com,Lee County Code Enforcement
+141,07/31/2023,Felix Loriga,1413 Henry Ave,Lehigh Acres,FL,33972,Code Enforcement,trash and nuisance,3052642777,Land Line,3056201522,Mobile,,Lee County Code Enforcement
+142,07/31/2023,Alberto Leal,438 Rajah St,Lehigh Acres,FL,33974,Code Enforcement,trash and nuisance. inoperable vehicles around the,3052272235,Land Line,3052163679,Mobile,drialys@bellsouth.net,Lee County Code Enforcement
+143,07/31/2023,Kendall Abbott,17297 Lee Rd,Fort Myers,FL,33967,Code Enforcement,the house was vacated and there is trash left all ,2292694435,Land Line,5084787584,Land Line,cinabb2003@bellsouth.net,Lee County Code Enforcement
+144,07/31/2023,Robert Raab,6510 Duquesne Dr,Fort Myers,FL,33919,Code Enforcement,"fence in disrepair, nuisance and trash.",2392924907,Mobile,2393620705,Land Line,rraab1@comcast.net,Lee County Code Enforcement
+145,07/31/2023,STEPHEN PERKINS,947 Hyacinth St,North Fort Myers,FL,33903,Code Enforcement,"lot mow, roof in disrepair, fence in disrepair",2392920877,Mobile,9419246641,Land Line,,Lee County Code Enforcement
+146,07/31/2023,Penny Hanks,2922 6th St SW,Lehigh Acres,FL,33976,Code Enforcement,lot mow,2694633929,Land Line,2694682415,Land Line,,Lee County Code Enforcement
+147,07/31/2023,DOLORES SHERMAN,800 Willow Dr,Lehigh Acres,FL,33936,Code Enforcement,lot mow,8143652118,Land Line,2393693079,Land Line,SHERDEE31@YAHOO.COM,Lee County Code Enforcement
+148,07/31/2023,Penalver Yohani,2405 Del Ray Pl,Lehigh Acres,FL,33936,Code Enforcement,lot mow,2392813810,Mobile,3057633201,Mobile,,Lee County Code Enforcement
+149,07/31/2023,Diane Vanpolen,10458 Trotwood Ave,Saint James City,FL,33956,Code Enforcement,complaint of lot mow.,2315905723,Mobile,2318258323,Land Line,dvanpolen@blackplanet.com,Lee County Code Enforcement
+150,07/31/2023,Thelma Alston,7704 Grande Pine Rd,Bokeelia,FL,33922,Code Enforcement,complaint of lot mow.,6175418443,Land Line,8572053985,Mobile,minniethelma07@yahoo.com,Lee County Code Enforcement
+151,07/31/2023,Andreas Visilias,3733 10th St W,Lehigh Acres,FL,33971,Code Enforcement,complaint of lot mow.,8622225478,Mobile,8572053985,Mobile,,Lee County Code Enforcement
+152,07/31/2023,Alexander Taveras,70 Lynne St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,9736531874,Mobile,8572053985,Mobile,alexandercanario17@hotmail.com,Lee County Code Enforcement
+153,07/31/2023,Trenton Edwards,9033 Frank Rd,Fort Myers,FL,33967,Code Enforcement,lot mow,2565578647,Mobile,2569275440,Land Line,,Lee County Code Enforcement
+154,07/31/2023,Edward Nyette,106 Stetson St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,6178527533,Mobile,9784092350,Land Line,enyette@adelphia.net,Lee County Code Enforcement
+155,07/31/2023,Eva Pugh,204 E 3rd St,Lehigh Acres,FL,33936,Code Enforcement,lot mow,3524892923,Land Line,9784092350,Land Line,evapugh@juno.com,Lee County Code Enforcement
+156,07/31/2023,Mary Lorenz,14161 Caribbean Blvd,Fort Myers,FL,33905,Code Enforcement,lot mow,8606632625,Land Line,2034674474,Land Line,dlorenz@snet.net,Lee County Code Enforcement
+157,07/31/2023,Hugh Nuckolls,3739 Liberty Sq,Fort Myers,FL,33908,Code Enforcement,complaint of lot mow.,2394640996,Mobile,2393343400,Land Line,,Lee County Code Enforcement
+158,07/31/2023,,2231 Randolph Dr,Fort Myers,FL,33905,Code Enforcement,complaint of lot mow.,2396936598,Land Line,2393343400,Land Line,,Lee County Code Enforcement
+159,07/31/2023,GAYLE BELL,906 San Carlos Dr,Fort Myers Beach,FL,33931,Code Enforcement,person living on a boat.,2397657894,Land Line,4197657894,Mobile,,Lee County Code Enforcement
+160,07/31/2023,Jonathan Shivers,6107 Island Park Ct,Fort Myers,FL,33908,Code Enforcement,"yard and brush is overgrown, boats and stuff all o",3525146076,Mobile,3052320181,Land Line,,Lee County Code Enforcement
+161,07/31/2023,,336 Lester Ave S,Lehigh Acres,FL,33974,Code Enforcement,vehicles and boat parkerd on lot.,,,,,,Lee County Code Enforcement
+162,07/31/2023,Ryan Springer,434 Lorraine Dr,Fort Myers,FL,33905,Code Enforcement,overgrown grass,9412665636,Mobile,9413426668,Land Line,ryanspringer1984@gmail.com,Lee County Code Enforcement
+163,07/31/2023,Florence Mcmaken,1179 Palm Ave,North Fort Myers,FL,33903,Code Enforcement,overgrown grass.,2399975832,Land Line,2392872229,Mobile,fmcmaken@webtv.net,Lee County Code Enforcement
+164,07/31/2023,Raymond Leonard,713 Zendor Ave,Fort Myers,FL,33913,Code Enforcement,complaint of overgrown grass on improved residenti,2399087725,Mobile,2396769643,Land Line,jayakannan_2002@yahoo.com,Lee County Code Enforcement
+165,07/31/2023,,3010 19th St W,Lehigh Acres,FL,33971,Code Enforcement,"there is overgrown grass on property, has not been",,,,,,Lee County Code Enforcement
+166,07/31/2023,John Howard,1251 Romano Key CIR,Punta Gorda,FL,33955,Code Enforcement,overgrown grass,3052153902,Mobile,7862066092,Land Line,eric@hmsgaming.com,Lee County Code Enforcement
+167,07/31/2023,Hiep Vo,319 Colorado Pl,Fort Myers,FL,33905,Code Enforcement,overgrown grass,6262356508,Mobile,7862066092,Land Line,volehiep@yahoo.com,Lee County Code Enforcement
+168,07/31/2023,ANTHONY BASSO,617 Glenn Ave,Lehigh Acres,FL,33972,Code Enforcement,overgrown grass,6317470351,Mobile,6317320743,Land Line,ANTBEE@USA.NET,Lee County Code Enforcement
+169,07/31/2023,Mary Kelley,1879 Queen Ct,North Fort Myers,FL,33917,Code Enforcement,complaint of horticultural debris.,2392020924,Land Line,2399952895,Land Line,mkelley2123@adelphia.net,Lee County Code Enforcement
+170,07/31/2023,Alan Romain,16500 Slater Rd,North Fort Myers,FL,33917,Code Enforcement,lot 76. complaint of debris all in front yard.,4143313744,Mobile,4144427018,Land Line,ajr2cook4u@sbcglobal.net,Lee County Code Enforcement
+171,07/31/2023,Toi Walters,18205 Wood Dr,Fort Myers,FL,33967,Code Enforcement,"nuisance debris front, back and both sides of home",2394102611,Mobile,2394109373,Mobile,,Lee County Code Enforcement
+172,07/31/2023,Sylvia Oliver,18428 Matanzas Rd,Fort Myers,FL,33967,Code Enforcement,severe nuisance debris on property. very dangerous,6602774064,Land Line,2394952514,Land Line,,Lee County Code Enforcement
+173,07/31/2023,MIGUEL RAMOS,7530 Laurel Valley Rd,Fort Myers,FL,33967,Code Enforcement,"high grass, nuisance debris.",7863573552,Mobile,2258025567,Mobile,MIGUELANGEL531@GMAIL.COM,Lee County Code Enforcement
+174,07/31/2023,VICTORIA MARTINEZ-VENTURA,3223 Vera Ct,Lehigh Acres,FL,33976,Code Enforcement,cars and trailer parked on vacant lot,2395605673,Mobile,2258025567,Mobile,VICKY1978LA@GMAIL.COM,Lee County Code Enforcement
+175,07/31/2023,David Garcia,3209 10th St W,Lehigh Acres,FL,33971,Code Enforcement,privacy fence installed on vacant lot,2396031521,Mobile,7728078224,Land Line,davidyanelys@yahoo.com,Lee County Code Enforcement
+176,07/31/2023,,31 E ELLA J GILMORE ST,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+177,07/31/2023,,1218 CLARCONA RD,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+178,07/31/2023,,68 E 13TH ST,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+179,07/31/2023,Winston Lewis,1323 25th St,Orlando,FL,32805,Code Enforcement,LOT CLEANING,4073487713,Land Line,3612079050,Mobile,lewisg32@hotmail.com,Orange County Code Enforcement
+180,07/31/2023,,106 E 12TH ST,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+181,07/31/2023,Ann Edwards,3550 Edgewater Dr,Orlando,FL,32804,Code Enforcement,HOUSING,,,,,wpedwards@csi.com,Orange County Code Enforcement
+182,07/31/2023,,1201 1st St,Orlando,FL,32824,Code Enforcement,ZONING,4077823975,Mobile,4077823965,Mobile,JDOMINY@EROLS.COM,Orange County Code Enforcement
+183,07/31/2023,Albert Kitt,8008 Balasands Blvd,Orlando,FL,32818,Code Enforcement,LOT CLEANING,4073937997,Mobile,4072704319,Land Line,jpd1@gci.net,Orange County Code Enforcement
+184,07/31/2023,,112 E CLEVELAND ST,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+185,07/31/2023,Hakim Holloway,1801 S Orange Blossom Trl,Orlando,FL,32805,Code Enforcement,LOT CLEANING,7329001902,Mobile,2017053391,Mobile,,Orange County Code Enforcement
+186,07/31/2023,Michael Smith,111 E CLEVELAND ST,Orlando,Florida,,Code Enforcement,LOT CLEANING,4078343381,Land Line,3213145723,Mobile,,Orange County Code Enforcement
+187,07/31/2023,,1928 OLD APOPKA RD,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+188,07/31/2023,Stephanie Dotts,129 CORNWALL,Orlando,Florida,,Code Enforcement,JUNK CARS,4078608222,Mobile,4078388082,Land Line,a.turner582@yahoo.com,Orange County Code Enforcement
+189,07/31/2023,Mary Beckman,5th Ave,Orlando,FL,32824,Code Enforcement,LOT CLEANING,4074891720,Mobile,4072730875,Land Line,mglbeckman@yahoo.com,Orange County Code Enforcement
+190,07/31/2023,SOMA JOSEPH,4683 S Orange Blossom Trl,Orlando,FL,32839,Code Enforcement,LOT CLEANING,3216957291,Mobile,3212315267,Mobile,ADORABLE114@AOL.COM,Orange County Code Enforcement
+191,07/31/2023,Bradley Harris,2114 S Parramore Ave,Orlando,FL,32805,Code Enforcement,ZONING,4077669137,Mobile,8638357806,Land Line,gatorhead@cfl.rr.com,Orange County Code Enforcement
+192,07/31/2023,Robert Mains,1305 Malone Dr,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4073391154,Land Line,4076969800,Land Line,rbmman@hotmail.com,Orange County Code Enforcement
+193,07/31/2023,JEAN DIEUJUSTE,6030 Brookhill Cir,Orlando,FL,32810,Code Enforcement,LOT CLEANING,9547618222,Land Line,4072909170,Land Line,AGEJEAN@YAHOO.COM,Orange County Code Enforcement
+194,07/31/2023,ANOLINE JEROME,5704 Lakefield Ct,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4072984956,Land Line,9042078591,Mobile,J_MAN_1205@REDIFFMAIL.COM,Orange County Code Enforcement
+195,07/31/2023,ANDREEN RAYMOND,6096 Brookhill Cir,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4072191489,Mobile,4077617183,Mobile,EJJIBABY@NETZERO.NET,Orange County Code Enforcement
+196,07/31/2023,,2139 PALM CREST DR,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+197,07/31/2023,Wanda Wroten,8579 Lyonia Dr,Orlando,FL,32829,Code Enforcement,LOT CLEANING,4075330478,Mobile,3213888772,Mobile,wcakebaker@aol.com,Orange County Code Enforcement
+198,07/31/2023,HECTOR MAISONET,8638 Gopher Ln,Orlando,FL,32829,Code Enforcement,JUNK CARS,7877320476,Land Line,3213888772,Mobile,,Orange County Code Enforcement
+199,07/31/2023,Henry Woessner,7252 June Bug Ln,Orlando,FL,32818,Code Enforcement,ZONING,4072347389,Mobile,4078431505,Land Line,hankstone9@aol.com,Orange County Code Enforcement
+200,07/31/2023,Yahu Properties Llc Yahu Properties Llc,5179 Gwynne Ave,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4078103805,Mobile,4072941085,Land Line,VJSINGH1@BELLSOUTH.NET,Orange County Code Enforcement
+201,07/31/2023,Lewis Henkel,5410 Kenmore Ln,Orlando,FL,32839,Code Enforcement,LOT CLEANING,3869356857,Land Line,4078592059,Mobile,lewis.henkel@aol.com,Orange County Code Enforcement
+202,07/31/2023,Wilma Rice,1116 Webster Ave,Orlando,FL,32804,Code Enforcement,LOT CLEANING,4072912235,Land Line,9312652585,Mobile,dumbbell@gdi.net,Orange County Code Enforcement
+203,07/31/2023,Nathaly Valecillos,9353 Juniper Moss Cir,Orlando,FL,32832,Code Enforcement,ZONING,9549344240,Mobile,4079794625,Land Line,,Orange County Code Enforcement
+204,07/31/2023,,842 S LAKE PLEASANT RD,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+205,07/31/2023,Tonya Godley,2910 Alamo Dr,Orlando,FL,32805,Code Enforcement,LOT CLEANING,,,,,strickt@ocps.net,Orange County Code Enforcement
+206,07/31/2023,Alexandra Petit,11342 Relaxation Loop,Orlando,FL,32817,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+207,07/31/2023,KAYE ALTIZER,12132 Greco Dr,Orlando,FL,32824,Code Enforcement,ZONING,4072419063,Mobile,4078574730,Land Line,MCOKAYE@OUTLOOK.COM,Orange County Code Enforcement
+208,07/31/2023,,2126 SPILLMAN DR,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+209,07/31/2023,Abdullah Rabbat,W Lancaster Rd,Orlando,FL,32809,Code Enforcement,LOT CLEANING,4077316320,Mobile,4073530911,Mobile,farah_ali39@yahoo.com,Orange County Code Enforcement
+210,07/31/2023,William Ericson,8926 Lake Mabel Dr,Orlando,FL,32836,Code Enforcement,ZONING,4075809936,Mobile,4073857916,Land Line,wbe@magicnet.net,Orange County Code Enforcement
+211,07/31/2023,Ghulam Kolsy,4242 Raleigh St,Orlando,FL,32811,Code Enforcement,LOT CLEANING,9497867786,Land Line,9496511552,Land Line,ghula_98@yahoo.com,Orange County Code Enforcement
+212,07/31/2023,Bibi Baksh,5719 Lejeune Dr,Orlando,FL,32808,Code Enforcement,JUNK CARS,4078924937,Land Line,4072718435,Land Line,bakshbibi@yahoo.com,Orange County Code Enforcement
+213,07/31/2023,Michael Brown,5608 Lejeune Dr,Orlando,FL,32808,Code Enforcement,LOT CLEANING,9124955310,Land Line,9122320269,Land Line,arthole@yahoo.com,Orange County Code Enforcement
+214,07/31/2023,Annette Davis,5506 Lejeune Dr,Orlando,FL,32808,Code Enforcement,JUNK CARS,7246308372,Mobile,7243710159,Land Line,annettedavis777@gmail.com,Orange County Code Enforcement
+215,07/31/2023,,14396 MURCOTT BLOSSOM BLVD,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+216,07/31/2023,Paul Davis,5207 Via Hacienda Cir,Orlando,FL,32839,Code Enforcement,HOUSING,5717226329,Mobile,7039312403,Land Line,adccarpet@aol.com,Orange County Code Enforcement
+217,07/31/2023,,1345 41st St,Orlando,FL,32839,Code Enforcement,HOUSING,4076856941,Land Line,6104372638,Land Line,,Orange County Code Enforcement
+218,07/31/2023,JOHANNA GALLO,7126 Eaker Dr,Orlando,FL,32822,Code Enforcement,LOT CLEANING,4077658622,Mobile,4072757655,Land Line,JOHANNASG1946@YAHOO.COM,Orange County Code Enforcement
+219,07/31/2023,Perla Palmani,3200 Coe Ave,Orlando,FL,32806,Code Enforcement,JUNK CARS,4078940804,Land Line,4075906190,Mobile,,Orange County Code Enforcement
+220,07/31/2023,MARLAINA QUATES,17503 Caudel Rd,Orlando,FL,32833,Code Enforcement,HOUSING,3215580627,Mobile,4075682899,Land Line,QUATES1967@AIM.COM,Orange County Code Enforcement
+221,07/31/2023,Benjamin Cimock,5005 Silver Star Rd,Orlando,FL,32808,Code Enforcement,ZONING,4073304011,Land Line,4077886957,Land Line,bcimock@bellsouth.net,Orange County Code Enforcement
+222,07/31/2023,JOSEFINA PENA,6706 Voltaire Dr,Orlando,FL,32809,Code Enforcement,ZONING,3218885064,Mobile,4077886957,Land Line,ZOILAPENA@ICLOUD.OM,Orange County Code Enforcement
+223,07/31/2023,Kelly Blair,6846 Alpert Dr,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4074632076,Mobile,4072935424,Land Line,keb59dog2009@yahoo.com,Orange County Code Enforcement
+224,07/31/2023,Raquel Serrano,2318 Woodleaf Ct,Orlando,FL,32837,Code Enforcement,ZONING,7878861311,Land Line,7875141423,Mobile,,Orange County Code Enforcement
+225,07/31/2023,Anthony Pasquale,6840 Alpert Dr,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4079201869,Mobile,4076997700,Land Line,tapbmw3@aol.com,Orange County Code Enforcement
+226,07/31/2023,Christina Cothia,1915 Cabo San Lucas Dr Apt 104,Orlando,FL,32839,Code Enforcement,HOUSING,6469325324,Mobile,6462966250,Mobile,,Orange County Code Enforcement
+227,07/31/2023,Newcastle Investments & Holdings L Newcastle Investments & Holdin,2849 Danforth Dr,Orlando,FL,32818,Code Enforcement,LOT CLEANING,7188472862,Land Line,6462966250,Mobile,,Orange County Code Enforcement
+228,07/31/2023,Danielle Wilczynski,6633 Doubletrace Ln,Orlando,FL,32819,Code Enforcement,LOT CLEANING,4074145247,Mobile,3212475634,Land Line,ddknygl@aol.com,Orange County Code Enforcement
+229,07/31/2023,Sifredo Torres,18722 Hollister Rd,Orlando,FL,32820,Code Enforcement,LOT CLEANING,4074821167,Land Line,3212283125,Mobile,crazyrican3@netscape.com,Orange County Code Enforcement
+230,07/31/2023,Shella Pierre,6848 Coral Cove Dr,Orlando,FL,32818,Code Enforcement,ZONING,3214401669,Mobile,3219481982,Mobile,,Orange County Code Enforcement
+231,07/31/2023,Reandias Williams,5413 Idlewild Ct,Orlando,FL,32808,Code Enforcement,HOUSING,3214604033,Mobile,4072997947,Land Line,andy2orlando@gmail.com,Orange County Code Enforcement
+232,07/31/2023,Kendall Abbott,7374 Habbersham Dr,Orlando,FL,32818,Code Enforcement,LOT CLEANING,2292694435,Land Line,5084787584,Land Line,cinabb2003@bellsouth.net,Orange County Code Enforcement
+233,07/31/2023,,4855 ROUND LAKE RD,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+234,07/31/2023,Crystal Scott,517 Lighthorse Ln Apt 2012,Orlando,FL,32818,Code Enforcement,HOUSING,3522822680,Mobile,3524843586,Mobile,mscocopuffz@yahoo.com,Orange County Code Enforcement
+235,07/31/2023,,507 HEATHER BRITE CIR,Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+236,07/31/2023,Bernardo Dominguez,1110 Redman St Apt C,Orlando,FL,32839,Code Enforcement,HOUSING,4078705655,Land Line,,,,Orange County Code Enforcement
+237,07/31/2023,,1420 CRESCENT LAKE DR,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+238,07/31/2023,,1400 CRESCENT LAKE DR,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+239,07/31/2023,RICHARD PERREIRA,10028 Galton Ln,Orlando,FL,32821,Code Enforcement,HOUSING,9179729728,Mobile,2017079990,Mobile,REALITY911CHECK@AOL.COM,Orange County Code Enforcement
+240,07/31/2023,WIDLINE MARCEUS,4741 La Vista Rd,Orlando,FL,32808,Code Enforcement,JUNK CARS,3213159742,Mobile,4079249351,Mobile,WIDLINEMARCEUS@GMAIL.COM,Orange County Code Enforcement
+241,07/31/2023,Sima Jain,N Dean Rd,Orlando,FL,32825,Code Enforcement,ZONING,3124859191,Mobile,4078767462,Land Line,,Orange County Code Enforcement
+242,07/31/2023,Neii Smelko,7409 Covina Ct,Orlando,FL,32810,Code Enforcement,HOUSING,4075211198,Land Line,4076174188,Mobile,,Orange County Code Enforcement
+243,07/31/2023,Carline Pauleus,6310 Vernon St,Orlando,FL,32818,Code Enforcement,HOUSING,9176507419,Mobile,7184211457,Land Line,,Orange County Code Enforcement
+244,07/31/2023,Marwan Alfarwan,7625 Timber River Cir,Orlando,FL,32807,Code Enforcement,ZONING,4079249009,Mobile,4073805505,Land Line,marwana@erols.com,Orange County Code Enforcement
+245,07/31/2023,Jose Perello,5810 Paradise Ln,Orlando,FL,32808,Code Enforcement,ZONING,7605075912,Mobile,4076161368,Mobile,jperello@netzero.net,Orange County Code Enforcement
+246,07/31/2023,Ira Boggs,1302 N 6th St,Orlando,FL,32820,Code Enforcement,ZONING,4075686285,Land Line,9047607987,Mobile,fanof9wing@att.net,Orange County Code Enforcement
+247,07/31/2023,ERNESTO TOMAS,12757 Majorama Dr,Orlando,FL,32837,Code Enforcement,ZONING,4072517859,Land Line,4079241046,Mobile,,Orange County Code Enforcement
+248,07/31/2023,,"5560 SOLIDAGO DR, APARTMENT 208",Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+249,07/31/2023,Sylvia Yaber,17441 Caudel Rd,Orlando,FL,32833,Code Enforcement,ZONING,4076924466,Mobile,4073522729,Land Line,shortnstubby@aol.com,Orange County Code Enforcement
+250,07/31/2023,Tatiana Lewis,6037 Long Peak Dr,Orlando,FL,32810,Code Enforcement,JUNK CARS,4074863878,Mobile,4077764803,Land Line,,Orange County Code Enforcement
+251,07/31/2023,Rene Milano,10726 Larissa St,Orlando,FL,32821,Code Enforcement,ZONING,7039382440,Land Line,7038341976,Land Line,,Orange County Code Enforcement
+252,07/31/2023,,1861 Americana Blvd Apt N,Orlando,FL,32839,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+253,07/31/2023,Simon Frost,3710 Westgate Rd,Orlando,FL,32808,Code Enforcement,LOT CLEANING,2026808653,Mobile,2025371300,Land Line,,Orange County Code Enforcement
+254,07/31/2023,ROSA CASTANEDA,3547 W Central Blvd,Orlando,FL,32805,Code Enforcement,ZONING,4076920586,Mobile,4079241198,Mobile,ROSACASTANEDA104@GMAIL.COM,Orange County Code Enforcement
+255,07/31/2023,Eugene Bracey,618 S Ivey Ln,Orlando,FL,32811,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+256,07/31/2023,,626 S IVEY LN,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+257,07/31/2023,SAM MURRELL,W Robinson St,Orlando,FL,32805,Code Enforcement,LOT CLEANING,9014095180,Mobile,9014582507,Land Line,SAM.MURRELL@YAHOO.COM,Orange County Code Enforcement
+258,07/31/2023,,325 E 15TH ST,Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+259,07/31/2023,Jean Chery,104 Jupiter Cir,Orlando,FL,32811,Code Enforcement,ZONING,4072838041,Mobile,4072959694,Land Line,,Orange County Code Enforcement
+260,07/31/2023,Sharon Riley,S Ivey Ln,Orlando,FL,32811,Code Enforcement,ZONING,4078838840,Mobile,4077198002,Mobile,agapeppwc@aol.com,Orange County Code Enforcement
+261,07/31/2023,Eliezer Irizarry,14149 Whooping Crane Ln,Orlando,FL,32824,Code Enforcement,ZONING,4078570860,Mobile,4079027101,Mobile,,Orange County Code Enforcement
+262,07/31/2023,Kenneth Rivera,4300 Robbins Ave,Orlando,FL,32808,Code Enforcement,HOUSING,4077978460,Mobile,4072988493,Land Line,kennethrivera@adelphia.net,Orange County Code Enforcement
+263,07/31/2023,,7525 WAUNATTA CT,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+264,07/31/2023,,10530 3RD AVE,Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+265,07/31/2023,,3025 EVELYN SCOTT ST,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+266,07/31/2023,,10005 ST MARKS,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+267,07/31/2023,Yuxiang Yan,673 Walkup Dr,Orlando,FL,32808,Code Enforcement,ZONING,5166531298,Mobile,,,,Orange County Code Enforcement
+268,07/31/2023,,333 E 15TH,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+269,07/31/2023,Taralyn Gilbert,6624 Mission Club Blvd Apt 203,Orlando,FL,32821,Code Enforcement,HOUSING,2032417522,Mobile,2037467262,Land Line,groceriesforotts@gmail.com,Orange County Code Enforcement
+270,07/31/2023,Yacoub Alsaka,7101 Harbor Heights Cir,Orlando,FL,32835,Code Enforcement,HOUSING,4072827464,Land Line,4077650930,Mobile,yalsaka@yahoo.com,Orange County Code Enforcement
+271,07/31/2023,,Happy Ln,Orlando,FL,32824,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+272,07/31/2023,,3935 N DEAN RD,Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+273,07/31/2023,Christophe Williams,3957 WALKER RD,Orlando,Florida,,Code Enforcement,ZONING,3212879826,Mobile,,,,Orange County Code Enforcement
+274,07/31/2023,Susan Valentine,6252 Bolling Dr,Orlando,FL,32808,Code Enforcement,JUNK CARS,2039065851,Mobile,7186371437,Mobile,suzukisu@hotmail.com,Orange County Code Enforcement
+275,07/31/2023,Jean Chery,104 Jupiter Cir,Orlando,FL,32811,Code Enforcement,HOUSING,4072838041,Mobile,4072959694,Land Line,,Orange County Code Enforcement
+276,07/31/2023,FELIX SILVESTRE,143 S Pine Hills Rd,Orlando,FL,32811,Code Enforcement,HOUSING,7189246611,Mobile,4072959694,Land Line,OURCREATION7@AOL.COM,Orange County Code Enforcement
+277,07/31/2023,Nicole Hmelar,7587 Groveoak Dr,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4078831509,Mobile,4079268258,Land Line,nhmelar01@yahoo.com,Orange County Code Enforcement
+278,07/31/2023,Jose Esparza,2531 Gresham Dr,Orlando,FL,32807,Code Enforcement,LOT CLEANING,7277715392,Mobile,7274524252,Mobile,jose.esparza@hotmail.com,Orange County Code Enforcement
+279,07/31/2023,Cc Spiliotis,2527 Gresham Dr,Orlando,FL,32807,Code Enforcement,LOT CLEANING,2019279426,Mobile,4079491553,Mobile,cspiliotishill@cs.com,Orange County Code Enforcement
+280,07/31/2023,AUDREY PELL,1600 Jessamine Ave,Orlando,FL,32806,Code Enforcement,LOT CLEANING,4072777714,Land Line,4077014524,Mobile,,Orange County Code Enforcement
+281,07/31/2023,,785 CARNATION DR,Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+282,07/31/2023,Kendall Abbott,1206 Overdale St,Orlando,FL,32825,Code Enforcement,HOUSING,2292694435,Land Line,5084787584,Land Line,cinabb2003@bellsouth.net,Orange County Code Enforcement
+283,07/31/2023,Edward Ross,6415 New Hope Rd,Orlando,FL,32824,Code Enforcement,ZONING,4072704498,Land Line,3523361450,Land Line,twins@nersp.nerdc.ufl.edu,Orange County Code Enforcement
+284,07/31/2023,,7600 WAUNATTA CT,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+285,07/31/2023,Judith Sthilaire,7406 Udine Ave,Orlando,FL,32819,Code Enforcement,ZONING,4076688782,Mobile,,,,Orange County Code Enforcement
+286,07/31/2023,Denise Harbin,6130 Huckleberry Ave,Orlando,FL,32819,Code Enforcement,LOT CLEANING,6315977208,Land Line,4073404649,Mobile,dellharbin@wallnet.com,Orange County Code Enforcement
+287,07/31/2023,Marta De Goes,4027 Woodsong Dr,Orlando,FL,32817,Code Enforcement,LOT CLEANING,4077615442,Mobile,4073404649,Mobile,,Orange County Code Enforcement
+288,07/31/2023,Kevin Bayl,2518 Drake Dr,Orlando,FL,32810,Code Enforcement,HOUSING,4079685438,Mobile,4075228500,Land Line,kbayl@peoplepc.com,Orange County Code Enforcement
+289,07/31/2023,Joan Grant,826 Appleton Ave,Orlando,FL,32806,Code Enforcement,LOT CLEANING,4078515091,Land Line,3212475467,Land Line,,Orange County Code Enforcement
+290,07/31/2023,Willie Glenn,14137 Whooping Crane Ln,Orlando,FL,32824,Code Enforcement,HOUSING,6127356684,Mobile,6123109968,Mobile,wglen@netscape.net,Orange County Code Enforcement
+291,07/31/2023,Fredy Cruz,803 4th St,Orlando,FL,32824,Code Enforcement,ZONING,9049813009,Land Line,9414842333,Land Line,ANTHONYDAVIDCRUZ9@GMAIL.COM,Orange County Code Enforcement
+292,07/31/2023,Susan Valentine,6252 Bolling Dr,Orlando,FL,32808,Code Enforcement,HOUSING,2039065851,Mobile,7186371437,Mobile,suzukisu@hotmail.com,Orange County Code Enforcement
+293,07/31/2023,Lynn Warlick,10810 Genevieve St,Orlando,FL,32825,Code Enforcement,HOUSING,4079287355,Mobile,4072774875,Land Line,lynnwarlick@hotmail.com,Orange County Code Enforcement
+294,07/31/2023,Kenneth Rivera,4300 Robbins Ave,Orlando,FL,32808,Code Enforcement,JUNK CARS,4077978460,Mobile,4072988493,Land Line,kennethrivera@adelphia.net,Orange County Code Enforcement
+295,07/31/2023,Bernadette Prieto,4301 Robbins Ave,Orlando,FL,32808,Code Enforcement,JUNK CARS,3522555678,Mobile,4073770700,Land Line,bernadetteprieto@msn.com,Orange County Code Enforcement
+296,07/31/2023,Carlos Castillo,9532 6th Ave,Orlando,FL,32824,Code Enforcement,ZONING,4073711427,Mobile,4078562848,Land Line,castillin44@hotmail.com,Orange County Code Enforcement
+297,07/31/2023,Cyrilla Harrell,1019 Marlowe Ave,Orlando,FL,32809,Code Enforcement,HOUSING,5616287283,Mobile,4074140771,Mobile,,Orange County Code Enforcement
+298,07/31/2023,,10524 3RD AVE,Orlando,Florida,,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+299,07/31/2023,Carmen Quinones,7422 Boice St,Orlando,FL,32809,Code Enforcement,LOT CLEANING,3214608734,Mobile,4072400594,Land Line,boricuachulaa@aol.com,Orange County Code Enforcement
+300,07/31/2023,PATRICIA MINARD,8511 Northridge Ct,Orlando,FL,32818,Code Enforcement,ZONING,3213035001,Mobile,3213035002,Mobile,ASHPOOH0227@AOL.COM,Orange County Code Enforcement
+301,07/31/2023,Law Richards,922 24th St,Orlando,FL,32805,Code Enforcement,HOUSING,4075390781,Land Line,3213035002,Mobile,,Orange County Code Enforcement
+302,07/31/2023,GERARDO BETANCOURT,1160 N Chickasaw Trl,Orlando,FL,32825,Code Enforcement,ZONING,4073849435,Land Line,4073251178,Mobile,JEFFERSONBETANCOURT@HOTMAIL.COM,Orange County Code Enforcement
+303,07/31/2023,MICHAEL LYBYER,5603 Lesser Dr,Orlando,FL,32818,Code Enforcement,LOT CLEANING,5305203602,Mobile,5303423327,Land Line,PACKERSFANML@YAHOO.COM,Orange County Code Enforcement
+304,07/31/2023,Jean Wroble,2132 Las Palmas Cir,Orlando,FL,32822,Code Enforcement,LOT CLEANING,4079708413,Mobile,4073823009,Land Line,jeanwroble@msn.com,Orange County Code Enforcement
+305,07/31/2023,,325 E 15TH ST,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+306,07/31/2023,Alexander Kristowicz,7661 BENT BOW,Orlando,Florida,,Code Enforcement,LOT CLEANING,4076575870,Land Line,4076575890,Land Line,akristowicz@cfl.rr.com,Orange County Code Enforcement
+307,07/31/2023,Fatima Daoud,8507 Anise Ct,Orlando,FL,32825,Code Enforcement,HOUSING,3217273271,Mobile,4078103001,Mobile,LKIRWAN@CFL.RR.COM,Orange County Code Enforcement
+308,07/31/2023,Rivera Figueroa,39 Wintergreen Way,Orlando,FL,32825,Code Enforcement,LOT CLEANING,4077816640,Mobile,4077816650,Mobile,,Orange County Code Enforcement
+309,07/31/2023,,7707 Udine Ave,Orlando,FL,32819,Code Enforcement,LOT CLEANING,4077048075,Land Line,4078550555,Land Line,,Orange County Code Enforcement
+310,07/31/2023,Elida Mieses,7379 Rush Ct,Orlando,FL,32818,Code Enforcement,ZONING,4075215410,Land Line,9044348858,Mobile,yulasery@univision.com,Orange County Code Enforcement
+311,07/31/2023,XIANGYONG CHEN,1814 Knave Dr,Orlando,FL,32810,Code Enforcement,LOT CLEANING,3475564892,Mobile,9044348858,Mobile,,Orange County Code Enforcement
+312,07/31/2023,David Russell,5422 Hernandes Dr,Orlando,FL,32808,Code Enforcement,LOT CLEANING,3213885909,Mobile,4077043127,Land Line,russelld72@yahoo.com,Orange County Code Enforcement
+313,07/31/2023,LESTER INGRAM,5440 Amazon St,Orlando,FL,32810,Code Enforcement,JUNK CARS,3212177204,Mobile,3216620434,Mobile,LINGRAM5440@GMAIL.COM,Orange County Code Enforcement
+314,07/31/2023,Christopher Bench,2945 Falling Tree Cir,Orlando,FL,32837,Code Enforcement,LOT CLEANING,2082062472,Mobile,5418893823,Land Line,,Orange County Code Enforcement
+315,07/31/2023,Lourdes Rizner,1216 Dickens Ave,Orlando,FL,32809,Code Enforcement,ZONING,4079528630,Mobile,4078169421,Land Line,,Orange County Code Enforcement
+316,07/31/2023,Ronald Reighter,2732 Lone Feather Dr,Orlando,FL,32837,Code Enforcement,LOT CLEANING,7048492843,Land Line,2146251310,Mobile,rreighter@hotmail.com,Orange County Code Enforcement
+317,07/31/2023,Stefano Falanga,2913 Eagle Lake Dr,Orlando,FL,32837,Code Enforcement,LOT CLEANING,4072567980,Mobile,4075664316,Land Line,,Orange County Code Enforcement
+318,07/31/2023,Steven Brandt,12602 Crest Springs Ln Apt 1312,Orlando,FL,32828,Code Enforcement,HOUSING,3212698027,Land Line,3216333118,Land Line,gibbyb@aol.com,Orange County Code Enforcement
+319,07/31/2023,ADELICE LOUIGENE,6821 Anoka Dr,Orlando,FL,32818,Code Enforcement,ZONING,4079152121,Mobile,3212763905,Mobile,LOUIGENEADELICE@YAHOO.COM,Orange County Code Enforcement
+320,07/31/2023,Jeffrey Borrero,2801 River Ridge Dr,Orlando,FL,32825,Code Enforcement,LOT CLEANING,9542980627,Mobile,9544726451,Land Line,,Orange County Code Enforcement
+321,07/31/2023,Steven Wong,3531 Ocita Dr,Orlando,FL,32837,Code Enforcement,ZONING,7183322830,Land Line,7187144732,Land Line,arc4_wong@hotmail.com,Orange County Code Enforcement
+322,07/31/2023,RAZIB KHAN,7214 Udine Ave,Orlando,FL,32819,Code Enforcement,HOUSING,4076189858,Mobile,4078129175,Land Line,KHAN_BD70@YAHOO.COM,Orange County Code Enforcement
+323,07/31/2023,Ruben Mendez,11364 Cardiff Dr,Orlando,FL,32837,Code Enforcement,LOT CLEANING,4075907299,Mobile,4078278629,Land Line,ruben.mendez@msn.com,Orange County Code Enforcement
+324,07/31/2023,LOREN ROBY,1337 41st St,Orlando,FL,32839,Code Enforcement,HOUSING,4078951545,Land Line,4076281714,Mobile,SMILESORSKITUULS@AOL.COM,Orange County Code Enforcement
+325,07/31/2023,Dan Zhang,368 Hammock Dunes Pl,Orlando,FL,32828,Code Enforcement,HOUSING,4073068064,Land Line,4078338988,Mobile,dan.zhang@comcast.net,Orange County Code Enforcement
+326,07/31/2023,MARIELLE RENE,5803 North Ln,Orlando,FL,32808,Code Enforcement,LOT CLEANING,4079146031,Mobile,4078391518,Land Line,MARIELLERENE@YAHOO.COM,Orange County Code Enforcement
+327,07/31/2023,Debra Conley,5815 North Ln,Orlando,FL,32808,Code Enforcement,LOT CLEANING,4078801149,Land Line,4075805179,Mobile,,Orange County Code Enforcement
+328,07/31/2023,Wilfrid Pierre,7317 Whitewater Ct,Orlando,FL,32835,Code Enforcement,HOUSING,4073474957,Land Line,4074906755,Mobile,msaimpreux@yahoo.com,Orange County Code Enforcement
+329,07/31/2023,Yuxiang Yan,673 Walkup Dr,Orlando,FL,32808,Code Enforcement,HOUSING,5166531298,Mobile,4074906755,Mobile,,Orange County Code Enforcement
+330,07/31/2023,Yacoub Alsaka,7101 Harbor Heights Cir,Orlando,FL,32835,Code Enforcement,JUNK CARS,4072827464,Land Line,4077650930,Mobile,yalsaka@yahoo.com,Orange County Code Enforcement
+331,07/31/2023,Paul Simmons,4634 Bunting Ave,Orlando,FL,32812,Code Enforcement,HOUSING,4072750477,Land Line,3057435965,Land Line,,Orange County Code Enforcement
+332,07/31/2023,Ashley Carrero,4754 Ternstone Ave,Orlando,FL,32812,Code Enforcement,HOUSING,4073820384,Land Line,3057435965,Land Line,,Orange County Code Enforcement
+333,07/31/2023,Ruizhu Zheng,4622 Mars Ct,Orlando,FL,32839,Code Enforcement,JUNK CARS,3212786888,Mobile,6464103879,Mobile,,Orange County Code Enforcement
+334,07/31/2023,,4th St,Orlando,FL,32824,Code Enforcement,ZONING,7144877131,Mobile,7143316685,Mobile,,Orange County Code Enforcement
+335,07/31/2023,Chase Bartlett,833 Neuse Ave,Orlando,FL,32804,Code Enforcement,LOT CLEANING,3212879579,Mobile,3214606727,Mobile,,Orange County Code Enforcement
+336,07/31/2023,,703 20th St,Orlando,FL,32805,Code Enforcement,LOT CLEANING,4078967158,Land Line,4078985886,Land Line,,Orange County Code Enforcement
+337,07/31/2023,,4732 Petroff Ave,Orlando,FL,32812,Code Enforcement,HOUSING,4074619430,Mobile,7862754264,Land Line,,Orange County Code Enforcement
+338,07/31/2023,Kendra Walls,1312 Melanie Dr,Orlando,FL,32825,Code Enforcement,LOT CLEANING,3864923096,Land Line,3218047061,Land Line,good_charlette_girl@yahoo.com,Orange County Code Enforcement
+339,07/31/2023,Jason Skym,Continental Blvd,Orlando,FL,32808,Code Enforcement,LOT CLEANING,6612332631,Mobile,4072566631,Mobile,rebeccasexton@hotmail.com,Orange County Code Enforcement
+340,07/31/2023,Tho Le,250 N Hastings St,Orlando,FL,32835,Code Enforcement,HOUSING,4079633050,Mobile,4072566631,Mobile,,Orange County Code Enforcement
+341,07/31/2023,Juanita Miller,3514 Arch St,Orlando,FL,32808,Code Enforcement,HOUSING,4072519671,Land Line,4078084703,Mobile,jcmstar07@gmail.com,Orange County Code Enforcement
+342,07/31/2023,Connie Bearden,29 S McKinley Ave,Orlando,FL,32811,Code Enforcement,ZONING,4072981484,Land Line,4078084703,Mobile,ebearden@sbcglobal.net,Orange County Code Enforcement
+343,07/31/2023,STEPHEN GRIMSHAW,5603 Parkdale Dr,Orlando,FL,32839,Code Enforcement,ZONING,3212457698,Land Line,4078164783,Land Line,,Orange County Code Enforcement
+344,07/31/2023,Kelly Henson,4225 Barwood Dr,Orlando,FL,32839,Code Enforcement,HOUSING,8647032385,Land Line,8644612956,Land Line,kellyhenson77@yahoo.com,Orange County Code Enforcement
+345,07/31/2023,Hardat Ramnauth,318 3rd St,Orlando,FL,32824,Code Enforcement,HOUSING,7183230706,Land Line,7184413381,Land Line,,Orange County Code Enforcement
+346,07/31/2023,ANSARI MOHAMAD,1710 Hinckley Rd,Orlando,FL,32818,Code Enforcement,HOUSING,4076174199,Mobile,4075239480,Land Line,ANSARI@YAHOO.COM,Orange County Code Enforcement
+347,07/31/2023,James Henson,1709 Bonita Ave,Orlando,FL,32805,Code Enforcement,HOUSING,4079289665,Mobile,4078413986,Land Line,jimhenson@gmail.com,Orange County Code Enforcement
+348,07/31/2023,Isaias Perez,1813 Crosswell Ct,Orlando,FL,32837,Code Enforcement,ZONING,4079229683,Mobile,7866247888,Mobile,,Orange County Code Enforcement
+349,07/31/2023,,1166 W Central Blvd,Orlando,FL,32805,Code Enforcement,HOUSING,,,,,,Orange County Code Enforcement
+350,07/31/2023,DAVID TRANT,6724 Pompeii Rd,Orlando,FL,32822,Code Enforcement,HOUSING,4076012664,Land Line,9414236811,Land Line,KINGOFS485@CS.COM,Orange County Code Enforcement
+351,07/31/2023,Kimberly Griffin,1176 Redman St Apt B,Orlando,FL,32839,Code Enforcement,HOUSING,4076922146,Mobile,4072969595,Land Line,kimmy69neal@gmail.com,Orange County Code Enforcement
+352,07/31/2023,DIONICIO ALVAREZ,12766 Ohio Woods Ln,Orlando,FL,32824,Code Enforcement,ZONING,4075586732,Mobile,4072969595,Land Line,DINORATEN@HOTMAIL.COM,Orange County Code Enforcement
+353,07/31/2023,Kishore Pherwani,8111 Forest City Rd,Orlando,FL,32810,Code Enforcement,LOT CLEANING,4077492622,Mobile,4075452130,Land Line,kishorpherwani@gmail.com,Orange County Code Enforcement
+354,07/31/2023,De Hernandez,4627 Ternstone Ave,Orlando,FL,32812,Code Enforcement,JUNK CARS,3213521517,Mobile,4074829210,Land Line,,Orange County Code Enforcement
+355,07/31/2023,CASEY STOVALL,1731 Brightmeadow Ct,Orlando,FL,32818,Code Enforcement,JUNK CARS,6626533719,Land Line,8082069928,Land Line,CASEYSTOVALL@GMAIL.COM,Orange County Code Enforcement
+356,07/31/2023,Ashley Carrero,4754 Ternstone Ave,Orlando,FL,32812,Code Enforcement,LOT CLEANING,4073820384,Land Line,8082069928,Land Line,,Orange County Code Enforcement
+357,07/31/2023,ANN ENGLISH,7021 Minippi Dr,Orlando,FL,32818,Code Enforcement,LOT CLEANING,2025371300,Land Line,2022441538,Land Line,NFROST@OPTONLINE.NET,Orange County Code Enforcement
+358,07/31/2023,,Happy Ln,Orlando,FL,32824,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+359,07/31/2023,CLAUDIA SOUZA,8618 Benoit Ave,Orlando,FL,32836,Code Enforcement,ZONING,4074854215,Mobile,,,CLAUDIAAVELAR86@GMAIL.COM,Orange County Code Enforcement
+360,07/31/2023,,12188 INTERNATIONAL DR,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+361,07/31/2023,,6200 WINTER GARDEN VINELAND RD,Orlando,Florida,,Code Enforcement,LOT CLEANING,,,,,,Orange County Code Enforcement
+362,07/31/2023,Brenda Young,2129 DEANNA DR,Orlando,Florida,,Code Enforcement,LOT CLEANING,7726436492,Mobile,4078848860,Land Line,foglight41@bellsouth.net,Orange County Code Enforcement
+363,07/31/2023,,4732 Petroff Ave,Orlando,FL,32812,Code Enforcement,HOUSING,4074619430,Mobile,7862754264,Land Line,,Orange County Code Enforcement
+364,07/31/2023,,6248 WINTER GARDEN VINELAND RD,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+365,07/31/2023,Marie Willis,6224 WINTER GARDEN VINELAND RD,Orlando,Florida,,Code Enforcement,HOUSING,5617379203,Land Line,3866739255,Land Line,,Orange County Code Enforcement
+366,07/31/2023,Wifi-Westgate Eastwood,13950 Golfway Blvd,Orlando,FL,32828,Code Enforcement,LOT CLEANING,4078239494,Land Line,3866739255,Land Line,,Orange County Code Enforcement
+367,07/31/2023,William Herb,5307 Brosche Rd,Orlando,FL,32807,Code Enforcement,ZONING,4078106119,Mobile,4079983993,Land Line,billherb@gmail.com,Orange County Code Enforcement
+368,07/31/2023,Ruizhu Zheng,4622 Mars Ct,Orlando,FL,32839,Code Enforcement,LOT CLEANING,3212786888,Mobile,6464103879,Mobile,,Orange County Code Enforcement
+369,07/31/2023,Lynn Warlick,10810 Genevieve St,Orlando,FL,32825,Code Enforcement,HOUSING,4072774875,Land Line,3212350306,Land Line,lynnwarlick@hotmail.com,Orange County Code Enforcement
+370,07/31/2023,ROBERT DROUIN,114 2nd St,Orlando,FL,32824,Code Enforcement,LOT CLEANING,4079241472,Mobile,8602428464,Land Line,FLORIDA-BOB@HOTMAIL.COM,Orange County Code Enforcement
+371,07/31/2023,Richard Bishop,8203 Palazzo Ct,Orlando,FL,32836,Code Enforcement,LOT CLEANING,4072977676,Land Line,4072981111,Land Line,,Orange County Code Enforcement
+372,07/31/2023,,6232 WINTER GARDEN VINELAND RD,Orlando,Florida,,Code Enforcement,ZONING,,,,,,Orange County Code Enforcement
+373,07/31/2023,Justin Diaz,1078 Redman St Apt A,Orlando,FL,32839,Code Enforcement,HOUSING,6465258652,Mobile,7188297786,Land Line,,Orange County Code Enforcement
+374,07/31/2023,Summer Brown,5815 Riviera Dr,Orlando,FL,32808,Code Enforcement,LOT CLEANING,3214425383,Mobile,7188297786,Land Line,,Orange County Code Enforcement
+375,07/31/2023,Kimberly Griffin,1176 Redman St Apt B,Orlando,FL,32839,Code Enforcement,HOUSING,4076922146,Mobile,4072969595,Land Line,kimmy69neal@gmail.com,Orange County Code Enforcement
+376,07/31/2023,,807 Hendry Dr,Orlando,FL,32822,Code Enforcement,LOT CLEANING,9545346292,Mobile,9545542434,Mobile,,Orange County Code Enforcement

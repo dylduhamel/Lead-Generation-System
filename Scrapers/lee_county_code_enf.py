@@ -221,14 +221,14 @@ class LeeCountyCodeEnf():
             # print(lead)
             # print("\n")
 
-            #session.add(lead)
+            session.add(lead)
 
         # Add new session to DB
-        #session.commit()
+        session.commit()
         # Relinquish resources
-        #session.close()
+        session.close()
 
         # Delete the file so it can be run again
-        #os.remove(os.path.join(self.file_path, self.file_name))
+        os.remove(os.path.join(self.file_path, self.file_name))
 
         status_print(f"DB committed and {self.file_name} removed -- {self.scraper_name}")
