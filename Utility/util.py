@@ -31,7 +31,7 @@ def get_address_from_lat_lng(lat, lng):
         return "Error: The request was unsuccessful. Status code: {}".format(response.status_code)
 
 
-# Get current date
+# Get current date - * Used for DB, do not modify
 def curr_date():
     current_date = datetime.datetime.now(pytz.timezone('America/New_York'))
     formatted_date = current_date.strftime("%m/%d/%Y")

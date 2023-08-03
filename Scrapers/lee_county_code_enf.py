@@ -56,7 +56,7 @@ class LeeCountyCodeEnf():
                     "vacant", "damaged roof", "damage", "parts"]
 
         # List of keywords to exclude
-        self.exclusions = ["Permit", "construction", "GVWR", "Builder"]
+        self.exclusions = ["Permit", "construction", "GVWR", "Builder", "vacant"]
 
         status_print(f"Initialized variables -- {self.scraper_name}")
     
@@ -83,7 +83,7 @@ class LeeCountyCodeEnf():
         except TimeoutException:
             print("Timeout, element not found")
 
-        # Date dropdown selection
+        # Record dropdown selection
         try:
             select = Select(self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_ddlGSPermitType"))
 
@@ -94,10 +94,22 @@ class LeeCountyCodeEnf():
 
         time.sleep(1)
 
-        # Time input
+        # Time input start
         try:
             # Change the search date range
             curr_date_input = self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_txtGSStartDate")
+            # Use JavaScript to set the value of the element
+            self.driver.execute_script("""
+            arguments[0].value = arguments[1];
+            arguments[0].dispatchEvent(new Event('change'));
+            """, curr_date_input, formatted_date)
+        except NoSuchElementException:
+            print("Can not input box.")
+
+        # Time input end
+        try:
+            # Change the search date range
+            curr_date_input = self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_txtGSEndDate")
             # Use JavaScript to set the value of the element
             self.driver.execute_script("""
             arguments[0].value = arguments[1];
@@ -164,6 +176,9 @@ class LeeCountyCodeEnf():
         # Remove rows where an exclusion keyword is found
         for exclusion in self.exclusions:
             selected_rows = selected_rows[~selected_rows['Description'].str.contains(exclusion.lower())]
+
+        # Remove rows where status is closed
+        selected_rows = selected_rows[~selected_rows['Status'].str.contains("Closed-Non Enforcement")]
 
         # Split the 'Address' field into separate 'Address', 'City_State_Zip' fields
         selected_rows[['Address', 'City_State_Zip']] = selected_rows['Address'].str.split(',', n=1, expand=True)

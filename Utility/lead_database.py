@@ -17,13 +17,14 @@ class Lead(Base):
 
      id = Column(Integer, primary_key=True)
      date_added = Column(String(100))
-     owner_name = Column(String(100), unique=True)
+     first_name_owner = Column(String(100))
+     last_name_owner = Column(String(100))
      property_address = Column(String(200))
      property_city = Column(String(200))
      property_state = Column(String(200))
      property_zipcode = Column(String(200))
-     document_type = Column(String(50))
-     document_subtype = Column(String(50))
+     document_type = Column(String(250))
+     document_subtype = Column(String(150))
      phone_number_1 = Column(String(100))
      phone_number_1_type = Column(String(100))
      phone_number_2 = Column(String(100))
@@ -34,7 +35,8 @@ class Lead(Base):
      # Printing representation for testing
      def __repr__(self):
         return (f"Lead(date_added={self.date_added}, "
-                f"owner_name={self.owner_name}, "
+                f"first_name_owner={self.first_name_owner}, "
+                f"last_name_owner={self.last_name_owner}, "
                 f"document_type={self.document_type}, "
                 f"document_subtype={self.document_subtype}, "
                 f"property_address={self.property_address}, "

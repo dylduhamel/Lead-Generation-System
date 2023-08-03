@@ -4,43 +4,79 @@ from dotenv import load_dotenv
 import pandas as pd
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType
-from Utility.lead_database import Session
+from Utility.lead_database import Session, Lead
 from Utility.util import curr_date
 
 def send_email():
     # Load .env file
     load_dotenv()
 
-    # Current date
-    current_date = curr_date()
-
     # Initialize the session
     session = Session()
 
-    # Write SQL queries
-    query1 = "SELECT * FROM leads"  
-    query2 = "SELECT * FROM leads WHERE document_type = 'Lien'" 
+    # Query for values added today
+    today = curr_date() 
 
-    # Use session to execute queries and get dataframes
-    df1 = pd.read_sql_query(query1, session.bind)
-    df2 = pd.read_sql_query(query2, session.bind)
+    # Query database using session.query
+    leads_today = session.query(Lead).filter(Lead.date_added == today, 
+                                             Lead.first_name_owner != None, 
+                                             Lead.first_name_owner != '', 
+                                             Lead.phone_number_1 != None, 
+                                             Lead.phone_number_1 != '').all()
+
+    leads_lien = session.query(Lead).filter(Lead.document_type == 'Lien').all()
+
+    # Convert query results to dataframes
+    df1 = pd.DataFrame([{column: getattr(lead, column) for column in Lead.__table__.columns.keys()} for lead in leads_today])
+    df2 = pd.DataFrame([{column: getattr(lead, column) for column in Lead.__table__.columns.keys()} for lead in leads_lien])
+
+    if not df1.empty:
+        # Get the list of current column names
+        cols = list(df1.columns)
+
+        # Remove 'first_name_owner' and 'last_name_owner' from their current positions in the list
+        cols.remove('first_name_owner')
+        cols.remove('last_name_owner')
+
+        # Add 'first_name_owner' and 'last_name_owner' at the desired positions
+        cols.insert(2, 'first_name_owner')  # at index 2 
+        cols.insert(3, 'last_name_owner')   # at index 3
+
+        # Reorder the dataframe according to the modified list of column names
+        df1 = df1[cols]
+
+    if not df2.empty:
+        # Get the list of current column names
+        cols = list(df2.columns)
+
+        # Remove 'first_name_owner' and 'last_name_owner' from their current positions in the list
+        cols.remove('first_name_owner')
+        cols.remove('last_name_owner')
+
+        # Add 'first_name_owner' and 'last_name_owner' at the desired positions
+        cols.insert(2, 'first_name_owner')  # at index 2 
+        cols.insert(3, 'last_name_owner')   # at index 3
+
+        # Reorder the dataframe according to the modified list of column names
+        df2 = df2[cols]
 
     # Convert DataFrames to CSV and save
-    # ADD DATE!!!!!
+    csv_filepath1 = "./Skiptraced_data/csv_exports/code_enforcement.csv"
+    csv_filepath2 = "./Skiptraced_data/csv_exports/lien_lis_penden.csv"
     csv_filename1 = "code_enforcement.csv"
     csv_filename2 = "lien_lis_penden.csv"
-    df1.to_csv(csv_filename1, index=False)
-    df2.to_csv(csv_filename2, index=False)
+    df1.to_csv(csv_filepath1, index=False)
+    df2.to_csv(csv_filepath2, index=False)
 
     # Load SendGrid API key and email addresses
     SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
-    FROM_EMAIL = os.getenv("FROM_EMAIL")  # The email to send from
-    TO_EMAIL = os.getenv("TO_EMAIL")  # The email to send to
+    FROM_EMAIL = os.getenv("FROM_EMAIL") 
+    TO_EMAIL = os.getenv("TO_EMAIL")  
 
     # Read CSV data and convert to Base64
-    with open(csv_filename1, "rb") as f:
+    with open(csv_filepath1, "rb") as f:
         data1 = base64.b64encode(f.read()).decode()
-    with open(csv_filename2, "rb") as f:
+    with open(csv_filepath2, "rb") as f:
         data2 = base64.b64encode(f.read()).decode()
 
     # Create attachments
@@ -60,7 +96,7 @@ def send_email():
         from_email=FROM_EMAIL,
         to_emails=TO_EMAIL,
         subject='Sending CSV Data',
-        plain_text_content='Your first complete Acuritas lead generating results are attached.'
+        plain_text_content='Hey Gents,\n\n\tHere is all of the data pulled in the last 24 hours.'
     )
 
     message.attachment = [attachment1, attachment2]

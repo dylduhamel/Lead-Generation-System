@@ -1,11 +1,9 @@
 '''
-Important: Check for the values accessable. If It does not have the zipcode than do not add it. Or put in its empty value. You must check to see if it can compute the correct result with 
-"propertyAddress": {
-                    "city": lead.property_city,
-                    "street": lead.property_address,
-                    "state": lead.property_state,
-                    "zip": NONE
-                }
+Function to skiptrace data from SQL DB
+
+Queries for only those values with "date_added" == curr_date()
+
+Saves as skiptraced JSON file
 '''
 
 import os
@@ -13,6 +11,7 @@ import requests
 import json
 from sqlalchemy import update
 from Utility.lead_database import Lead, Session
+from Utility.util import curr_date
 
 def skiptrace_leads():
     # API call function
@@ -63,44 +62,16 @@ def skiptrace_leads():
     # Create a session
     session = Session()
 
-    # Query the database (WHERE WE EXTRACT JUST YESTERDAYS DATE
-    # 
-    # !!!!!!!!!!
-    # )
-    leads = session.query(Lead).all()
+    # Query for values added today
+    today = curr_date()
+    leads = session.query(Lead).filter(Lead.date_added == today).all()
 
     # Make a single API call for all leads
     results = api_call(leads)
 
-    # Export json to data.json
-    with open('skip_trace.json', 'w') as file:
+    # UNIX filename issues
+    today = today.replace("/", "-")
+
+    # Export json to Skiptraced_data directory
+    with open(f'./Skiptraced_data/skiptrace_{today}.json', 'w') as file:
         json.dump(results, file)
-
-    for lead, result in zip(leads, results):
-        owner_first_name = result.get("name", {}).get("first")
-        owner_last_name = result.get("name", {}).get("last")
-
-        # Check if "phoneNumbers" key exists and its associated list is not empty
-        phone_numbers = result.get("phoneNumbers", [])
-        if phone_numbers:
-            phone_number_1 = phone_numbers[0].get("number")
-            phone_number_1_type = phone_numbers[0].get("type")
-
-            if len(phone_numbers) > 1:
-                phone_number_2 = phone_numbers[1].get("number")
-                phone_number_2_type = phone_numbers[1].get("type")
-        else:
-            phone_number_1 = phone_number_1_type = phone_number_2 = phone_number_2_type = None
-
-        email = result.get("emails", [{}])[0].get("email") if result.get("emails") else None
-
-        # Update the fields in the database
-        lead.owner_name = owner_first_name + ' ' + owner_last_name if owner_first_name and owner_last_name else lead.owner_name
-        lead.phone_number_1 = phone_number_1 if phone_number_1 else lead.phone_number_1
-        lead.phone_number_1_type = phone_number_1_type if phone_number_1_type else lead.phone_number_1_type
-        lead.phone_number_2 = phone_number_2 if phone_number_2 else lead.phone_number_2
-        lead.phone_number_2_type = phone_number_2_type if phone_number_2_type else lead.phone_number_2_type
-        lead.email = email if email else lead.email
-
-    # Commit the changes
-    session.commit()
