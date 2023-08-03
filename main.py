@@ -16,8 +16,9 @@ from Scrapers.cinci_code_enf_API import CinciCodeEnfAPI
 from Scrapers.cinci_code_enf import CinciCodeEnf
 from Scrapers.orange_county_code_enf import OrangeCountyCodeEnf
 from Scrapers.fort_myers_code_enf import FortMeyersEnf
-from Scrapers.clermont_county_foreclosure import ClermontForeclosure
+from Scrapers.clermont_county_foreclosure import ClermontCountyForeclosure
 from Scrapers.lee_county_foreclosure import LeeCountyForeclosure
+from Scrapers.franklin_county_foreclosure import FranklinCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -48,26 +49,37 @@ if __name__ == "__main__":
     # orange_county_code_enf.download_dataset()
     # orange_county_code_enf.start(1)
 
-    # # Get today's date and add one day to get tomorrow's date
-    # start_date = datetime.datetime.now() + datetime.timedelta(days=1)
-    # end_date = parse('09/01/2023')
-    # # Generate a list of all dates from start_date to end_date
-    # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+    # Get today's date and add one day to get tomorrow's date
+    start_date = datetime.datetime.now() + datetime.timedelta(days=1)
+    end_date = parse('09/01/2023')
+    # Generate a list of all dates from start_date to end_date
+    dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
 
-    # # Iterate over the dates
-    # for date in dates:
-    #     clermont_county_forclosure = ClermontForeclosure(date.strftime("%m/%d/%Y"))
-    #     clermont_county_forclosure.start()
+    # Iterate over the dates CLERMONT
+    for date in dates:
+        clermont_county_forclosure = ClermontCountyForeclosure(date.strftime("%m/%d/%Y"))
+        clermont_county_forclosure.start()
 
-    # # End date
-    # end_date = parse('09/15/2023')
-    # # Generate a list of all dates from start_date to end_date
-    # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+    # End date
+    end_date = parse('09/15/2023')
+    # Generate a list of all dates from start_date to end_date
+    dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
 
-    # # Iterate over the dates
-    # for date in dates:
-    #     lee_county_forclosure = LeeCountyForeclosure(date.strftime("%m/%d/%Y"))
-    #     lee_county_forclosure.start()
+    # Iterate over the dates LEE
+    for date in dates:
+        lee_county_forclosure = LeeCountyForeclosure(date.strftime("%m/%d/%Y"))
+        lee_county_forclosure.start()
+
+    # End date
+    end_date = parse('09/01/2023')
+    # Generate a list of all dates from start_date to end_date
+    dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+
+    # Iterate over the dates FRANKLIN
+    for date in dates:
+        franklin_county_forclosure = FranklinCountyForeclosure(date.strftime("%m/%d/%Y"))
+        franklin_county_forclosure.start()
+
 
     '''
     Remove any duplicate address from today
@@ -88,7 +100,7 @@ if __name__ == "__main__":
     """
     Twilio API to send out SMS/Email messages 
     """
-    send_email()
+    #send_email()
 
 
     # End timing program execution

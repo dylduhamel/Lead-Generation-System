@@ -11,7 +11,7 @@ from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
 
-class ClermontForeclosure:
+class ClermontCountyForeclosure:
     def __init__(self, date):
         # Initialization
 
@@ -100,11 +100,11 @@ class ClermontForeclosure:
                     # Website tracking
                     lead.county_website = self.county_website
 
-                    # print(lead)
-                    # print("\n")
+                    print(lead)
+                    print("\n")
 
                     # Add lead to db
-                    session.add(lead)
+                    #session.add(lead)
 
                     # Add to visited list
                     clermont_county_visited_leads.append(property_address)
@@ -115,9 +115,9 @@ class ClermontForeclosure:
             self.driver.quit()
 
         # Add new session to DB
-        session.commit()
+        #session.commit()
         # Relinquish resources
-        session.close()
+        #session.close()
 
         # Relinquish resources
         self.driver.quit()

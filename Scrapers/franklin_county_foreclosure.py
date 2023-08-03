@@ -5,34 +5,33 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from Utility.visited_calendar_leads import save_global_list_lee, lee_county_visited_leads
+from Utility.visited_calendar_leads import save_global_list_franklin, franklin_county_visited_leads
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
 
-class LeeCountyForeclosure:
+class FranklinCountyForeclosure:
     def __init__(self, date):
         # Initialization
 
         # Date for tracking
         self.page_date = date
         # Pass in the date
-        self.url = f'https://www.lee.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
+        self.url = f'https://franklin.sheriffsaleauction.ohio.gov/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
         # Webdriver
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "lee_county_foreclosure.py"
-        self.county_website = "Lee County Foreclosure"
+        self.scraper_name = "franklin_county_foreclosure.py"
+        self.county_website = "Franklin County Sheriff Foreclosure"
 
-        # Initialize driver
-        self.driver.get(self.url)
+        status_print(f"Initialized variables -- {self.scraper_name}")
 
     def start(self):
         # Initialize driver
         self.driver.get(self.url)
-        
+
         status_print(f"Chrome driver created. Beginning scraping on {self.page_date} -- {self.scraper_name}")
 
         # Create a new database Session
@@ -72,7 +71,6 @@ class LeeCountyForeclosure:
                 try:
                     if city_zip_data is not None:
                         city, zip_code = map(str.strip, city_zip_data.split(','))
-                        zip_code = zip_code.split('- ')[1]
                     else:
                         raise ValueError("City zip data is None")
                 except ValueError as e:
@@ -80,7 +78,7 @@ class LeeCountyForeclosure:
                     city, zip_code = None, None
                 
                 # Check if it has been seen before
-                if property_address is not None and property_address not in lee_county_visited_leads:
+                if property_address is not None and property_address not in franklin_county_visited_leads:
                     # Create new lead
                     lead = Lead()
 
@@ -97,7 +95,7 @@ class LeeCountyForeclosure:
                     # City and State
                     lead.property_city = city
                     lead.property_zipcode = zip_code
-                    lead.property_state = "Florida"
+                    lead.property_state = "Ohio"
 
                     # Website tracking
                     lead.county_website = self.county_website
@@ -109,8 +107,9 @@ class LeeCountyForeclosure:
                     #session.add(lead)
 
                     # Add to visited list
-                    lee_county_visited_leads.append(property_address)
-                    save_global_list_lee()
+                    franklin_county_visited_leads.append(property_address)
+                    save_global_list_franklin()
+
         except TimeoutException:
             print("AUCTION_ITEM element not found. Quitting the driver.")
             self.driver.quit()
