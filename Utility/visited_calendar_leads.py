@@ -52,3 +52,20 @@ if os.path.exists(franklin_filename):
 def save_global_list_franklin():
     with open(franklin_filename, 'wb') as f:
         pickle.dump(franklin_county_visited_leads, f)
+
+'''
+Hamilton County Foreclosure
+'''
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+hamilton_filename = './Utility/global_list_hamilton.pkl'
+hamilton_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(hamilton_filename):
+    with open(hamilton_filename, 'rb') as f:
+        hamilton_county_visited_leads = pickle.load(f)
+
+def save_global_list_hamilton():
+    with open(hamilton_filename, 'wb') as f:
+        pickle.dump(hamilton_county_visited_leads, f)

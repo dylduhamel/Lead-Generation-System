@@ -39,7 +39,7 @@ class ClermontCountyForeclosure:
 
         try:
             # Wait until an auction item is present in the webpage
-            WebDriverWait(self.driver, 1).until(EC.presence_of_element_located((By.CLASS_NAME, "AUCTION_ITEM")))
+            WebDriverWait(self.driver, 2).until(EC.presence_of_element_located((By.CLASS_NAME, "AUCTION_ITEM")))
 
             html_doc = self.driver.page_source
             soup = BeautifulSoup(html_doc, 'html.parser')
@@ -100,11 +100,11 @@ class ClermontCountyForeclosure:
                     # Website tracking
                     lead.county_website = self.county_website
 
-                    print(lead)
-                    print("\n")
+                    # print(lead)
+                    # print("\n")
 
                     # Add lead to db
-                    #session.add(lead)
+                    session.add(lead)
 
                     # Add to visited list
                     clermont_county_visited_leads.append(property_address)
@@ -115,9 +115,9 @@ class ClermontCountyForeclosure:
             self.driver.quit()
 
         # Add new session to DB
-        #session.commit()
+        session.commit()
         # Relinquish resources
-        #session.close()
+        session.close()
 
         # Relinquish resources
         self.driver.quit()
