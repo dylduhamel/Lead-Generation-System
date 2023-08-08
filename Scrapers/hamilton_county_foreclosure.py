@@ -82,19 +82,19 @@ class HamiltonCountyForeclosure():
                 # Website tracking
                 lead.county_website = self.county_website
 
-                print(lead)
-                print("\n")
+                # print(lead)
+                # print("\n")
 
                 # Add lead to db
-                #self.session.add(lead)
+                self.session.add(lead)
 
                 # Add to visited list
                 hamilton_county_visited_leads.append(row["Address"])
                 save_global_list_hamilton()
         
         # Add new session to DB
-        #self.session.commit()
+        self.session.commit()
         # Relinquish resources
-        #self.session.close()
+        self.session.close()
         
         status_print(f"DB committed -- {self.scraper_name}")

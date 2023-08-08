@@ -19,6 +19,7 @@ def save_global_list_clermont():
     with open(clermont_filename, 'wb') as f:
         pickle.dump(clermont_county_visited_leads, f)
 
+
 '''
 Lee County Foreclosure
 '''
@@ -35,6 +36,7 @@ if os.path.exists(lee_filename):
 def save_global_list_lee():
     with open(lee_filename, 'wb') as f:
         pickle.dump(lee_county_visited_leads, f)
+
 
 '''
 Franklin County Foreclosure
@@ -53,6 +55,7 @@ def save_global_list_franklin():
     with open(franklin_filename, 'wb') as f:
         pickle.dump(franklin_county_visited_leads, f)
 
+
 '''
 Hamilton County Foreclosure
 '''
@@ -69,3 +72,41 @@ if os.path.exists(hamilton_filename):
 def save_global_list_hamilton():
     with open(hamilton_filename, 'wb') as f:
         pickle.dump(hamilton_county_visited_leads, f)
+
+
+'''
+Pinellas County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+pinellas_filename = './Utility/global_list_pinellas.pkl'
+
+# Initialize an empty list
+pinellas_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(pinellas_filename):
+    with open(pinellas_filename, 'rb') as f:
+        pinellas_county_visited_leads = pickle.load(f)
+
+def save_global_list_pinellas():
+    with open(pinellas_filename, 'wb') as f:
+        pickle.dump(pinellas_county_visited_leads, f)
+
+
+'''
+Duval County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+duval_filename = './Utility/global_list_duval.pkl'
+
+# Initialize an empty list
+duval_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(duval_filename):
+    with open(duval_filename, 'rb') as f:
+        duval_county_visited_leads = pickle.load(f)
+
+def save_global_list_duval():
+    with open(duval_filename, 'wb') as f:
+        pickle.dump(duval_county_visited_leads, f)

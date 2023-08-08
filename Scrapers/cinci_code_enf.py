@@ -41,7 +41,8 @@ class CinciCodeEnf():
         self.driver = webdriver.Chrome()
 
         self.file_name = "PropertyActivity.csv"
-        self.file_path = "/home/dylan/Downloads"
+        #self.file_path = "/home/dylan/Downloads"
+        self.file_path = "/Users/dylanduhamel/Downloads"
         self.read_file = ""
 
         status_print(f"Initialized variables -- {self.scraper_name}")

@@ -20,6 +20,8 @@ from Scrapers.clermont_county_foreclosure import ClermontCountyForeclosure
 from Scrapers.lee_county_foreclosure import LeeCountyForeclosure
 from Scrapers.franklin_county_foreclosure import FranklinCountyForeclosure
 from Scrapers.hamilton_county_foreclosure import HamiltonCountyForeclosure
+from Scrapers.pinellas_county_foreclosure import PinellasCountyForeclosure
+from Scrapers.duval_county_foreclosure import DuvalCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -50,8 +52,8 @@ if __name__ == "__main__":
     # orange_county_code_enf.download_dataset()
     # orange_county_code_enf.start(1)
 
-    # Get today's date and add one day to get tomorrow's date
-    #start_date = datetime.datetime.now() + datetime.timedelta(days=1)
+    # # Get today's date and add one day to get tomorrow's date
+    # start_date = datetime.datetime.now() + datetime.timedelta(days=1)
     # end_date = parse('09/01/2023')
     # # Generate a list of all dates from start_date to end_date
     # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
@@ -71,7 +73,7 @@ if __name__ == "__main__":
     #     lee_county_forclosure = LeeCountyForeclosure(date.strftime("%m/%d/%Y"))
     #     lee_county_forclosure.start()
 
-    # End date
+    # # End date
     # end_date = parse('09/01/2023')
     # # Generate a list of all dates from start_date to end_date
     # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
@@ -81,7 +83,27 @@ if __name__ == "__main__":
     #     franklin_county_forclosure = FranklinCountyForeclosure(date.strftime("%m/%d/%Y"))
     #     franklin_county_forclosure.start()
 
-    # Hamilton County Foreclosure Scraper
+    # # End date
+    # end_date = parse('11/07/2023')
+    # # Generate a list of all dates from start_date to end_date
+    # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+
+    # # Iterate over the dates PINELLAS
+    # for date in dates:
+    #     pinellas_county_forclosure = PinellasCountyForeclosure(date.strftime("%m/%d/%Y"))
+    #     pinellas_county_forclosure.start()
+
+    # # End date
+    # end_date = parse('09/01/2023')
+    # # Generate a list of all dates from start_date to end_date
+    # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+
+    # # Iterate over the dates DUVAL
+    # for date in dates:
+    #     duval_county_forclosure = DuvalCountyForeclosure(date.strftime("%m/%d/%Y"))
+    #     duval_county_forclosure.start()
+
+    # # Hamilton County Foreclosure Scraper
     # hamilton_county_foreclosure = HamiltonCountyForeclosure()
     # hamilton_county_foreclosure.start()
 
@@ -97,14 +119,14 @@ if __name__ == "__main__":
 
     Read from JSON and append to database
     """
-    #skiptrace = skiptrace_leads()
+    skiptrace = skiptrace_leads()
     
-    #json_to_database()
+    json_to_database()
 
     """
     Twilio API to send out SMS/Email messages 
     """
-    #send_email()
+    send_email()
 
 
     # End timing program execution
