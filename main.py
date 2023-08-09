@@ -84,7 +84,7 @@ if __name__ == "__main__":
     #     franklin_county_forclosure.start()
 
     # # End date
-    # end_date = parse('11/07/2023')
+    # end_date = parse('10/07/2023')
     # # Generate a list of all dates from start_date to end_date
     # dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
 

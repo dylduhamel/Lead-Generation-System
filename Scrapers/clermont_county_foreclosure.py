@@ -39,7 +39,7 @@ class ClermontCountyForeclosure:
 
         try:
             # Wait until an auction item is present in the webpage
-            WebDriverWait(self.driver, 2).until(EC.presence_of_element_located((By.CLASS_NAME, "AUCTION_ITEM")))
+            WebDriverWait(self.driver, 1).until(EC.presence_of_element_located((By.CLASS_NAME, "AUCTION_ITEM")))
 
             html_doc = self.driver.page_source
             soup = BeautifulSoup(html_doc, 'html.parser')
