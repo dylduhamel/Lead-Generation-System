@@ -73,5 +73,5 @@ def skiptrace_leads():
     today = today.replace("/", "-")
 
     # Export json to Skiptraced_data directory
-    with open(f'./Skiptraced_data/skiptrace_{today}.json', 'w') as file:
+    with open(f'./Data/Skiptrace/skiptrace_{today}.json', 'w') as file:
         json.dump(results, file)

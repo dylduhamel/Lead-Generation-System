@@ -5,7 +5,7 @@ import pickle
 Clermont County Foreclosure
 '''
 # Specify the filename to be used for the pickled data
-clermont_filename = './Utility/global_list_clermont.pkl'
+clermont_filename = './Data/Visited_calendar_leads/global_list_clermont.pkl'
 
 # Initialize an empty list
 clermont_county_visited_leads = []
@@ -25,7 +25,7 @@ Lee County Foreclosure
 '''
 # Initialize an empty list
 # Specify the filename to be used for the pickled data
-lee_filename = './Utility/global_list_lee.pkl'
+lee_filename = './Data/Visited_calendar_leads/global_list_lee.pkl'
 lee_county_visited_leads = []
 
 # If the file exists (i.e., if the program has been run before), load the data from it
@@ -43,7 +43,7 @@ Franklin County Foreclosure
 '''
 # Initialize an empty list
 # Specify the filename to be used for the pickled data
-franklin_filename = './Utility/global_list_franklin.pkl'
+franklin_filename = './Data/Visited_calendar_leads/global_list_franklin.pkl'
 franklin_county_visited_leads = []
 
 # If the file exists (i.e., if the program has been run before), load the data from it
@@ -61,7 +61,7 @@ Hamilton County Foreclosure
 '''
 # Initialize an empty list
 # Specify the filename to be used for the pickled data
-hamilton_filename = './Utility/global_list_hamilton.pkl'
+hamilton_filename = './Data/Visited_calendar_leads/global_list_hamilton.pkl'
 hamilton_county_visited_leads = []
 
 # If the file exists (i.e., if the program has been run before), load the data from it
@@ -78,7 +78,7 @@ def save_global_list_hamilton():
 Pinellas County Foreclosure
 '''
 # Specify the filename to be used for the pickled data
-pinellas_filename = './Utility/global_list_pinellas.pkl'
+pinellas_filename = './Data/Visited_calendar_leads/global_list_pinellas.pkl'
 
 # Initialize an empty list
 pinellas_county_visited_leads = []
@@ -97,7 +97,7 @@ def save_global_list_pinellas():
 Duval County Foreclosure
 '''
 # Specify the filename to be used for the pickled data
-duval_filename = './Utility/global_list_duval.pkl'
+duval_filename = './Data/Visited_calendar_leads/global_list_duval.pkl'
 
 # Initialize an empty list
 duval_county_visited_leads = []

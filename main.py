@@ -21,6 +21,7 @@ from Scrapers.lee_county_foreclosure import LeeCountyForeclosure
 from Scrapers.franklin_county_foreclosure import FranklinCountyForeclosure
 from Scrapers.hamilton_county_foreclosure import HamiltonCountyForeclosure
 from Scrapers.pinellas_county_foreclosure import PinellasCountyForeclosure
+from Scrapers.butler_county_foreclosure import ButlerCountyForeclosure
 from Scrapers.duval_county_foreclosure import DuvalCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
@@ -103,6 +104,9 @@ if __name__ == "__main__":
     #     duval_county_forclosure = DuvalCountyForeclosure(date.strftime("%m/%d/%Y"))
     #     duval_county_forclosure.start()
 
+    butler_county_foreclosure = ButlerCountyForeclosure()
+    butler_county_foreclosure.start("08/20/2023")
+
     # # Hamilton County Foreclosure Scraper
     # hamilton_county_foreclosure = HamiltonCountyForeclosure()
     # hamilton_county_foreclosure.start()
@@ -119,14 +123,14 @@ if __name__ == "__main__":
 
     Read from JSON and append to database
     """
-    skiptrace = skiptrace_leads()
+    #skiptrace = skiptrace_leads()
     
-    json_to_database()
+    #json_to_database()
 
     """
     Twilio API to send out SMS/Email messages 
     """
-    send_email()
+    #send_email()
 
 
     # End timing program execution

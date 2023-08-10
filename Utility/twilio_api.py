@@ -61,8 +61,8 @@ def send_email():
         df2 = df2[cols]
 
     # Convert DataFrames to CSV and save
-    csv_filepath1 = "./Skiptraced_data/csv_exports/code_enforcement.csv"
-    csv_filepath2 = "./Skiptraced_data/csv_exports/lien_lis_penden.csv"
+    csv_filepath1 = "./Data/csv_exports/code_enforcement.csv"
+    csv_filepath2 = "./Data/csv_exports/lien_lis_penden.csv"
     csv_filename1 = "code_enforcement.csv"
     csv_filename2 = "lien_lis_penden.csv"
     df1.to_csv(csv_filepath1, index=False)
