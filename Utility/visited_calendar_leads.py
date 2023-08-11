@@ -129,3 +129,22 @@ if os.path.exists(butler_filename):
 def save_global_list_butler():
     with open(butler_filename, 'wb') as f:
         pickle.dump(butler_county_visited_leads, f)
+
+
+'''
+Fairfield County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+fairfield_filename = './Data/Visited_calendar_leads/global_list_fairfield.pkl'
+
+# Initialize an empty list
+fairfield_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(fairfield_filename):
+    with open(fairfield_filename, 'rb') as f:
+        fairfield_county_visited_leads = pickle.load(f)
+
+def save_global_list_fairfield():
+    with open(fairfield_filename, 'wb') as f:
+        pickle.dump(fairfield_county_visited_leads, f)

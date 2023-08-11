@@ -9,22 +9,22 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from Utility.visited_calendar_leads import save_global_list_pinellas, pinellas_county_visited_leads
+from Utility.visited_calendar_leads import save_global_list_fairfield, fairfield_county_visited_leads
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
 
-class PinellasCountyForeclosure:
+class FairfieldCountyForeclosure:
     def __init__(self):
         # Initialization
 
-        # Webdriver
+        # Chrome driver
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "pinellas_county_foreclosure.py"
-        self.county_website = "Pinellas County Foreclosure"
+        self.scraper_name = "fairfield_county_foreclosure.py"
+        self.county_website = "Fairfield County Foreclosure"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -41,7 +41,7 @@ class PinellasCountyForeclosure:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f'https://www.pinellas.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
+            self.url = f'https://fairfield.sheriffsaleauction.ohio.gov/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
              # Initialize driver
             self.driver.get(self.url)
 
@@ -110,7 +110,6 @@ class PinellasCountyForeclosure:
                     try:
                         if city_zip_data is not None:
                             city, zip_code = map(str.strip, city_zip_data.split(','))
-                            zip_code = zip_code.split('- ')[1]
                         else:
                             raise ValueError("City zip data is None")
                     except ValueError as e:
@@ -118,7 +117,7 @@ class PinellasCountyForeclosure:
                         city, zip_code = None, None
                     
                     # Check if it has been seen before
-                    if property_address is not None and property_address not in pinellas_county_visited_leads:
+                    if property_address is not None and property_address not in fairfield_county_visited_leads:
                         # Create new lead
                         lead = Lead()
 
@@ -146,8 +145,8 @@ class PinellasCountyForeclosure:
                         session.add(lead)
 
                         # Add to visited list
-                        pinellas_county_visited_leads.append(property_address)
-                        save_global_list_pinellas()
+                        fairfield_county_visited_leads.append(property_address)
+                        save_global_list_fairfield()
 
             except TimeoutException:
                 print("AUCTION_ITEM element not found. Moving on.")
@@ -161,5 +160,3 @@ class PinellasCountyForeclosure:
         self.driver.quit()
         
         status_print(f"DB committed -- {self.scraper_name}")
-
-

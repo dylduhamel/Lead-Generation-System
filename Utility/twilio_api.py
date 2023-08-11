@@ -7,7 +7,7 @@ from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileT
 from Utility.lead_database import Session, Lead
 from Utility.util import curr_date
 
-def send_email():
+def email_csv():
     # Load .env file
     load_dotenv()
 

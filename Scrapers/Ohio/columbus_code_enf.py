@@ -1,7 +1,3 @@
-'''
-Complete
-'''
-
 import os
 import time
 import math
@@ -23,13 +19,13 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 
-class LeeCountyCodeEnf():
+class ColumbusCodeEnf():
     def __init__(self):
         # Initialization
-    
-        self.scraper_name = "lee_county_code_enf.py"
-        self.county_website = "Lee County Code Enforcement"
-        self.url = "https://accelaaca.leegov.com/aca/Cap/CapHome.aspx?module=CodeEnforcement&TabName=CodeEnforcement"
+        
+        self.scraper_name = "columbus_code_enf.py"
+        self.county_website = "Columbus Code Enforcement"
+        self.url = "https://portal.columbus.gov/permits/"
         
         # Set options for headless mode
         #options = Options()
@@ -47,13 +43,8 @@ class LeeCountyCodeEnf():
         #self.file_path = "/Users/dylanduhamel/Downloads"
         self.read_file = ""
 
-        # List of keywords to search for
-        self.keywords = ["Nuisance Accumulation", "junk", "trash", "lot mow", "plywood", "Inoperable", 
-                    "tents", "tires", "Abandoned", "boat", "Overgrown grass", "debris", 
-                    "vacant", "damaged roof", "damage", "parts"]
-
         # List of keywords to exclude
-        self.exclusions = ["Permit", "construction", "GVWR", "Builder", "vacant"]
+        self.exclusions = ["Permit", "construction", "GVWR", "Builder", "vacant", "llc", "vehicle", "car", "cars", "pool", "smoke detector", "food truck", ]
 
         status_print(f"Initialized variables -- {self.scraper_name}")
     
@@ -78,44 +69,37 @@ class LeeCountyCodeEnf():
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
             )
         except TimeoutException:
-            print("Timeout, element not found")
+            print("Timeout, body not found")
 
-        # Record dropdown selection
+        time.sleep(5)
+        # Violations records button
         try:
-            select = Select(self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_ddlGSPermitType"))
+            #WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_TabDataList_TabsDataList_ctl08_LinksDataList_ctl00_LinkItemUrl")))
+            self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_TabDataList_TabsDataList_ctl08_LinksDataList_ctl00_LinkItemUrl").click()
 
-            # Select the option by its value
-            select.select_by_value("CodeEnforcement/Complaint/NA/NA")
         except NoSuchElementException:
             print("Can not find dropdown.")
 
-        time.sleep(1)
+        try:
+            # Wait for a specific element to be present
+            element = WebDriverWait(self.driver, 15).until(
+                EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_lblPermitListTitle"))
+            )
+        except TimeoutException:
+            print("Timeout, record list not found")
 
         # Time input start
         try:
             # Change the search date range
-            curr_date_input = self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_txtGSStartDate")
+            start_date_input = self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_txtGSStartDate")
             # Use JavaScript to set the value of the element
             self.driver.execute_script("""
             arguments[0].value = arguments[1];
             arguments[0].dispatchEvent(new Event('change'));
-            """, curr_date_input, formatted_date)
+            """, start_date_input, formatted_date)
         except NoSuchElementException:
             print("Can not input box.")
 
-        # Time input end
-        try:
-            # Change the search date range
-            curr_date_input = self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_generalSearchForm_txtGSEndDate")
-            # Use JavaScript to set the value of the element
-            self.driver.execute_script("""
-            arguments[0].value = arguments[1];
-            arguments[0].dispatchEvent(new Event('change'));
-            """, curr_date_input, formatted_date)
-        except NoSuchElementException:
-            print("Can not input box.")
-
-        time.sleep(1)
 
         # Search 
         try:
@@ -163,25 +147,21 @@ class LeeCountyCodeEnf():
         # Handle empty or missing values
         df = df.dropna(subset=['Address', 'Description'])
 
-        # Create a new DataFrame to hold rows where a keyword is found
+        # Create a new DataFrame to drop exclusions
         selected_rows = pd.DataFrame(columns=df.columns)
-
-        for keyword in self.keywords:
-            keyword_rows = df[df['Description'].str.contains(keyword.lower())]
-            selected_rows = pd.concat([selected_rows, keyword_rows])
             
         # Remove rows where an exclusion keyword is found
         for exclusion in self.exclusions:
             selected_rows = selected_rows[~selected_rows['Description'].str.contains(exclusion.lower())]
 
         # Remove rows where status is closed
-        selected_rows = selected_rows[~selected_rows['Status'].str.contains("Closed-Non Enforcement")]
+        selected_rows = selected_rows[~selected_rows['Status'].str.contains("Closed")]
 
         # Split the 'Address' field into separate 'Address', 'City_State_Zip' fields
         selected_rows[['Address', 'City_State_Zip']] = selected_rows['Address'].str.split(',', n=1, expand=True)
 
         # Split the 'City_State_Zip' field into separate 'City', 'State_Zip' fields
-        selected_rows[['City', 'State_Zip']] = selected_rows['City_State_Zip'].str.split('FL', n=1, expand=True)
+        selected_rows[['City', 'State_Zip']] = selected_rows['City_State_Zip'].str.split('OH', n=1, expand=True)
 
         # Split the 'State_Zip' field into separate 'State', 'Zip' fields
         selected_rows[['State', 'Zip']] = selected_rows['State_Zip'].str.split(' ', n=1, expand=True)
@@ -190,7 +170,7 @@ class LeeCountyCodeEnf():
         selected_rows = selected_rows.drop(columns=['Record Number', 'Status', 'Related Records', 'City_State_Zip', 'State_Zip'])
 
         # Populate 'State' column with 'FL'
-        selected_rows['State'] = 'FL'
+        selected_rows['State'] = 'OH'
 
         # Reorder the columns
         selected_rows = selected_rows[['Address', 'City', 'State', 'Zip', 'Description']]
@@ -230,17 +210,17 @@ class LeeCountyCodeEnf():
             # Website tracking
             lead.county_website = self.county_website
 
-            # print(lead)
-            # print("\n")
+            print(lead)
+            print("\n")
 
-            session.add(lead)
+            #session.add(lead)
 
         # Add new session to DB
-        session.commit()
+        #session.commit()
         # Relinquish resources
-        session.close()
+        #session.close()
 
         # Delete the file so it can be run again
-        os.remove(os.path.join(self.file_path, self.file_name))
+        #os.remove(os.path.join(self.file_path, self.file_name))
 
         status_print(f"DB committed and {self.file_name} removed -- {self.scraper_name}")

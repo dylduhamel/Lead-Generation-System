@@ -26,8 +26,7 @@ class LeeCountyForeclosure:
         self.scraper_name = "lee_county_foreclosure.py"
         self.county_website = "Lee County Foreclosure"
 
-        # Initialize driver
-        self.driver.get(self.url)
+        status_print(f"Initialized variables -- {self.scraper_name}")
 
     def start(self, end_date):
         # Get today's date and add one day to get tomorrow's date
