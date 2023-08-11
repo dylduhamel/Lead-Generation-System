@@ -48,6 +48,7 @@ class LeeCountyCodeEnf():
 
         self.file_name = "RecordList" + formatted_date + ".csv"
         self.file_path = "/home/dylan/Downloads"
+        #self.file_path = "/Users/dylanduhamel/Downloads"
         self.read_file = ""
 
         # List of keywords to search for

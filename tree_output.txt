@@ -1,0 +1,94 @@
+.
+├── BatchData_services
+│   ├── __pycache__
+│   │   └── skiptrace.cpython-310.pyc
+│   └── skiptrace.py
+├── chromedriver
+├── Data
+│   ├── csv_exports
+│   │   ├── code_enforcement.csv
+│   │   └── lien_lis_penden.csv
+│   ├── Skiptrace
+│   │   ├── skiptrace_07-31-2023.json
+│   │   ├── skiptrace_08-02-2023.json
+│   │   ├── skiptrace_08-02-2023[old].json
+│   │   ├── skiptrace_08-03-2023.json
+│   │   ├── skiptrace_08-05-2023.json
+│   │   ├── skiptrace_08-06-2023.json
+│   │   ├── skiptrace_08-07-2023.json
+│   │   ├── skiptrace_08-08-2023.json
+│   │   ├── skiptrace_08-09-2023.json
+│   │   └── skiptrace_08-10-2023.json
+│   └── Visited_calendar_leads
+│       ├── global_list_butler.pkl
+│       ├── global_list_clermont.pkl
+│       ├── global_list_duval.pkl
+│       ├── global_list_franklin.pkl
+│       ├── global_list_hamilton.pkl
+│       ├── global_list_lee.pkl
+│       └── global_list_pinellas.pkl
+├── main.py
+├── output_redirect.log
+├── processing.log
+├── README.md
+├── requirements.txt
+├── Scrapers
+│   ├── Florida
+│   │   ├── duval_county_foreclosure.py
+│   │   ├── fort_myers_code_enf.py
+│   │   ├── lee_county_code_enf.py
+│   │   ├── lee_county_foreclosure.py
+│   │   ├── lee_county.py
+│   │   ├── orange_county_code_enf.py
+│   │   ├── pinellas_county_foreclosure.py
+│   │   └── __pycache__
+│   │       ├── duval_county_foreclosure.cpython-310.pyc
+│   │       ├── fort_myers_code_enf.cpython-310.pyc
+│   │       ├── lee_county_code_enf.cpython-310.pyc
+│   │       ├── lee_county.cpython-310.pyc
+│   │       ├── lee_county_foreclosure.cpython-310.pyc
+│   │       ├── orange_county_code_enf.cpython-310.pyc
+│   │       └── pinellas_county_foreclosure.cpython-310.pyc
+│   ├── Ohio
+│   │   ├── butler_county_foreclosure.py
+│   │   ├── cinci_code_enf_API.py
+│   │   ├── cinci_code_enf.py
+│   │   ├── clermont_county_foreclosure.py
+│   │   ├── franklin_county_foreclosure.py
+│   │   ├── hamilton_county_foreclosure.py
+│   │   └── __pycache__
+│   │       ├── butler_county_foreclosure.cpython-310.pyc
+│   │       ├── cinci_code_enf_API.cpython-310.pyc
+│   │       ├── cinci_code_enf.cpython-310.pyc
+│   │       ├── clermont_county_foreclosure.cpython-310.pyc
+│   │       ├── franklin_county_foreclosure.cpython-310.pyc
+│   │       └── hamilton_county_foreclosure.cpython-310.pyc
+│   └── __pycache__
+│       ├── butler_county_foreclosure.cpython-310.pyc
+│       ├── cinci_code_enf_API.cpython-310.pyc
+│       ├── cinci_code_enf.cpython-310.pyc
+│       ├── clermont_county_foreclosure.cpython-310.pyc
+│       ├── duval_county_foreclosure.cpython-310.pyc
+│       ├── fort_myers_code_enf.cpython-310.pyc
+│       ├── franklin_county_foreclosure.cpython-310.pyc
+│       ├── hamilton_county_foreclosure.cpython-310.pyc
+│       ├── lee_county_code_enf.cpython-310.pyc
+│       ├── lee_county.cpython-310.pyc
+│       ├── lee_county_foreclosure.cpython-310.pyc
+│       ├── orange_county_code_enf.cpython-310.pyc
+│       └── pinellas_county_foreclosure.cpython-310.pyc
+├── tree_output.txt
+└── Utility
+    ├── lead_database_operations.py
+    ├── lead_database.py
+    ├── __pycache__
+    │   ├── lead_database.cpython-310.pyc
+    │   ├── lead_database_operations.cpython-310.pyc
+    │   ├── twilio_api.cpython-310.pyc
+    │   ├── util.cpython-310.pyc
+    │   └── visited_calendar_leads.cpython-310.pyc
+    ├── twilio_api.py
+    ├── util.py
+    └── visited_calendar_leads.py
+
+14 directories, 77 files

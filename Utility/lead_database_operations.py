@@ -34,7 +34,7 @@ def json_to_database():
     today = today.replace("/", "-")
 
     # Load the results from a json file instead of making an API call
-    with open(f'./Skiptraced_data/skiptrace_{today}.json', 'r') as file:
+    with open(f'./Data/Skiptrace/skiptrace_{today}.json', 'r') as file:
         results = json.load(file)
 
     for lead, result in zip(leads, results):
@@ -71,14 +71,11 @@ def remove_duplicates():
     # Initialize the session
     session = Session()
 
-    # Query for values added today
-    today = curr_date() 
-
     # Query to find duplicate rows
     query = f"""
     DELETE t1 FROM leads t1
     INNER JOIN leads t2 
-    WHERE t1.id > t2.id AND t1.property_address = t2.property_address AND t1.date_added = '{today}'
+    WHERE t1.id > t2.id AND t1.property_address = t2.property_address
     """
 
     # Execute the DELETE query

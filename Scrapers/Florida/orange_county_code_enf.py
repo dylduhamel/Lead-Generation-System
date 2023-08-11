@@ -48,6 +48,7 @@ class OrangeCountyCodeEnf():
 
         self.file_name = "OpenActiveCodeEnforcementCases_" + formatted_date + ".xlsx"
         self.file_path = "/home/dylan/Downloads"
+        #self.file_path = "/Users/dylanduhamel/Downloads"
         self.read_file = ""
 
         # Keyword to be excluded 

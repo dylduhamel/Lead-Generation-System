@@ -10,14 +10,19 @@ from Utility.lead_database_operations import json_to_database, remove_duplicates
 from Utility.util import status_print
 from Utility.twilio_api import send_email
 from Utility.visited_calendar_leads import lee_county_visited_leads, clermont_county_visited_leads
-from Scrapers.lee_county import LeeCountyScraper
-from Scrapers.lee_county_code_enf import LeeCountyCodeEnf
-from Scrapers.cinci_code_enf_API import CinciCodeEnfAPI
-from Scrapers.cinci_code_enf import CinciCodeEnf
-from Scrapers.orange_county_code_enf import OrangeCountyCodeEnf
-from Scrapers.fort_myers_code_enf import FortMeyersEnf
-from Scrapers.clermont_county_foreclosure import ClermontForeclosure
-from Scrapers.lee_county_foreclosure import LeeCountyForeclosure
+from Scrapers.Florida.lee_county import LeeCountyScraper
+from Scrapers.Florida.lee_county_code_enf import LeeCountyCodeEnf
+from Scrapers.Ohio.cinci_code_enf_API import CinciCodeEnfAPI
+from Scrapers.Ohio.cinci_code_enf import CinciCodeEnf
+from Scrapers.Florida.orange_county_code_enf import OrangeCountyCodeEnf
+from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
+from Scrapers.Ohio.clermont_county_foreclosure import ClermontCountyForeclosure
+from Scrapers.Florida.lee_county_foreclosure import LeeCountyForeclosure
+from Scrapers.Ohio.franklin_county_foreclosure import FranklinCountyForeclosure
+from Scrapers.Ohio.hamilton_county_foreclosure import HamiltonCountyForeclosure
+from Scrapers.Florida.pinellas_county_foreclosure import PinellasCountyForeclosure
+from Scrapers.Ohio.butler_county_foreclosure import ButlerCountyForeclosure
+from Scrapers.Florida.duval_county_foreclosure import DuvalCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -33,41 +38,52 @@ if __name__ == "__main__":
     Each script will add all available lead info to database
     """
 
+    # Cincinnati code enforcement
     cinci_code_enf = CinciCodeEnf()
     cinci_code_enf.download_dataset()
     cinci_code_enf.start(1)
 
+    # Cincinnati code enforcement API
     cinci_code_enf_API = CinciCodeEnfAPI()
     cinci_code_enf_API.start(1)
 
+    # Lee county code enforcement 
     lee_county_code_enf = LeeCountyCodeEnf()
     lee_county_code_enf.download_dataset(1)
     lee_county_code_enf.start()
 
+    # Orange county code enforcement
     orange_county_code_enf = OrangeCountyCodeEnf()
     orange_county_code_enf.download_dataset()
     orange_county_code_enf.start(1)
 
-    # Get today's date and add one day to get tomorrow's date
-    start_date = datetime.datetime.now() + datetime.timedelta(days=1)
-    end_date = parse('09/01/2023')
-    # Generate a list of all dates from start_date to end_date
-    dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+    # Claremont county foreclosure
+    clermont_county_forclosure = ClermontCountyForeclosure()
+    clermont_county_forclosure.start(end_date="09/01/2023")
 
-    # Iterate over the dates
-    for date in dates:
-        clermont_county_forclosure = ClermontForeclosure(date.strftime("%m/%d/%Y"))
-        clermont_county_forclosure.start()
+    # Lee county foreclosure
+    lee_county_forclosure = LeeCountyForeclosure()
+    lee_county_forclosure.start(end_date="09/15/2023")
 
-    # End date
-    end_date = parse('09/15/2023')
-    # Generate a list of all dates from start_date to end_date
-    dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
+    # Franklin county foreclosure
+    franklin_county_forclosure = FranklinCountyForeclosure()
+    franklin_county_forclosure.start(end_date="09/10/2023")
 
-    # Iterate over the dates
-    for date in dates:
-        lee_county_forclosure = LeeCountyForeclosure(date.strftime("%m/%d/%Y"))
-        lee_county_forclosure.start()
+    # Pinellas county foreclosure
+    pinellas_county_forclosure = PinellasCountyForeclosure()
+    pinellas_county_forclosure.start(end_date="10/07/2023")
+
+    # Duval county foreclosure
+    duval_county_forclosure = DuvalCountyForeclosure()
+    duval_county_forclosure.start(end_date="09/01/2023")
+
+    # Butler county foreclosure
+    butler_county_foreclosure = ButlerCountyForeclosure()
+    butler_county_foreclosure.start(end_date="09/10/2023")
+
+    # Hamilton county foreclosure 
+    hamilton_county_foreclosure = HamiltonCountyForeclosure()
+    hamilton_county_foreclosure.start()
 
     '''
     Remove any duplicate address from today
