@@ -25,6 +25,8 @@ from Scrapers.Ohio.butler_county_foreclosure import ButlerCountyForeclosure
 from Scrapers.Florida.duval_county_foreclosure import DuvalCountyForeclosure
 from Scrapers.Ohio.fairfield_county_foreclosure import FairfieldCountyForeclosure
 from Scrapers.Ohio.columbus_code_enf import ColumbusCodeEnf
+from Scrapers.Florida.charlotte_county_foreclosure import CharlotteCountyForeclosure
+from Scrapers.Florida.marion_county_foreclosure import MarionCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -49,20 +51,20 @@ if __name__ == "__main__":
     # cinci_code_enf_API = CinciCodeEnfAPI()
     # cinci_code_enf_API.start(1)
 
-    # # Lee county code enforcement 
-    # lee_county_code_enf = LeeCountyCodeEnf()
-    # lee_county_code_enf.download_dataset(1)
-    # lee_county_code_enf.start()
+    # Lee county code enforcement 
+    lee_county_code_enf = LeeCountyCodeEnf()
+    lee_county_code_enf.download_dataset(1)
+    lee_county_code_enf.start()
 
-    # # Orange county code enforcement
-    # orange_county_code_enf = OrangeCountyCodeEnf()
-    # orange_county_code_enf.download_dataset()
-    # orange_county_code_enf.start(1)
+    # # Orange county code enforcement [ Turned off for time being ]
+    # # orange_county_code_enf = OrangeCountyCodeEnf()
+    # # orange_county_code_enf.download_dataset()
+    # # orange_county_code_enf.start(1)
 
-    # Columbus code enforcement
-    columbus_code_enf = ColumbusCodeEnf()   
-    columbus_code_enf.download_dataset(1)
-    columbus_code_enf.start()
+    # # Columbus code enforcement
+    # columbus_code_enf = ColumbusCodeEnf()   
+    # columbus_code_enf.download_dataset(1)
+    # columbus_code_enf.start()
 
     # # Claremont county foreclosure
     # clermont_county_forclosure = ClermontCountyForeclosure()
@@ -80,7 +82,7 @@ if __name__ == "__main__":
     # pinellas_county_forclosure = PinellasCountyForeclosure()
     # pinellas_county_forclosure.start(end_date="10/07/2023")
 
-    # Duval county foreclosure
+    # # Duval county foreclosure
     # duval_county_forclosure = DuvalCountyForeclosure()
     # duval_county_forclosure.start(end_date="09/01/2023")
 
@@ -95,6 +97,14 @@ if __name__ == "__main__":
     # # Fairfield county foreclosure
     # fairfield_county_foreclosure = FairfieldCountyForeclosure()
     # fairfield_county_foreclosure.start("09/10/2023")
+
+    # # Charlotte county foreclosure
+    # charlotte_county_foreclosure = CharlotteCountyForeclosure()
+    # charlotte_county_foreclosure.start(end_date="10/10/2023")
+
+    # # Marion county foreclosure
+    # marion_county_foreclosure = MarionCountyForeclosure()
+    # marion_county_foreclosure.start(end_date="11/21/2023")
 
     '''
     Remove any duplicate address from today

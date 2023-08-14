@@ -148,3 +148,41 @@ if os.path.exists(fairfield_filename):
 def save_global_list_fairfield():
     with open(fairfield_filename, 'wb') as f:
         pickle.dump(fairfield_county_visited_leads, f)
+
+
+'''
+Charlotte County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+charlotte_filename = './Data/Visited_calendar_leads/global_list_charlotte.pkl'
+
+# Initialize an empty list
+charlotte_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(charlotte_filename):
+    with open(charlotte_filename, 'rb') as f:
+        charlotte_county_visited_leads = pickle.load(f)
+
+def save_global_list_charlotte():
+    with open(charlotte_filename, 'wb') as f:
+        pickle.dump(charlotte_county_visited_leads, f)
+
+
+'''
+Marion County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+marion_filename = './Data/Visited_calendar_leads/global_list_marion.pkl'
+
+# Initialize an empty list
+marion_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(marion_filename):
+    with open(marion_filename, 'rb') as f:
+        marion_county_visited_leads = pickle.load(f)
+
+def save_global_list_marion():
+    with open(marion_filename, 'wb') as f:
+        pickle.dump(marion_county_visited_leads, f)
