@@ -27,6 +27,8 @@ from Scrapers.Ohio.fairfield_county_foreclosure import FairfieldCountyForeclosur
 from Scrapers.Ohio.columbus_code_enf import ColumbusCodeEnf
 from Scrapers.Florida.charlotte_county_foreclosure import CharlotteCountyForeclosure
 from Scrapers.Florida.marion_county_foreclosure import MarionCountyForeclosure
+from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
+from Scrapers.Florida.alachua_county_foreclosure import AlachuaCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -51,20 +53,25 @@ if __name__ == "__main__":
     # cinci_code_enf_API = CinciCodeEnfAPI()
     # cinci_code_enf_API.start(1)
 
-    # Lee county code enforcement 
-    lee_county_code_enf = LeeCountyCodeEnf()
-    lee_county_code_enf.download_dataset(1)
-    lee_county_code_enf.start()
+    # # Lee county code enforcement 
+    # lee_county_code_enf = LeeCountyCodeEnf()
+    # lee_county_code_enf.download_dataset(1)
+    # lee_county_code_enf.start()
 
-    # # Orange county code enforcement [ Turned off for time being ]
-    # # orange_county_code_enf = OrangeCountyCodeEnf()
-    # # orange_county_code_enf.download_dataset()
-    # # orange_county_code_enf.start(1)
+    # Orange county code enforcement [ Turned off for time being ]
+    # orange_county_code_enf = OrangeCountyCodeEnf()
+    # orange_county_code_enf.download_dataset()
+    # orange_county_code_enf.start(1)
 
     # # Columbus code enforcement
     # columbus_code_enf = ColumbusCodeEnf()   
     # columbus_code_enf.download_dataset(1)
     # columbus_code_enf.start()
+
+    # # Fort Myers code enforcement
+    # fort_myers_code_enf = FortMeyersEnf()
+    # fort_myers_code_enf.download_dataset(days=1)
+    # fort_myers_code_enf.start()
 
     # # Claremont county foreclosure
     # clermont_county_forclosure = ClermontCountyForeclosure()
@@ -106,6 +113,10 @@ if __name__ == "__main__":
     # marion_county_foreclosure = MarionCountyForeclosure()
     # marion_county_foreclosure.start(end_date="11/21/2023")
 
+    # # Alachua county foreclosure
+    # alachua_county_foreclosure = AlachuaCountyForeclosure()
+    # alachua_county_foreclosure.start(end_date="09/30/2023")
+
     '''
     Remove any duplicate address from today
     CHECK WHAT DUPES WE HAVE FROM ORANGE BEFORE
@@ -120,12 +131,12 @@ if __name__ == "__main__":
     """
     #skiptrace = skiptrace_leads()
     
-    #json_to_database()
+    json_to_database()
 
     """
     Twilio API to send out SMS/Email messages 
     """
-    #email_csv()
+    email_csv()
 
 
     # End timing program execution

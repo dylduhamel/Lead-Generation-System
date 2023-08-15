@@ -44,8 +44,8 @@ class LeeCountyCodeEnf():
 
         self.file_name = "RecordList" + formatted_date + ".csv"
         self.file_path = "/home/dylan/Downloads"
-        #self.file_path = "/Users/dylanduhamel/Downloads"
-        self.read_file = ""
+        # Path to downloaded CSV
+        self.read_file = self.file_path + "/" + self.file_name
 
         # List of keywords to search for
         self.keywords = ["Nuisance Accumulation", "junk", "trash", "lot mow", "plywood", "Inoperable", 
@@ -145,10 +145,6 @@ class LeeCountyCodeEnf():
 
         # Create a new database Session
         session = Session()
-        
-        # Path to downloaded CSV
-        # Format for local data set 
-        self.read_file = self.file_path + "/" + self.file_name
 
         try:
             # Load the csv file into a DataFrame

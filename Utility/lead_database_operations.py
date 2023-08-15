@@ -46,12 +46,14 @@ def json_to_database():
         if phone_numbers:
             phone_number_1 = phone_numbers[0].get("number")
             phone_number_1_type = phone_numbers[0].get("type")
-
+            phone_number_2 = None
+            phone_number_2_type = None
             if len(phone_numbers) > 1:
                 phone_number_2 = phone_numbers[1].get("number")
                 phone_number_2_type = phone_numbers[1].get("type")
         else:
             phone_number_1 = phone_number_1_type = phone_number_2 = phone_number_2_type = None
+
 
         email = result.get("emails", [{}])[0].get("email") if result.get("emails") else None
 

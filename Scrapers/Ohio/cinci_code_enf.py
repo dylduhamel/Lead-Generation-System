@@ -193,7 +193,7 @@ class CinciCodeEnf():
                 lead.date_added = time_stamp
 
                 # Document type
-                lead.document_type = record["WORK_TYPE"]
+                lead.document_type = "Code Enforcement"
 
                 # Document subtype & description
                 lead.document_subtype = record["COMP_TYPE_DESC"]

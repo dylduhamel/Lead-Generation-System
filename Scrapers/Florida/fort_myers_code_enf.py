@@ -44,19 +44,17 @@ class FortMeyersEnf():
         self.download_name = "fort_myers_code_enf"
         self.file_name = self.download_name + ".csv"
         self.file_path = "/home/dylan/Downloads"
-        self.read_file = ""
+        self.read_file = self.file_path + "/" + self.file_name
         
         # List of keywords to exclude
         # This exclusion is added because BTR means Business Tax Receipt
         self.exclusions = ["btr", "airbnb", "commercial"]
 
         status_print(f"Initialized variables -- {self.scraper_name}")
+
     def download_dataset(self,days):
-        
         # Calculate dates needed for download entry 
         today = datetime.now()
-        self.today = today.strftime("%m/%d/%Y")
-
         yesterday = today - timedelta(days=days)
         self.yesterday = yesterday.strftime("%m/%d/%Y")
 
@@ -68,23 +66,29 @@ class FortMeyersEnf():
         try:
             # Wait for a specific element to be present
             element = WebDriverWait(self.driver, 15).until(
-                EC.presence_of_element_located((By.TAG_NAME, "body"))
+                EC.presence_of_element_located((By.ID, "SearchModule"))
             )
-
         except TimeoutException:
             print("Timeout, element not found")
 
-        # Dataset options page
-        try: 
-            self.dropdown_button = WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.ID,"SearchModule")))
-            self.select_dropdown = Select(self.dropdown_button)
-            self.select_dropdown.select_by_visible_text("Code Case")
+        time.sleep(5)
+
+        # Record dropdown selection
+        try:
+            # Locate the dropdown element
+            dropdown_element = self.driver.find_element(By.ID, "SearchModule")
+
+            # Create a Select object based on the dropdown element
+            select = Select(dropdown_element)
+
+            # Select the option by visible text
+            select.select_by_visible_text("Code Case")
         except NoSuchElementException:
-            print("Can not find Code Case.")
+            print("Can not find dropdown.")
 
         time.sleep(3)
 
-        # Set dates for search
+        # Advanced settings
         try:
             WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "button-Advanced")))
             self.driver.find_element(By.ID, "button-Advanced").click()
@@ -93,18 +97,32 @@ class FortMeyersEnf():
 
         # Enter in dates for search 
         try:
-            self.driver.execute_script("document.getElementById('OpenedDateFrom').value= arguments[0];", self.yesterday)
+            # Locate the data input start box
+            date_start_element = self.driver.find_element(By.ID, "OpenedDateFrom")
+            
+            # Clear box if it has any input
+            date_start_element.clear()
+
+            # Input the value for yesterday
+            date_start_element.send_keys(self.yesterday)
         except NoSuchElementException:
             print("Could not find and enter yesterdays date")
 
         try:
-            self.driver.execute_script("document.getElementById('OpenedDateTo').value= arguments[0];", self.today)
+            # Locate the data input end box
+            date_end_element = self.driver.find_element(By.ID, "OpenedDateTo")
+            
+            # Clear box if it has any input
+            date_end_element.clear()
+
+            # Input the value for yesterday
+            date_end_element.send_keys(self.yesterday)
         except NoSuchElementException:
-            print("Could not find and enter yesterdays date")
+            print("Could not find and enter todays date")
         
         # Run query 
         try: 
-            WebDriverWait(self.driver,5).until(EC.presence_of_element_located((By.ID, "button-Search")))
+            WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.ID, "button-Search")))
             self.driver.find_element(By.ID, "button-Search").click()
         except NoSuchElementException:
             print("Can not find search button")
@@ -114,75 +132,78 @@ class FortMeyersEnf():
 
         # Download file 
         try:
-            WebDriverWait(self.driver, 2).until(EC.presence_of_element_located((By.ID, "button-Export")))
-            self.driver.find_element(By.ID, "button-Export")
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "button-Export")))
+            self.driver.find_element(By.ID, "button-Export").click()
         except NoSuchElementException:
             print("Can not find export button")
 
+        time.sleep(5)
+        
         # Name File 
         try:
-            self.driver.execute_script("document.getElementById('filename').value= arguments[0];", self.download_name )
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "filename")))
+            # Locate the data input end box
+            filename_element = self.driver.find_element(By.ID, "filename")
+            
+            # Clear box if it has any input
+            filename_element.clear()
+
+            # Input the value for yesterday
+            filename_element.send_keys(self.download_name)
         except NoSuchElementException:
             print ("Could not enter file name")
 
+        time.sleep(1)
+
         # Download file 
         try: 
-            WebDriverWait(self.driver, 2).until(EC.presence_of_element_located((By.ID, "Okclick")))
-            self.driver.find_element(By.ID, "Okclick")
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "Okclick")))
+            self.driver.find_element(By.ID, "Okclick").click()
         except NoSuchElementException:
             print ("Can not find ok button")
 
-        time.sleep(10)
 
+        # Wait for the file to be downloaded 
+        while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
+            time.sleep(1)
+
+        # Relinquish resources
         self.driver.quit()
 
         status_print(f"Scraping complete. Driver relinquished -- {self.scraper_name}")
 
-    def start(self,days):
+    def start(self):
         status_print(f"Beginning data format and transfer to DB -- {self.scraper_name}")
 
         # Create a new database Session
         session = Session()
 
-        # Compute yesterdays date for getting recent entries
-        today = datetime.now()
-
-        # Calculate yesterday's date
-        self.yesterday = today - timedelta(days=days)
-        
-        self.read_file = self.file_name + self.file_path
-
         try:
             #load csv into a data frame 
             df = pd.read_csv(self.read_file)
         except Exception as e: 
-            logging.error(f"Failed to load CSV file: {e}")
-            exit() 
-        
-        try:
-            #select only the desired columns
-            #this is set up for having the data set from the previous day 
-            #if longer is desired want to add "Opened Date", "Closed Date" to determined if case is still open 
-            df = df[[ "Address", "Description", "Status", "Type" ]]
-        except KeyError:
-            print(f"No new records on {self.yesterday} for Cinci code enforcments.\n")
+            print(f"Failed to load CSV file: {e}")
+            exit()
 
-        #Convert the Address and Description to lowercase for case-insensitive matching
-        df["Address"] = df["Address"].str.lower()
+        #Convert the description to lowercase for case-insensitive matching
         df["Description"] = df["Description"].str.lower()
-        df["Status"] = df["Status"].str.lower()
-        df["Type"] = df["Type"].str.lower()
  
-
         # Handle empty or missing values
         df = df.dropna(subset=['Address', 'Description'])
-
+    
+        # Create a new DataFrame to hold rows where a keyword is found
         selected_rows = pd.DataFrame(columns=df.columns)
         
+        # Copy all over from df
+        selected_rows = df.copy()
+
         # Check if the code inforcement is against a business 
         for exclusion in self.exclusions:
              selected_rows = selected_rows[~selected_rows['Description'].str.contains(exclusion.lower(), case =False, na = False)]
         
+        # Ensure the address is within FORT MYERS
+        selected_rows = selected_rows[selected_rows['Address'].str.contains('FORT MYERS')]
+
         # Parse and format the address
         selected_rows[['Address', 'Rest']] = selected_rows['Address'].str.split('FORT MYERS', n=1, expand=True)
 
@@ -206,8 +227,6 @@ class FortMeyersEnf():
 
         status_print(f"adding records to database -- {self.scraper_name}")
 
-        print(len(records))
-
         # Iterate through records
         for record in records:
             # Create new lead
@@ -218,7 +237,7 @@ class FortMeyersEnf():
             lead.date_added = time_stamp
 
             # Document type
-            lead.document_type = record["Type"]
+            lead.document_type = "Code Enforcement"
 
             # Document subtype & description
             lead.document_subtype = record["Description"]
@@ -233,17 +252,20 @@ class FortMeyersEnf():
             lead.property_city = clean_string(record["City"])
             lead.property_state = clean_string(record["State"])
 
-            print(lead)
-            print("\n")
+            # Website tracking
+            lead.county_website = self.county_website
 
-            #session.add(lead)
+            # print(lead)
+            # print("\n")
+
+            session.add(lead)
 
         # Add new session to DB
-        #session.commit()
+        session.commit()
         # Relinquish resources
-        #session.close()
+        session.close()
 
         # Delete the file so it can be run again
-        #os.remove(os.path.join(self.file_path, self.file_name))
+        os.remove(os.path.join(self.file_path, self.file_name))
 
         status_print(f"DB committed and {self.file_name} removed -- {self.scraper_name}")

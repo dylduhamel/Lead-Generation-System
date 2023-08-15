@@ -186,3 +186,22 @@ if os.path.exists(marion_filename):
 def save_global_list_marion():
     with open(marion_filename, 'wb') as f:
         pickle.dump(marion_county_visited_leads, f)
+
+
+'''
+Alachua County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+alachua_filename = './Data/Visited_calendar_leads/global_list_alachua.pkl'
+
+# Initialize an empty list
+alachua_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(alachua_filename):
+    with open(alachua_filename, 'rb') as f:
+        alachua_county_visited_leads = pickle.load(f)
+
+def save_global_list_alachua():
+    with open(alachua_filename, 'wb') as f:
+        pickle.dump(alachua_county_visited_leads, f)

@@ -1,144 +1,91 @@
 id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
-2102,08/14/2023,Enrique,Gianello,27478 LAS LOMAS DR,PUNTA GORDA,Ohio,33955,Foreclosure,,4416375789,Mobile,9413489541,Mobile,,Charlotte County Foreclosure
-2103,08/14/2023,Enrique,Gianello,27482 LAS LOMAS DR,PUNTA GORDA,Ohio,33955,Foreclosure,,4416375789,Mobile,9413489541,Mobile,,Charlotte County Foreclosure
-2104,08/14/2023,Kirk,Doskocil,27333 SUNSET DR,PUNTA GORDA,Ohio,33955,Foreclosure,,2164083298,Mobile,3304673665,Land Line,kdoskocil@gmail.com,Charlotte County Foreclosure
-2105,08/14/2023,Catherine,Mohr,15441 SUNKIST DRIVE,PUNTA GORDA,Ohio,33955,Foreclosure,,5173885535,Mobile,9412490133,Mobile,catmo@aol.com,Charlotte County Foreclosure
-2106,08/14/2023,Micheal,Mitchell,4827 DUNCAN ROAD,PUNTA GORDA,Ohio,33982,Foreclosure,,6234449552,Land Line,6235611067,Land Line,,Charlotte County Foreclosure
-2107,08/14/2023,Annette,Pack,9025 FRUITLAND AVE,ENGLEWOOD,Ohio,34224,Foreclosure,,9417160436,Mobile,9417590106,Mobile,,Charlotte County Foreclosure
-2109,08/14/2023,Shane,Lorenzen,39840 LITTLE FARM ROAD,PUNTA GORDA,Ohio,33982,Foreclosure,,7276124138,Mobile,7273938990,Land Line,,Charlotte County Foreclosure
-2110,08/14/2023,Elizabeth,Mcbride,5231 ALAMANDA DR,PUNTA GORDA,Ohio,33982,Foreclosure,,3525971293,Land Line,6307340477,Land Line,,Charlotte County Foreclosure
-2112,08/14/2023,Marjorie,Stephenson,6164 THORMAN ROAD,PORT CHARLOTTE,Ohio,33981,Foreclosure,,9416978704,Land Line,2603753819,Land Line,marjorie.stephenson@blackplanet.com,Charlotte County Foreclosure
-2113,08/14/2023,Alison,Maloney,509 BISCAYNE DR,PORT CHARLOTTE,Ohio,33953,Foreclosure,,7722001743,Mobile,7722368038,Land Line,amaloneytnt@gmail.com,Charlotte County Foreclosure
-2115,08/14/2023,Rachel,Atkey,49 LONG MEADOW PL,ROTONDA WEST,Ohio,33947,Foreclosure,,8596899180,Land Line,5135208181,Mobile,qinhao007@sina.com,Charlotte County Foreclosure
-2116,08/14/2023,Ariderson,Benitez,3452 LIBERTY ST,PORT CHARLOTTE,Ohio,33948,Foreclosure,,2018694749,Land Line,2012418630,Mobile,nauanyer06@hotmai.com,Charlotte County Foreclosure
-2118,08/14/2023,Bill,Rusyn,22569 MOROCCO AVE,PORT CHARLOTTE,Ohio,33952,Foreclosure,,8622514776,Land Line,9084752939,Land Line,rebekahrusyn@yahoo.com,Charlotte County Foreclosure
-2119,08/14/2023,Karen,Hawrylo,2290 AARON ST -UNIT 315,PORT CHARLOTTE,Ohio,33952,Foreclosure,,9412044490,Mobile,9416262220,Mobile,,Charlotte County Foreclosure
-2120,08/14/2023,Kathryne,Johnston,21105 HIGGS DR,PORT CHARLOTTE,Ohio,33952,Foreclosure,,8509397657,Land Line,9415754350,Land Line,,Charlotte County Foreclosure
-2121,08/14/2023,Nicholas,Gassera,20546 TAPPAN ZEE DR,PORT CHARLOTTE,Ohio,33952,Foreclosure,,9416626648,Mobile,3416254794,Mobile,nicholas.gassera@netzero.net,Charlotte County Foreclosure
-2122,08/14/2023,Antonio,Aguiar,309 BRASILIA ST,PUNTA GORDA,Ohio,33983,Foreclosure,,2819377417,Land Line,9414672468,Mobile,,Charlotte County Foreclosure
-2123,08/14/2023,Clifton,Fox,1925 BANANA ST,PORT CHARLOTTE,Ohio,33980,Foreclosure,,2398411768,Mobile,3309271096,Land Line,RANDYFOX99@YAHOO.COM,Charlotte County Foreclosure
-2124,08/14/2023,Micheal,Mitchell,6646 VILLA VIEW DRIVE,PUNTA GORDA,Ohio,33982,Foreclosure,,6234449552,Land Line,6235611067,Land Line,,Charlotte County Foreclosure
-2126,08/14/2023,Sonia,Lozada,5246 GROVEWOOD CIR,PUNTA GORDA,Ohio,33982,Foreclosure,,7863067404,Mobile,3054470565,Mobile,mmeayls@worldnet.att.net,Charlotte County Foreclosure
-2130,08/14/2023,Robert,Soto,4515 S FAIRWAY DR,PUNTA GORDA,Ohio,33982,Foreclosure,,5618014808,Mobile,6158484808,Mobile,bob.soto@hotmail.com,Charlotte County Foreclosure
-2134,08/14/2023,Aidan,Codd,117 MARK TWAIN LANE,ROTONDA WEST,Ohio,33947,Foreclosure,,9412148018,Land Line,9416970408,Land Line,,Charlotte County Foreclosure
-2137,08/14/2023,Yaroslav,Voytukhov,7431 SAN CASA DRIVE,ENGLEWOOD,Ohio,34224,Foreclosure,,9412043825,Mobile,9414237913,Land Line,,Charlotte County Foreclosure
-2138,08/14/2023,Stephen,Helgemo,312 MONACO DR,PUNTA GORDA,Ohio,33950,Foreclosure,,2394810894,Land Line,9416394671,Land Line,shelgemo@aol.com,Charlotte County Foreclosure
-2140,08/14/2023,Gilles,Baillargeon,25030 AIRPORT ROAD,PUNTA GORDA,Ohio,33950,Foreclosure,,2398784982,Mobile,7864316105,Mobile,,Charlotte County Foreclosure
-2141,08/14/2023,Serge,Foulon,258 BAHIA BLANCA DR,PUNTA GORDA,Ohio,33983,Foreclosure,,3054095678,Mobile,3053858577,Land Line,franckfoulon191@gmail.com,Charlotte County Foreclosure
-2142,08/14/2023,Edwin,Pickrell,6120 TAYLOR ROAD,PUNTA GORDA,Ohio,33950,Foreclosure,,9414232914,Land Line,9415050965,Land Line,epickrell@hotmail.com,Charlotte County Foreclosure
-2143,08/14/2023,Dennis,Jones,2725 MAGDALINA DR,PUNTA GORDA,Ohio,33950,Foreclosure,,9419642964,Land Line,9416254254,Land Line,,Charlotte County Foreclosure
-2144,08/14/2023,Arthur,Steeves,318 MONACO DR,PUNTA GORDA,Ohio,33950,Foreclosure,,6164431341,Mobile,6164193096,Land Line,,Charlotte County Foreclosure
-2145,08/14/2023,Danny,Chu,2080 DUMONT DR,PUNTA GORDA,Ohio,33983,Foreclosure,,9174078007,Mobile,2013423696,Land Line,yes2happy@aol.com,Charlotte County Foreclosure
-2148,08/14/2023,Annemarie,Russo,33280 OIL WELL RD,PUNTA GORDA,Ohio,33955,Foreclosure,,9045362525,Mobile,9897854387,Land Line,amrusso1222@ymail.com,Charlotte County Foreclosure
-2150,08/14/2023,Fariborz,Najmi,2218 BEURKET ST,PORT CHARLOTTE,Ohio,33953,Foreclosure,,7183808632,Land Line,9416972967,Land Line,najmi@juno.com,Charlotte County Foreclosure
-2151,08/14/2023,Donna,Connolly,22033 BEVERLY AVENUE,PORT CHARLOTTE,Ohio,33952,Foreclosure,,3233946193,Mobile,2032660000,Land Line,sheltie@charter.net,Charlotte County Foreclosure
-2152,08/14/2023,Stephen,Helgemo,3554 MONDOVI CT,PUNTA GORDA,Ohio,33950,Foreclosure,,2394810894,Land Line,9416394671,Land Line,shelgemo@aol.com,Charlotte County Foreclosure
-2153,08/14/2023,Olive,Robison,472 SHORELAND ST,PORT CHARLOTTE,Ohio,33954,Foreclosure,,9413790390,Land Line,9413713483,Mobile,orobison@gmail.com,Charlotte County Foreclosure
-2155,08/14/2023,Patricia,Smith,5914 DAVID BLVD,PORT CHARLOTTE,Ohio,33981,Foreclosure,,3527967314,Mobile,9047967314,Mobile,,Charlotte County Foreclosure
-2156,08/14/2023,Susan,Pryor,7419 CAPITAL HEIGHTS ST,ENGLEWOOD,Ohio,34224,Foreclosure,,2038534528,Land Line,2038541049,Land Line,,Charlotte County Foreclosure
-2157,08/14/2023,Robert,Croushore,23098 ELMIRA BLVD,PORT CHARLOTTE,Ohio,33980,Foreclosure,,7409654651,Land Line,6148753867,Land Line,r_croushore@msn.com,Charlotte County Foreclosure
-2158,08/14/2023,Kurt,Benner,1405 PERSAY DRIVE,PUNTA GORDA,Ohio,33982,Foreclosure,,9416246989,Land Line,9417646556,Land Line,,Charlotte County Foreclosure
-2159,08/14/2023,Onalee,Deplonty,28200 BERMONT ROAD,PUNTA GORDA,Ohio,33982,Foreclosure,,9416288494,Mobile,9416263615,Mobile,odeplonty@hotmail.com,Charlotte County Foreclosure
-2160,08/14/2023,Linda,Ward,12936 XAVIER AVE,PORT CHARLOTTE,Ohio,33981,Foreclosure,,9412351039,Land Line,9416614098,Mobile,l.e.ward@worldnet.att.net,Charlotte County Foreclosure
-2161,08/14/2023,Michael,Thermenos,1148 MELVILLE RD,PUNTA GORDA,Ohio,33983,Foreclosure,,9732289573,Land Line,9416614098,Mobile,,Charlotte County Foreclosure
-2162,08/14/2023,Bernard,Bauer,10179 STONECROP AVE,ENGLEWOOD,Ohio,34224,Foreclosure,,9897377284,Mobile,9898684053,Mobile,,Charlotte County Foreclosure
-2163,08/14/2023,Marcos,Pineda,9855 WINNIPEG ST,PORT CHARLOTTE,Ohio,33981,Foreclosure,,9172144013,Mobile,2018163696,Land Line,marcozi@yahoo.com,Charlotte County Foreclosure
-2164,08/14/2023,Nancy,Sherron,5444 MONTEGO LN,PORT CHARLOTTE,Ohio,33981,Foreclosure,,7277895671,Land Line,7272499639,Mobile,bethsherronrnlc@gmail.com,Charlotte County Foreclosure
-2165,08/14/2023,Carola,Lang,21288 BIRWOOD AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,3055052382,Mobile,3055966276,Land Line,protzig1@aol.com,Charlotte County Foreclosure
-2166,08/14/2023,Katina,Karamalikis,215 BROADMOOR LN,ROTONDA WEST,Ohio,33947,Foreclosure,,3014606170,Land Line,3055966276,Land Line,katinakaramalikis@aol.com,Charlotte County Foreclosure
-2167,08/14/2023,Karl,Mcclintock,14550 MAYSVILLE CIR,PORT CHARLOTTE,Ohio,33981,Foreclosure,,9412347127,Mobile,9414937722,Land Line,,Charlotte County Foreclosure
-2168,08/14/2023,Julie,Rich,14240 BARBET LN,PORT CHARLOTTE,Ohio,33981,Foreclosure,,9416972619,Land Line,7346926796,Land Line,,Charlotte County Foreclosure
-2169,08/14/2023,Jose,Rodriguez,82 VANILLA CIR,PUNTA GORDA,Ohio,33982,Foreclosure,,7872931348,Land Line,7346926796,Land Line,,Charlotte County Foreclosure
-2170,08/14/2023,John,Moralis,2329 DIPLOMAT DR,PUNTA GORDA,Ohio,33983,Foreclosure,,9416256965,Land Line,8136256965,Mobile,johnm2759@address.com,Charlotte County Foreclosure
-2175,08/14/2023,Jason,Forman,22026 CLINTON AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,9546486644,Mobile,9545259189,Land Line,jasonf9999@yahoo.com,Charlotte County Foreclosure
-2176,08/14/2023,Andre,Toussaint,1369 KARIN TER,PORT CHARLOTTE,Ohio,33952,Foreclosure,,8632979528,Land Line,8632682382,Land Line,tandre1165@yahoo.com,Charlotte County Foreclosure
-2177,08/14/2023,Michael,Moritz,27345 NEAPTIDE DR,PUNTA GORDA,Ohio,33983,Foreclosure,,9413306685,Mobile,9419294204,Mobile,,Charlotte County Foreclosure
-2179,08/14/2023,Edward,Olbrys,16227 ORRICK AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,6095483077,Mobile,8329325058,Land Line,sharktuth@aol.com,Charlotte County Foreclosure
-2180,08/14/2023,Sally,Warnke,29436 LILLIS ST,PUNTA GORDA,Ohio,33982,Foreclosure,,9415751952,Land Line,9415756417,Land Line,sallycraig67@yahoo.com,Charlotte County Foreclosure
-2181,08/14/2023,ARLENE,KIST,7190 SAN CASA DR,ENGLEWOOD,Ohio,34224,Foreclosure,,4232637281,Land Line,9414758010,Land Line,,Charlotte County Foreclosure
-2182,08/14/2023,Robert,Hale,17072 DOYLE AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,9417438054,Land Line,9412685965,Mobile,,Charlotte County Foreclosure
-2183,08/14/2023,Gaetano,Puglia,12131 VAUGHAN AVE,PORT CHARLOTTE,Ohio,33981,Foreclosure,,4244435189,Land Line,7189802450,Land Line,,Charlotte County Foreclosure
-2185,08/14/2023,Denis,Raymond,3948 LA COSTA ISLAND CT,PUNTA GORDA,Ohio,33950,Foreclosure,,6038890370,Land Line,9416218138,Land Line,,Charlotte County Foreclosure
-2186,08/14/2023,Thomas,Yamashita,755 FLORAL LN,PORT CHARLOTTE,Ohio,33952,Foreclosure,,4072284749,Land Line,4078948771,Land Line,mott71@yahoo.com,Charlotte County Foreclosure
-2187,08/14/2023,Donald,Broda,2000 FORREST NELSON BLVD C8,PORT CHARLOTTE,Ohio,33952,Foreclosure,,9412585369,Mobile,9416245317,Land Line,donaldbroda@aol.com,Charlotte County Foreclosure
-2188,08/14/2023,Sarra,Ezzagaghi,26091 DOLMAN CT,PUNTA GORDA,Ohio,33983,Foreclosure,,8502644172,Mobile,8509078206,Land Line,,Charlotte County Foreclosure
-2190,08/14/2023,Donna,Wright,20369 KINDERKEMAC AVE,PORT CHARLOTTE,Ohio,33952,Foreclosure,,9517800848,Land Line,5632009243,Land Line,,Charlotte County Foreclosure
-2191,08/14/2023,Tyler,Matzen,30153 RED PINE RD,PUNTA GORDA,Ohio,33982,Foreclosure,,9418157937,Mobile,9416371067,Land Line,,Charlotte County Foreclosure
-2192,08/14/2023,Donald,Jensen,581 BOUNDARY BLVD,ROTONDA WEST,Ohio,33947,Foreclosure,,8027792867,Mobile,8024271200,Land Line,,Charlotte County Foreclosure
-2193,08/14/2023,Romik,Yeghnazary,201 HARDEE WAY,ROTONDA WEST,Ohio,33947,Foreclosure,,7024200655,Mobile,7025014406,Mobile,ronyyeghnazary@gmail.com,Charlotte County Foreclosure
-2194,08/14/2023,Sue,Betancourt,6 GULL CT,PLACIDA,Ohio,33946,Foreclosure,,9417694006,Mobile,9416979792,Land Line,sue.betancourt@aol.com,Charlotte County Foreclosure
-2196,08/14/2023,Jack,Medlin,32967 OIL WELL RD,PUNTA GORDA,Ohio,33955,Foreclosure,,6152435695,Mobile,8287493058,Land Line,jackmedlin@hotmail.com,Charlotte County Foreclosure
-2199,08/14/2023,Elizabeth,Sousa,401 BOWMAN TER,PORT CHARLOTTE,Ohio,33953,Foreclosure,,9415857523,Mobile,9416244802,Land Line,lisasousa63@gmail.com,Charlotte County Foreclosure
-2200,08/14/2023,Robert,Rice,72 CARNATION DR,PLACIDA,Ohio,33946,Foreclosure,,9416973753,Land Line,9418308071,Land Line,,Charlotte County Foreclosure
-2201,08/14/2023,Haydee,Torres,17458 WELLSLEY AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,3052058066,Mobile,3057540307,Land Line,rhianromanik@gmail.com,Charlotte County Foreclosure
-2202,08/14/2023,Randy,Weissbach,14466 BULGER AVE,PORT CHARLOTTE,Ohio,33953,Foreclosure,,5613894284,Mobile,5617933134,Land Line,,Charlotte County Foreclosure
-2203,08/14/2023,Linda,Johnson,400 MCCABE ST,PORT CHARLOTTE,Ohio,33953,Foreclosure,,2565330067,Land Line,2564897798,Land Line,,Charlotte County Foreclosure
-2205,08/14/2023,Beatrice,Jacobson,5478 RILEY LN,PORT CHARLOTTE,Ohio,33981,Foreclosure,,7704345426,Land Line,7036803609,Land Line,,Charlotte County Foreclosure
-2206,08/14/2023,Lorenzo,Luaces,22092 BANCROFT AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,3052743834,Land Line,7036803609,Land Line,,Charlotte County Foreclosure
-2212,08/14/2023,Aldo,Burroni,18358 OXFORD AVE,PORT CHARLOTTE,Ohio,33948,Foreclosure,,5853465817,Land Line,5853987034,Land Line,smhrn66@yahoo.com,Charlotte County Foreclosure
-2213,08/14/2023,Kelvin,Campbell,18553 QUAINT AVE,PORT CHARLOTTE,Ohio,33948,Foreclosure,,9416296864,Mobile,5853987034,Land Line,,Charlotte County Foreclosure
-2214,08/14/2023,Olga,Betancourt,29210 ALFARETTA AVE,PUNTA GORDA,Ohio,33982,Foreclosure,,7877900490,Mobile,5853987034,Land Line,,Charlotte County Foreclosure
-2215,08/14/2023,Albert,Murray,9504 PORTILLO AVE,ENGLEWOOD,Ohio,34224,Foreclosure,,9414748341,Land Line,7034815230,Land Line,mral21@aol.com,Charlotte County Foreclosure
-2216,08/14/2023,Norman,Greer,21440 HOLDERN AVE,PORT CHARLOTTE,Ohio,33952,Foreclosure,,5408714274,Mobile,5404000329,Land Line,kngreer@hotmail.com,Charlotte County Foreclosure
-2217,08/14/2023,Wendy,Tungland,28390 CHALLENGER BOULEVARD,PUNTA GORDA,Ohio,33982,Foreclosure,,5073606057,Mobile,5078475700,Land Line,,Charlotte County Foreclosure
-2218,08/14/2023,James,Cima,2380 N BEACH ROAD,ENGLEWOOD,Ohio,34223,Foreclosure,,8562188158,Land Line,6098841379,Land Line,james.cima@excite.com,Charlotte County Foreclosure
-2219,08/14/2023,Lynda,Umphress,1652 HAYWORTH RD,PORT CHARLOTTE,Ohio,33952,Foreclosure,,9418838979,Mobile,9046002449,Mobile,lyndajo11@aol.com,Charlotte County Foreclosure
-2220,08/14/2023,Lucy,Burns,12416 ESPANOL DR,PUNTA GORDA,Ohio,33955,Foreclosure,,9416370205,Land Line,9414560480,Mobile,dianeheller@juno.com,Charlotte County Foreclosure
-2221,08/14/2023,Joan,Lisanti,17375 SE 76TH CORAPEAKE CT,THE VILLAGES,Ohio,32162,Foreclosure,,5616821693,Land Line,3523500266,Mobile,jlisanti@aol.com,Marion County Foreclosure
-2222,08/14/2023,Jerry,Brigman,3817 SW 161ST LOOP,OCALA,Ohio,34473,Foreclosure,,3523079210,Land Line,3523070000,Land Line,jwbrigman@gmail.com,Marion County Foreclosure
-2223,08/14/2023,Douglas,Kirkland,1930 SE 51ST TER,OCALA,Ohio,34480,Foreclosure,,3528953283,Mobile,3523696100,Land Line,go4mall@aol.com,Marion County Foreclosure
-2224,08/14/2023,Glenn,Steffen,14206 SE 45TH CT,SUMMERFIELD,Ohio,34491,Foreclosure,,3525952146,Land Line,3526698558,Land Line,gsteffen@cfl.rr.com,Marion County Foreclosure
-2225,08/14/2023,Jazmin,Rodriguez,4756 SW 139TH LN,OCALA,Ohio,34473,Foreclosure,,8452836163,Mobile,7187553799,Mobile,jazmin.rodriguez@gmail.com,Marion County Foreclosure
-2226,08/14/2023,Michael,Warren,8940 SE 180TH AVENUE RD,OCKLAWAHA,Ohio,32179,Foreclosure,,3522145777,Mobile,6786022503,Mobile,lilwarren2g@webtv.com,Marion County Foreclosure
-2227,08/14/2023,MARLINA,SIMS,3405 NE 15TH AVE,OCALA,Ohio,34479,Foreclosure,,3523040794,Mobile,3528435145,Mobile,MARLINASIMS357@YAHOO.COM,Marion County Foreclosure
-2228,08/14/2023,Marc,Feldman,719 NW 7 PL,OCALA,Ohio,34475,Foreclosure,,9417945600,Land Line,9417957449,Land Line,marc@abanet.org,Marion County Foreclosure
-2229,08/14/2023,George,Stone,15828 SW 16TH TER,OCALA,Ohio,34473,Foreclosure,,9786971820,Mobile,3522334020,Land Line,,Marion County Foreclosure
-2230,08/14/2023,Colleen,Jackson,576FAIRWAYS LN UNIT M101,OCALA,Ohio,34472,Foreclosure,,3526870217,Land Line,3522818477,Mobile,brianhunter82@yahoo.com,Marion County Foreclosure
-2231,08/14/2023,Kimberly,Brown,1307 NW 12TH AVE,OCALA,Ohio,34475,Foreclosure,,3524806477,Mobile,3522867229,Mobile,ahnistee@yahoo.com,Marion County Foreclosure
-2232,08/14/2023,Bell,Loos,1253 NE 35 ST,OCALA,Ohio,34479,Foreclosure,,3523511648,Land Line,3527326030,Land Line,,Marion County Foreclosure
-2233,08/14/2023,Dustin,Estey,60HEMLOCK RADL,OCALA,Ohio,34472,Foreclosure,,3526290790,Land Line,3523423217,Mobile,deminox1@yahoo.com,Marion County Foreclosure
-2234,08/14/2023,Eddie,O'glesby,16445 NE 142 CT,FORT MCCOY,Ohio,32134,Foreclosure,,3522741956,Mobile,3525462316,Land Line,kid.koyote@yahoo.com,Marion County Foreclosure
-2235,08/14/2023,Christopher,Richardson,519 SE 28TH AVE,OCALA,Ohio,34471,Foreclosure,,3528120141,Mobile,3526942216,Land Line,,Marion County Foreclosure
-2236,08/14/2023,VIRGINIA,DEFAZIO,16735 NE 2ND STREET RD,SILVER SPRINGS,Ohio,34488,Foreclosure,,3865327346,Land Line,3522893005,Land Line,GINNYCATSEYES@GMAIL.COM,Marion County Foreclosure
-2238,08/14/2023,Nancy,Smith,3801 SW 86TH TER,OCALA,Ohio,34481,Foreclosure,,2146762077,Mobile,3528549606,Land Line,marvinsmith1968@yahoo.com,Marion County Foreclosure
-2239,08/14/2023,Trenton,Lobel,4251 SW SHASTA CT,DUNNELLON,Ohio,34431,Foreclosure,,5078486551,Mobile,8134109380,Mobile,,Marion County Foreclosure
-2240,08/14/2023,Krista,Thurmond,6160 SE 183RD AVENUE RD,OCKLAWAHA,Ohio,32179,Foreclosure,,3525980049,Mobile,3522894539,Land Line,kct1524@yahoo.com,Marion County Foreclosure
-2241,08/14/2023,Shirley,Smith,1955 NW 3RD ST,OCALA,Ohio,34475,Foreclosure,,8635580624,Mobile,8635580751,Mobile,ssmith3516@onebox.com,Marion County Foreclosure
-2242,08/14/2023,Giovanni,Scola,32PECAN PASS RUN,OCALA,Ohio,34472,Foreclosure,,9258494108,Land Line,9256828238,Land Line,,Marion County Foreclosure
-2243,08/14/2023,Doris,Rivera,11301 NW 18TH PL,OCALA,Ohio,34482,Foreclosure,,3526314259,Mobile,9256828238,Land Line,,Marion County Foreclosure
-2244,08/14/2023,Kristy,Pierce,2501 NW 56TH ST,OCALA,Ohio,34475,Foreclosure,,3159752034,Mobile,3522361561,Land Line,kylforeman22@yahoo.com,Marion County Foreclosure
-2245,08/14/2023,Joseph,Campetella,7804 SE 123 LN,BELLEVIEW,Ohio,34420,Foreclosure,,3528160614,Mobile,3524278627,Mobile,,Marion County Foreclosure
-2246,08/14/2023,Joy,King,9401 NE 25 AVE,ANTHONY,Ohio,32617,Foreclosure,,4078739041,Mobile,4079521985,Mobile,jking.joy.com@gmail.com,Marion County Foreclosure
-2247,08/14/2023,Sandy,Carman,10993 SW 83RD AVE,OCALA,Ohio,34481,Foreclosure,,3528540419,Land Line,3522087066,Mobile,sandrac1646@yahoo.com,Marion County Foreclosure
-2248,08/14/2023,Amber,Dillon,20JUNIPER PASS TRL,OCALA,Ohio,34480,Foreclosure,,3524146274,Mobile,3522168848,Mobile,rnamber83@gmail.com,Marion County Foreclosure
-2249,08/14/2023,Craig,Faine,20NEVER BEND DR,OCALA,Ohio,34482,Foreclosure,,3527327728,Land Line,3522393481,Mobile,craigpf21@aol.com,Marion County Foreclosure
-2250,08/14/2023,William,Plance,19759 SW 85TH LOOP,DUNNELLON,Ohio,34432,Foreclosure,,3526539549,Mobile,3526800973,Land Line,,Marion County Foreclosure
-2251,08/14/2023,Theresa,Caprio,11SILVER DR,OCALA,Ohio,34472,Foreclosure,,3528430678,Mobile,3522294628,Mobile,stephc211@gmail.com,Marion County Foreclosure
-2252,08/14/2023,Alexander,Defio,6319 SW 38TH ST,OCALA,Ohio,34474,Foreclosure,,3525094053,Land Line,3525044053,Land Line,alexdef8@aol.com,Marion County Foreclosure
-2253,08/14/2023,RICHARD,BYRNE,4465 SE 60TH ST,OCALA,Ohio,34480,Foreclosure,,3522994313,Mobile,3522880671,Land Line,RICHBYRNE74@YAHOO.COM,Marion County Foreclosure
-2254,08/14/2023,Jackie,Goldman,10720 SE 128TH ST,BELLEVIEW,Ohio,34420,Foreclosure,,8505029181,Mobile,8502177900,Mobile,,Marion County Foreclosure
-2255,08/14/2023,Darryl,Mccall,5001 SE 7TH PL,OCALA,Ohio,34471,Foreclosure,,3528123757,Mobile,3526243029,Land Line,,Marion County Foreclosure
-2256,08/14/2023,Virgil,Keith,10727 SE 90TH CT,BELLEVIEW,Ohio,34420,Foreclosure,,3522099631,Mobile,2703333554,Land Line,virgil.keith@yahoo.com,Marion County Foreclosure
-2257,08/14/2023,Cheryl,Odom,13JUNIPER TRAIL CRSE,OCALA,Ohio,34480,Foreclosure,,3528574792,Mobile,3523076366,Land Line,cherylgodom@yahoo.com,Marion County Foreclosure
-2258,08/14/2023,DOROTHY,SINSMEISTER,12350 SE 128 CT,OCKLAWAHA,Ohio,32179,Foreclosure,,3522880443,Land Line,3522868234,Mobile,BWITCHIN1@AOL.COM,Marion County Foreclosure
-2259,08/14/2023,Gordon,Smith,6039 SE FOSS RD,BELLEVIEW,Ohio,34420,Foreclosure,,2697294569,Land Line,6167294569,Mobile,,Marion County Foreclosure
-2260,08/14/2023,SANDRA,GLOVER,13120 NW 87TH AVENUE RD,REDDICK,Ohio,32686,Foreclosure,,3523614889,Mobile,3528756418,Mobile,MISSBOSSLADY1@HOTMAIL.COM,Marion County Foreclosure
-2261,08/14/2023,Helen,Smith,2432 SW 1ST ST,OCALA,Ohio,34475,Foreclosure,,3526223070,Land Line,3528756418,Mobile,helens@cox.net,Marion County Foreclosure
-2262,08/14/2023,Carol,Stark,8717 SW 205TH CIR,DUNNELLON,Ohio,34431,Foreclosure,,3524896356,Land Line,3526507390,Mobile,carol.stark@covad.net,Marion County Foreclosure
-2263,08/14/2023,Thomas,Cummins,14274 SE 61ST AVE,SUMMERFIELD,Ohio,34491,Foreclosure,,3525811200,Mobile,3522997507,Mobile,theelitedefender65@gmail.com,Marion County Foreclosure
-2264,08/14/2023,Elmer,Marshall,22036 SW BEACH BLVD,DUNNELLON,Ohio,34431,Foreclosure,,3522204077,Mobile,3526820582,Mobile,imp_98_2000@yahoo.com,Marion County Foreclosure
-2265,08/14/2023,Ricardo,Bryan,12HEMLOCK PL,OCALA,Ohio,34472,Foreclosure,,3526156627,Mobile,3526820582,Mobile,djbryan1991@yahoo.com,Marion County Foreclosure
-2266,08/14/2023,Brent,Blondun,19279 SW 96TH LOOP,DUNNELLON,Ohio,34432,Foreclosure,,9412371333,Mobile,9542986601,Mobile,bblondun@cs.com,Marion County Foreclosure
-2267,08/14/2023,April,Wright,16TEAK LOOP,OCALA,Ohio,34472,Foreclosure,,6149847560,Mobile,9372194821,Mobile,,Marion County Foreclosure
-2268,08/14/2023,Victoria,Russell,12272 SE 74 TER,BELLEVIEW,Ohio,34420,Foreclosure,,5138287716,Mobile,3523079060,Land Line,varussell1@cougars.ccis.edu,Marion County Foreclosure
-2269,08/14/2023,DEBBIE,FALES,4041 SE 56TH TER,OCALA,Ohio,34480,Foreclosure,,3522458174,Mobile,3523025026,Mobile,DRISINGS@YAHOO.COM,Marion County Foreclosure
-2270,08/14/2023,Laura,Williams,11345 SE 188TH AVE,OCKLAWAHA,Ohio,32179,Foreclosure,,3524065355,Mobile,3523452807,Mobile,litchicfl@yahoo.com,Marion County Foreclosure
-2271,08/14/2023,Claudia,Mckibbin,2929 NE 106 ST,ANTHONY,Ohio,32617,Foreclosure,,3522588697,Mobile,3526295770,Land Line,cmckibbinumana@wmconnect.com,Marion County Foreclosure
-2272,08/14/2023,Ervin,Lake,14520 SE 73RD AVE,SUMMERFIELD,Ohio,34491,Foreclosure,,3523077839,Land Line,3523070489,Land Line,ervin.lake@yahoo.com,Marion County Foreclosure
-2273,08/14/2023,DANIEL,CARO,8315 SW 209TH CT,DUNNELLON,Ohio,34431,Foreclosure,,3017885635,Mobile,3522869582,Mobile,CALI1278@AOL.COM,Marion County Foreclosure
-2274,08/14/2023,CECIL,FLETCHER,591 BAHIA CIR,OCALA,Ohio,34472,Foreclosure,,3526870565,Land Line,3526870951,Land Line,RFMARKETING3@AOL.COM,Marion County Foreclosure
-2275,08/14/2023,Kaleb,Christmas,13779 NE JACKSONVILL RD,CITRA,Ohio,32113,Foreclosure,,3525988059,Mobile,3525958980,Land Line,christmaskaleb21@yahoo.com,Marion County Foreclosure
-2276,08/14/2023,Deborah,Foulk,1745 NW 165TH COURT RD,DUNNELLON,Ohio,34432,Foreclosure,,3524654460,Land Line,3522374176,Land Line,mauve172@bellsouth.net,Marion County Foreclosure
-2277,08/14/2023,Lloyd,Haynes,13129 SW 35TH CIR,OCALA,Ohio,34473,Foreclosure,,3523072599,Land Line,7185924511,Land Line,,Marion County Foreclosure
-2278,08/14/2023,Valarie,Croskey,2099 SE 80TH ST,OCALA,Ohio,34480,Foreclosure,,3522072209,Mobile,2073203200,Mobile,vsims5@cfl.rr.com,Marion County Foreclosure
-2279,08/14/2023,Andrew,Williams,2609 NW 44TH PL,OCALA,Ohio,34475,Foreclosure,,3526221327,Land Line,3528579811,Mobile,,Marion County Foreclosure
+2280,08/15/2023,DANIEL,ESTEBAN,229 ICHABOD AVE,LEHIGH ACRES,FL,33973,Code Enforcement,a significant accumulation of junk and vehicles without tags on the road right of way.,2397457288,Mobile,,,ESTEBAND91@YAHOO.COM,Lee County Code Enforcement
+2283,08/15/2023,TIMOTHY,DEMPSEY,13845 RIVER FOREST DR,FORT MYERS,FL,33905,Code Enforcement,lot mow,2399226033,Mobile,2399490375,Land Line,TRAILRAKER@AOL.COM,Lee County Code Enforcement
+2284,08/15/2023,Kendall,Abbott,1906 QUINTERO LN,LEHIGH ACRES,FL,33972,Code Enforcement,lot mow,7714397051,Mobile,2292694435,Land Line,cinabb2003@bellsouth.net,Lee County Code Enforcement
+2285,08/15/2023,MARK,DIETZ,432 CANDLEWICK CIR W,LEHIGH ACRES,FL,33936,Code Enforcement,lot mow,9529426393,Land Line,7635224114,Land Line,MDICTZ@YAHOO.COM,Lee County Code Enforcement
+2286,08/15/2023,Lloyd,Mattox,1928 PALM DR,FORT MYERS,FL,33907,Code Enforcement,complaint of lot mow.,2399391896,Land Line,2393135182,Land Line,,Lee County Code Enforcement
+2287,08/15/2023,Caitlin,Postlethwait,1561 CUMBERLAND CT,FORT MYERS,FL,33919,Code Enforcement,"lot mow, backyard not cut",2398507158,Mobile,2393138909,Mobile,cpostlethwait@juno.com,Lee County Code Enforcement
+2288,08/15/2023,Rachel,Boyd,9935 COUNTRY OAKS DR,FORT MYERS,FL,33967,Code Enforcement,non working motor vehicle with no tires sitting on jack stands in driveway,7313946262,Mobile,,,,Lee County Code Enforcement
+2379,08/15/2023,Casimir,Fanfan,1859 HANSON ST,FORT MYERS,FL,33901,Code Enforcement,junk vehicle and junk in sections of the front yard.,2393323276,Land Line,2392756424,Land Line,frantz_casimir@yahoo.com,Fort Myers Code Enforcement
+2380,08/15/2023,Matthew,Gordon,2104 W FIRST ST,FORT MYERS,FL,33901,Code Enforcement,expired permit #bldc-027229-2023,2397705042,Mobile,2397715042,Mobile,mathew.gordon@msn.com,Fort Myers Code Enforcement
+2381,08/15/2023,Kathryn,Ouderkirk,2575 SECOND ST UNIT: 3,FORT MYERS,FL,33901,Code Enforcement,"delinquent utilities acct: 2-010454-02	ouderkirk, kathryn	2575    2nd st apt 3",2392403570,Mobile,2392404134,Mobile,kouderkirk@netzero.net,Fort Myers Code Enforcement
+2382,08/15/2023,Loraine,Davis,2217 QUALITY LIFE CENTER WAY,FORT MYERS,FL,33916,Code Enforcement,white utility van parked behind house.  complainant said has been there for a month.  had fmpd come out does not have current tags fmpd told her to ca,2392097166,Mobile,2393346016,Land Line,,Fort Myers Code Enforcement
+2383,08/15/2023,ROBLERO,PEREZ,880 NUNA AVE,FORT MYERS,FL,33905,Code Enforcement,"baseball field built in the back of property possible permit needed.  loud speakers, many people paying at the front of the property to get in. first ",3863258337,Land Line,,,,Fort Myers Code Enforcement
+2384,08/15/2023,Hector,Myslicki,4310 METRO PKWY,FORT MYERS,FL,33916,Code Enforcement,expired permit #trd-024364-2022,2397701615,Mobile,2394987303,Land Line,hmyslicki@gmail.com,Fort Myers Code Enforcement
+2385,08/15/2023,Kathleen,Holiday,1717 SUNSET PL,FORT MYERS,FL,33901,Code Enforcement,high grass,2394702681,Mobile,2393327992,Land Line,,Fort Myers Code Enforcement
+2386,08/15/2023,Muhammad,Sajid,1416 FLORAL DR,FORT MYERS,FL,33916,Code Enforcement,high grass repeat offense,6047836633,Mobile,3236575918,Land Line,,Fort Myers Code Enforcement
+2387,08/15/2023,Sarah,Orum,2331 STELLA ST,FORT MYERS,FL,33901,Code Enforcement,expired permit #trd-027134-2023,9522263940,Land Line,3106454005,Mobile,sarah_orum@yahoo.com,Fort Myers Code Enforcement
+2388,08/15/2023,Paul,Beattie,1725 CORONADO RD,FORT MYERS,FL,33901,Code Enforcement,expired permit #bldr-011561-2021,2392573295,Mobile,2398515203,Mobile,pbeatti@clemson.edu,Fort Myers Code Enforcement
+2389,08/15/2023,EZETTA,GREEN,2903 LAFAYETTE ST,FORT MYERS,FL,33916,Code Enforcement,"no water (small children living here too), trash in the front yard",4072825479,Land Line,2393346301,Land Line,,Fort Myers Code Enforcement
+2390,08/15/2023,Kevin,Ninia,2430 CONCORDE DR,FORT MYERS,FL,33901,Code Enforcement,boats being worked on and painted.  doors are being lifted a couple of feet and putting fans to blow out the overspray.  concerns that this is a very ,9413802501,Mobile,9416294357,Land Line,,Fort Myers Code Enforcement
+2391,08/15/2023,City Of Palms Apostolic Church,,1807 VERONICA S SHOEMAKER BLVD,FORT MYERS,FL,33916,Code Enforcement,delinquent utilities acct:  4-000696-01	city of palm apostolic	1807 veronica s shoemaker blvd	184425p3035160010,2393321568,Land Line,2393328313,Land Line,,Fort Myers Code Enforcement
+2392,08/15/2023,JOSE,GONZALEZMARTINEZ,919 FREEMONT ST,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 6-000188-13	oxlaj meregildo, gasper genaro	919 freemont st	074425p3036180190",2158395064,Mobile,,,YAMILECSRODRIGUEZ0@GMAIL.COM,Fort Myers Code Enforcement
+2393,08/15/2023,Simi,Niederman,2861 CENTER POINTE DR,FORT MYERS,FL,33916,Code Enforcement,2 unregistered and crashed vehicles ,8459283871,Land Line,8457837606,Land Line,sniederman@comcast.net,Fort Myers Code Enforcement
+2394,08/15/2023,Ihor,Kucheynyk,2171 JEFFCOTT ST,FORT MYERS,FL,33901,Code Enforcement,high grass - vacant lot ,6503903488,Mobile,5867453032,Land Line,kucheinyk@gmail.com,Fort Myers Code Enforcement
+2395,08/15/2023,Laporsha,Arnold,4220 ROMEO LN UNIT: 101,FORT MYERS,FL,33916,Code Enforcement,ac not working - repairs are done one day and the next day the unit is not working again. all complaints to property manager have been documented per ,2396018615,Mobile,2393842318,Mobile,porsha239.pa@gmail.com,Fort Myers Code Enforcement
+2397,08/15/2023,Robert,Troupe,3150 LAFAYETTE ST,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilites acct: 3-001130-01	moore, freddie r	3150 lafayette st	194425p1003200020",2393321568,Land Line,2393328313,Land Line,rtroupe@gte.net,Fort Myers Code Enforcement
+2398,08/15/2023,Margarita,Pagan,4012 WINKLER AVE UNIT: 201,FORT MYERS,FL,33916,Code Enforcement,refrigertor does not work.,7323520366,Land Line,7329002146,Mobile,josharvelo@comcast.net,Fort Myers Code Enforcement
+2399,08/15/2023,Bonnie,Prator,1839 PASSAIC AVE,FORT MYERS,FL,33901,Code Enforcement,delinquent utilities acct: 6-001905-05	ramdy fleuri florentino	1839 passaic ave	264424p3013030180,2395655622,Mobile,2393377185,Land Line,bprator@msn.com,Fort Myers Code Enforcement
+2400,08/15/2023,Pura,Kurywczak,3419 FORUM BLVD,FORT MYERS,FL,33905,Code Enforcement,expired permit #bldc-023101-2022,9085913320,Mobile,9082412248,Land Line,,Fort Myers Code Enforcement
+2402,08/15/2023,Louis,Sibert,2156 BARKER BLVD,FORT MYERS,FL,33916,Code Enforcement,"exterior structure, shed in disrepair, junk and debris",2393324091,Land Line,2399859610,Land Line,louis.sibert@aol.com,Fort Myers Code Enforcement
+2403,08/15/2023,Mark,Voto,2427 MCGREGOR BLVD,FORT MYERS,FL,33901,Code Enforcement,expired permit #sitc-014502-2022 & #bldc-014499-2022,9179216309,Mobile,7183178072,Land Line,mvlegend@prodigy.net,Fort Myers Code Enforcement
+2404,08/15/2023,Bruce,Kaplan,3152 ROYAL GARDENS AVE,FORT MYERS,FL,33916,Code Enforcement,expired permit #bldr-026697-2023,8472671150,Land Line,8478232128,Land Line,skuwar@hotmail.com,Fort Myers Code Enforcement
+2405,08/15/2023,Regis Construction Llc,,2640 LARMIE ST,FORT MYERS,FL,33916,Code Enforcement,expired permit #bldr-022676-2022 & bldr-022694-2022,2393328124,Land Line,2396726259,Mobile,,Fort Myers Code Enforcement
+2406,08/15/2023,Joann,Peeples,1611 HENDRY ST,FORT MYERS,FL,33901,Code Enforcement,mattress in alley and fence broken,2398504646,Mobile,9412758131,Land Line,joannpeeples@gmail.com,Fort Myers Code Enforcement
+2407,08/15/2023,Brooke,Newman,1227 WALDEN DR,FORT MYERS,FL,33901,Code Enforcement,expired permit trd-027059-2023,8082125245,Mobile,8507662253,Mobile,,Fort Myers Code Enforcement
+2408,08/15/2023,Suzanne,Horn,2350 CHAMPION RING RD,FORT MYERS,FL,33905,Code Enforcement,"living out of a trailer, one unregistered",9723349056,Land Line,9729319345,Land Line,suzan42686@aol.com,Fort Myers Code Enforcement
+2409,08/15/2023,Richard,Donovan,4747 MCGREGOR BLVD,FORT MYERS,FL,33901,Code Enforcement,delinquent utilities acct: 7-005226-03	boston hedge sfr llc	4747 mcgregor blvd	344424p30180b0330,7135577949,Mobile,8323161830,Mobile,donovanr54@gmail.com,Fort Myers Code Enforcement
+2410,08/15/2023,Jose,Ramos,3139 LINCOLN BLVD,FORT MYERS,FL,33916,Code Enforcement,delinquent utilities acct: 3-001016-06	florida real estate asset grou	3139 lincoln blvd	194425p1002150210,7184242624,Land Line,7184028391,Land Line,,Fort Myers Code Enforcement
+2411,08/15/2023,Curtis,Mccarter,2675 DR MARTIN LUTHER KING JR BLVD,FORT MYERS,FL,33916,Code Enforcement,roof damage and exterior damage,2398222172,Mobile,9413348534,Mobile,curtis.mccarter@gmail.com,Fort Myers Code Enforcement
+2412,08/15/2023,Paul,Carbone,2215 STELLA ST,FORT MYERS,FL,33901,Code Enforcement,driveway in need of repair (referred from cod-022558-2023),2396343133,Mobile,6023468700,Land Line,gobikes@live.com,Fort Myers Code Enforcement
+2413,08/15/2023,Junior,Maloy,1754 EBENEZER CT,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 8-000867-01	maloy, junior	1754 ebenezer ct	174425p4004000150",2392445960,Mobile,2393628819,Mobile,jazzinaki18@aol.com,Fort Myers Code Enforcement
+2414,08/15/2023,LEONARD,LIBERSHER,4927 ZANA DR,FORT MYERS,FL,33905,Code Enforcement,"delinquent utilities acct: 6-000371-17	hill, beverly	4927 zana dr	094425p2002000030",2392837729,Mobile,8154828770,Mobile,EDWARD.LIBERSHER@JUNO.COM,Fort Myers Code Enforcement
+2415,08/15/2023,VAN,SPEAS,1635 MEDICAL LN,FORT MYERS,FL,33907,Code Enforcement,"long vertical lane, in row",2394330038,Land Line,2394331041,Land Line,VSPEAS@MSN.COM,Fort Myers Code Enforcement
+2417,08/15/2023,David,Kirkpatrick,1709 SUNSET PL,FORT MYERS,FL,33901,Code Enforcement,high grass,2393346500,Land Line,2399954018,Land Line,,Fort Myers Code Enforcement
+2418,08/15/2023,James,Putnam,10541 BELLA VISTA DR,FORT MYERS,FL,33913,Code Enforcement,"delinquent utilities acct: 1-009439-03	putnam, joann	10541 bella vista dr	024525p2003000480",3157338648,Land Line,3157248216,Land Line,,Fort Myers Code Enforcement
+2419,08/15/2023,Edward,Crawford,3041 ST CHARLES ST,FORT MYERS,FL,33916,Code Enforcement,caller is at 3033 st charles she says the house next door to her is flooding her yard. i am not sure if this rain water or if there are pipes leaking ,2392711647,Mobile,2393342481,Land Line,,Fort Myers Code Enforcement
+2420,08/15/2023,Marly,Gonzalez,1949 MARAVILLA AVE,FORT MYERS,FL,33901,Code Enforcement,expired permit #trd-027147-2023,9412491355,Mobile,2394385398,Mobile,vmarly21@gmail.com,Fort Myers Code Enforcement
+2421,08/15/2023,Carolyn,Perkins,3213 WILLIN ST,FORT MYERS,FL,33916,Code Enforcement,expired permit #trd-027192-2023,2392184519,Mobile,2394790000,Land Line,cmpgam@yahoo.com,Fort Myers Code Enforcement
+2422,08/15/2023,Roland,Scott,3024 VIA RIALTO ST,FORT MYERS,FL,33905,Code Enforcement,expired permit #bldr-026396-2023,2392457158,Land Line,6148373675,Land Line,,Fort Myers Code Enforcement
+2424,08/15/2023,Daymon,Brown,2913 EDISON AVE,FORT MYERS,FL,33916,Code Enforcement,expired permit #bldr-012793-2021,2393341914,Land Line,2393341647,Land Line,brown.daymon@gmail.com,Fort Myers Code Enforcement
+2425,08/15/2023,SARAH,STERLING,12107 GRAND JARDIN DR,FORT MYERS,FL,33913,Code Enforcement,"delinquent utilities acct: 1-023221-00	rd town plantation, llc	12107 grand jardin dr",3129258469,Mobile,7732764148,Land Line,SARAH.STERLING@GMAIL.COM,Fort Myers Code Enforcement
+2426,08/15/2023,TOSCA,ROBERTS,3421 WILLARD ST,FORT MYERS,FL,33916,Code Enforcement,expired permit #trd-027116-2023,2396039932,Mobile,2392260220,Land Line,LUVYOURSELF2001@YAHOO.COM,Fort Myers Code Enforcement
+2427,08/15/2023,Jonathan,Weichel,3531 VERONICA S SHOEMAKER BLVD UNIT: C,FORT MYERS,FL,33916,Code Enforcement,expired permit #bldc-013529-2021,2399899016,Mobile,9894712111,Land Line,j_weichel_thirty@hotmail.com,Fort Myers Code Enforcement
+2428,08/15/2023,Maria,Baldonado,866 DELLENA LN,FORT MYERS,FL,33905,Code Enforcement,expired permit #trd-025320-2022,2396948768,Land Line,2396910095,Mobile,,Fort Myers Code Enforcement
+2429,08/15/2023,Brittany,Stready,2540 CONGRESS ST,FORT MYERS,FL,33901,Code Enforcement,apartment complex with high grass,2396927944,Mobile,2392692270,Mobile,b.stready@yahoo.com,Fort Myers Code Enforcement
+2430,08/15/2023,George,Romano,1804 PALM AVE,FORT MYERS,FL,33916,Code Enforcement,high grass,2034671121,Land Line,2034679716,Land Line,rromano1946@hotmail.com,Fort Myers Code Enforcement
+2431,08/15/2023,Tiffanie,Stuckey,5312 SUMMERLIN RD UNIT: 3,FORT MYERS,FL,33919,Code Enforcement,"plumbing issues, sewage backing up, mold in unit  ",3058967556,Mobile,4045529171,Mobile,,Fort Myers Code Enforcement
+2432,08/15/2023,Mario,Mastronardi,2981 CARGO ST,FORT MYERS,FL,33916,Code Enforcement,vacant lot unmaintained being used for a concrete dump high grass weeds fence in disrepair.,7187462541,Land Line,5164590864,Mobile,mmastronardi@webtv.net,Fort Myers Code Enforcement
+2434,08/15/2023,Glen,Veno,2227 FOWLER ST,FORT MYERS,FL,33901,Code Enforcement,delinquent utilities acct: 2-009603-01	1st premier bail bonds	2227 fowler st	244424p2018060240,8105999999,Mobile,8102273183,Land Line,gveno36@comcast.net,Fort Myers Code Enforcement
+2435,08/15/2023,Pascual,Francisco,3165 E RIVERSIDE DR UNIT: 6,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 5-000849-20	mccowan, jonathan	3165 e riverside dr",8136940995,Mobile,,,,Fort Myers Code Enforcement
+2436,08/15/2023,Ka,Ngo,3119 APACHE ST,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 4-000706-03	sylfroid, gabriel	3119 apache st	184425p40010c0120",6265797860,Mobile,7548889061,Land Line,,Fort Myers Code Enforcement
+2437,08/15/2023,Claudio,Colorado,3616 PEARL ST,FORT MYERS,FL,33916,Code Enforcement,stop work: permit required stairs repaired or replacement.  double fees and admin. complainant stated that 3 men are at the property tearing down the ,2398263065,Mobile,,,,Fort Myers Code Enforcement
+2438,08/15/2023,Theresa,Parra,30 ROANOKE DR,FORT MYERS,FL,33905,Code Enforcement,expired permit #trd-026620-2023,2399395569,Land Line,2392858428,Mobile,glamourgirl742004@yahoo.com,Fort Myers Code Enforcement
+2439,08/15/2023,Otis,Dixon,3217 WILLIN ST,FORT MYERS,FL,33916,Code Enforcement,expired permit #trd-023968-2022,2394613908,Land Line,2394613989,Land Line,baldhat@juno.com,Fort Myers Code Enforcement
+2440,08/15/2023,JOHN,PRIOUX,2500 EDWARDS DR UNIT: 1702,FORT MYERS,FL,33901,Code Enforcement,received call in reference to ac being out with no portable,2398268224,Mobile,2392018065,Mobile,PRIOUXJOHN580@GMAIL.COM,Fort Myers Code Enforcement
+2441,08/15/2023,Brennon,Howard,2605 GUAVA ST,FORT MYERS,FL,33916,Code Enforcement,expired permit #trd-014727-2022,3524000208,Mobile,3528602336,Land Line,birdmanhoward@gmail.com,Fort Myers Code Enforcement
+2442,08/15/2023,Mary,Baron,2500 EDWARDS DR,FORT MYERS,FL,33901,Code Enforcement,advised ac on floors 8 and 2 are not working,3052964982,Land Line,3056073671,Mobile,,Fort Myers Code Enforcement
+2444,08/15/2023,Siquanna,Armstrong,4636 DELEON ST UNIT: G233,FORT MYERS,FL,33907,Code Enforcement,"infestation of roaches, appliances not working.  pest control only sprays 1 or 2 places and this does not help. she is told to call property manager. ",2392979138,Mobile,2392487484,Mobile,kathleenkatlord@aol.com,Fort Myers Code Enforcement
+2445,08/15/2023,Margaret,Ehemann,4189 MCGREGOR BLVD,FORT MYERS,FL,33901,Code Enforcement,expired permit #bldr-026443-2023,5135755205,Land Line,5134927519,Land Line,,Fort Myers Code Enforcement
+2446,08/15/2023,Brennen,Melvin,3663 LAKE ST,FORT MYERS,FL,33901,Code Enforcement,expired permit #bldr-024818-2022,2394329714,Land Line,,,,Fort Myers Code Enforcement
+2447,08/15/2023,Jaime,Layne,3980 FOWLER ST,FORT MYERS,FL,33901,Code Enforcement,expired permit #trd-027187-2023,2399368561,Land Line,,,jaime1922@aol.com,Fort Myers Code Enforcement
+2448,08/15/2023,ALLISON,SEARCY,11558 RIVERSTONE LN,FORT MYERS,FL,33913,Code Enforcement,"delinquent utilities acct: 1-022376-01	frazile, benel	11558 riverstone ln	114525p4350005870",2397703178,Mobile,2399407889,Mobile,ALLIERM@AOL.COM,Fort Myers Code Enforcement
+2450,08/15/2023,Shanquisha,Upshaw,3950 LORA ST UNIT: 106,FORT MYERS,FL,33916,Code Enforcement,delinquent utilities acct: 8-000562-14	shanquisha lashay upshaw	3950 lora st apt 106	084425p4023001060,2392260733,Land Line,2398108925,Mobile,,Fort Myers Code Enforcement
+2451,08/15/2023,Kenneth,Blow,4383 NEW ST,FORT MYERS,FL,33905,Code Enforcement,"delinquent utilities acct: 9-000107-13	blow, kenneth s	4383 new st	054425p30070b0170",2396938011,Land Line,2392188011,Mobile,kennethb4220@gmail.com,Fort Myers Code Enforcement
+2452,08/15/2023,Roderick,Allison,3909 BELMONT ST UNIT: 2,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 1-000960-13	spates, sherita	3160 e riverside dr",2396457135,Mobile,,,roderickallison169@gmail.com,Fort Myers Code Enforcement
+2453,08/15/2023,DALVEN,SPATES,3160 E RIVERSIDE DR UNIT: 2,FORT MYERS,FL,33916,Code Enforcement,"deliniquent utilities acct: # 1-000960-13	spates, sherita	3160 e riverside dr",2397714232,Mobile,2393131136,Mobile,DSPATES33905@GMAIL.COM,Fort Myers Code Enforcement
+2454,08/15/2023,Ladarius,Pritchett,1533 BROOKHILL DR,FORT MYERS,FL,33916,Code Enforcement,delinquent utilities acct: 2-000603-11	at home swfl llc	1533 brookhill dr	184425p2013001280,2398789072,Mobile,4252493028,Land Line,pritchett77.lp@gmail.com,Fort Myers Code Enforcement
+2455,08/15/2023,Annette,Nelson,3138 INDIAN ST,FORT MYERS,FL,33916,Code Enforcement,high grass,2392404013,Mobile,2394663480,Land Line,annettenelson@adelphia.net,Fort Myers Code Enforcement
+2456,08/15/2023,William,Tj Prather,1380 COLONIAL BLVD,FORT MYERS,FL,33907,Code Enforcement,permit required for installation of fencing and metal structure in parking lot.,2398506192,Mobile,,,,Fort Myers Code Enforcement
+2457,08/15/2023,Maria,Martinez,1016 SUPERIOR ST,FORT MYERS,FL,33916,Code Enforcement,high grass and weeds,2392454955,Mobile,,,,Fort Myers Code Enforcement
+2458,08/15/2023,Michael,Dinschel,4346 MCCORMICK ST,FORT MYERS,FL,33905,Code Enforcement,permit,2396942906,Land Line,7045074784,Mobile,auntdebdeb@netzero.com,Fort Myers Code Enforcement
+2461,08/15/2023,Tiffany,Cummings,1834 DELAWARE AVE,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 2-009759-00	jones, darrell	1834 delaware ave	184425p3035200060",2398951228,Mobile,2398781228,Mobile,,Fort Myers Code Enforcement
+2462,08/15/2023,Takita,Vidal,2751 MARKET ST,FORT MYERS,FL,33916,Code Enforcement,"delinquent utilities acct: 1-009146-15	cohen, gil	2751 market st	244424p2027210400",2393621859,Land Line,,,kekidaboss23@gmail.com,Fort Myers Code Enforcement
+2463,08/15/2023,Michael,Rivera,2543 FIRST ST,FORT MYERS,FL,33901,Code Enforcement,high grass,8608286849,Land Line,8602028302,Mobile,mike.rivera9@gmail.com,Fort Myers Code Enforcement
+2464,08/15/2023,Elshan,Gurbanov,3312 BASSIE CT,FORT MYERS,FL,33916,Code Enforcement,portable toilet on property,2393319975,Mobile,2393319985,Mobile,,Fort Myers Code Enforcement
+2465,08/15/2023,Rachel,Gorges,2751 COLONIAL BLVD UNIT: 201,FORT MYERS,FL,33907,Code Enforcement,kitchen fire.   minor unsafe.   unit 51-201,3168333344,Mobile,3164452554,Land Line,dgorges1@worldnet.att.net,Fort Myers Code Enforcement
+2466,08/15/2023,Allison,Dicroce,4101 RESIDENCE DR,FORT MYERS,FL,33901,Code Enforcement,stop work:  permit required pouring concrete slab  double fees and admin.,2392186267,Mobile,2399926445,Land Line,adicroce@localnet.com,Fort Myers Code Enforcement
+2469,08/15/2023,CHRISNA,MIDI,2809 MEADOW AVE,FORT MYERS,FL,33901,Code Enforcement,expired permit #trd-027121-2023,2397458659,Mobile,2393622832,Land Line,CHRISNAMIDI5@GMAIL.COM,Fort Myers Code Enforcement
+2471,08/15/2023,James,Hanlon,3823 WASHINGTON AVE,FORT MYERS,FL,33916,Code Enforcement,repeat-lot mow due to high grass.,2393343700,Land Line,9413343700,Mobile,hkobie@aol.com,Fort Myers Code Enforcement
+2472,08/15/2023,Eric,White,3438 FRANKLIN ST,FORT MYERS,FL,33916,Code Enforcement,high grass - this lot is 3 lots wide with a structure (possibly church) on 1 of them,8632977065,Land Line,8636625406,Land Line,ericred2005@gmail.com,Fort Myers Code Enforcement
+2473,08/15/2023,Gabriel,Perez,4115 UMBRIA LN UNIT: 521,FORT MYERS,FL,33916,Code Enforcement,no a/c for a month,9412681124,Mobile,9415859521,Mobile,,Fort Myers Code Enforcement

@@ -9,13 +9,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from Utility.visited_calendar_leads import save_global_list_duval, duval_county_visited_leads
+from Utility.visited_calendar_leads import save_global_list_alachua, alachua_county_visited_leads
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
 
-class DuvalCountyForeclosure:
+class AlachuaCountyForeclosure:
     def __init__(self):
         # Initialization
 
@@ -23,8 +23,8 @@ class DuvalCountyForeclosure:
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "duval_county_foreclosure.py"
-        self.county_website = "Duval County Foreclosure"
+        self.scraper_name = "alachua_county_foreclosure.py"
+        self.county_website = "Alachua County Foreclosure"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -41,7 +41,7 @@ class DuvalCountyForeclosure:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f'https://www.duval.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
+            self.url = f'https://alachua.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
              # Initialize driver
             self.driver.get(self.url)
 
@@ -118,7 +118,7 @@ class DuvalCountyForeclosure:
                         city, zip_code = None, None
                     
                     # Check if it has been seen before
-                    if property_address is not None and property_address not in duval_county_visited_leads:
+                    if property_address is not None and property_address not in alachua_county_visited_leads:
                         # Create new lead
                         lead = Lead()
 
@@ -146,8 +146,8 @@ class DuvalCountyForeclosure:
                         session.add(lead)
 
                         # Add to visited list
-                        duval_county_visited_leads.append(property_address)
-                        save_global_list_duval()
+                        alachua_county_visited_leads.append(property_address)
+                        save_global_list_alachua()
 
             except TimeoutException:
                 print("AUCTION_ITEM element not found. Moving on.")
