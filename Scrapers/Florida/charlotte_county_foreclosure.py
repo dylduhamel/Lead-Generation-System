@@ -116,6 +116,14 @@ class CharlotteCountyForeclosure:
                     except ValueError as e:
                         print(f"Error splitting city and zip data: '{e}'")
                         city, zip_code = None, None
+
+                    # Find Auction type [Document type]
+                    for i, row in enumerate(rows):
+                        if row.th.get_text(strip=True) == 'Auction Type:':
+                            self.auction_type_data = rows[i].td.get_text(strip=True)
+                            break
+                    else:
+                        self.auction_type_data = f"N/A - {self.county_website}"
                     
                     # Check if it has been seen before
                     if property_address is not None and property_address not in charlotte_county_visited_leads:
@@ -126,7 +134,7 @@ class CharlotteCountyForeclosure:
                         lead.date_added = time_stamp
 
                         # Document type
-                        lead.document_type = "Foreclosure"
+                        lead.document_type = "Foreclosure" if self.auction_type_data == "FORECLOSURE" else "Taxdeed" if self.auction_type_data == "TAXDEED" else self.auction_type_data
 
                         # Address
                         lead.property_address = property_address

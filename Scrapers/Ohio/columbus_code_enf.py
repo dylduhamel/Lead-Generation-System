@@ -4,6 +4,7 @@ import math
 import datetime
 import pytz
 import pandas as pd
+import undetected_chromedriver as uc
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
@@ -17,6 +18,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import Select
 
 class ColumbusCodeEnf():
@@ -25,18 +27,14 @@ class ColumbusCodeEnf():
         
         self.scraper_name = "columbus_code_enf.py"
         self.county_website = "Columbus Code Enforcement"
-        self.url = "https://portal.columbus.gov/permits/"
+        self.url = "https://portal.columbus.gov/permits"
         
-        # Set options for headless mode
-        #options = Options()
-        #options.add_argument('--headless')
-
-        self.driver = webdriver.Chrome()
+        service = Service(executable_path='Acuritas-Lead-Generation/chromedriver')
+        self.driver = webdriver.Chrome(service=service)
 
         # Format date for file name
         current_date = datetime.now(pytz.timezone('America/New_York'))
         formatted_date = current_date.strftime("%Y%m%d")
-        
 
         self.file_name = "RecordList" + formatted_date + ".csv"
         self.file_path = "/home/dylan/Downloads"
@@ -57,11 +55,14 @@ class ColumbusCodeEnf():
         # Calculate yesterday's date
         yesterday = today - timedelta(days=days)
 
-        # Format the date in the desired format (month/day/year) with no leading zero
+        # Format the date in the desired format (month/day/year)
         formatted_date = yesterday.strftime("%m/%d/%Y")
 
         # Start driver
         self.driver.get(self.url)
+
+        # This will set the value to `undefined`
+        self.driver.execute_script("delete navigator.webdriver;")
 
         try:
             # Wait for a specific element to be present
@@ -71,12 +72,13 @@ class ColumbusCodeEnf():
         except TimeoutException:
             print("Timeout, body not found")
 
-        time.sleep(5)
+        time.sleep(100)
+
         # Violations records button
         try:
-            #WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_TabDataList_TabsDataList_ctl08_LinksDataList_ctl00_LinkItemUrl")))
-            self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_TabDataList_TabsDataList_ctl08_LinksDataList_ctl00_LinkItemUrl").click()
-
+            # Execute JS event
+            js_script = "__doPostBack('ctl00$PlaceHolderMain$TabDataList$TabsDataList$ctl08$LinksDataList$ctl00$LinkItemUrl','')"
+            self.driver.execute_script(js_script)
         except NoSuchElementException:
             print("Can not find dropdown.")
 

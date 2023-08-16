@@ -6,6 +6,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType
 from Utility.lead_database import Session, Lead
 from Utility.util import curr_date
+from sqlalchemy import or_
 
 def email_csv():
     # Load .env file
@@ -30,7 +31,7 @@ def email_csv():
                                              Lead.first_name_owner != '', 
                                              Lead.phone_number_1 != None, 
                                              Lead.phone_number_1 != '', 
-                                             Lead.document_type == "Foreclosure").all()
+                                             or_(Lead.document_type == "Foreclosure", Lead.document_type == "Taxdeed")).all()
 
     # Convert query results to dataframes
     df1 = pd.DataFrame([{column: getattr(lead, column) for column in Lead.__table__.columns.keys()} for lead in code_enforcement_leads])
@@ -68,9 +69,9 @@ def email_csv():
 
     # Convert DataFrames to CSV and save
     csv_filepath1 = "./Data/csv_exports/code_enforcement.csv"
-    csv_filepath2 = "./Data/csv_exports/foreclosure.csv"
+    csv_filepath2 = "./Data/csv_exports/foreclosure_taxdeed.csv"
     csv_filename1 = "code_enforcement.csv"
-    csv_filename2 = "foreclosure.csv"
+    csv_filename2 = "foreclosure_taxdeed.csv"
     df1.to_csv(csv_filepath1, index=False)
     df2.to_csv(csv_filepath2, index=False)
 

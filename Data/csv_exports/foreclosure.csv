@@ -1,47 +1,71 @@
 id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
-2320,08/15/2023,Raida,Corujo,932 GRANT BLVD,LEHIGH ACRES,Ohio,33974,Foreclosure,,5708399157,Land Line,2398498824,Mobile,puchichis@gmail.com,Lee County Foreclosure
-2321,08/15/2023,Dorothy,Faison,1541 CLARK ST,CLEARWATER,Ohio,33755,Foreclosure,,7276233602,Mobile,7275323812,Land Line,,Pinellas County Foreclosure
-2322,08/15/2023,Donna,Blackstone,1205 OHIO AVE,PALM HARBOR,Ohio,34683,Foreclosure,,7277867976,Land Line,8137867976,Mobile,fookiesan@aol.com,Pinellas County Foreclosure
-2323,08/15/2023,Jonathan,South,5819 BRANBLE AVE,Cincinnati,Ohio,,Foreclosure,,6467898446,Mobile,5135496534,Land Line,jsouth72@hotmail.com,Hamilton County Sheriff Foreclosure
-2325,08/15/2023,Anna,Stang,121 INDIGO RD,ROTONDA WEST,Ohio,33947,Foreclosure,,2154414052,Land Line,7275263809,Land Line,annastang@hotmail.com,Charlotte County Foreclosure
-2326,08/15/2023,Mary,Dressell,7401 MANVILLE TER,PORT CHARLOTTE,Ohio,33981,Foreclosure,,4198770116,Land Line,4198775896,Land Line,mldressell@hotmail.com,Charlotte County Foreclosure
-2327,08/15/2023,Loida,Nicholson,7408 WALCOTT RD,PORT CHARLOTTE,Ohio,33981,Foreclosure,,8602430283,Land Line,8602431852,Land Line,,Charlotte County Foreclosure
-2328,08/15/2023,Tatiana,Adediran,13179 KAKAPO AVE,PORT CHARLOTTE,Ohio,33981,Foreclosure,,7707887391,Land Line,4045105801,Mobile,,Charlotte County Foreclosure
-2332,08/15/2023,Edwin,Pickrell,6130 TAYLOR RD,PUNTA GORDA,Ohio,33950,Foreclosure,,9414232914,Land Line,9415050965,Land Line,,Charlotte County Foreclosure
-2336,08/15/2023,Myles,Cope,33691 OIL WELL RD,PUNTA GORDA,Ohio,33955,Foreclosure,,9418152719,Mobile,9416371802,Land Line,mylescope@gmail.com,Charlotte County Foreclosure
-2338,08/15/2023,Daniel,Kosik,47060 BERMONT RD,PUNTA GORDA,Ohio,33982,Foreclosure,,9319930011,Mobile,9319371056,Land Line,,Charlotte County Foreclosure
-2339,08/15/2023,Guy,Briolet,12429 CALADIUM AVE,PUNTA GORDA,Ohio,33955,Foreclosure,,2396739597,Land Line,2396911358,Mobile,,Charlotte County Foreclosure
-2340,08/15/2023,S,Potter,27060 TREADMILL DR,PUNTA GORDA,Ohio,33955,Foreclosure,,8703653872,Land Line,,,,Charlotte County Foreclosure
-2342,08/15/2023,Brian,Wright,27441 MONTE CRISTO BLVD,PUNTA GORDA,Ohio,33955,Foreclosure,,9048342098,Land Line,9045014777,Mobile,buckfever52@aol.com,Charlotte County Foreclosure
-2343,08/15/2023,Donald,Swindell,12332 COGNAC DR,PUNTA GORDA,Ohio,33955,Foreclosure,,4402563794,Land Line,3125057093,Mobile,dswindell@sbcglobal.net,Charlotte County Foreclosure
-2344,08/15/2023,Russell,Hunt,13302 GREEN GULF BLVD,PUNTA GORDA,Ohio,33955,Foreclosure,,5302221239,Land Line,5302435718,Land Line,,Charlotte County Foreclosure
-2345,08/15/2023,Guy,Briolet,13343 CAROUSEL DR,PUNTA GORDA,Ohio,33955,Foreclosure,,2396739597,Land Line,2396911358,Mobile,,Charlotte County Foreclosure
-2346,08/15/2023,Ana,Dominguez,29217 GONDOLIER AVE,PUNTA GORDA,Ohio,33982,Foreclosure,,7209477530,Land Line,7877229224,Land Line,s1585kp@zionsbank.com,Charlotte County Foreclosure
-2347,08/15/2023,Diego,Batista,434 LEMOYNE ST,PORT CHARLOTTE,Ohio,33954,Foreclosure,,9416974568,Land Line,6032327543,Land Line,,Charlotte County Foreclosure
-2348,08/15/2023,Thomas,Linville,8307 PELICAN RD,ENGLEWOOD,Ohio,34224,Foreclosure,,8133837251,Land Line,8134815529,Mobile,tlinville@cox.net,Charlotte County Foreclosure
-2351,08/15/2023,Orrin,Day,13489 BENDER AVE,PORT CHARLOTTE,Ohio,33953,Foreclosure,,7607895137,Land Line,7607886351,Land Line,,Charlotte County Foreclosure
-2352,08/15/2023,Marva,Ellis,17240 JUNE AVE,PORT CHARLOTTE,Ohio,33948,Foreclosure,,9087538748,Land Line,9087530000,Land Line,marvaellis1@yahoo.com,Charlotte County Foreclosure
-2353,08/15/2023,Wilfredo,Canales,5912 GILLOT BLVD,PORT CHARLOTTE,Ohio,33981,Foreclosure,,3053330879,Mobile,3058650347,Land Line,,Charlotte County Foreclosure
-2354,08/15/2023,Mounir,Mrabet,90 WYLAM DR,PORT CHARLOTTE,Ohio,33954,Foreclosure,,9179155082,Mobile,9176316057,Mobile,,Charlotte County Foreclosure
-2355,08/15/2023,Vilma,Pollack,18342 LINCOYA AVE,PORT CHARLOTTE,Ohio,33954,Foreclosure,,9418156814,Mobile,7182760134,Land Line,,Charlotte County Foreclosure
-2356,08/15/2023,Guy,Briolet,1084 HINTON ST,PORT CHARLOTTE,Ohio,33952,Foreclosure,,2392348840,Mobile,2396911358,Mobile,rentorbuy@hotmail.com,Charlotte County Foreclosure
-2358,08/15/2023,Olga,Betancourt,29084 ALFARETTA AVE,PUNTA GORDA,Ohio,33982,Foreclosure,,7877900490,Mobile,,,,Charlotte County Foreclosure
-2360,08/15/2023,GEORGE,HOLL,27122 SAN JORGE DR,PUNTA GORDA,Ohio,33983,Foreclosure,,4129950837,Mobile,4122877896,Mobile,GEOHOLL@VERIZON.NET,Charlotte County Foreclosure
-2361,08/15/2023,Latchmin,Misir,1085 BISMARCK RD,PUNTA GORDA,Ohio,33983,Foreclosure,,9417438483,Land Line,9416245907,Land Line,mmisir1@worldnet.att.net,Charlotte County Foreclosure
-2362,08/15/2023,Christina,Katz,3060 SULSTONE DR,PUNTA GORDA,Ohio,33983,Foreclosure,,9412350930,Land Line,9416370930,Land Line,e-man5@comcast.net,Charlotte County Foreclosure
-2363,08/15/2023,Jake,Dressel,30376 HOLLY RD,PUNTA GORDA,Ohio,33982,Foreclosure,,8634535822,Land Line,,,jake.dressel@comcast.net,Charlotte County Foreclosure
-2364,08/15/2023,Aida,Fuentes,19622 MIDWAY BLVD,PORT CHARLOTTE,Ohio,33948,Foreclosure,,9413916434,Land Line,9417660000,Land Line,aidafuentes@webtv.net,Charlotte County Foreclosure
-2365,08/15/2023,Charles,Teuton,21318 NE HWY 315,MCCOY,Ohio,32134,Foreclosure,,8137815058,Mobile,8133632115,Mobile,dt@lesc.com,Marion County Foreclosure
-2366,08/15/2023,Ryan,Nagel,5021 W UNIVERSITY AVE,GAINESVILLE,Florida,32607,Foreclosure,,9702615670,Mobile,5613582392,Mobile,,Alachua County Foreclosure
-2367,08/15/2023,Fletcher,Hope,2015 NW 36TH DR,GAINESVILLE,Florida,32605,Foreclosure,,3524952130,Mobile,3524952774,Land Line,fhope@maddoxfoundry.com,Alachua County Foreclosure
-2368,08/15/2023,JEFFERY,CLAYTON,11616 NW 8TH LN,GAINESVILLE,Florida,32606,Foreclosure,,3522758857,Mobile,3523739442,Land Line,JEFFCLAHTON814@GMAIL.COM,Alachua County Foreclosure
-2369,08/15/2023,Jennifer,Leisey,7904 SW 87TH TER,GAINESVILLE,Florida,32608,Foreclosure,,9518165627,Mobile,9096575399,Land Line,jleisey@adelphia.com,Alachua County Foreclosure
-2370,08/15/2023,DORI,LOWER,7023 NW 92ND PL,GAINESVILLE,Florida,32653,Foreclosure,,3527927720,Mobile,3523726596,Land Line,ALMOST2TIRED2@AOL.COM,Alachua County Foreclosure
-2371,08/15/2023,Christopher,Wallace,9302 HOLDEN PARK RD,HAWTHORNE,Florida,32640,Foreclosure,,3862134445,Land Line,,,,Alachua County Foreclosure
-2372,08/15/2023,Mark,Verner,22528 SE 60TH PL,HAWTHORNE,Florida,32640,Foreclosure,,3866841136,Land Line,3373973622,Mobile,lint.northwood@gmail.com,Alachua County Foreclosure
-2373,08/15/2023,Catherine,Terry,14215 NW 156TH PL,ALACHUA,Florida,32615,Foreclosure,,3864180744,Land Line,3864624070,Land Line,,Alachua County Foreclosure
-2374,08/15/2023,David,Acevedo,14624 NW 150TH LN,ALACHUA,Florida,32615,Foreclosure,,3525754963,Mobile,3523288382,Mobile,dacevedo@chartermi.net,Alachua County Foreclosure
-2375,08/15/2023,DANIEL,POTTHAST,4741 NW 27TH TER,GAINESVILLE,Florida,32605,Foreclosure,,8139947378,Land Line,3018859379,Mobile,DANIELPOTTHAST@NETZERO.NET,Alachua County Foreclosure
-2376,08/15/2023,Judith,Strack,43 NE 46TH TER,GAINESVILLE,Florida,32641,Foreclosure,,2397773741,Mobile,9412624153,Land Line,,Alachua County Foreclosure
-2377,08/15/2023,Greg,Anderson,2105 NE 4TH AVE,GAINESVILLE,Florida,32641,Foreclosure,,3522194443,Mobile,3523388348,Land Line,greganderson23@sprint.blackberry.net,Alachua County Foreclosure
-2378,08/15/2023,ROBERT,RENO,22560 NW 174TH AVE,HIGH SPRINGS,Florida,32643,Foreclosure,,3522564144,Mobile,3522257231,Land Line,,Alachua County Foreclosure
+2522,08/16/2023,John,Bennington,2133 PICKETSIDE DRIVE,BATAVIA,Ohio,45103,Foreclosure,,5137350306,Land Line,5137245470,Land Line,jbenningtoniii@yahoo.com,Clermont County Sheriff Foreclosure
+2523,08/16/2023,Joseph,Westendorf,6408 PHEASANT RUN,LOVELAND,Ohio,45140,Foreclosure,,5137201165,Mobile,5137517219,Land Line,,Clermont County Sheriff Foreclosure
+2524,08/16/2023,Chuck,Wagner,7461 PINELAND RD,PINELAND,Ohio,33945,Foreclosure,,2392828215,Land Line,9412828215,Land Line,wroverwaggy@aol.com,Lee County Foreclosure
+2525,08/16/2023,John,Riester,2835 SE 17TH PL,CAPE CORAL,Ohio,33904,Foreclosure,,2399451452,Land Line,9419451452,Mobile,jriester@aol.com,Lee County Foreclosure
+2526,08/16/2023,KIMBERLY,WILLIAMS,2245 BELCHER ROAD,COLUMBUS,Ohio,43224,Foreclosure,,6144761218,Land Line,6149006893,Mobile,SAVANNAH4MARY@GMAIL.COM,Franklin County Sheriff Foreclosure
+2527,08/16/2023,CLARENCE,SMITH,1127 E 19TH AVENUE,COLUMBUS,Ohio,43211,Foreclosure,,6142661105,Mobile,6147360376,Mobile,BABYGIRL_SNOOP@BELLSOUTH.NET,Franklin County Sheriff Foreclosure
+2528,08/16/2023,Sovathara,Sambo,5607 MID DAY DRIVE,GALLOWAY,Ohio,43119,Foreclosure,,6147073504,Mobile,6148792400,Land Line,thaheenkhmer21@aol.com,Franklin County Sheriff Foreclosure
+2529,08/16/2023,Philomena,Olie,1382 GRAY MEADOW DRIVE,COLUMBUS,Ohio,43223,Foreclosure,,8325600478,Mobile,6142726365,Land Line,,Franklin County Sheriff Foreclosure
+2530,08/16/2023,Houston,Burks,3605 THIRD AVE,GROVE CITY,Ohio,43123,Foreclosure,,6149002501,Mobile,6145513036,Mobile,,Franklin County Sheriff Foreclosure
+2531,08/16/2023,Frances,Barnhouse,4541 FLOYD DRIVE0 HELEN ROA,COLUMBUS,Ohio,43232,Foreclosure,,6148331855,Land Line,4196690140,Land Line,,Franklin County Sheriff Foreclosure
+2532,08/16/2023,Lucian,Sovea,2641 OAKSTONE DR (VT LAND AND,COLUMBUS,Ohio,43231,Foreclosure,,2546618070,Mobile,7134295888,Land Line,lucians@hotmail.com,Franklin County Sheriff Foreclosure
+2533,08/16/2023,Kimberly,Ferrin,6675 HAMLER DRIVE,CANAL WINCHESTER,Ohio,43110,Foreclosure,,6144774647,Mobile,7405009728,Mobile,kferrin@insight.rr.com,Franklin County Sheriff Foreclosure
+2534,08/16/2023,Beverly,Timmons,205 SOUTH ASHBURTON RD,COLUMBUS,Ohio,43213,Foreclosure,,6142351533,Land Line,6145709558,Mobile,bwilsontimmons@aol.com,Franklin County Sheriff Foreclosure
+2535,08/16/2023,John,Altham,5795 BLENDON PLACE,COLUMBUS,Ohio,43230,Foreclosure,,6142710398,Mobile,6148550982,Land Line,jaltham@yahoo.com,Franklin County Sheriff Foreclosure
+2536,08/16/2023,James,Spears,2859 BLOSSOM AVE,COLUMBUS,Ohio,43231,Foreclosure,,6148902859,Land Line,6063531216,Land Line,bookitty77100289@aol.com,Franklin County Sheriff Foreclosure
+2537,08/16/2023,LISE,DELORME,472 TROUT LN,OLDSMAR,Ohio,34677,Foreclosure,,7274746143,Land Line,7272716157,Mobile,LISEJAC100@GMAIL.COM,Pinellas County Foreclosure
+2538,08/16/2023,Eileen,Amodei,2856 ANNISTON RD,JACKSONVILLE,Florida,32246,Foreclosure,,9045279959,Mobile,9043835531,Mobile,,Duval County Foreclosure
+2539,08/16/2023,Raymond,Gause,2931 E MIKRIS DR,JACKSONVILLE,Florida,32225,Foreclosure,,9043141335,Mobile,9043141235,Mobile,r.gause@yahoo.com,Duval County Foreclosure
+2540,08/16/2023,Elouise,Hunt,9216 LEITH DR,JACKSONVILLE,Florida,32208,Foreclosure,,9047664567,Land Line,9049242676,Land Line,elouise.hunt@excite.com,Duval County Foreclosure
+2541,08/16/2023,Carlos,Rivas,6616 COLBY HILLS DR,JACKSONVILLE,Florida,32222,Foreclosure,,5712758439,Mobile,5713407624,Mobile,,Duval County Foreclosure
+2542,08/16/2023,Jennifer,Stowell,6511 GINNIE SPRINGS RD,JACKSONVILLE,Florida,32258,Foreclosure,,9045042142,Mobile,9042681621,Land Line,jennystowell@comcast.net,Duval County Foreclosure
+2543,08/16/2023,William,Crumley,14011 HOLLINGS ST,JACKSONVILLE,Florida,32218,Foreclosure,,9043090456,Mobile,9043778964,Mobile,redneckedcowboy@yahoo.com,Duval County Foreclosure
+2544,08/16/2023,Sandra,Smiley,2520 DOLPHIN AVE,JACKSONVILLE,Florida,32218,Foreclosure,,6157924830,Land Line,6152998777,Land Line,sandra.smiley@juno.com,Duval County Foreclosure
+2545,08/16/2023,Marion,Page,5123 COLONIAL AVE,JACKSONVILLE,Florida,32210,Foreclosure,,9043887269,Land Line,9047181927,Mobile,mlp1942@comcast.net,Duval County Foreclosure
+2546,08/16/2023,Pauline,Dinapoli,1714 S BROOKVIEW DR,JACKSONVILLE,Florida,32246,Foreclosure,,9049961483,Land Line,9046428382,Land Line,,Duval County Foreclosure
+2547,08/16/2023,Josue,Alvarez,2511 GAILLARDIA RD,JACKSONVILLE,Florida,32211,Foreclosure,,5044100070,Mobile,5129158353,Mobile,zjosephine.alvareza47@netscape.net,Duval County Foreclosure
+2548,08/16/2023,Dmitry,Yakimchuk,3326 INTERNATIONAL VILLAGE CT,JACKSONVILLE,Florida,32277,Foreclosure,,9048219955,Land Line,9047629019,Land Line,dyakimchuk@msn.com,Duval County Foreclosure
+2549,08/16/2023,Luis,Gallardo,1665 SPRING OAKS LN,JACKSONVILLE,Florida,32221,Foreclosure,,9047598249,Mobile,9042208726,Land Line,luisgallardo@hotmail.com,Duval County Foreclosure
+2550,08/16/2023,RICHARD,BLACK,5200 SE 31ST ST ALL UNITS,OCALA,Ohio,34480,Foreclosure,,3526204764,Mobile,3528739766,Land Line,BRANNENJILL@YAHOO.COM,Marion County Foreclosure
+2551,08/16/2023,Jarred,Pugh,9080 SE 154TH LN,SUMMERFIELD,Ohio,34491,Foreclosure,,3524102220,Mobile,3524102202,Mobile,,Marion County Foreclosure
+2552,08/16/2023,Augustine,Lonergan,14887 SW 35TH CIR,OCALA,Ohio,34473,Foreclosure,,3523470087,Land Line,9043470087,Mobile,augustine.lonergan@go.com,Marion County Foreclosure
+2554,08/16/2023,Elizabeth,Garner,1208 AVENUE G,FORT PIERCE,Florida,34950,Taxdeed,,4078860268,Land Line,,,egarner@juno.com,St Lucie County Foreclosure
+2555,08/16/2023,Stephen,Deboi,906 N 18TH ST,FORT PIERCE,Florida,34950,Taxdeed,,3109168188,Mobile,6266443546,Mobile,,St Lucie County Foreclosure
+2556,08/16/2023,James,Richardson,5005 SANIBEL AVE,SAINT LUCIE COUNTY,Florida,34950,Taxdeed,,7724649995,Land Line,7724617114,Land Line,,St Lucie County Foreclosure
+2557,08/16/2023,HARRY,GALLOWAY,323 SE INWOOD AVE,PORT SAINT LUCIE,Florida,34953,Foreclosure,,5619027701,Mobile,7728710701,Land Line,HARRY.GALLOWAY@AOL.COM,St Lucie County Foreclosure
+2558,08/16/2023,DONALD,WILLIAMS,217 SW RIDGECREST DR,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7722606227,Mobile,7722374388,Land Line,DDUBB1973@GMAIL.COM,St Lucie County Foreclosure
+2559,08/16/2023,Eliseo,Diego,298 SW KIMBALL CIR,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7723338002,Mobile,7722878022,Land Line,swampboy@ymail.com,St Lucie County Foreclosure
+2560,08/16/2023,Sherone,Johnson,490 SW DEER RUN,PORT SAINT LUCIE,Florida,34953,Foreclosure,,5049520878,Mobile,7723327164,Mobile,sheronesr@yahoo.com,St Lucie County Foreclosure
+2561,08/16/2023,Phillip,Grindley,515 N 13TH ST,FORT PIERCE,Florida,34950,Foreclosure,,3472049716,Mobile,7729404614,Mobile,pbgrindley@hotmail.com,St Lucie County Foreclosure
+2562,08/16/2023,Richard,Hinson,6703 PENSACOLA RD,SAINT LUCIE COUNTY,Florida,34950,Foreclosure,,7728349541,Mobile,7726729383,Mobile,,St Lucie County Foreclosure
+2563,08/16/2023,Rebeca,Ruiz,6140 NW HOPKINS AVE,PORT SAINT LUCIE,Florida,34986,Foreclosure,,5612835814,Mobile,5619642254,Land Line,rebeca.ruiz47@yahoo.com,St Lucie County Foreclosure
+2565,08/16/2023,CLAYTON,LEONARD,541 NW PLACID AVE,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7726461855,Mobile,7729188263,Land Line,CLAYTONLEONARD40@GMAIL.COM,St Lucie County Foreclosure
+2566,08/16/2023,Tokiko,Lewis,2074 SW BEAUREGARD ST,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7728781776,Land Line,6313994928,Land Line,tokiko@yahoo.com,St Lucie County Foreclosure
+2567,08/16/2023,JAMES,SAVASTANO,1382 SW PATRICIA AVE,PORT SAINT LUCIE,Florida,34953,Foreclosure,,5613407393,Land Line,7723407393,Land Line,,St Lucie County Foreclosure
+2568,08/16/2023,Frank,Marasco,110 NW SWANN MILL CIR,PORT SAINT LUCIE,Florida,34986,Foreclosure,,7729796521,Mobile,7723430123,Land Line,FRANK.MARASCO@AOL.COM,St Lucie County Foreclosure
+2569,08/16/2023,Larry,Brown,661 CAMPBELL RD,SAINT LUCIE COUNTY,Florida,34950,Foreclosure,,7723594946,Mobile,7723237218,Mobile,,St Lucie County Foreclosure
+2570,08/16/2023,JOEL,ROLLE,1904 SAN MARCOS AVE,FORT PIERCE,Florida,34950,Foreclosure,,5614668119,Mobile,7724626777,Land Line,TOCF4@HOTMAIL.COM,St Lucie County Foreclosure
+2571,08/16/2023,Patricia,Ross,7606 FORT WALTON AVE,SAINT LUCIE COUNTY,Florida,34951,Foreclosure,,7724605275,Land Line,7724619929,Land Line,flstargazer56@aol.com,St Lucie County Foreclosure
+2572,08/16/2023,Dravelin,Crutchfield,446 SE GALLEON LN,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7723536990,Mobile,7726722621,Mobile,ddctaytay@gmail.com,St Lucie County Foreclosure
+2573,08/16/2023,Nancy,Wilkinson,1625 SW DIAMOND ST,PORT SAINT LUCIE,Florida,34953,Foreclosure,,3174144332,Mobile,5617587472,Mobile,,St Lucie County Foreclosure
+2574,08/16/2023,Michael,Yielding,321 NE GENESEE AVE,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7727770673,Mobile,7194730022,Land Line,mryielding53@gmail.com,St Lucie County Foreclosure
+2575,08/16/2023,Galter,Wilson,1509 BOSTON AVE,FORT PIERCE,Florida,34950,Taxdeed,,6174723713,Land Line,6173024247,Land Line,kyla_rebecca@hotmail.com,St Lucie County Foreclosure
+2576,08/16/2023,Anthony,Caramanis,8802 CITRUS PARK BLVD,SAINT LUCIE COUNTY,Florida,34950,Taxdeed,,7729859554,Mobile,7727130843,Mobile,carissacaramanis@hotmail.com,St Lucie County Foreclosure
+2577,08/16/2023,David,Conran,5112 SANIBEL AVE,SAINT LUCIE COUNTY,Florida,34950,Taxdeed,,7725196333,Mobile,4074616762,Mobile,dgconran@hotmail.com,St Lucie County Foreclosure
+2579,08/16/2023,Alan,Branca,720 TEXAS CT A,FORT PIERCE,Florida,34950,Taxdeed,,7724640491,Land Line,7724895523,Land Line,,St Lucie County Foreclosure
+2580,08/16/2023,THOMAS,WEEKS,1901 S 34TH ST,SAINT LUCIE COUNTY,Florida,34950,Foreclosure,,7729790922,Mobile,7729719313,Mobile,TWEEKS@NC.RR.COM,St Lucie County Foreclosure
+2581,08/16/2023,ASHLEY,WALKER,1439 CAPTAINS WALK20D,FORT PIERCE,Florida,34950,Foreclosure,,7728288596,Mobile,7724672587,Land Line,DADDYSSINFULBABYGIRL@GMAIL.COM,St Lucie County Foreclosure
+2582,08/16/2023,Geraldine,Walling,1810 S 32 ST,FORT PIERCE,Florida,34947,Foreclosure,,7063870686,Land Line,5617776307,Mobile,,St Lucie County Foreclosure
+2583,08/16/2023,Laura,Sneed,3303 AVENUE J,SAINT LUCIE COUNTY,Florida,34950,Taxdeed,,9544048378,Land Line,3523783389,Land Line,lboyd88@hotmail.com,St Lucie County Foreclosure
+2584,08/16/2023,Delores,Dotson,1908 COLONIAL RD,FORT PIERCE,Florida,34950,Taxdeed,,7723327880,Mobile,7725792631,Mobile,,St Lucie County Foreclosure
+2585,08/16/2023,LOUISE,CROSLEY,122 N 14TH ST,FORT PIERCE,Florida,34950,Taxdeed,,8147200930,Mobile,8143374208,Land Line,LGIZZIE@HOTMAIL.COM,St Lucie County Foreclosure
+2586,08/16/2023,David,Ingersoll,2962 SE DALHART RD,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7723357531,Land Line,7725218976,Land Line,all-in-one-@webtv.net,St Lucie County Foreclosure
+2587,08/16/2023,Christian,Cedeno,1013 SW BARBAROSA AVE,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7726265341,Mobile,7722499057,Mobile,jcedeno@sbcglobal.net,St Lucie County Foreclosure
+2588,08/16/2023,JEAN,PENALVER,114 DEVONSHIRE DR,SAINT LUCIE COUNTY,Florida,34950,Foreclosure,,7723531532,Mobile,3475204211,Mobile,PENALVERJ@HOTMAIL.COM,St Lucie County Foreclosure
+2589,08/16/2023,Frederick,Taht,1850 SE BOMA AVE,PORT SAINT LUCIE,Florida,34952,Foreclosure,,7727774687,Land Line,5613355849,Land Line,,St Lucie County Foreclosure
+2590,08/16/2023,Anita,Horwitz,2186 SE STARGRASS ST,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7728128624,Mobile,7723363982,Land Line,inneutral@aol.com,St Lucie County Foreclosure
+2591,08/16/2023,Audrey,Masterson,102 SW CARTER AVE,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7728790043,Land Line,7723445725,Land Line,,St Lucie County Foreclosure
+2593,08/16/2023,MANUEL,FUENTES,1311 AVENUE E,FORT PIERCE,Florida,34950,Taxdeed,,3056873702,Land Line,3059198025,Land Line,,St Lucie County Foreclosure
+2594,08/16/2023,Joseph,Renda,5701 ST LUCIE BLVD,SAINT LUCIE COUNTY,Florida,34946,Taxdeed,,7724680767,Land Line,7728782451,Land Line,richieperillo@yahoo.com,St Lucie County Foreclosure
+2595,08/16/2023,Christian,Dirkes,423 N 20TH ST,FORT PIERCE,Florida,34950,Taxdeed,,6267057860,Mobile,3214736446,Land Line,ced_productions@hotmail.com,St Lucie County Foreclosure

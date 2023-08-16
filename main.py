@@ -29,6 +29,8 @@ from Scrapers.Florida.charlotte_county_foreclosure import CharlotteCountyForeclo
 from Scrapers.Florida.marion_county_foreclosure import MarionCountyForeclosure
 from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
 from Scrapers.Florida.alachua_county_foreclosure import AlachuaCountyForeclosure
+from Scrapers.Florida.st_lucie_county_foreclosure import StLucieCountyForeclosure
+from Scrapers.Florida.sarasota_county_taxdeed import SarasotaCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -58,15 +60,15 @@ if __name__ == "__main__":
     # lee_county_code_enf.download_dataset(1)
     # lee_county_code_enf.start()
 
-    # Orange county code enforcement [ Turned off for time being ]
-    # orange_county_code_enf = OrangeCountyCodeEnf()
-    # orange_county_code_enf.download_dataset()
-    # orange_county_code_enf.start(1)
+    # # Orange county code enforcement [ Turned off for time being ]
+    # # orange_county_code_enf = OrangeCountyCodeEnf()
+    # # orange_county_code_enf.download_dataset()
+    # # orange_county_code_enf.start(1)
 
     # # Columbus code enforcement
-    # columbus_code_enf = ColumbusCodeEnf()   
-    # columbus_code_enf.download_dataset(1)
-    # columbus_code_enf.start()
+    # # columbus_code_enf = ColumbusCodeEnf()   
+    # # columbus_code_enf.download_dataset(1)
+    # # columbus_code_enf.start()
 
     # # Fort Myers code enforcement
     # fort_myers_code_enf = FortMeyersEnf()
@@ -75,23 +77,23 @@ if __name__ == "__main__":
 
     # # Claremont county foreclosure
     # clermont_county_forclosure = ClermontCountyForeclosure()
-    # clermont_county_forclosure.start(end_date="09/01/2023")
+    # clermont_county_forclosure.start(end_date="09/15/2023")
 
     # # Lee county foreclosure
     # lee_county_forclosure = LeeCountyForeclosure()
-    # lee_county_forclosure.start(end_date="09/15/2023")
+    # lee_county_forclosure.start(end_date="09/30/2023")
 
     # # Franklin county foreclosure
     # franklin_county_forclosure = FranklinCountyForeclosure()
-    # franklin_county_forclosure.start(end_date="09/10/2023")
+    # franklin_county_forclosure.start(end_date="09/20/2023")
 
     # # Pinellas county foreclosure
     # pinellas_county_forclosure = PinellasCountyForeclosure()
-    # pinellas_county_forclosure.start(end_date="10/07/2023")
+    # pinellas_county_forclosure.start(end_date="10/15/2023")
 
     # # Duval county foreclosure
     # duval_county_forclosure = DuvalCountyForeclosure()
-    # duval_county_forclosure.start(end_date="09/01/2023")
+    # duval_county_forclosure.start(end_date="09/10/2023")
 
     # # Butler county foreclosure
     # butler_county_foreclosure = ButlerCountyForeclosure()
@@ -103,7 +105,7 @@ if __name__ == "__main__":
 
     # # Fairfield county foreclosure
     # fairfield_county_foreclosure = FairfieldCountyForeclosure()
-    # fairfield_county_foreclosure.start("09/10/2023")
+    # fairfield_county_foreclosure.start(end_date="09/10/2023")
 
     # # Charlotte county foreclosure
     # charlotte_county_foreclosure = CharlotteCountyForeclosure()
@@ -117,26 +119,33 @@ if __name__ == "__main__":
     # alachua_county_foreclosure = AlachuaCountyForeclosure()
     # alachua_county_foreclosure.start(end_date="09/30/2023")
 
+    # # St Lucie county foreclosure
+    # st_lucie_county_foreclosure = StLucieCountyForeclosure()
+    # st_lucie_county_foreclosure.start(end_date="10/31/2023")
+
+    # Sarasota county taxdeed
+    sarasota_county_taxdeed = SarasotaCountyForeclosure()
+    sarasota_county_taxdeed.start(end_date="08/22/2023")
+
     '''
     Remove any duplicate address from today
-    CHECK WHAT DUPES WE HAVE FROM ORANGE BEFORE
     '''
     #remove_duplicates()
 
     """
-    Method call to BatchData API
+    API call to BatchData API
     Completes the missing info for each lead in database and exports to JSON
 
     Read from JSON and append to database
     """
     #skiptrace = skiptrace_leads()
     
-    json_to_database()
+    #json_to_database()
 
     """
     Twilio API to send out SMS/Email messages 
     """
-    email_csv()
+    #email_csv()
 
 
     # End timing program execution

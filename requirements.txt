@@ -9,3 +9,4 @@ openpyxl==3.1.2
 twilio==8.5.0
 sendgrid==6.10.0
 bs4
+undetected-chromedriver==3.5.2

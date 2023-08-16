@@ -205,3 +205,41 @@ if os.path.exists(alachua_filename):
 def save_global_list_alachua():
     with open(alachua_filename, 'wb') as f:
         pickle.dump(alachua_county_visited_leads, f)
+
+
+'''
+St Lucie County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+st_lucie_filename = './Data/Visited_calendar_leads/global_list_st_lucie.pkl'
+
+# Initialize an empty list
+st_lucie_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(st_lucie_filename):
+    with open(st_lucie_filename, 'rb') as f:
+        st_lucie_county_visited_leads = pickle.load(f)
+
+def save_global_list_st_lucie():
+    with open(st_lucie_filename, 'wb') as f:
+        pickle.dump(st_lucie_county_visited_leads, f)
+
+
+'''
+Sarasota County Foreclosure
+'''
+# Specify the filename to be used for the pickled data
+sarasota_filename = './Data/Visited_calendar_leads/global_list_sarasota.pkl'
+
+# Initialize an empty list
+sarasota_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(sarasota_filename):
+    with open(sarasota_filename, 'rb') as f:
+        sarasota_county_visited_leads = pickle.load(f)
+
+def save_global_list_sarasota():
+    with open(sarasota_filename, 'wb') as f:
+        pickle.dump(sarasota_county_visited_leads, f)
