@@ -9,7 +9,10 @@ from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import json_to_database, remove_duplicates
 from Utility.util import status_print
 from Utility.twilio_api import email_csv
-from Utility.visited_calendar_leads import lee_county_visited_leads, clermont_county_visited_leads
+from Utility.visited_calendar_leads import (
+    lee_county_visited_leads,
+    clermont_county_visited_leads,
+)
 from Scrapers.Florida.lee_county import LeeCountyScraper
 from Scrapers.Florida.lee_county_code_enf import LeeCountyCodeEnf
 from Scrapers.Ohio.cinci_code_enf_API import CinciCodeEnfAPI
@@ -30,7 +33,10 @@ from Scrapers.Florida.marion_county_foreclosure import MarionCountyForeclosure
 from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
 from Scrapers.Florida.alachua_county_foreclosure import AlachuaCountyForeclosure
 from Scrapers.Florida.st_lucie_county_foreclosure import StLucieCountyForeclosure
-from Scrapers.Florida.sarasota_county_taxdeed import SarasotaCountyForeclosure
+from Scrapers.Florida.sarasota_county_taxdeed import SarasotaCountyTaxdeed
+from Scrapers.Florida.marion_county_taxdeed import MarionCountyTaxdeed
+from Scrapers.Florida.nassau_county_foreclosure import NassauCountyForeclosure
+from Scrapers.Florida.nassau_county_taxdeed import NassauCountyTaxdeed
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -55,19 +61,19 @@ if __name__ == "__main__":
     # cinci_code_enf_API = CinciCodeEnfAPI()
     # cinci_code_enf_API.start(1)
 
-    # # Lee county code enforcement 
+    # # Lee county code enforcement
     # lee_county_code_enf = LeeCountyCodeEnf()
     # lee_county_code_enf.download_dataset(1)
     # lee_county_code_enf.start()
 
-    # # Orange county code enforcement [ Turned off for time being ]
-    # # orange_county_code_enf = OrangeCountyCodeEnf()
-    # # orange_county_code_enf.download_dataset()
-    # # orange_county_code_enf.start(1)
+    # Orange county code enforcement [ Turned off for time being ]
+    # orange_county_code_enf = OrangeCountyCodeEnf()
+    # orange_county_code_enf.download_dataset()
+    # orange_county_code_enf.start(1)
 
-    # # Columbus code enforcement
-    # # columbus_code_enf = ColumbusCodeEnf()   
-    # # columbus_code_enf.download_dataset(1)
+    # Columbus code enforcement
+    # columbus_code_enf = ColumbusCodeEnf()
+    # columbus_code_enf.download_dataset(1)
     # # columbus_code_enf.start()
 
     # # Fort Myers code enforcement
@@ -99,7 +105,7 @@ if __name__ == "__main__":
     # butler_county_foreclosure = ButlerCountyForeclosure()
     # butler_county_foreclosure.start(end_date="09/10/2023")
 
-    # # Hamilton county foreclosure 
+    # # Hamilton county foreclosure
     # hamilton_county_foreclosure = HamiltonCountyForeclosure()
     # hamilton_county_foreclosure.start()
 
@@ -115,6 +121,10 @@ if __name__ == "__main__":
     # marion_county_foreclosure = MarionCountyForeclosure()
     # marion_county_foreclosure.start(end_date="11/21/2023")
 
+    # # # Marion county taxdeed
+    # marion_county_taxdeed = MarionCountyTaxdeed()
+    # marion_county_taxdeed.start(end_date="10/01/2023")
+
     # # Alachua county foreclosure
     # alachua_county_foreclosure = AlachuaCountyForeclosure()
     # alachua_county_foreclosure.start(end_date="09/30/2023")
@@ -123,14 +133,23 @@ if __name__ == "__main__":
     # st_lucie_county_foreclosure = StLucieCountyForeclosure()
     # st_lucie_county_foreclosure.start(end_date="10/31/2023")
 
-    # Sarasota county taxdeed
-    sarasota_county_taxdeed = SarasotaCountyForeclosure()
-    sarasota_county_taxdeed.start(end_date="08/22/2023")
+    # # Sarasota county taxdeed
+    # sarasota_county_taxdeed = SarasotaCountyTaxdeed()
+    # sarasota_county_taxdeed.start(end_date="09/30/2023")
 
-    '''
+    # # Nassau county foreclosure
+    # nassau_county_foreclosure = NassauCountyForeclosure()
+    # nassau_county_foreclosure.start(end_date="10/01/2023")
+
+    # # Nassau county taxdeed
+    # nassau_county_taxdeed = NassauCountyTaxdeed()
+    # nassau_county_taxdeed.start(end_date="10/17/2023")
+
+
+    """
     Remove any duplicate address from today
-    '''
-    #remove_duplicates()
+    """
+    remove_duplicates()
 
     """
     API call to BatchData API
@@ -138,18 +157,18 @@ if __name__ == "__main__":
 
     Read from JSON and append to database
     """
-    #skiptrace = skiptrace_leads()
-    
-    #json_to_database()
+    skiptrace = skiptrace_leads()
+
+    json_to_database()
 
     """
     Twilio API to send out SMS/Email messages 
     """
-    #email_csv()
-
+    email_csv()
 
     # End timing program execution
     end_time = time.time()
     execution_time = end_time - start_time
-    status_print(f"Execution time of main function: {execution_time // 3600} hours {(execution_time % 3600) // 60} minutes {execution_time % 60} seconds")
-
+    status_print(
+        f"Execution time of main function: {execution_time // 3600} hours {(execution_time % 3600) // 60} minutes {execution_time % 60} seconds"
+    )

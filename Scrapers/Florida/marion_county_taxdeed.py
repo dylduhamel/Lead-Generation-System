@@ -10,15 +10,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from Utility.visited_calendar_leads import (
-    save_global_list_sarasota,
-    sarasota_county_visited_leads,
+    save_global_list_marion_taxdeed,
+    marion_taxdeed_county_visited_leads,
 )
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
 
-class SarasotaCountyTaxdeed:
+class MarionCountyTaxdeed:
     def __init__(self):
         # Initialization
 
@@ -26,8 +26,8 @@ class SarasotaCountyTaxdeed:
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "sarasota_county_taxdeed.py"
-        self.county_website = "Sarasota County Taxdeed"
+        self.scraper_name = "marion_county_taxdeed.py"
+        self.county_website = "Marion County Taxdeed"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -44,7 +44,7 @@ class SarasotaCountyTaxdeed:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f"https://sarasota.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
+            self.url = f"https://marion.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
@@ -144,7 +144,7 @@ class SarasotaCountyTaxdeed:
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in sarasota_county_visited_leads
+                        and property_address not in marion_taxdeed_county_visited_leads
                     ):
                         # Check if the first segment of the address (before the first space) is a full number
                         first_segment = property_address.split(" ")[0]
@@ -185,8 +185,8 @@ class SarasotaCountyTaxdeed:
                         session.add(lead)
 
                         # Add to visited list
-                        sarasota_county_visited_leads.append(property_address)
-                        save_global_list_sarasota()
+                        marion_taxdeed_county_visited_leads.append(property_address)
+                        save_global_list_marion_taxdeed()
 
             except TimeoutException:
                 print("AUCTION_ITEM element not found. Moving on.")

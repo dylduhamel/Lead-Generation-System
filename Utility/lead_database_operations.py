@@ -6,6 +6,7 @@ from sqlalchemy import update, text
 from Utility.lead_database import Lead, Session
 from Utility.util import curr_date, status_print
 
+
 def add_lead_to_database(lead):
     session = Session()
 
@@ -18,10 +19,13 @@ def add_lead_to_database(lead):
     finally:
         session.close()
 
-'''
+
+"""
 Function to add all skiptraced data to DB
 Only adds data to the leads who have date_added == curr_date()
-'''
+"""
+
+
 def json_to_database():
     # Create a session
     session = Session()
@@ -34,7 +38,7 @@ def json_to_database():
     today = today.replace("/", "-")
 
     # Load the results from a json file instead of making an API call
-    with open(f'./Data/Skiptrace/skiptrace_{today}.json', 'r') as file:
+    with open(f"./Data/Skiptrace/skiptrace_{today}.json", "r") as file:
         results = json.load(file)
 
     for lead, result in zip(leads, results):
@@ -52,22 +56,34 @@ def json_to_database():
                 phone_number_2 = phone_numbers[1].get("number")
                 phone_number_2_type = phone_numbers[1].get("type")
         else:
-            phone_number_1 = phone_number_1_type = phone_number_2 = phone_number_2_type = None
+            phone_number_1 = (
+                phone_number_1_type
+            ) = phone_number_2 = phone_number_2_type = None
 
-
-        email = result.get("emails", [{}])[0].get("email") if result.get("emails") else None
+        email = (
+            result.get("emails", [{}])[0].get("email") if result.get("emails") else None
+        )
 
         # Update the fields in the database
-        lead.first_name_owner = owner_first_name if owner_first_name else lead.first_name_owner
-        lead.last_name_owner = owner_last_name if owner_last_name else lead.last_name_owner
+        lead.first_name_owner = (
+            owner_first_name if owner_first_name else lead.first_name_owner
+        )
+        lead.last_name_owner = (
+            owner_last_name if owner_last_name else lead.last_name_owner
+        )
         lead.phone_number_1 = phone_number_1 if phone_number_1 else lead.phone_number_1
-        lead.phone_number_1_type = phone_number_1_type if phone_number_1_type else lead.phone_number_1_type
+        lead.phone_number_1_type = (
+            phone_number_1_type if phone_number_1_type else lead.phone_number_1_type
+        )
         lead.phone_number_2 = phone_number_2 if phone_number_2 else lead.phone_number_2
-        lead.phone_number_2_type = phone_number_2_type if phone_number_2_type else lead.phone_number_2_type
+        lead.phone_number_2_type = (
+            phone_number_2_type if phone_number_2_type else lead.phone_number_2_type
+        )
         lead.email = email if email else lead.email
 
     # Commit the changes
     session.commit()
+
 
 def remove_duplicates():
     # Initialize the session
