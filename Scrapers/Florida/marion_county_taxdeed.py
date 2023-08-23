@@ -1,5 +1,6 @@
 import time
 import datetime
+import logging
 from dateutil.rrule import rrule, DAILY
 from dateutil.parser import parse
 from selenium import webdriver
@@ -17,6 +18,7 @@ from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
+logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 class MarionCountyTaxdeed:
     def __init__(self):
@@ -188,8 +190,8 @@ class MarionCountyTaxdeed:
                         marion_taxdeed_county_visited_leads.append(property_address)
                         save_global_list_marion_taxdeed()
 
-            except TimeoutException:
-                print("AUCTION_ITEM element not found. Moving on.")
+            except Exception as e:
+                logging.error(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
 
         # Add new session to DB
         session.commit()

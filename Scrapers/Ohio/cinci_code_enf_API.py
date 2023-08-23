@@ -21,7 +21,7 @@ class CinciCodeEnfAPI():
         #  Load environment variables from .env file
         load_dotenv()
 
-        self.scraper_name = "cinci_code_enf.py"
+        self.scraper_name = "cinci_code_enf_API.py"
         self.county_website = "Cincinnati Code Enforcement API"
 
         # App token for authenticated requests

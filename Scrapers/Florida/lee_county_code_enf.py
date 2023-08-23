@@ -8,6 +8,7 @@ import math
 import datetime
 import pytz
 import pandas as pd
+import logging
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
@@ -22,6 +23,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
+
+logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 class LeeCountyCodeEnf():
     def __init__(self):
@@ -77,8 +80,8 @@ class LeeCountyCodeEnf():
             element = WebDriverWait(self.driver, 15).until(
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
             )
-        except TimeoutException:
-            print("Timeout, element not found")
+        except Exception as e:
+            logging.error("Timeout, element not found")
 
         # Record dropdown selection
         try:
@@ -86,8 +89,8 @@ class LeeCountyCodeEnf():
 
             # Select the option by its value
             select.select_by_value("CodeEnforcement/Complaint/NA/NA")
-        except NoSuchElementException:
-            print("Can not find dropdown.")
+        except Exception as e:
+            logging.error("Can not find dropdown.")
 
         time.sleep(1)
 
@@ -100,8 +103,8 @@ class LeeCountyCodeEnf():
             arguments[0].value = arguments[1];
             arguments[0].dispatchEvent(new Event('change'));
             """, curr_date_input, formatted_date)
-        except NoSuchElementException:
-            print("Can not input box.")
+        except Exception as e:
+            logging.error("Can not input box.")
 
         # Time input end
         try:
@@ -112,8 +115,8 @@ class LeeCountyCodeEnf():
             arguments[0].value = arguments[1];
             arguments[0].dispatchEvent(new Event('change'));
             """, curr_date_input, formatted_date)
-        except NoSuchElementException:
-            print("Can not input box.")
+        except Exception as e:
+            logging.error("Can not input box.")
 
         time.sleep(1)
 
@@ -121,15 +124,15 @@ class LeeCountyCodeEnf():
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_btnNewSearch")))
             self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_btnNewSearch").click()
-        except NoSuchElementException:
-            print("Can not find search button")
+        except Exception as e:
+            logging.error("Can not find search button")
 
         # Download csv
         try:
             WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "ctl00_PlaceHolderMain_dgvPermitList_gdvPermitList_gdvPermitListtop4btnExport")))
             self.driver.find_element(By.ID, "ctl00_PlaceHolderMain_dgvPermitList_gdvPermitList_gdvPermitListtop4btnExport").click()
-        except NoSuchElementException:
-            print("Can not find download button.")    
+        except Exception as e:
+            logging.error("Can not find download button.")    
 
         # Wait for the file to be downloaded 
         while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
@@ -150,7 +153,7 @@ class LeeCountyCodeEnf():
             # Load the csv file into a DataFrame
             df = pd.read_csv(self.read_file)
         except Exception as e:
-            print(f"Failed to load CSV file: {e}")
+            logging.error(f"Failed to load CSV file: {e}")
             exit()
         
         # Convert the Description to lowercase for case-insensitive matching 

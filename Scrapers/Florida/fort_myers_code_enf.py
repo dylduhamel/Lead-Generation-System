@@ -23,6 +23,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 
+logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 class FortMeyersEnf():
     def __init__(self):
@@ -33,7 +34,7 @@ class FortMeyersEnf():
         self.county_website = "Fort Myers Code Enforcement"
         self.url = "https://cdservices.cityftmyers.com/EnerGovProd/SelfService#/search"
 
-        # Set options for headless mode
+        # # Set options for headless mode
         # options = Options()
         # options.add_argument('--headless')
 
@@ -55,8 +56,10 @@ class FortMeyersEnf():
     def download_dataset(self,days):
         # Calculate dates needed for download entry 
         today = datetime.now()
-        yesterday = today - timedelta(days=days)
-        self.yesterday = yesterday.strftime("%m/%d/%Y")
+        start_date = today - timedelta(days=days)
+        end_date = today - timedelta(days=1)
+        self.start_date = start_date.strftime("%m/%d/%Y")
+        self.end_date = end_date.strftime("%m/%d/%Y")
 
         # Start driver
         self.driver.get(self.url)
@@ -68,8 +71,8 @@ class FortMeyersEnf():
             element = WebDriverWait(self.driver, 15).until(
                 EC.presence_of_element_located((By.ID, "SearchModule"))
             )
-        except TimeoutException:
-            print("Timeout, element not found")
+        except Exception as e:
+            logging.error("Timeout, element not found")
 
         time.sleep(5)
 
@@ -83,8 +86,8 @@ class FortMeyersEnf():
 
             # Select the option by visible text
             select.select_by_visible_text("Code Case")
-        except NoSuchElementException:
-            print("Can not find dropdown.")
+        except Exception as e:
+            logging.error("Can not find dropdown.")
 
         time.sleep(3)
 
@@ -92,8 +95,8 @@ class FortMeyersEnf():
         try:
             WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, "button-Advanced")))
             self.driver.find_element(By.ID, "button-Advanced").click()
-        except NoSuchElementException:
-            print("Can not find Advanced button.")
+        except Exception as e:
+            logging.error("Can not find Advanced button.")
 
         # Enter in dates for search 
         try:
@@ -104,9 +107,9 @@ class FortMeyersEnf():
             date_start_element.clear()
 
             # Input the value for yesterday
-            date_start_element.send_keys(self.yesterday)
-        except NoSuchElementException:
-            print("Could not find and enter yesterdays date")
+            date_start_element.send_keys(self.start_date)
+        except Exception as e:
+            logging.error("Could not find and enter yesterdays date")
 
         try:
             # Locate the data input end box
@@ -116,26 +119,26 @@ class FortMeyersEnf():
             date_end_element.clear()
 
             # Input the value for yesterday
-            date_end_element.send_keys(self.yesterday)
-        except NoSuchElementException:
-            print("Could not find and enter todays date")
+            date_end_element.send_keys(self.end_date)
+        except Exception as e:
+            logging.error("Could not find and enter todays date")
         
         # Run query 
         try: 
             WebDriverWait(self.driver,10).until(EC.presence_of_element_located((By.ID, "button-Search")))
             self.driver.find_element(By.ID, "button-Search").click()
-        except NoSuchElementException:
-            print("Can not find search button")
+        except Exception as e:
+            logging.error("Can not find search button")
         
         # Wait for search to run
-        time.sleep(5)
+        time.sleep(20)
 
         # Download file 
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "button-Export")))
             self.driver.find_element(By.ID, "button-Export").click()
-        except NoSuchElementException:
-            print("Can not find export button")
+        except Exception as e:
+            logging.error("Can not find export button")
 
         time.sleep(5)
         
@@ -150,18 +153,17 @@ class FortMeyersEnf():
 
             # Input the value for yesterday
             filename_element.send_keys(self.download_name)
-        except NoSuchElementException:
-            print ("Could not enter file name")
+        except Exception as e:
+            logging.error("Could not enter file name")
 
         time.sleep(1)
 
         # Download file 
         try: 
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "Okclick")))
+            WebDriverWait(self.driver, 25).until(EC.presence_of_element_located((By.ID, "Okclick")))
             self.driver.find_element(By.ID, "Okclick").click()
-        except NoSuchElementException:
-            print ("Can not find ok button")
-
+        except Exception as e:
+            logging.error("Can not find ok button")
 
         # Wait for the file to be downloaded 
         while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
@@ -182,7 +184,7 @@ class FortMeyersEnf():
             #load csv into a data frame 
             df = pd.read_csv(self.read_file)
         except Exception as e: 
-            print(f"Failed to load CSV file: {e}")
+            logging.error(f"Failed to load CSV file: {e}")
             exit()
 
         #Convert the description to lowercase for case-insensitive matching

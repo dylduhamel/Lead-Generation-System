@@ -23,6 +23,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 
+logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 class CinciCodeEnf():
     def __init__(self):
@@ -59,15 +60,15 @@ class CinciCodeEnf():
                 EC.presence_of_element_located((By.TAG_NAME, "body"))
             )
 
-        except TimeoutException:
-            print("Timeout, element not found")
+        except Exception as e:
+            logging.error("Timeout, element not found")
 
         # Dataset options page
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID,"recordDetailsButton")))
             self.driver.find_element(By.ID,"recordDetailsButton").click()
-        except NoSuchElementException:
-            print("Can not find record details button.")
+        except Exception as e:
+            logging.error("Can not find record details button.")
 
 
         # Wait for page to load completely
@@ -77,8 +78,8 @@ class CinciCodeEnf():
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "exportButton")))
             self.driver.find_element(By.ID, "exportButton").click()
-        except NoSuchElementException:
-            print("Can not find download button.")
+        except Exception as e:
+            logging.error("Can not find download button.")
 
         # Date dropdown selection
         try:
@@ -93,8 +94,8 @@ class CinciCodeEnf():
                 EC.visibility_of_element_located((By.XPATH, '/html/body/div[7]/div/div/div[2]/div[2]/div/div/div[2]/ul/li[8]/a')) 
             )
             dropdown_option.click()
-        except NoSuchElementException:
-            print("Can not find dropdown.")
+        except Exception as e:
+            logging.error("Can not find dropdown.")
 
         time.sleep(3)
 
@@ -102,8 +103,8 @@ class CinciCodeEnf():
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "limitedToView")))
             self.driver.find_element(By.ID, "limitedToView").click()
-        except NoSuchElementException:
-            print("Can not find checkbox.")
+        except Exception as e:
+            logging.error("Can not find checkbox.")
 
         time.sleep(3)
 
@@ -111,8 +112,8 @@ class CinciCodeEnf():
         try:
             WebDriverWait(self.driver, 25).until(EC.presence_of_element_located((By.ID, "exportDataSubmitBtn")))
             self.driver.find_element(By.ID, "exportDataSubmitBtn").click()
-        except NoSuchElementException:
-            print("Can not find download button.")
+        except Exception as e:
+            logging.error("Can not find download button.")
 
         # Wait for the file to be downloaded
         while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
@@ -155,7 +156,7 @@ class CinciCodeEnf():
         try:
             df= df[["COMP_TYPE_DESC", "X_COORD", "Y_COORD", "YN_ACTIVITY_REPORT", "STREET_NO", "STREET_DIRECTION", "STREET_NAME", "COMP_TYPE_DESC", "WORK_TYPE", "ENTERED_DATE"]] 
         except KeyError:
-            print(f"No new records for Cinci code enforcments.\n")
+            logging.error(f"No new records for Cinci code enforcments.\n")
 
         # Drop rows with empty values
         df = df.dropna(subset=[ "X_COORD", "Y_COORD", "STREET_NAME"])

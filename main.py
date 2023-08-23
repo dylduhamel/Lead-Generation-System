@@ -1,5 +1,7 @@
 import time
 import datetime
+import logging
+import inspect
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -27,7 +29,6 @@ from Scrapers.Florida.pinellas_county_foreclosure import PinellasCountyForeclosu
 from Scrapers.Ohio.butler_county_foreclosure import ButlerCountyForeclosure
 from Scrapers.Florida.duval_county_foreclosure import DuvalCountyForeclosure
 from Scrapers.Ohio.fairfield_county_foreclosure import FairfieldCountyForeclosure
-from Scrapers.Ohio.columbus_code_enf import ColumbusCodeEnf
 from Scrapers.Florida.charlotte_county_foreclosure import CharlotteCountyForeclosure
 from Scrapers.Florida.marion_county_foreclosure import MarionCountyForeclosure
 from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
@@ -42,131 +43,81 @@ from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
 from dateutil.parser import parse
 
-# Entry point
+logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
+
+def run_scraper(name, scraper_class, days=1, end_date=None):
+    scraper = scraper_class()
+
+    # Check if methods exist and then introspect for accepted parameters
+    download_dataset_accepts_days = 'days' in inspect.signature(scraper.download_dataset).parameters if hasattr(scraper, 'download_dataset') else False
+    download_dataset_accepts_end_date = 'end_date' in inspect.signature(scraper.download_dataset).parameters if hasattr(scraper, 'download_dataset') else False
+    start_accepts_days = 'days' in inspect.signature(scraper.start).parameters if hasattr(scraper, 'start') else False
+    start_accepts_end_date = 'end_date' in inspect.signature(scraper.start).parameters if hasattr(scraper, 'start') else False
+
+    if hasattr(scraper, 'download_dataset'):
+        try:
+            if download_dataset_accepts_days:
+                scraper.download_dataset(days=days)
+            elif download_dataset_accepts_end_date:
+                scraper.download_dataset(end_date=end_date)
+            else:
+                scraper.download_dataset()
+        except Exception as e:
+            logging.error(f"Error in {name}: {str(e)}")
+
+    if hasattr(scraper, 'start'):
+        try:
+            if start_accepts_days:
+                scraper.start(days=days)
+            elif start_accepts_end_date:
+                scraper.start(end_date=end_date)
+            else:
+                scraper.start()
+        except Exception as e:
+            logging.error(f"Error in {name}: {str(e)}")
+            
+
 if __name__ == "__main__":
-    # Begin timing program execution
     start_time = time.time()
 
-    """
-    All daily calls to "lead generating scripts"
-    Each script will add all available lead info to database
-    """
+    # Running each scraper
+    # run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
+    # run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
+    # run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
+    # run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
+    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date="09/15/2023")
+    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date="09/30/2023")
+    # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date="09/20/2023")
+    # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date="10/15/2023")
+    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date="09/10/2023")
+    # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date="09/10/2023")
+    # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
+    # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date="09/10/2023")
+    # run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date="10/10/2023")
+    # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date="11/21/2023")
+    # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date="10/01/2023")
+    # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date="09/30/2023")
+    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date="10/31/2023")
+    # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date="09/30/2023")
+    # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date="10/01/2023")
+    # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date="10/17/2023")
 
-    # # Cincinnati code enforcement
-    # cinci_code_enf = CinciCodeEnf()
-    # cinci_code_enf.download_dataset()
-    # cinci_code_enf.start(1)
+    # remove_duplicates()
 
-    # # Cincinnati code enforcement API
-    # cinci_code_enf_API = CinciCodeEnfAPI()
-    # cinci_code_enf_API.start(1)
+    try:
+        skiptrace_leads()
+        json_to_database()
+    except Exception as e:
+        logging.error(f"Error during skiptrace or json processing: {str(e)}")
 
-    # # Lee county code enforcement
-    # lee_county_code_enf = LeeCountyCodeEnf()
-    # lee_county_code_enf.download_dataset(1)
-    # lee_county_code_enf.start()
-
-    # Orange county code enforcement [ Turned off for time being ]
-    # orange_county_code_enf = OrangeCountyCodeEnf()
-    # orange_county_code_enf.download_dataset()
-    # orange_county_code_enf.start(1)
-
-    # Columbus code enforcement
-    # columbus_code_enf = ColumbusCodeEnf()
-    # columbus_code_enf.download_dataset(1)
-    # # columbus_code_enf.start()
-
-    # # Fort Myers code enforcement
-    # fort_myers_code_enf = FortMeyersEnf()
-    # fort_myers_code_enf.download_dataset(days=1)
-    # fort_myers_code_enf.start()
-
-    # # Claremont county foreclosure
-    # clermont_county_forclosure = ClermontCountyForeclosure()
-    # clermont_county_forclosure.start(end_date="09/15/2023")
-
-    # # Lee county foreclosure
-    # lee_county_forclosure = LeeCountyForeclosure()
-    # lee_county_forclosure.start(end_date="09/30/2023")
-
-    # # Franklin county foreclosure
-    # franklin_county_forclosure = FranklinCountyForeclosure()
-    # franklin_county_forclosure.start(end_date="09/20/2023")
-
-    # # Pinellas county foreclosure
-    # pinellas_county_forclosure = PinellasCountyForeclosure()
-    # pinellas_county_forclosure.start(end_date="10/15/2023")
-
-    # # Duval county foreclosure
-    # duval_county_forclosure = DuvalCountyForeclosure()
-    # duval_county_forclosure.start(end_date="09/10/2023")
-
-    # # Butler county foreclosure
-    # butler_county_foreclosure = ButlerCountyForeclosure()
-    # butler_county_foreclosure.start(end_date="09/10/2023")
-
-    # # Hamilton county foreclosure
-    # hamilton_county_foreclosure = HamiltonCountyForeclosure()
-    # hamilton_county_foreclosure.start()
-
-    # # Fairfield county foreclosure
-    # fairfield_county_foreclosure = FairfieldCountyForeclosure()
-    # fairfield_county_foreclosure.start(end_date="09/10/2023")
-
-    # # Charlotte county foreclosure
-    # charlotte_county_foreclosure = CharlotteCountyForeclosure()
-    # charlotte_county_foreclosure.start(end_date="10/10/2023")
-
-    # # Marion county foreclosure
-    # marion_county_foreclosure = MarionCountyForeclosure()
-    # marion_county_foreclosure.start(end_date="11/21/2023")
-
-    # # # Marion county taxdeed
-    # marion_county_taxdeed = MarionCountyTaxdeed()
-    # marion_county_taxdeed.start(end_date="10/01/2023")
-
-    # # Alachua county foreclosure
-    # alachua_county_foreclosure = AlachuaCountyForeclosure()
-    # alachua_county_foreclosure.start(end_date="09/30/2023")
-
-    # # St Lucie county foreclosure
-    # st_lucie_county_foreclosure = StLucieCountyForeclosure()
-    # st_lucie_county_foreclosure.start(end_date="10/31/2023")
-
-    # # Sarasota county taxdeed
-    # sarasota_county_taxdeed = SarasotaCountyTaxdeed()
-    # sarasota_county_taxdeed.start(end_date="09/30/2023")
-
-    # # Nassau county foreclosure
-    # nassau_county_foreclosure = NassauCountyForeclosure()
-    # nassau_county_foreclosure.start(end_date="10/01/2023")
-
-    # # Nassau county taxdeed
-    # nassau_county_taxdeed = NassauCountyTaxdeed()
-    # nassau_county_taxdeed.start(end_date="10/17/2023")
+    # Change so that json returns a result so we dont email prematurely.
 
 
-    """
-    Remove any duplicate address from today
-    """
-    remove_duplicates()
+    # try:
+    #     email_csv()
+    # except Exception as e:
+    #     logging.error(f"Error during email_csv: {str(e)}")
 
-    """
-    API call to BatchData API
-    Completes the missing info for each lead in database and exports to JSON
-
-    Read from JSON and append to database
-    """
-    skiptrace = skiptrace_leads()
-
-    json_to_database()
-
-    """
-    Twilio API to send out SMS/Email messages 
-    """
-    email_csv()
-
-    # End timing program execution
     end_time = time.time()
     execution_time = end_time - start_time
     status_print(

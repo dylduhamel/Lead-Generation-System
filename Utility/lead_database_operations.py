@@ -1,11 +1,13 @@
 import os
 import requests
 import json
+import logging
 import pandas as pd
 from sqlalchemy import update, text
 from Utility.lead_database import Lead, Session
 from Utility.util import curr_date, status_print
 
+logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 def add_lead_to_database(lead):
     session = Session()
@@ -14,7 +16,7 @@ def add_lead_to_database(lead):
         session.add(lead)
         session.commit()
     except Exception as e:
-        print(f"Not able to add lead to database. An error has occoured: {e}")
+        logging.error(f"Not able to add lead to database. An error has occoured: {e}")
         session.rollback()
     finally:
         session.close()
