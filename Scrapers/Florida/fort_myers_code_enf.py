@@ -165,9 +165,18 @@ class FortMeyersEnf():
         except Exception as e:
             logging.error("Can not find ok button")
 
-        # Wait for the file to be downloaded 
-        while not os.path.exists(os.path.join(self.file_path, self.file_name)): 
+        # Timing of attmepted download
+        start_time = time.time()
+        elapsed_time = 0
+
+        # Wait for the file to be downloaded or for 45 seconds to elapse
+        while not os.path.exists(os.path.join(self.file_path, self.file_name)) and elapsed_time < 45:
             time.sleep(1)
+            elapsed_time = time.time() - start_time
+
+        # Check if the file hasn't been downloaded after 45 seconds
+        if not os.path.exists(os.path.join(self.file_path, self.file_name)):
+            logging.error(f"File was not downloaded after 45 seconds! : For scraper {self.scraper_name}")
 
         # Relinquish resources
         self.driver.quit()

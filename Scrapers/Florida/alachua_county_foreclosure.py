@@ -160,7 +160,7 @@ class AlachuaCountyForeclosure:
                         save_global_list_alachua()
 
             except Exception as e:
-                logging.error("AUCTION_ITEM element not found. Moving on.")
+                print("AUCTION_ITEM element not found. Moving on.")
 
         # Add new session to DB
         session.commit()

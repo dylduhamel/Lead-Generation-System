@@ -2,6 +2,8 @@ import time
 import datetime
 import logging
 import inspect
+from datetime import date
+from dateutil.relativedelta import relativedelta
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -80,29 +82,42 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
 if __name__ == "__main__":
     start_time = time.time()
 
-    # Running each scraper
-    # run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
-    # run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
-    # run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
-    # run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
-    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date="09/15/2023")
-    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date="09/30/2023")
-    # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date="09/20/2023")
-    # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date="10/15/2023")
-    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date="09/10/2023")
-    # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date="09/10/2023")
-    # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
-    # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date="09/10/2023")
-    # run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date="10/10/2023")
-    # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date="11/21/2023")
-    # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date="10/01/2023")
-    # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date="09/30/2023")
-    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date="10/31/2023")
-    # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date="09/30/2023")
-    # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date="10/01/2023")
-    # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date="10/17/2023")
+    # Get the date two months from today
+    future_date = date.today() + relativedelta(months=2)
+    # Convert it to the "mm/dd/yyyy" format
+    end_date = future_date.strftime('%m/%d/%Y')
 
-    # remove_duplicates()
+    # Running each scraper
+    # Code Enforcement 
+    run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
+    run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
+    run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
+    run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
+
+    # Get the date two months from today
+    future_date = date.today() + relativedelta(months=2)
+    # Convert it to the "mm/dd/yyyy" format
+    end_date = future_date.strftime('%m/%d/%Y')
+
+    # Foreclosure and Taxdeed
+    run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
+    run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
+    run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
+    run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
+    run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
+    run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
+    run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
+    run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
+    run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
+    run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
+    run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
+    run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
+    run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
+    run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
+    run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
+    run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
+
+    remove_duplicates()
 
     try:
         skiptrace_leads()

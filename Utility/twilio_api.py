@@ -79,6 +79,7 @@ def email_csv():
     SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
     FROM_EMAIL = os.getenv("FROM_EMAIL") 
     TO_EMAIL = os.getenv("TO_EMAIL")  
+    TO_EMAIL_SELF = os.getenv("TO_EMAIL_SELF")
 
     # Read CSV data and convert to Base64
     with open(csv_filepath1, "rb") as f:
@@ -101,7 +102,7 @@ def email_csv():
     # Create message
     message = Mail(
         from_email=FROM_EMAIL,
-        to_emails=TO_EMAIL,
+        to_emails=[TO_EMAIL, TO_EMAIL_SELF],
         subject='Sending CSV Data',
         plain_text_content='Hey Gents,\n\n\tHere is all of the data pulled in the last 24 hours.'
     )

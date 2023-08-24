@@ -151,7 +151,7 @@ class ClermontCountyForeclosure:
                         save_global_list_clermont()
 
             except Exception as e:      
-                logging.error(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
 
         # Add new session to DB
         session.commit()
