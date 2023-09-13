@@ -34,11 +34,6 @@ class CinciCodeEnf():
         self.county_website = "Cincinnati Code Enforcement"
         self.url = "https://cagismaps.hamilton-co.org/PropertyActivity/propertyMaintenance"
 
-        # Set options for headless mode
-        # options = Options()
-        # options.add_argument('--headless')
-
-        # Initialize the browser (assumes Chrome here)
         self.driver = webdriver.Chrome()
 
         self.file_name = "PropertyActivity.csv"

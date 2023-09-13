@@ -102,7 +102,7 @@ def email_csv():
     # Create message
     message = Mail(
         from_email=FROM_EMAIL,
-        to_emails=[TO_EMAIL, TO_EMAIL_SELF],
+        to_emails=(TO_EMAIL, TO_EMAIL_SELF),
         subject='Sending CSV Data',
         plain_text_content='Hey Gents,\n\n\tHere is all of the data pulled in the last 24 hours.'
     )

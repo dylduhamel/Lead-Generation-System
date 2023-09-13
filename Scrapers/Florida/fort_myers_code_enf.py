@@ -34,11 +34,6 @@ class FortMeyersEnf():
         self.county_website = "Fort Myers Code Enforcement"
         self.url = "https://cdservices.cityftmyers.com/EnerGovProd/SelfService#/search"
 
-        # # Set options for headless mode
-        # options = Options()
-        # options.add_argument('--headless')
-
-        # Initialize the browser (assumes Chrome here)
         self.driver = webdriver.Chrome()
 
         # File name is entered upon download

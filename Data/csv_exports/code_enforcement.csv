@@ -1,4 +1,5 @@
 id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
+<<<<<<< HEAD
 3364,08/26/2023,Bibi,Baksh,3306 31ST ST W,LEHIGH ACRES,FL,33971,Code Enforcement,nuisance accumulation / dumpster overflowing / no silt fence,3052981736,Mobile,9548946273,Land Line,bnbaksh@hotmail.com,Lee County Code Enforcement
 3365,08/26/2023,Marilyn,Stagg,3312 41ST ST W,LEHIGH ACRES,FL,33971,Code Enforcement,nuisance accumulation / horticultural debris,3193775409,Land Line,5208255298,Land Line,,Lee County Code Enforcement
 3366,08/26/2023,Hamilton,Desales,4602 NORA AVE N,LEHIGH ACRES,FL,33971,Code Enforcement,nuisance accumulation,2392422444,Mobile,2392403866,Mobile,,Lee County Code Enforcement
@@ -29,3 +30,33 @@ id,date_added,first_name_owner,last_name_owner,property_address,property_city,pr
 3424,08/26/2023,David,Sussman,2462 LAFAYETTE ST,FORT MYERS,FL,33901,Code Enforcement,high grass - easement behind building ,2392401947,Mobile,6175151811,Mobile,babydave@gmail.com,Fort Myers Code Enforcement
 3429,08/26/2023,CORY,JONES,5243 RED CEDAR DR UNIT: 12,FORT MYERS,FL,33907,Code Enforcement,possible interior renovation ,7866586853,Mobile,7862344628,Mobile,JACORYJONESRODRIGUEZ@GMAIL.COM,Fort Myers Code Enforcement
 3430,08/26/2023,Sameisha,Johnson,4890 MAJORCA PALMS DR,FORT MYERS,FL,33905,Code Enforcement,street light has been out since hurricane but post is fine.,2398781544,Mobile,2398789841,Mobile,sameisha.johnson@yahoo.com,Fort Myers Code Enforcement
+=======
+4167,09/10/2023,William,Nash,2201 CRYSTAL DR,FORT MYERS,FL,33907,Code Enforcement,"lot mow, nuisance accumulation.",2398262601,Mobile,2392776281,Land Line,wnash@lycos.com,Lee County Code Enforcement
+4168,09/10/2023,Doreen,Bailey,2600 64TH ST W,LEHIGH ACRES,FL,33971,Code Enforcement,trash and nuisance accumulation,8034314372,Mobile,8033961419,Land Line,baileyd@novachem.com,Lee County Code Enforcement
+4169,09/10/2023,Tammy,Kaster,5745 SPRINGFIELD AVE,BOKEELIA,FL,33922,Code Enforcement,junk all over the property,2396341945,Mobile,2396452101,Mobile,tammykaster.tk@gmail.com,Lee County Code Enforcement
+4170,09/10/2023,Kenneth,Prosch,918 HAPPY RD,NORTH FORT MYERS,FL,33903,Code Enforcement,complaint of lot mow.,2766884332,Land Line,8452971743,Land Line,kprosch@aol.com,Lee County Code Enforcement
+4171,09/10/2023,Vasile,Onetiu,2207 LILY RD,FORT MYERS,FL,33905,Code Enforcement,lot mow,7732093058,Mobile,,,,Lee County Code Enforcement
+4172,09/10/2023,GABRIEL,MEJIA,210 VERMONT WAY,LEHIGH ACRES,FL,33936,Code Enforcement,lot mow,7863019802,Mobile,3058647518,Land Line,GABOMEJIA@HOTMAIL.COM,Lee County Code Enforcement
+4173,09/10/2023,Michael,Fee,602 HARRISON DR,LEHIGH ACRES,FL,33936,Code Enforcement,lot mow,2398100615,Mobile,2397328477,Land Line,mfee05@gmail.com,Lee County Code Enforcement
+4174,09/10/2023,Natasha,Cular,2655 WEST POINT LN,MATLACHA,FL,33993,Code Enforcement,complaint of roofing debris all over property and lot mow.,2399957266,Land Line,2398720794,Mobile,ncular@gmail.com,Lee County Code Enforcement
+4175,09/10/2023,Dale,Mcavoy,2645 COCO PLUM DR,MATLACHA,FL,33993,Code Enforcement,complaint of debris from hurricane all over property.,9415275303,Mobile,8133936410,Mobile,dale.mcavoy@attb1.com,Lee County Code Enforcement
+4176,09/10/2023,Rhonda,Lamont,4125 CLEVELAND AVE UNIT: 1255,FORT MYERS,FL,33901,Code Enforcement,utilities needs assistance getting access to meter.  water meter is in bank #2 across from twisted crab.  see notes in case.,3212681723,Land Line,3213839567,Land Line,ruffkitty59@yahoo.com,Fort Myers Code Enforcement
+4177,09/10/2023,Laura,Brown,317 NOGALES ST,FORT MYERS,FL,33916,Code Enforcement,lot mow requested due to high grass and weeds.,2393375220,Land Line,2393370303,Land Line,sommermaloy@ymail.com,Fort Myers Code Enforcement
+4178,09/10/2023,DESHARI,STALEY,5356 SUMMERLIN RD,FORT MYERS,FL,33919,Code Enforcement,roof damage,2396890843,Mobile,2397858771,Mobile,SHARIS033@ICLOUD.COM,Fort Myers Code Enforcement
+4179,09/10/2023,Kendall,Abbott,1 KINGSMAN CIR,FORT MYERS,FL,33905,Code Enforcement,high grass row ,7704398899,Land Line,,,cinabb2003@bellsouth.net,Fort Myers Code Enforcement
+4180,09/10/2023,Mercedes,Marin,93 DIANA AVE,FORT MYERS,FL,33905,Code Enforcement,"community house with disabled tenants living there.  outside lights not working, infestation of roaches, fire ants, cracks in walls.",2394405337,Mobile,2398222782,Mobile,,Fort Myers Code Enforcement
+4181,09/10/2023,Michael,Newman,2538 CONGRESS ST,FORT MYERS,FL,33901,Code Enforcement,apartment complex with high grass and trash,2397382018,Mobile,2395409846,Land Line,,Fort Myers Code Enforcement
+4182,09/10/2023,Raymond,Johnson,5348 SUMMERLIN RD,FORT MYERS,FL,33919,Code Enforcement,roof damage,2394408087,Mobile,5042234684,Mobile,ck828@hotmail.com,Fort Myers Code Enforcement
+4184,09/10/2023,Kevin,Williams,3747 SUNTRUST DR,FORT MYERS,FL,33916,Code Enforcement,expired permit #trd-027657-2023,2394795273,Land Line,2398101995,Mobile,kwilliams3546@aol.com,Fort Myers Code Enforcement
+4185,09/10/2023,Eldin,Hotic,4681 ELEVATION WAY,FORT MYERS,FL,33905,Code Enforcement,"storage of construction equipment, pavers, dumpsters appears to be site clearing ",2395651412,Mobile,2394588200,Land Line,nelahotic@comcast.net,Fort Myers Code Enforcement
+4186,09/10/2023,Danielle,Wilbon,5352 SUMMERLIN RD,FORT MYERS,FL,33919,Code Enforcement,roof damage,2394404219,Mobile,2398789159,Mobile,daniellewilbon45@gmail.com,Fort Myers Code Enforcement
+4187,09/10/2023,George,Allen,2939 LINCOLN BLVD,FORT MYERS,FL,33916,Code Enforcement,high grass repeat,7742874192,Mobile,7743141265,Land Line,professor.dryasdust@gmail.com,Fort Myers Code Enforcement
+4188,09/10/2023,Robert,Huston,4663 ELEVATION WAY,FORT MYERS,FL,33905,Code Enforcement,high grass,8634022398,Land Line,3202600200,Mobile,rahust@aol.com,Fort Myers Code Enforcement
+4190,09/10/2023,Hemaprasad,Kasireddy,2140 FLINT DR,FORT MYERS,FL,33916,Code Enforcement,lot mow requested due to high grass and weeds.,5034904362,Mobile,2396890127,Mobile,hemaprasad@yahoo.com,Fort Myers Code Enforcement
+4191,09/10/2023,Julie,Bourassa,3340 E RIVERSIDE DR,FORT MYERS,FL,33916,Code Enforcement,expired permit #bld2019-03638,2393214574,Mobile,2394826897,Land Line,,Fort Myers Code Enforcement
+4192,09/10/2023,Luciano,Sanchez,3711 BALLARD RD,FORT MYERS,FL,33916,Code Enforcement,chickens,2397742692,Land Line,2392852959,Mobile,,Fort Myers Code Enforcement
+4193,09/10/2023,Ronald,Jansen,2248 CLEVELAND AVE,FORT MYERS,FL,33901,Code Enforcement,bathroom locked when attendant leaves - no one has access to bathrooms & people are urinating on side of building,9418096377,Mobile,5176275285,Land Line,rjansenjr@comcast.net,Fort Myers Code Enforcement
+4194,09/10/2023,Dennis,Bubar,4647 ELEVATION WAY,FORT MYERS,FL,33905,Code Enforcement,"parking on vacant lot, row needs to be mowed
+",2393324400,Land Line,2394892479,Land Line,dvaden@alcc.com,Fort Myers Code Enforcement
+4195,09/10/2023,Donna,Alexander,1500 JACKSON ST,FORT MYERS,FL,33901,Code Enforcement,expired permit #trd-028201-2023,7276232397,Mobile,7275793890,Land Line,,Fort Myers Code Enforcement
+>>>>>>> origin/HEAD
