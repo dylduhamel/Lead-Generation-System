@@ -18,7 +18,7 @@ class CinciCodeEnfAPI():
     def __init__(self):
         # Initialization
 
-        #  Load environment variables from .env file
+        # Load environment variables from .env file
         load_dotenv()
 
         self.scraper_name = "cinci_code_enf_API.py"
@@ -41,8 +41,9 @@ class CinciCodeEnfAPI():
         # Create a new database Session
         session = Session()
 
-        # Calculate yesterday's date
-        self.yesterday = (datetime.now() - timedelta(days)).strftime('%Y-%m-%dT00:00:00.000')
+        # Calculate yesterday's date dynamically
+        yesterday_date = datetime.now() - timedelta(days=1)
+        self.yesterday = yesterday_date.strftime("%Y-%m-%dT00:00:00.000")
 
         # Make a request to the API and get the results
         # Filter results for records with an 'entered_date' from yesterday and limit to 2000 results
@@ -104,8 +105,6 @@ class CinciCodeEnfAPI():
 
             # Website tracking
             lead.county_website = self.county_website
-
-            #print(lead, '\n')
 
             # Add lead to database
             session.add(lead)

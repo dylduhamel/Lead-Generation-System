@@ -34,10 +34,6 @@ class LeeCountyCodeEnf():
         self.county_website = "Lee County Code Enforcement"
         self.url = "https://accelaaca.leegov.com/aca/Cap/CapHome.aspx?module=CodeEnforcement&TabName=CodeEnforcement"
         
-        # Set options for headless mode
-        #options = Options()
-        #options.add_argument('--headless')
-
         self.driver = webdriver.Chrome()
 
         # Format date for file name

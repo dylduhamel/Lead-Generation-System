@@ -1,46 +1,16 @@
 id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
-2978,08/24/2023,Ronald,Whitaker,2587 GAYLORD AVE,BETHEL,Ohio,45106,Foreclosure,,5139672854,Mobile,5139672855,Mobile,rwhitaker911@yahoo.com,Clermont County Sheriff Foreclosure
-2979,08/24/2023,Charlene,Mayes,2564 SWINGS CORNER POINT ISABE,BETHEL,Ohio,45106,Foreclosure,,5132924470,Mobile,5135599421,Land Line,char45may@yahoo.com,Clermont County Sheriff Foreclosure
-2980,08/24/2023,Daniel,Long,3576 STATE ROUTE 756,FELICITY,Ohio,45120,Foreclosure,,5133142611,Mobile,5138760075,Land Line,dlong1428@yahoo.com,Clermont County Sheriff Foreclosure
-2981,08/24/2023,Scott,Schadel,4731 SHEPHERD ROAD,BATAVIA,Ohio,45103,Foreclosure,,5139478210,Land Line,5133788640,Mobile,sschadel@msn.com,Clermont County Sheriff Foreclosure
-2982,08/24/2023,Randy,Morrison,912 SW 6TH AVE,CAPE CORAL,Ohio,33991,Foreclosure,,8157281905,Land Line,2399491877,Land Line,blixt@aol.com,Lee County Foreclosure
-2983,08/24/2023,Brittany,Ring,7055 CAVALCADE DRIVE,NEW ALBANY,Ohio,43054,Foreclosure,,2167013361,Mobile,2164960930,Mobile,,Franklin County Sheriff Foreclosure
-2984,08/24/2023,Destiny,Clark,4857 STONEYBROOK BLVD,HILLIARD,Ohio,43026,Foreclosure,,6145726314,Mobile,6142197004,Land Line,,Franklin County Sheriff Foreclosure
-2985,08/24/2023,Eric,Johnston,2085 ATTERBURY AVE,COLUMBUS,Ohio,43229,Foreclosure,,6147353951,Mobile,6145234231,Land Line,ericj5073@ole.com,Franklin County Sheriff Foreclosure
-2986,08/24/2023,Essie,Woodard,3382 N BINBROOK ROAD,COLUMBUS,Ohio,43227,Foreclosure,,6145010377,Land Line,6142354040,Land Line,,Franklin County Sheriff Foreclosure
-2987,08/24/2023,Benjamin,Bridges,2596 AZELDA ST,COLUMBUS,Ohio,43211,Foreclosure,,7409194436,Land Line,6142885937,Mobile,,Franklin County Sheriff Foreclosure
-2988,08/24/2023,John,Schreck,6788 SKYLINE DR E,COLUMBUS,Ohio,43235,Foreclosure,,6147930169,Land Line,6149895333,Mobile,johnschreck@netscape.net,Franklin County Sheriff Foreclosure
-2989,08/24/2023,Joyce,Quenah,3339 CROSSING HILL WAY,COLUMBUS,Ohio,43219,Foreclosure,,6143162162,Mobile,6144189113,Land Line,jquenah@gmail.com,Franklin County Sheriff Foreclosure
-2990,08/24/2023,Roland,Johnson,1277 MINNESOTA AVE,COLUMBUS,Ohio,43211,Foreclosure,,6147973536,Mobile,8032754598,Land Line,robeccaj@myway.com,Franklin County Sheriff Foreclosure
-2991,08/24/2023,Robert,Warden,644 BUTLER AVE,COLUMBUS,Ohio,43223,Foreclosure,,6142798869,Land Line,6144881116,Land Line,rwarden@excite.com,Franklin County Sheriff Foreclosure
-2992,08/24/2023,Tiffany,Mason,5568 LONGRIFLE ROAD,WESTERVILLE,Ohio,43081,Foreclosure,,2169267087,Mobile,6135699853,Land Line,,Franklin County Sheriff Foreclosure
-2993,08/24/2023,Carolyn,Boyer,699 BERNHARD ROAD,COLUMBUS,Ohio,43213,Foreclosure,,7279423636,Land Line,6142351514,Land Line,brian.45@netzero.com,Franklin County Sheriff Foreclosure
-2994,08/24/2023,Jerome,Salata,1141 IDLEWILD DR S,DUNEDIN,Ohio,34698,Foreclosure,,7277446886,Mobile,7276696310,Land Line,jsalata@aol.com,Pinellas County Foreclosure
-2995,08/24/2023,Scott,Newmark,13211 PARK BLVD,SEMINOLE,Ohio,33776,Foreclosure,,9086196050,Mobile,,,,Pinellas County Foreclosure
-2996,08/24/2023,GABRIEL,RIVERA,1522 WALNUT ST,JACKSONVILLE,Florida,32206,Foreclosure,,2392400714,Mobile,,,GABESRIVERA1214@AOL.COM,Duval County Foreclosure
-2997,08/24/2023,Sandra,Fluharty,12630 STOCKWOOD LN,JACKSONVILLE,Florida,32225,Foreclosure,,9042204497,Land Line,9042215505,Land Line,ssaeiou@aol.com,Duval County Foreclosure
-2998,08/24/2023,IGOR,BRUNFON,6567 ARCHING BRANCH CIR,JACKSONVILLE,Florida,32258,Foreclosure,,3476171630,Land Line,9048860650,Land Line,BRUI006@HOTMAIL.COM,Duval County Foreclosure
-2999,08/24/2023,Katrina,Hosea,13751 SAXON LAKE DR,JACKSONVILLE,Florida,32225,Foreclosure,,9043336187,Mobile,9045022942,Mobile,khosea@gmail.com,Duval County Foreclosure
-3000,08/24/2023,Michelle,Welcome,10035 JUMPING FOX LN,JACKSONVILLE,Florida,32222,Foreclosure,,9049620132,Mobile,9049969006,Land Line,michelle.welcome@yahoo.com,Duval County Foreclosure
-3001,08/24/2023,CARLTON,AUSTIN,540 WORCESTER CT,JACKSONVILLE,Florida,32218,Foreclosure,,8435751018,Mobile,8433218138,Land Line,CARLTON.AUSTIN@AOL.COM,Duval County Foreclosure
-3002,08/24/2023,Terri,Graham,12391 DEWHURST CIR,JACKSONVILLE,Florida,32218,Foreclosure,,9042881531,Mobile,9049088827,Land Line,terrinblair@yahoo.com,Duval County Foreclosure
-3003,08/24/2023,JAMES,CONNORS,137 WILLIS AVE,JACKSONVILLE,Florida,32220,Foreclosure,,9044852859,Mobile,9045517356,Land Line,CONNORS_JMS@YAHOO.COM,Duval County Foreclosure
-3004,08/24/2023,Sonja,Sprott,6569 MANHATTAN DR,JACKSONVILLE,Florida,32219,Foreclosure,,9043548817,Land Line,9046305401,Land Line,ssprott@coj.net,Duval County Foreclosure
-3005,08/24/2023,Nicholas,Arias,3948 UNIVERSITY CLUB BLVD,JACKSONVILLE,Florida,32277,Foreclosure,,3238983871,Mobile,7602411501,Land Line,,Duval County Foreclosure
-3006,08/24/2023,Deborah,Bundy,1018 TOWNSEND BLVD,JACKSONVILLE,Florida,32211,Foreclosure,,9047201873,Land Line,9046323316,Land Line,,Duval County Foreclosure
-3007,08/24/2023,Tlj Revocable Trust,,12271 N BUCKS HARBOR DR,JACKSONVILLE,Florida,32225,Foreclosure,,7702882999,Land Line,3047439209,Land Line,,Duval County Foreclosure
-3008,08/24/2023,Juan,Pertuz,2133 WATERFOOT LN,JACKSONVILLE,Florida,32246,Foreclosure,,9042366237,Land Line,9047182800,Mobile,,Duval County Foreclosure
-3009,08/24/2023,Christopher,Fleming,8431 SANTANA CT,JACKSONVILLE,Florida,32220,Foreclosure,,9042267460,Mobile,9047297410,Mobile,bul1rider@collegeclub.com,Duval County Foreclosure
-3010,08/24/2023,Diana,Martinez,11925 N CANTERWOOD DR,JACKSONVILLE,Florida,32246,Foreclosure,,9043047945,Mobile,9044157136,Mobile,dianitapr2006@hotmail.com,Duval County Foreclosure
-3011,08/24/2023,PANELL,REID,2131 JERNIGAN RD,JACKSONVILLE,Florida,32207,Foreclosure,,9043069130,Land Line,,,PANELLDANIEL@YAHOO.COM,Duval County Foreclosure
-3012,08/24/2023,Leroy,Lucas,16325 MAGNOLIA GROVE WAY,JACKSONVILLE,Florida,32218,Foreclosure,,9046199108,Land Line,9046725342,Mobile,glendalehardy@gmail.com,Duval County Foreclosure
-3013,08/24/2023,THOMAS,SANTORO,11565 WHISPERINGBROOK LN,JACKSONVILLE,Florida,32218,Foreclosure,,9042948713,Mobile,9042788713,Land Line,THOMAS.SANTORO@AOL.COM,Duval County Foreclosure
-3014,08/24/2023,Clyde,Rudisill,550 South Hill Road,Pickerington,Ohio,43147,Foreclosure,,6148377391,Land Line,6148669490,Land Line,crudisill1@peoplepc.com,Fairfield County Foreclosure
-3015,08/24/2023,John,Canfield,642 McKinley Avenue,Lancaster,Ohio,43130,Foreclosure,,7407856272,Mobile,7404389839,Mobile,johncanfield@hotmail.com,Fairfield County Foreclosure
-3016,08/24/2023,Joshua,Ellis,720 Brannon Drive,Lancaster,Ohio,43130,Foreclosure,,7402702653,Mobile,7408233471,Mobile,joshbe908@gmail.com,Fairfield County Foreclosure
-3017,08/24/2023,Gregory,Goodman,1304 East Allen Street,Lancaster,Ohio,43130,Foreclosure,,7408083369,Mobile,7406876431,Land Line,fairfieldid@gmail.com,Fairfield County Foreclosure
-3018,08/24/2023,Jeff,Whitaker,211 South Broad Street,Bremen,Ohio,43107,Foreclosure,,7408628424,Land Line,6146271041,Land Line,freestuff44@columbus.rr.com,Fairfield County Foreclosure
-3019,08/24/2023,Dustin,Bidwell,11708 Broad Street,Millersport,Ohio,43046,Foreclosure,,7404386365,Mobile,7404386412,Mobile,,Fairfield County Foreclosure
-3021,08/24/2023,MARJORIE,FONG,32 PECAN PASS RUN,OCALA,Ohio,34472,Foreclosure,,5107341944,Mobile,5102354110,Land Line,,Marion County Foreclosure
-3022,08/24/2023,Ramiro,Rodriguez,11311 NW 12TH LN,OCALA,Florida,34482,Taxdeed,,3528730241,Land Line,,,,Marion County Taxdeed
-3023,08/24/2023,CHRISTOPHER,COOGAN,8518 SW 122ND ST,ARCHER,Florida,32618,Foreclosure,,9417304974,Mobile,3523189255,Mobile,CCOOGAN@NETSCAPE.NET,Alachua County Foreclosure
+4196,09/10/2023,Kenneth,Berdick,3714 EVANS AVE,FORT MYERS,Ohio,33901,Foreclosure,,2393344157,Land Line,,,e.gonzalez@hacfl.net,Lee County Foreclosure
+4197,09/10/2023,Frank,Moreno,2724 SW 21ST AVE,CAPE CORAL,Ohio,33914,Foreclosure,,2397450435,Mobile,2398290052,Land Line,blackandwhite@embarqmail.com,Lee County Foreclosure
+4198,09/10/2023,Dianne,Copp,2236 SE 11TH PL,CAPE CORAL,Ohio,33990,Foreclosure,,2394585569,Land Line,,,,Lee County Foreclosure
+4199,09/10/2023,Joanna,Stead,10924 LIMPKIN CIR,ESTERO,Ohio,33928,Foreclosure,,2394953949,Land Line,2392675171,Land Line,joanna.stead@cs.com,Lee County Foreclosure
+4200,09/10/2023,Wesley,Wimberly,2747 ADRIAN AVE,LARGO,Ohio,33774,Foreclosure,,7274920811,Mobile,7275253382,Land Line,,Pinellas County Foreclosure
+4201,09/10/2023,Joseph,Ancona,801 83RD AVE N # 120,ST PETERSBURG,Ohio,33702,Foreclosure,,7274030470,Mobile,8135754640,Land Line,joancona@sunline.net,Pinellas County Foreclosure
+4202,09/10/2023,Abby,Posner,3345 HAMILTON EATON ROAD,HAMILTON,Ohio,45011,Foreclosure,,9138512873,Land Line,5135730842,Land Line,adposner@comcast.net,Butler County Foreclosure
+4203,09/10/2023,Donald,Black,738 WALTER AVENUE,FAIRFIELD,Ohio,45014,Foreclosure,,5138634069,Land Line,5132567743,Mobile,,Butler County Foreclosure
+4204,09/10/2023,David,Wesley,2959 PLEASANT RIDGE,HAMILTON,Ohio,45011,Foreclosure,,5136312857,Land Line,5138878011,Land Line,wesleyscustoms2012@hotmail.com,Butler County Foreclosure
+4205,09/10/2023,Carla,Butterfield,89 LEXINGTON DRIVE,HAMILTON,Ohio,45013,Foreclosure,,5133748882,Mobile,5138632218,Land Line,carlab@cinci.rr.com,Butler County Foreclosure
+4206,09/10/2023,Polly,Landers,128 GRANT CIRCLE,HAMILTON,Ohio,45011,Foreclosure,,5138631364,Land Line,5138631363,Land Line,jlanders00@hotmail.com,Butler County Foreclosure
+4207,09/10/2023,Christopher,Hundley,8381 EAGLERIDGE DRIVE,WEST CHESTER,Ohio,45069,Foreclosure,,5132882359,Mobile,5136660667,Land Line,,Butler County Foreclosure
+4208,09/10/2023,Rhonda,Stout,409 BRELSFORD AVENUE,TRENTON,Ohio,45067,Foreclosure,,5135716349,Mobile,5137265902,Land Line,rstout@erols.com,Butler County Foreclosure
+4209,09/10/2023,Benjamin,Morgerson,1761 BUNKER HILL WOODS ROAD,OXFORD,Ohio,45056,Foreclosure,,5134008244,Mobile,5138441359,Land Line,,Butler County Foreclosure
+4210,09/10/2023,William,Mike,15938 SW 49TH COURT RD,OCALA,Ohio,34473,Foreclosure,,3522073054,Mobile,3524384651,Mobile,jacalynkmike@embarqmail.com,Marion County Foreclosure
