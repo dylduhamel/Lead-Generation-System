@@ -87,37 +87,37 @@ if __name__ == "__main__":
     # Convert it to the "mm/dd/yyyy" format
     end_date = future_date.strftime('%m/%d/%Y')
 
-    # Running each scraper
-    # Code Enforcement 
-    run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
-    run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
-    run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
-    run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
+    # # Running each scraper
+    # # Code Enforcement 
+    # run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
+    # run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
+    # run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
+    # run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
 
-    # Get the date two months from today
-    future_date = date.today() + relativedelta(months=2)
-    # Convert it to the "mm/dd/yyyy" format
-    end_date = future_date.strftime('%m/%d/%Y')
+    # # Get the date two months from today
+    # future_date = date.today() + relativedelta(months=2)
+    # # Convert it to the "mm/dd/yyyy" format
+    # end_date = future_date.strftime('%m/%d/%Y')
 
-    # Foreclosure and Taxdeed
-    run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
-    run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
-    run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
-    run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
-    run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
-    run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
-    run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
-    run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
-    run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
-    run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
-    run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
-    run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
-    run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
-    run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
-    run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
-    run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
+    # # Foreclosure and Taxdeed
+    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
+    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
+    # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
+    # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
+    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
+    # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
+    # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
+    # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
+    # run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
+    # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
+    # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
+    # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
+    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
+    # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
+    # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
+    # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
 
-    remove_duplicates()
+    # remove_duplicates()
 
     try:
         skiptrace_leads()
@@ -127,11 +127,10 @@ if __name__ == "__main__":
 
     # Change so that json returns a result so we dont email prematurely.
 
-
-    # try:
-    #     email_csv()
-    # except Exception as e:
-    #     logging.error(f"Error during email_csv: {str(e)}")
+    try:
+        email_csv()
+    except Exception as e:
+        logging.error(f"Error during email_csv: {str(e)}")
 
     end_time = time.time()
     execution_time = end_time - start_time
