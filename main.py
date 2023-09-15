@@ -91,8 +91,8 @@ if __name__ == "__main__":
     # Code Enforcement 
     # run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
     run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
-    # run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
-    # run_scraper("FortMeyersEnf", FortMeyersEnf, days=1)
+    run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
+    run_scraper("FortMeyersEnf", FortMeyersEnf, days=1)
 
     # Get the date two months from today
     future_date = date.today() + relativedelta(months=2)

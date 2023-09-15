@@ -46,6 +46,11 @@ class FortMeyersEnf():
         # This exclusion is added because BTR means Business Tax Receipt
         self.exclusions = ["btr", "airbnb", "commercial"]
 
+        # List of keywords to search for
+        self.keywords = ["Nuisance Accumulation", "junk", "trash", "lot mow", "plywood", "Inoperable", 
+                    "tents", "tires", "Abandoned", "boat", "Overgrown grass", "debris", 
+                    "vacant", "damaged roof", "damage", "parts"]
+
         status_print(f"Initialized variables -- {self.scraper_name}")
 
     def download_dataset(self,days):
@@ -202,6 +207,10 @@ class FortMeyersEnf():
         
         # Copy all over from df
         selected_rows = df.copy()
+
+        for keyword in self.keywords:
+            keyword_rows = df[df['Description'].str.contains(keyword.lower())]
+            selected_rows = pd.concat([selected_rows, keyword_rows])
 
         # Check if the code inforcement is against a business 
         for exclusion in self.exclusions:
