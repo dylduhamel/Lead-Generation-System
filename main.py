@@ -92,7 +92,11 @@ if __name__ == "__main__":
     run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
     run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
     run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
+<<<<<<< HEAD
+    run_scraper("FortMeyersEnf", FortMeyersEnf, days=1)
+=======
     run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
+>>>>>>> origin/main
 
     # # Get the date two months from today
     # future_date = date.today() + relativedelta(months=2)
