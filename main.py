@@ -40,23 +40,49 @@ from Scrapers.Florida.sarasota_county_taxdeed import SarasotaCountyTaxdeed
 from Scrapers.Florida.marion_county_taxdeed import MarionCountyTaxdeed
 from Scrapers.Florida.nassau_county_foreclosure import NassauCountyForeclosure
 from Scrapers.Florida.nassau_county_taxdeed import NassauCountyTaxdeed
+from Scrapers.Florida.broward_county_foreclosure import BrowardCountyForeclosure
+from Scrapers.Florida.orange_county_foreclosure import OrangeCountyForeclosure
+from Scrapers.Florida.miami_dade_foreclosure import MiamiDadeForeclosure
+from Scrapers.Florida.polk_county_taxdeed import PolkCountyTaxdeed
+from Scrapers.Florida.lee_county_taxdeed import LeeCountyTaxdeed
+from Scrapers.Florida.duval_county_taxdeed import DuvalCountyTaxdeed
+from Scrapers.Ohio.cuyahoga_county_foreclosure import CuyahogaCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
 from dateutil.parser import parse
 
-logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
+logging.basicConfig(
+    filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
+)
+
 
 def run_scraper(name, scraper_class, days=1, end_date=None):
     scraper = scraper_class()
 
     # Check if methods exist and then introspect for accepted parameters
-    download_dataset_accepts_days = 'days' in inspect.signature(scraper.download_dataset).parameters if hasattr(scraper, 'download_dataset') else False
-    download_dataset_accepts_end_date = 'end_date' in inspect.signature(scraper.download_dataset).parameters if hasattr(scraper, 'download_dataset') else False
-    start_accepts_days = 'days' in inspect.signature(scraper.start).parameters if hasattr(scraper, 'start') else False
-    start_accepts_end_date = 'end_date' in inspect.signature(scraper.start).parameters if hasattr(scraper, 'start') else False
+    download_dataset_accepts_days = (
+        "days" in inspect.signature(scraper.download_dataset).parameters
+        if hasattr(scraper, "download_dataset")
+        else False
+    )
+    download_dataset_accepts_end_date = (
+        "end_date" in inspect.signature(scraper.download_dataset).parameters
+        if hasattr(scraper, "download_dataset")
+        else False
+    )
+    start_accepts_days = (
+        "days" in inspect.signature(scraper.start).parameters
+        if hasattr(scraper, "start")
+        else False
+    )
+    start_accepts_end_date = (
+        "end_date" in inspect.signature(scraper.start).parameters
+        if hasattr(scraper, "start")
+        else False
+    )
 
-    if hasattr(scraper, 'download_dataset'):
+    if hasattr(scraper, "download_dataset"):
         try:
             if download_dataset_accepts_days:
                 scraper.download_dataset(days=days)
@@ -67,7 +93,7 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
         except Exception as e:
             logging.error(f"Error in {name}: {str(e)}")
 
-    if hasattr(scraper, 'start'):
+    if hasattr(scraper, "start"):
         try:
             if start_accepts_days:
                 scraper.start(days=days)
@@ -77,60 +103,54 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
                 scraper.start()
         except Exception as e:
             logging.error(f"Error in {name}: {str(e)}")
-            
+
 
 if __name__ == "__main__":
     start_time = time.time()
 
-    # Get the date two months from today
-    future_date = date.today() + relativedelta(months=2)
-    # Convert it to the "mm/dd/yyyy" format
-    end_date = future_date.strftime('%m/%d/%Y')
-
     # Running each scraper
-    # Code Enforcement 
-    run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
-    run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
-    run_scraper("LeeCountyCodeEnf", LeeCountyCodeEnf, days=1)
-<<<<<<< HEAD
-    run_scraper("FortMeyersEnf", FortMeyersEnf, days=1)
-=======
-    run_scraper("FortMeyersEnf", FortMeyersEnf, days=2)
->>>>>>> origin/main
-
+    # Code Enforcement
+    # run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
+    # run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)print(lead)
     # # Get the date two months from today
-    # future_date = date.today() + relativedelta(months=2)
+    future_date = date.today() + relativedelta(months=1)
     # # Convert it to the "mm/dd/yyyy" format
-    # end_date = future_date.strftime('%m/%d/%Y')
+    end_date = future_date.strftime("%m/%d/%Y")
 
     # Foreclosure and Taxdeed
-    run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
-    run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
-    run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
-    run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
-    run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
-    run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
-    run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
-    run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
-    run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
-    run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
-    run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
-    run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
-    run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
-    run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
-    run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
-    run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
+    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
+    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
+    # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
+    # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
+    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
+    # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
+    # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
+    # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
+    # run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
+    # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
+    # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
+    # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
+    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
+    # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
+    # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
+    # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
+    # run_scraper("BrowardCountyForeclosure", BrowardCountyForeclosure, end_date=end_date)
+    # run_scraper("OrangeCountyFoeclosure", OrangeCountyForeclosure, end_date=end_date)
+    # run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
+    # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
+    # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
+    # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
+    #run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
 
     # remove_duplicates()
 
-    try:
-        skiptrace_leads()
-        json_to_database()
-    except Exception as e:
-        logging.error(f"Error during skiptrace or json processing: {str(e)}")
+    # try:
+    #     skiptrace_leads()
+    #     json_to_database()
+    # except Exception as e:
+    #     logging.error(f"Error during skiptrace or json processing: {str(e)}")
 
-    # Change so that json returns a result so we dont email prematurely.
-
+    # # Change so that json returns a result so we dont email prematurely.
 
     # try:
     #     email_csv()

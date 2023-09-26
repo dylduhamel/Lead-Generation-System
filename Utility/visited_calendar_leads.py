@@ -317,3 +317,141 @@ def save_global_list_nassau_taxdeed():
     with open(nassau_taxdeed_filename, "wb") as f:
         pickle.dump(nassau_taxdeed_county_visited_leads, f)
 
+
+"""
+Broward County Foreclosure
+"""
+# Specify the filename to be used for the pickled data
+broward_foreclosure_filename = "./Data/Visited_calendar_leads/global_list_broward_foreclosure.pkl"
+
+# Initialize an empty list
+broward_foreclosure_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(broward_foreclosure_filename):
+    with open(broward_foreclosure_filename, "rb") as f:
+        broward_foreclosure_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_broward_foreclosure():
+    with open(broward_foreclosure_filename, "wb") as f:
+        pickle.dump(broward_foreclosure_county_visited_leads, f)
+
+        
+"""
+Orange County Foreclosure
+"""
+# Specify the filename to be used for the pickled data
+orange_foreclosure_filename = "./Data/Visited_calendar_leads/global_list_orange_foreclosure.pkl"
+
+# Initialize an empty list
+orange_foreclosure_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(orange_foreclosure_filename):
+    with open(orange_foreclosure_filename, "rb") as f:
+        orange_foreclosure_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_orange_foreclosure():
+    with open(orange_foreclosure_filename, "wb") as f:
+        pickle.dump(orange_foreclosure_county_visited_leads, f)
+
+
+"""
+Miami Dade Foreclosure
+"""
+# Specify the filename to be used for the pickled data
+miami_dade_foreclosure_filename = "./Data/Visited_calendar_leads/global_list_miami_dade_foreclosure.pkl"
+
+# Initialize an empty list
+miami_dade_foreclosure_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(miami_dade_foreclosure_filename):
+    with open(miami_dade_foreclosure_filename, "rb") as f:
+        miami_dade_foreclosure_visited_leads = pickle.load(f)
+
+
+def save_global_list_miami_dade_foreclosure():
+    with open(miami_dade_foreclosure_filename, "wb") as f:
+        pickle.dump(miami_dade_foreclosure_visited_leads, f)
+
+
+"""
+Polk County taxdeed
+"""
+# Specify the filename to be used for the pickled data
+polk_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_polk_taxdeed.pkl"
+
+# Initialize an empty list
+polk_taxdeed_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(polk_taxdeed_filename):
+    with open(polk_taxdeed_filename, "rb") as f:
+        polk_taxdeed_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_polk_taxdeed():
+    with open(polk_taxdeed_filename, "wb") as f:
+        pickle.dump(polk_taxdeed_county_visited_leads, f)
+
+
+"""
+Lee County taxdeed
+"""
+# Specify the filename to be used for the pickled data
+lee_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_lee_taxdeed.pkl"
+
+# Initialize an empty list
+lee_taxdeed_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(lee_taxdeed_filename):
+    with open(lee_taxdeed_filename, "rb") as f:
+        lee_taxdeed_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_lee_taxdeed():
+    with open(lee_taxdeed_filename, "wb") as f:
+        pickle.dump(lee_taxdeed_county_visited_leads, f)
+
+
+"""
+Duval County taxdeed
+"""
+# Specify the filename to be used for the pickled data
+duval_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_duval_taxdeed.pkl"
+
+# Initialize an empty list
+duval_taxdeed_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(duval_taxdeed_filename):
+    with open(duval_taxdeed_filename, "rb") as f:
+        duval_taxdeed_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_duval_taxdeed():
+    with open(duval_taxdeed_filename, "wb") as f:
+        pickle.dump(duval_taxdeed_county_visited_leads, f)
+
+
+"""
+Cuyahoga County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+cuyahoga_filename = "./Data/Visited_calendar_leads/global_list_cuyahoga.pkl"
+cuyahoga_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(cuyahoga_filename):
+    with open(cuyahoga_filename, "rb") as f:
+        cuyahoga_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_cuyahoga():
+    with open(cuyahoga_filename, "wb") as f:
+        pickle.dump(cuyahoga_county_visited_leads, f)

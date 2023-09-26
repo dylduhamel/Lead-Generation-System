@@ -4,15 +4,15 @@ import logging
 from dateutil.rrule import rrule, DAILY
 from dateutil.parser import parse
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from Utility.visited_calendar_leads import (
-    save_global_list_st_lucie,
-    st_lucie_county_visited_leads,
+    save_global_list_orange_foreclosure,
+    orange_foreclosure_county_visited_leads,
 )
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
@@ -23,16 +23,21 @@ logging.basicConfig(
 )
 
 
-class StLucieCountyForeclosure:
+class OrangeCountyForeclosure:
     def __init__(self):
         # Initialization
 
+        # Running headless mode
+        # chrome_options = Options()
+        # chrome_options.add_argument("--headless=new") # for Chrome >= 109
+
         # Webdriver
+        # self.driver = webdriver.Chrome(options=chrome_options)
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "st_lucie_county_foreclosure.py"
-        self.county_website = "St Lucie County Foreclosure"
+        self.scraper_name = "orange_county_foreclosure.py"
+        self.county_website = "Orange County Foreclosure"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -46,10 +51,10 @@ class StLucieCountyForeclosure:
         # Create new database session
         session = Session()
 
-        # Iterate over the dates CLERMONT
+        # Iterate over the dates
         for date in dates:
             # Get URL with current date
-            self.url = f"https://stlucie.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
+            self.url = f"https://www.myorangeclerk.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
@@ -64,10 +69,11 @@ class StLucieCountyForeclosure:
                     EC.presence_of_element_located((By.CLASS_NAME, "Loading"))
                 )
 
+                # Parse the main content to get auction items
                 html_doc = self.driver.page_source
                 soup = BeautifulSoup(html_doc, "html.parser")
 
-                # Check number of pages
+                # Extract number of pages
                 max_pages_elem = soup.find(id="maxWA")
                 if max_pages_elem:
                     try:
@@ -79,6 +85,7 @@ class StLucieCountyForeclosure:
 
                 all_items = []
 
+                # Main loop to go through all the pages
                 for current_page in range(1, max_pages + 1):
                     if current_page > 1:
                         # If it's not the first page, click the next page button
@@ -93,12 +100,9 @@ class StLucieCountyForeclosure:
                         # Wait until an auction item is present in the webpage
                         time.sleep(2)
 
-                        # Wait for the page to load
                         WebDriverWait(self.driver, 10).until_not(
                             EC.presence_of_element_located((By.CLASS_NAME, "Loading"))
                         )
-
-                        # Parse the new page source
                         html_doc = self.driver.page_source
                         soup = BeautifulSoup(html_doc, "html.parser")
 
@@ -108,48 +112,52 @@ class StLucieCountyForeclosure:
                     all_items.extend(items)
 
                 for item in all_items:
-                    details_table = item.find(class_="AUCTION_DETAILS")
-                    rows = details_table.find_all("tr")
-                    data = {
-                        row.th.get_text(strip=True): row.td.get_text(strip=True)
-                        for row in rows
-                    }
+                    auction_details = item.find(class_="AUCTION_DETAILS")
+                    details = auction_details.find_all(class_="ad_tab")
 
-                    auction_type = data.get("Auction Type:", None)
-                    property_address = data.get("Property Address:", None)
-                    appraised_value = data.get("Appraised Value:", None)
+                    for detail in details:
+                        labels = detail.find_all(
+                            class_="AD_LBL", style="float:left;"
+                        )
+                        values = detail.find_all(class_="AD_DTA")
 
-                    # Find city and zip code
-                    for i, row in enumerate(rows):
-                        if row.th.get_text(strip=True) == "Property Address:":
-                            city_zip_data = rows[i + 1].td.get_text(strip=True)
-                            break
-                    else:
-                        city_zip_data = None
+                        data = {}
+                        for lbl, val in zip(labels, values):
+                            data[lbl.get_text(strip=True)] = val.get_text(
+                                strip=True
+                            )
 
-                    # Getting city and zip data extracted
-                    try:
-                        if city_zip_data is not None and "FL-" in city_zip_data:
-                            city, zip_code = map(str.strip, city_zip_data.split(","))
-                            zip_code = zip_code.split("- ")[1]
-                        else:
-                            raise ValueError("City zip data is None")
-                    except ValueError as e:
-                        print(f"Error splitting city and zip data: '{e}'")
-                        city, zip_code = None, None
+                        auction_type = data.get("Auction Type:", None)
+                        property_address = data.get("Property Address:", None)
+                        appraised_value = data.get("Appraised Value:", None)
 
-                    # Find Auction type [Document type]
-                    for i, row in enumerate(rows):
-                        if row.th.get_text(strip=True) == "Auction Type:":
-                            self.auction_type_data = rows[i].td.get_text(strip=True)
-                            break
-                    else:
-                        self.auction_type_data = f"N/A - {self.county_website}"
+                        # Getting city and zip data extracted
+                        city_zip_data = data.get(
+                            "", None
+                        )  # It seems the city and zip do not have an associated label in the new HTML layout.
+                        try:
+                            if city_zip_data is not None:
+                                city, zip_code = map(
+                                    str.strip, city_zip_data.split(",")
+                                )
+                            else:
+                                raise ValueError("City zip data is None")
+                        except ValueError as e:
+                            print(f"Error splitting city and zip data: '{e}'")
+                            city, zip_code = None, None
+
+                        # Find Auction type [Document type]
+                        self.auction_type_data = data.get(
+                            "Auction Type:", f"N/A - {self.county_website}"
+                        )
+
+                    # The rest of your code continues...
 
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in st_lucie_county_visited_leads
+                        and property_address
+                        not in orange_foreclosure_county_visited_leads
                     ):
                         # Check if the first segment of the address (before the first space) is a full number
                         first_segment = property_address.split(" ")[0]
@@ -164,13 +172,7 @@ class StLucieCountyForeclosure:
                         lead.date_added = time_stamp
 
                         # Document type
-                        lead.document_type = (
-                            "Foreclosure"
-                            if self.auction_type_data == "FORECLOSURE"
-                            else "Taxdeed"
-                            if self.auction_type_data == "TAXDEED"
-                            else self.auction_type_data
-                        )
+                        lead.document_type = "Foreclosure"
 
                         # Address
                         lead.property_address = property_address
@@ -190,8 +192,8 @@ class StLucieCountyForeclosure:
                         session.add(lead)
 
                         # Add to visited list
-                        st_lucie_county_visited_leads.append(property_address)
-                        save_global_list_st_lucie()
+                        orange_foreclosure_county_visited_leads.append(property_address)
+                        save_global_list_orange_foreclosure()
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
