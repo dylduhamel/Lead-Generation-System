@@ -16,7 +16,8 @@ def email_csv():
     session = Session()
 
     # Query for values added today
-    today = curr_date() 
+    today = curr_date()
+    #today = "09/27/2023" # If you want to skiptrace date other than today 
 
     # Query database using session.query
     code_enforcement_leads = session.query(Lead).filter(Lead.date_added == today, 
@@ -24,14 +25,14 @@ def email_csv():
                                              Lead.first_name_owner != '', 
                                              Lead.phone_number_1 != None, 
                                              Lead.phone_number_1 != '', 
-                                             Lead.document_type == "Code Enforcement").all()
+                                             Lead.document_type == "Taxdeed").all()
 
     tax_and_foreclosure_leads = session.query(Lead).filter(Lead.date_added == today, 
                                              Lead.first_name_owner != None, 
                                              Lead.first_name_owner != '', 
                                              Lead.phone_number_1 != None, 
                                              Lead.phone_number_1 != '', 
-                                             or_(Lead.document_type == "Foreclosure", Lead.document_type == "Taxdeed")).all()
+                                             Lead.document_type == "Foreclosure").all()
 
     # Convert query results to dataframes
     df1 = pd.DataFrame([{column: getattr(lead, column) for column in Lead.__table__.columns.keys()} for lead in code_enforcement_leads])
@@ -68,10 +69,10 @@ def email_csv():
         df2 = df2[cols]
 
     # Convert DataFrames to CSV and save
-    csv_filepath1 = "./Data/csv_exports/code_enforcement.csv"
-    csv_filepath2 = "./Data/csv_exports/foreclosure_taxdeed.csv"
-    csv_filename1 = "code_enforcement.csv"
-    csv_filename2 = "foreclosure_taxdeed.csv"
+    csv_filepath1 = "./Data/csv_exports/taxdeed.csv"
+    csv_filepath2 = "./Data/csv_exports/foreclosure.csv"
+    csv_filename1 = "taxdeed.csv"
+    csv_filename2 = "foreclosure.csv"
     df1.to_csv(csv_filepath1, index=False)
     df2.to_csv(csv_filepath2, index=False)
 

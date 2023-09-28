@@ -34,6 +34,8 @@ def json_to_database():
 
     # Query for values added today
     today = curr_date()
+    #today = "09/27/2023" # If you want to skiptrace date other than today 
+
     leads = session.query(Lead).filter(Lead.date_added == today).all()
 
     # UNIX filename issues

@@ -455,3 +455,62 @@ if os.path.exists(cuyahoga_filename):
 def save_global_list_cuyahoga():
     with open(cuyahoga_filename, "wb") as f:
         pickle.dump(cuyahoga_county_visited_leads, f)
+
+
+"""
+Volusia County taxdeed
+"""
+# Specify the filename to be used for the pickled data
+volusia_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_volusia_taxdeed.pkl"
+
+# Initialize an empty list
+volusia_taxdeed_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(volusia_taxdeed_filename):
+    with open(volusia_taxdeed_filename, "rb") as f:
+        volusia_taxdeed_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_volusia_taxdeed():
+    with open(volusia_taxdeed_filename, "wb") as f:
+        pickle.dump(volusia_taxdeed_county_visited_leads, f)
+
+
+"""
+Palm Beach County Foreclosure
+"""
+# Specify the filename to be used for the pickled data
+palm_beach_filename = "./Data/Visited_calendar_leads/global_list_palm_beach.pkl"
+
+# Initialize an empty list
+palm_beach_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(palm_beach_filename):
+    with open(palm_beach_filename, "rb") as f:
+        palm_beach_visited_leads = pickle.load(f)
+
+
+def save_global_list_palm_beach():
+    with open(palm_beach_filename, "wb") as f:
+        pickle.dump(palm_beach_visited_leads, f)
+
+
+"""
+Hillsborough County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+hillsborugh_filename = "./Data/Visited_calendar_leads/global_list_hillsborugh.pkl"
+hillsborugh_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(hillsborugh_filename):
+    with open(hillsborugh_filename, "rb") as f:
+        hillsborugh_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_hillsborugh():
+    with open(hillsborugh_filename, "wb") as f:
+        pickle.dump(hillsborugh_county_visited_leads, f)

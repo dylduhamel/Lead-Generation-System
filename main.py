@@ -47,6 +47,9 @@ from Scrapers.Florida.polk_county_taxdeed import PolkCountyTaxdeed
 from Scrapers.Florida.lee_county_taxdeed import LeeCountyTaxdeed
 from Scrapers.Florida.duval_county_taxdeed import DuvalCountyTaxdeed
 from Scrapers.Ohio.cuyahoga_county_foreclosure import CuyahogaCountyForeclosure
+from Scrapers.Florida.volusia_county_taxdeed import VolusiaCountyTaxdeed
+from Scrapers.Florida.palm_beach_foreclosure import PalmBeachForeclosure
+from Scrapers.Florida.hillsborough_county_foreclosure import HillsboroughCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -140,7 +143,10 @@ if __name__ == "__main__":
     # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
     # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
     # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
-    #run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
+    # run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
+    # run_scraper("VolusiaCountyTaxdeed", VolusiaCountyTaxdeed, end_date=end_date)
+    # run_scraper("PalmBeachForeclosure", PalmBeachForeclosure, end_date=end_date)
+    # run_scraper("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure, end_date=end_date)
 
     # remove_duplicates()
 
@@ -150,7 +156,7 @@ if __name__ == "__main__":
     # except Exception as e:
     #     logging.error(f"Error during skiptrace or json processing: {str(e)}")
 
-    # # Change so that json returns a result so we dont email prematurely.
+    # Change so that json returns a result so we dont email prematurely.
 
     # try:
     #     email_csv()
