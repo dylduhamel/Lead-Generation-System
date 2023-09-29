@@ -143,12 +143,12 @@ if __name__ == "__main__":
     # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
     # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
     # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
-    # run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
+    run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
     # run_scraper("VolusiaCountyTaxdeed", VolusiaCountyTaxdeed, end_date=end_date)
     # run_scraper("PalmBeachForeclosure", PalmBeachForeclosure, end_date=end_date)
     # run_scraper("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure, end_date=end_date)
 
-    # remove_duplicates()
+    remove_duplicates()
 
     # try:
     #     skiptrace_leads()

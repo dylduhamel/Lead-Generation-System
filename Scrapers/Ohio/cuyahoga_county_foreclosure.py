@@ -162,23 +162,23 @@ class CuyahogaCountyForeclosure:
                         # Website tracking
                         lead.county_website = self.county_website
 
-                        print(lead)
-                        print("\n")
+                        # print(lead)
+                        # print("\n")
 
                         # Add lead to db
-                        #session.add(lead)
+                        session.add(lead)
 
                         # Add to visited list
-                        #cuyahoga_county_visited_leads.append(property_address)
-                        #save_global_list_cuyahoga()
+                        cuyahoga_county_visited_leads.append(property_address)
+                        save_global_list_cuyahoga()
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
 
         # Add new session to DB
-        #session.commit()
+        session.commit()
         # Relinquish resources
-        #session.close()
+        session.close()
 
         # Relinquish resources
         self.driver.quit()
