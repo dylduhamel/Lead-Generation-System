@@ -1,143 +1,97 @@
 id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
-5343,09/27/2023,Andres,Sorzana,40 SW 13 ST,MIAMI,Florida,33130,Taxdeed,,2148748421,Mobile,,,,Miami Dade Foreclosure
-5476,09/27/2023,Chaman,Sapnaa,533 STARR AVE W,LAKE WALES,Florida,33859,Taxdeed,,9175196143,Mobile,2129800377,Land Line,sapnaa@vsnl.com,Polk County Taxdeed
-5477,09/27/2023,Robert,Ford,151 NORTHSIDE DR E,LAKE WALES,Florida,33853,Taxdeed,,8634392527,Land Line,8634393278,Land Line,,Polk County Taxdeed
-5478,09/27/2023,HUGUES,STHILAIRE,903 RUTH AVE N,LAKELAND,Florida,33815,Taxdeed,,8635138415,Mobile,8636885219,Land Line,HUGHESSTHILAIRE@GIMAIL.COM,Polk County Taxdeed
-5485,09/27/2023,Deborah,Hlavka,843 GAYLORD AVE S,LEHIGH ACRES,Florida,33974,Taxdeed,,9529383037,Land Line,3206293262,Land Line,,Lee County Taxdeed
-5487,09/27/2023,Ivy,Blair,804 TRUMAN AVE,LEHIGH ACRES,Florida,33972,Taxdeed,,2393697349,Land Line,,,ivyblair@gmail.com,Lee County Taxdeed
-5488,09/27/2023,Ann,Thomas,1020 MONROE AVE,LEHIGH ACRES,Florida,33972,Taxdeed,,7344537658,Land Line,7344496617,Mobile,ken.sands@cavtel.net,Lee County Taxdeed
-5489,09/27/2023,Michael,Mcguire,614 PLUMOSA AVE,LEHIGH ACRES,Florida,33972,Taxdeed,,2483309353,Mobile,2486983005,Land Line,,Lee County Taxdeed
-5490,09/27/2023,Jennifer,Blackmon,2850 NW 46TH PL,CAPE CORAL,Florida,33993,Taxdeed,,7063431035,Land Line,7706535829,Mobile,jablackmon@ems.att.com,Lee County Taxdeed
-5491,09/27/2023,Mary,Michnich,4132 GARDEN BLVD,CAPE CORAL,Florida,33909,Taxdeed,,5707442871,Land Line,,,,Lee County Taxdeed
-5492,09/27/2023,S,Punter,51 NE 31ST TER,CAPE CORAL,Florida,33909,Taxdeed,,4348470000,Land Line,,,,Lee County Taxdeed
-5495,09/27/2023,CHARLES,BATCHELOR,1067 MERRY ST E,LEHIGH ACRES,Florida,33974,Taxdeed,,2536272627,Land Line,2536272617,Land Line,,Lee County Taxdeed
-5498,09/27/2023,CHIN,LEE,639 NW 14TH TER,CAPE CORAL,Florida,33993,Taxdeed,,7185755185,Land Line,7182689088,Mobile,,Lee County Taxdeed
-5499,09/27/2023,Constance,Dainko,1117 ANZA AVE,LEHIGH ACRES,Florida,33971,Taxdeed,,6309913215,Mobile,6308525211,Land Line,pouritagainsam@sbcglobal.net,Lee County Taxdeed
-5500,09/27/2023,Mike,Janko,2723 NE 4TH PL,CAPE CORAL,Florida,33909,Taxdeed,,8015973700,Mobile,8012669900,Land Line,hifinances@hotmail.com,Lee County Taxdeed
-5501,09/27/2023,Mark,Vercruysse,5223 TOWER DR,CAPE CORAL,Florida,33904,Taxdeed,,7346440012,Land Line,7344343900,Land Line,mvercruysse@angelfire.com,Lee County Taxdeed
-5502,09/27/2023,Roseanne,Steinke,216 CAPTAINS WALK,NORTH FORT MYERS,Florida,33917,Taxdeed,,2393369012,Mobile,2395670402,Land Line,rsteinke1946@gmail.com,Lee County Taxdeed
-5565,09/27/2023,JIM,OMATSEYE,0 3RD AVE,JACKSONVILLE,Florida,32208,Taxdeed,,9089061010,Mobile,9547402475,Mobile,NESINOMATSEYE@GMAIL.COM,Duval County Taxdeed
-5567,09/27/2023,Lip Energy Propco Llc,Lip Energy Propco Llc,0 BLAIR RD,JACKSONVILLE,Florida,32221,Taxdeed,,9045685867,Mobile,9047685396,Land Line,,Duval County Taxdeed
-5568,09/27/2023,Barbara,Ritter,308 GALWAY CT,JACKSONVILLE,Florida,32218,Taxdeed,,9047513159,Land Line,9047512690,Land Line,,Duval County Taxdeed
-5569,09/27/2023,TONIYA,THOMAS,1122 W 32ND ST,JACKSONVILLE,Florida,32209,Taxdeed,,9047667955,Land Line,9049828209,Mobile,TONIYATHOMAS@YAHOO.COM,Duval County Taxdeed
-5570,09/27/2023,MELVIN,DALLAS,1520 STEELE ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043557020,Land Line,9043556567,Land Line,MELVIN.DALLAS@CS.COM,Duval County Taxdeed
-5571,09/27/2023,Wesley,Prince,6041 FLICKER AVE,JACKSONVILLE,Florida,32219,Taxdeed,,9043432333,Mobile,9042946215,Mobile,wesley.prince@aol.com,Duval County Taxdeed
-5572,09/27/2023,John,Goodbread,2546 ORCHARD ST,JACKSONVILLE,Florida,32254,Taxdeed,,9046002270,Mobile,9045540876,Mobile,johngoodbread@yahoo.com,Duval County Taxdeed
-5573,09/27/2023,SUSIE,FIELDS,1359 HARRISON ST,JACKSONVILLE,Florida,32206,Taxdeed,,9043555949,Land Line,,,,Duval County Taxdeed
-5574,09/27/2023,ROBERT,JACKSON,1550 E 30TH ST,JACKSONVILLE,Florida,32206,Taxdeed,,9043564782,Land Line,,,,Duval County Taxdeed
-5575,09/27/2023,Marsha,Eason,1242 MAIN ST,JACKSONVILLE,Florida,32206,Taxdeed,,9045489912,Land Line,9044631669,Mobile,charlene.robson@gmail.com,Duval County Taxdeed
-5576,09/27/2023,Earl,Alexander,441 SPRINGFIELD CT,JACKSONVILLE,Florida,32206,Taxdeed,,9048860348,Land Line,9042874869,Land Line,earlalexander@cox.net,Duval County Taxdeed
-5577,09/27/2023,Aurelius,Stafford,628 ALDER ST,JACKSONVILLE,Florida,32206,Taxdeed,,9043748552,Land Line,9047653171,Land Line,,Duval County Taxdeed
-5578,09/27/2023,Aurelius,Stafford,672 ALDER ST,JACKSONVILLE,Florida,32206,Taxdeed,,9043748552,Land Line,9047653171,Land Line,,Duval County Taxdeed
-5579,09/27/2023,Michelle,Mosely,1551 W 24TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9046129935,Mobile,9047354848,Mobile,dadzgirlz@qwest.net,Duval County Taxdeed
-5580,09/27/2023,Aurelius,Stafford,805 BROXTON ST,JACKSONVILLE,Florida,32208,Taxdeed,,9043748552,Land Line,9047653171,Land Line,,Duval County Taxdeed
-5581,09/27/2023,Robert,Burdette,3146 2ND ST CIR,JACKSONVILLE,Florida,32254,Taxdeed,,9046083489,Mobile,9048791020,Land Line,,Duval County Taxdeed
-5583,09/27/2023,Alvin,Curry,520 LONG BRANCH BLVD,JACKSONVILLE,Florida,32206,Taxdeed,,9043388346,Mobile,2544584700,Mobile,pdss44@yahoo.com,Duval County Taxdeed
-5584,09/27/2023,AARON,MULLIS,229 E 26TH ST,JACKSONVILLE,Florida,32206,Taxdeed,,7855517682,Land Line,8652685264,Land Line,,Duval County Taxdeed
-5585,09/27/2023,Larry,Johnson,0 UTSEY RD,JACKSONVILLE,Florida,32219,Taxdeed,,9043224028,Mobile,9044873845,Mobile,johnl@jea.com,Duval County Taxdeed
-5586,09/27/2023,Jerry,Redden,1937 EVERGREEN AVE,JACKSONVILLE,Florida,32206,Taxdeed,,9043873160,Land Line,2565381024,Land Line,jerry.redden@worldnet.att.net,Duval County Taxdeed
-5587,09/27/2023,KAREN,DAVIS,5528 AGRA CT,JACKSONVILLE,Florida,32209,Taxdeed,,9047685404,Land Line,7187315169,Land Line,,Duval County Taxdeed
-5588,09/27/2023,Lavern,Smith,1664 LESSARD CIR,JACKSONVILLE,Florida,32208,Taxdeed,,9043055064,Mobile,9047647177,Land Line,,Duval County Taxdeed
-5589,09/27/2023,Kenya,Mccloud,8037 HELSTON DR,JACKSONVILLE,Florida,32208,Taxdeed,,9545876179,Land Line,,,,Duval County Taxdeed
-5590,09/27/2023,Kenya,Mccloud,1950 W 20TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9545876179,Land Line,,,,Duval County Taxdeed
-5591,09/27/2023,Shafronia,Campbell,1408 W 18TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9046834145,Land Line,9044766833,Mobile,,Duval County Taxdeed
-5592,09/27/2023,Richard,Grant,550 ALICE COVE CT,JACKSONVILLE,Florida,32218,Taxdeed,,9048912340,Mobile,9042622143,Land Line,,Duval County Taxdeed
-5593,09/27/2023,STANLEY,THOMPSON,7563 JONES RD,JACKSONVILLE,Florida,32219,Taxdeed,,9047685439,Land Line,9048919256,Mobile,KINGKOOPA61408@GMAIL.COM,Duval County Taxdeed
-5594,09/27/2023,Noel,Cummings,2138 W 17TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9045140178,Mobile,9045981925,Land Line,nnoellee@comcast.net,Duval County Taxdeed
-5595,09/27/2023,ALICE,JACKSON,1684 ROWE AVE,JACKSONVILLE,Florida,32208,Taxdeed,,9047377544,Land Line,9047681259,Land Line,,Duval County Taxdeed
-5596,09/27/2023,MARY,LINDSEY,4625 HARLOW BLVD,JACKSONVILLE,Florida,32210,Taxdeed,,9047798945,Land Line,9049086009,Land Line,TRUCKSTOP@JUNO.COM,Duval County Taxdeed
-5597,09/27/2023,Chris,Bookhardt,6615 BARNEY RD,JACKSONVILLE,Florida,32219,Taxdeed,,3212081586,Mobile,3212674951,Land Line,chris@bookhardt.com,Duval County Taxdeed
-5598,09/27/2023,ADAM,WACHOWIAK,3324 SUNNYBROOK AVE,JACKSONVILLE,Florida,32254,Taxdeed,,9178930083,Mobile,,,ADAMJWASSER@GMAIL.COM,Duval County Taxdeed
-5599,09/27/2023,EARVIN,COLEMAN,3135 PINE AVE,JACKSONVILLE,Florida,32218,Taxdeed,,9042946607,Mobile,9047663652,Land Line,TIMOTHY.COLEMAN@AOL.COM,Duval County Taxdeed
-5600,09/27/2023,LATONYA,ALEXANDER,5235 SHANNON AVE,JACKSONVILLE,Florida,32254,Taxdeed,,9042585422,Mobile,9042369992,Mobile,LATONYAALEXANDER44@GMAIL.COM,Duval County Taxdeed
-5601,09/27/2023,Agnes,Hill,1213 STAFFORD ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043565477,Land Line,9047041811,Mobile,agnes.hill@earthlink.net,Duval County Taxdeed
-5602,09/27/2023,CLINTON,ROGERS,4409 N KEN KNIGHT DR,JACKSONVILLE,Florida,32209,Taxdeed,,9047651217,Land Line,,,,Duval County Taxdeed
-5603,09/27/2023,Donald,Henderson,6411 NORWOOD AVE,JACKSONVILLE,Florida,32208,Taxdeed,,9043567446,Land Line,3103964066,Land Line,,Duval County Taxdeed
-5604,09/27/2023,Jarmal,Woodard,1103 W 30TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9047669187,Land Line,9044158310,Mobile,,Duval County Taxdeed
-5605,09/27/2023,Chelsea & Brittany Enterprises Llc,Chelsea & Brittany Enterprises,2409 BROADWAY AVE,JACKSONVILLE,Florida,32209,Taxdeed,,9043519555,Mobile,9043292755,Land Line,LARRY.PATRICK@SWBELL.NET,Duval County Taxdeed
-5606,09/27/2023,LARRY,PATRICK,3539 KINGSTON ST,JACKSONVILLE,Florida,32254,Taxdeed,,9043292755,Land Line,9047869098,Land Line,LARRY.PATRICK@SWBELL.NET,Duval County Taxdeed
-5607,09/27/2023,WILLIAM,DIXON,7128 W KEN KNIGHT DR,JACKSONVILLE,Florida,32209,Taxdeed,,9043520513,Mobile,9046618021,Mobile,WILLIAMDIXON695@GMAIL.COM,Duval County Taxdeed
-5608,09/27/2023,Ranzel,Lawson,2006 MYRTLE AVE,JACKSONVILLE,Florida,32209,Taxdeed,,9048025349,Mobile,9046744152,Mobile,sweethoneydeee@gmail.com,Duval County Taxdeed
-5609,09/27/2023,BENJAMIN,GREENWALD,4510 FRIDEN DR,JACKSONVILLE,Florida,32209,Taxdeed,,6192868925,Land Line,,,,Duval County Taxdeed
-5610,09/27/2023,SCOTT,CAMPBELL,1963 W 12TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9046191936,Land Line,9043569250,Land Line,PRISCILLA.CAMPBELL@OPTONLINE.NET,Duval County Taxdeed
-5611,09/27/2023,Darwin,Martinez,2025 S WITTEN RD,JACKSONVILLE,Florida,32254,Taxdeed,,9043391218,Mobile,9048058714,Land Line,laselva75@aol.com,Duval County Taxdeed
-5612,09/27/2023,HAYWARD,ADAMS,6232 E LAMAR DR,JACKSONVILLE,Florida,32244,Taxdeed,,9043791417,Land Line,9047729290,Land Line,TONYAADAMSJ@AOL.COM,Duval County Taxdeed
-5613,09/27/2023,BARBARA,JONES,625 E 61ST ST,JACKSONVILLE,Florida,32208,Taxdeed,,7028800776,Land Line,,,,Duval County Taxdeed
-5614,09/27/2023,Rutha,Smith,5608 PANSY LN,JACKSONVILLE,Florida,32209,Taxdeed,,9047642338,Land Line,9047048003,Mobile,rutha.smith@aol.com,Duval County Taxdeed
-5615,09/27/2023,Kevin,Reese,1212 GROTHE ST,JACKSONVILLE,Florida,32209,Taxdeed,,9044503783,Mobile,8132483595,Land Line,,Duval County Taxdeed
-5616,09/27/2023,JARED,WILLIAMS,45 E 16TH ST,JACKSONVILLE,Florida,32206,Taxdeed,,9047199231,Land Line,,,AGENTMARQUITA@GMAIL.COM,Duval County Taxdeed
-5617,09/27/2023,Cj,Stevenson,6864 HEMA RD,JACKSONVILLE,Florida,32209,Taxdeed,,9047648692,Land Line,9044385876,Land Line,charlie.stevenson@mindspring.com,Duval County Taxdeed
-5618,09/27/2023,ALBERT,STRATTON,7234 RICKER RD,JACKSONVILLE,Florida,32244,Taxdeed,,9046139646,Mobile,9046955215,Land Line,,Duval County Taxdeed
-5619,09/27/2023,Talmadge,Billingslea,4615 N KEN KNIGHT DR,JACKSONVILLE,Florida,32209,Taxdeed,,9048881175,Mobile,9043650863,Mobile,talmadgebillingslea@hotmail.com,Duval County Taxdeed
-5620,09/27/2023,Michele,Camillone,5861 BUCKLEY DR,JACKSONVILLE,Florida,32244,Taxdeed,,8707510799,Mobile,2679665629,Mobile,carmelasaunt@comcast.net,Duval County Taxdeed
-5621,09/27/2023,Lizzie,Joyner,953 ARDOON ST,JACKSONVILLE,Florida,32208,Taxdeed,,9047669819,Land Line,9047660683,Land Line,ojoyner@swbell.net,Duval County Taxdeed
-5622,09/27/2023,Dora,Kennebrew,6669 RESTLAWN DR,JACKSONVILLE,Florida,32208,Taxdeed,,9047643013,Land Line,,,dkennebrew@sbcglobal.net,Duval County Taxdeed
-5623,09/27/2023,TAYLOR,DRAIN,2114 BURGOYNE DR,JACKSONVILLE,Florida,32208,Taxdeed,,9043382256,Mobile,,,,Duval County Taxdeed
-5624,09/27/2023,Glenna,Ghee,3532 WASHINGTONIAN ST,JACKSONVILLE,Florida,32254,Taxdeed,,9043740226,Land Line,9047831602,Land Line,glenna531@yahoo.com,Duval County Taxdeed
-5625,09/27/2023,Andrew,Gaylord,4990 SOUTEL DR,JACKSONVILLE,Florida,32208,Taxdeed,,7276564084,Mobile,7274480816,Land Line,agaylord@gmail.com,Duval County Taxdeed
-5626,09/27/2023,Michael,Chapple,2316 W 28TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043542985,Land Line,9046126702,Mobile,bigmc67@aol.com,Duval County Taxdeed
-5627,09/27/2023,LATONYA,ALEXANDER,406 W 7TH ST,JACKSONVILLE,Florida,32206,Taxdeed,,9042585422,Mobile,9042369992,Mobile,LATONYAALEXANDER44@GMAIL.COM,Duval County Taxdeed
-5628,09/27/2023,Edward,Boatright,2048 BUCKMAN ST,JACKSONVILLE,Florida,32206,Taxdeed,,9122823922,Mobile,9126324204,Land Line,speedyz28@ccessatc.net,Duval County Taxdeed
-5629,09/27/2023,Carolyn,Mitchell,1425 FLORIDA AVE,JACKSONVILLE,Florida,32206,Taxdeed,,9045243890,Mobile,9048855969,Mobile,1999suzukigirl@gmail.com,Duval County Taxdeed
-5630,09/27/2023,MENZO,DAVIS,9438 CRYSTAL SPRINGS RD,JACKSONVILLE,Florida,32221,Taxdeed,,9047811691,Land Line,9048916941,Mobile,MENZO.DAVIS@HOTMAIL.COM,Duval County Taxdeed
-5631,09/27/2023,BRIAN,COOPER,346 BIRCH ST,JACKSONVILLE,Florida,32206,Taxdeed,,5056042529,Mobile,5052175168,Mobile,YNOTBLIKEUS@AOL.COM,Duval County Taxdeed
-5632,09/27/2023,Jeffrey,Johnson,2118 W ALLANDALE CIR,JACKSONVILLE,Florida,32254,Taxdeed,,9042533576,Land Line,9043583241,Land Line,,Duval County Taxdeed
-5633,09/27/2023,NAUSHIK,HOODA,1578 FLORIDA AVE,JACKSONVILLE,Florida,32206,Taxdeed,,3219728406,Land Line,4076829707,Land Line,NHOODAIS91@ATT.NET,Duval County Taxdeed
-5634,09/27/2023,Lopez Juan Vladimir Vane Gas,,2202 W 12TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,5616743115,Mobile,7863660965,Mobile,OANDRES.SANCHEZ@GMAIL.COM,Duval County Taxdeed
-5635,09/27/2023,Mary,Devoe,11537 W MONTEGO BAY DR,JACKSONVILLE,Florida,32218,Taxdeed,,9047570265,Land Line,9047988859,Land Line,marynjax@gmail.com,Duval County Taxdeed
-5636,09/27/2023,JUDITH,LECLERC,236 HOLLY CT,JACKSONVILLE,Florida,32218,Taxdeed,,9047576525,Land Line,,,,Duval County Taxdeed
-5637,09/27/2023,Danielle,Paschel,4620 FREDERICKSBURG AVE,JACKSONVILLE,Florida,32208,Taxdeed,,9047658189,Land Line,,,,Duval County Taxdeed
-5638,09/27/2023,MICHELLE,GERACI,3519 BOUGAINVILLEA ST,JACKSONVILLE,Florida,32254,Taxdeed,,2032209255,Land Line,,,MICHELLELYN.GERACI@GMAIL.COM,Duval County Taxdeed
-5639,09/27/2023,John,Davis,5037 CAMILLE AVE,JACKSONVILLE,Florida,32210,Taxdeed,,9044246349,Mobile,9047819692,Land Line,lod0207@comcast.net,Duval County Taxdeed
-5640,09/27/2023,Jeanette,Williams,5217 110TH ST,JACKSONVILLE,Florida,32244,Taxdeed,,9043221641,Mobile,9042514569,Mobile,jxjeanette3@aol.com,Duval County Taxdeed
-5641,09/27/2023,DOUGLAS,CARLSEN,2356 3RD AVE,JACKSONVILLE,Florida,32208,Taxdeed,,8133632976,Mobile,7278422555,Land Line,DOUGLASCARLSEN@MSN.COM,Duval County Taxdeed
-5642,09/27/2023,CLYDE,DOUGLAS,1964 ELLA ST,JACKSONVILLE,Florida,32209,Taxdeed,,3867520782,Land Line,3862438946,Land Line,CLYDE.DOUGLAS@CS.COM,Duval County Taxdeed
-5643,09/27/2023,Chris,Hionides,1500 N RIVER BLUFF RD,JACKSONVILLE,Florida,32211,Taxdeed,,9042413515,Land Line,9042462173,Land Line,chionides@comcast.net,Duval County Taxdeed
-5644,09/27/2023,JOCELYN,SWANSONAPOLLON,0 ELLA ST,JACKSONVILLE,Florida,32209,Taxdeed,,4436044716,Mobile,4435359704,Land Line,JAPOLLON@YAHOO.COM,Duval County Taxdeed
-5645,09/27/2023,Sandra,Bowen,0 CAPERCALLIE TRL,JACKSONVILLE,Florida,32210,Taxdeed,,6789714089,Land Line,9046149449,Mobile,,Duval County Taxdeed
-5646,09/27/2023,INGRID,WALCOTT,5017 SILVER ST,JACKSONVILLE,Florida,32206,Taxdeed,,9044127266,Mobile,9047728841,Land Line,INGRID@NC.RR.COM,Duval County Taxdeed
-5647,09/27/2023,HELEN,NORMAN,212 E 19TH ST,JACKSONVILLE,Florida,32206,Taxdeed,,9047649340,Land Line,9047641629,Land Line,HHALLNORMAN@AOL.COM,Duval County Taxdeed
-5648,09/27/2023,Kim,Tran,1794 KINGS RD,JACKSONVILLE,Florida,32209,Taxdeed,,4045478961,Mobile,7702791727,Land Line,phuongthy65@yahoo.com,Duval County Taxdeed
-5649,09/27/2023,Janae,Nelson,828 ACORN ST,JACKSONVILLE,Florida,32209,Taxdeed,,9044774302,Mobile,9046465627,Land Line,,Duval County Taxdeed
-5651,09/27/2023,David,Singletary,1034 W 27TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9042071263,Mobile,9046190078,Land Line,david.singleterry@att.net,Duval County Taxdeed
-5652,09/27/2023,Eliyahou,Rouimi,7103 E KEN KNIGHT DR,JACKSONVILLE,Florida,32209,Taxdeed,,7863446620,Mobile,6127478295,Mobile,elirouimi@gmail.com,Duval County Taxdeed
-5653,09/27/2023,Monique,Robinson,0 MONCRIEF RD,JACKSONVILLE,Florida,32209,Taxdeed,,8503216285,Mobile,2024917344,Mobile,,Duval County Taxdeed
-5654,09/27/2023,Jaquana,Willcox,2331 JANETTE ST,JACKSONVILLE,Florida,32209,Taxdeed,,9045181859,Mobile,9044762732,Mobile,msross4eva@yahoo.com,Duval County Taxdeed
-5655,09/27/2023,James,Berry,0 JANETTE ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043827035,Mobile,9043825879,Mobile,vancemann1@aol.com,Duval County Taxdeed
-5656,09/27/2023,Sarah,Just,617 ODESSA ST,JACKSONVILLE,Florida,32206,Taxdeed,,8109222319,Mobile,8104301253,Mobile,sarahj02680@aol.com,Duval County Taxdeed
-5657,09/27/2023,Mack,Daymon,1555 LOUISIANA ST,JACKSONVILLE,Florida,32209,Taxdeed,,7738747015,Land Line,9043556174,Land Line,,Duval County Taxdeed
-5658,09/27/2023,Michael,Bailey,1520 FAIRFAX ST,JACKSONVILLE,Florida,32209,Taxdeed,,9047269951,Land Line,9047388651,Land Line,valueworlddeals@yahoo.com,Duval County Taxdeed
-5659,09/27/2023,Leila,Adams,1544 MT HERMAN ST,JACKSONVILLE,Florida,32209,Taxdeed,,3133411765,Land Line,3136804117,Mobile,,Duval County Taxdeed
-5660,09/27/2023,ANNIE,ROSS,0 W 4TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043541480,Land Line,,,,Duval County Taxdeed
-5661,09/27/2023,BRANAYSA,HOOKS,0 TYLER ST,JACKSONVILLE,Florida,32209,Taxdeed,,3523488606,Mobile,3523488609,Mobile,BRANAYSAHOOKS14@GMAIL.COM,Duval County Taxdeed
-5662,09/27/2023,Airport East Property Llc,,0 W DUVAL PL,JACKSONVILLE,Florida,32218,Taxdeed,,3525462292,Land Line,,,,Duval County Taxdeed
-5663,09/27/2023,Debra,Johnson,0 OLD PLANK RD,JACKSONVILLE,Florida,32254,Taxdeed,,4788270659,Land Line,9099644882,Mobile,charlieboi57@yahoo.com,Duval County Taxdeed
-5664,09/27/2023,James,Goldsmith,0 NORWOOD AVE,JACKSONVILLE,Florida,32208,Taxdeed,,3056736488,Land Line,3055354690,Land Line,jgoldsm861@aol.com,Duval County Taxdeed
-5665,09/27/2023,Barry,Levinson,0 RICKENBACKER ST,JACKSONVILLE,Florida,32209,Taxdeed,,9545929339,Mobile,9545659291,Land Line,,Duval County Taxdeed
-5666,09/27/2023,Carleen,Brooks,0 NORTH SHORE DR,JACKSONVILLE,Florida,32208,Taxdeed,,9043537952,Land Line,9045370568,Mobile,,Duval County Taxdeed
-5667,09/27/2023,Sandra,Allen,0 W 45TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9044008908,Mobile,9043793985,Land Line,,Duval County Taxdeed
-5668,09/27/2023,Willie,Mikel,0 WHITNER ST,JACKSONVILLE,Florida,32209,Taxdeed,,9047643332,Land Line,9047640301,Land Line,wmikel@cableone.net,Duval County Taxdeed
-5669,09/27/2023,Michael,Bailey,1962 W 9TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9047269951,Land Line,9047388651,Land Line,valueworlddeals@yahoo.com,Duval County Taxdeed
-5670,09/27/2023,PHILIP,OADES,0 PALAFOX ST,JACKSONVILLE,Florida,32209,Taxdeed,,8503768697,Mobile,,,SCOADES11@GMAIL.COM,Duval County Taxdeed
-5671,09/27/2023,Moses,Jenkins,2520 THAMES ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043542129,Land Line,9043501144,Land Line,,Duval County Taxdeed
-5672,09/27/2023,James,Frazier,0 LEO ST,JACKSONVILLE,Florida,32208,Taxdeed,,9047643583,Land Line,,,,Duval County Taxdeed
-5674,09/27/2023,WAYNE,WILSON,4525 FRIDEN DR,JACKSONVILLE,Florida,32209,Taxdeed,,9043143804,Mobile,9127298871,Land Line,WHOPPYIE@GMAIL.COM,Duval County Taxdeed
-5676,09/27/2023,BARBARA,RANDALL,0 W 16TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9048743083,Mobile,9047515576,Land Line,BARBRA.RANDALL@AOL.COM,Duval County Taxdeed
-5677,09/27/2023,Fta Trust,,2309 JANETTE ST,JACKSONVILLE,Florida,32209,Taxdeed,,6503476974,Land Line,6507598915,Mobile,,Duval County Taxdeed
-5678,09/27/2023,Eliza,Davis,1988 W 20TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9046198445,Land Line,9043548781,Land Line,,Duval County Taxdeed
-5679,09/27/2023,Henry,Dunbar,0 W 10TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9046356737,Mobile,9047082204,Mobile,virtuousspouse@yahoo.com,Duval County Taxdeed
-5680,09/27/2023,Josie,Armstrong,0 W 11TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9046120705,Mobile,9047648450,Land Line,,Duval County Taxdeed
-5681,09/27/2023,Maurice,Boykins,0 INDIAN LAKES DR,JACKSONVILLE,Florida,32210,Taxdeed,,9047664680,Land Line,9045680556,Mobile,boykinsmc1@gmail.com,Duval County Taxdeed
-5682,09/27/2023,Gonzalo,Benavides,0 W 2ND ST,JACKSONVILLE,Florida,32209,Taxdeed,,7032093771,Mobile,7034767994,Land Line,,Duval County Taxdeed
-5683,09/27/2023,John,Mcgovern,429 E 26TH ST,JACKSONVILLE,Florida,32206,Taxdeed,,9048619296,Mobile,9044667962,Mobile,jmmailbox6@gmail.com,Duval County Taxdeed
-5684,09/27/2023,Beatrice,Sherman,1555 E 22ND ST,JACKSONVILLE,Florida,32206,Taxdeed,,9043967589,Land Line,9047373700,Land Line,beatrice.sherman@aol.com,Duval County Taxdeed
-5685,09/27/2023,NATHAN,ALEXANDER,3824 EVERGREEN AVE,JACKSONVILLE,Florida,32206,Taxdeed,,9045715455,Mobile,9048860348,Land Line,NALEX1995@COMCAST.NET,Duval County Taxdeed
-5686,09/27/2023,NAOMI,JAMISON,1335 MCCONIHE ST,JACKSONVILLE,Florida,32209,Taxdeed,,8504327212,Land Line,8506371242,Land Line,,Duval County Taxdeed
-5687,09/27/2023,Eugene,Long,4659 N KEN KNIGHT DR,JACKSONVILLE,Florida,32209,Taxdeed,,9043544345,Land Line,,,,Duval County Taxdeed
-5688,09/27/2023,William,Taylor,1071 W 4TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043547750,Land Line,6622881219,Mobile,williamgregory@earthlink.net,Duval County Taxdeed
-5689,09/27/2023,Dorothy,Ross,1241 W 5TH ST,JACKSONVILLE,Florida,32209,Taxdeed,,9043553009,Land Line,9046312773,Mobile,fuller123rp@gmail.com,Duval County Taxdeed
-5690,09/27/2023,MARCELLO,ALMEIDA,3718 BRICK RD,JACKSONVILLE,Florida,32209,Taxdeed,,9545546560,Mobile,9547446851,Mobile,DOPEMARCELLO@HOTMAIL.COM,Duval County Taxdeed
-5693,09/27/2023,Gillis,Creech,220 STRAWBERRY LN,DAYTONA BEACH,Florida,32117,Taxdeed,,3867173369,Mobile,3862551005,Land Line,GCREECH@MSN.COM,Volusia County Taxdeed
-5694,09/27/2023,Paul,Garzot,42 ERMA AVE,DEBARY,Florida,32713,Taxdeed,,7075455203,Land Line,2538635200,Land Line,,Volusia County Taxdeed
-5695,09/27/2023,James,Hickey,39 FYFE AVE,DEBARY,Florida,32713,Taxdeed,,6162589493,Mobile,2319293401,Land Line,,Volusia County Taxdeed
-5696,09/27/2023,Paul,Garzot,38 ERMA AVE,DEBARY,Florida,32713,Taxdeed,,7075455203,Land Line,2538635200,Land Line,,Volusia County Taxdeed
+6160,10/16/2023,Chun,Wang,27151 SEEGER DR,PUNTA GORDA,Ohio,33955,Taxdeed,,7183580852,Land Line,6467256116,Mobile,,Charlotte County Foreclosure
+6161,10/16/2023,Chester,Crago,12427 MINNESOTA AVE,PUNTA GORDA,Ohio,33955,Taxdeed,,6025462635,Land Line,,,,Charlotte County Foreclosure
+6162,10/16/2023,Robert,Sartore,12276 CARTOUCHE AVE,PUNTA GORDA,Ohio,33955,Taxdeed,,9416850292,Mobile,9417560850,Land Line,me@robsatori.com,Charlotte County Foreclosure
+6163,10/16/2023,Prentice,Peterson,27119 SAVOY DR,PUNTA GORDA,Ohio,33955,Taxdeed,,4237438381,Land Line,4237435177,Land Line,,Charlotte County Foreclosure
+6164,10/16/2023,Verna,Peterson,27113 SAVOY DR,PUNTA GORDA,Ohio,33955,Taxdeed,,4237354170,Land Line,4237434769,Land Line,,Charlotte County Foreclosure
+6165,10/16/2023,Prentice,Peterson,27125 SAVOY DR,PUNTA GORDA,Ohio,33955,Taxdeed,,4237438381,Land Line,4237435177,Land Line,,Charlotte County Foreclosure
+6166,10/16/2023,William,Morton,27348 BALBOA DR,PUNTA GORDA,Ohio,33955,Taxdeed,,7135609852,Mobile,2813438885,Land Line,billm11@houston.rr.com,Charlotte County Foreclosure
+6167,10/16/2023,Susan,Bowser,27355 BALBOA DR,PUNTA GORDA,Ohio,33955,Taxdeed,,9414562119,Mobile,9415050427,Land Line,splashinwater@yahoo.com,Charlotte County Foreclosure
+6168,10/16/2023,Yuan,Huang,27331 ALOHA DR,PUNTA GORDA,Ohio,33955,Taxdeed,,9176788677,Mobile,9177569131,Mobile,,Charlotte County Foreclosure
+6173,10/16/2023,Karen,Findlay,27387 MONTE CRISTO BLVD,PUNTA GORDA,Ohio,33955,Taxdeed,,9412684321,Mobile,9195182058,Land Line,,Charlotte County Foreclosure
+6175,10/16/2023,Priscilla,Fleitas,28165 ALATADENA DR,PUNTA GORDA,Ohio,33955,Taxdeed,,7862603981,Mobile,3052221354,Land Line,openheart50@hotmail.com,Charlotte County Foreclosure
+6176,10/16/2023,Reinaldo,Ruiz,13025 MIZELL AVE,PUNTA GORDA,Ohio,33955,Taxdeed,,3219489489,Mobile,3218044111,Land Line,rerservicessolutions@gmail.com,Charlotte County Foreclosure
+6178,10/16/2023,Lorraine,Dillon,13223 SANTA MARIA DR,PUNTA GORDA,Ohio,33955,Taxdeed,,7274472170,Land Line,7277978091,Land Line,lorrained@gci.net,Charlotte County Foreclosure
+6179,10/16/2023,Luis,Allegre,28311 MORNINGSIDE DR,PUNTA GORDA,Ohio,33955,Taxdeed,,2052800743,Land Line,2052173739,Mobile,,Charlotte County Foreclosure
+6180,10/16/2023,Salena,Festa,28335 MORNINGSIDE DR,PUNTA GORDA,Ohio,33955,Taxdeed,,2392890516,Mobile,2394550231,Land Line,sdentonfesta@webtv.net,Charlotte County Foreclosure
+6183,10/16/2023,Eli,Agsar,4363 SINES LN,PORT CHARLOTTE,Ohio,33981,Taxdeed,,9413211785,Mobile,9418224520,Mobile,,Charlotte County Foreclosure
+6184,10/16/2023,Frank,Jeffers,5527 ASHWOOD RD,PORT CHARLOTTE,Ohio,33981,Taxdeed,,6304693117,Land Line,6306823388,Land Line,,Charlotte County Foreclosure
+6186,10/16/2023,Thomas,Haywood,4421 SPIRE ST,PORT CHARLOTTE,Ohio,33981,Taxdeed,,2162585702,Mobile,2163822568,Land Line,emberstoashes@hotmail.com,Charlotte County Foreclosure
+6187,10/16/2023,Santa,Anza,26357 HAPSBURG RD,PUNTA GORDA,Ohio,33955,Taxdeed,,7818944252,Land Line,6178934920,Mobile,,Charlotte County Foreclosure
+6188,10/16/2023,Lenora,Curtin,12085 EISENHOWER DR,PORT CHARLOTTE,Ohio,33953,Taxdeed,,4014674006,Land Line,4017830607,Land Line,,Charlotte County Foreclosure
+6189,10/16/2023,Prentice,Peterson,27131 SAVOY DR,PUNTA GORDA,Ohio,33955,Taxdeed,,4237438381,Land Line,4237435177,Land Line,,Charlotte County Foreclosure
+6190,10/16/2023,Edward,Critchfield,21077 BAFFIN AVE,PORT CHARLOTTE,Ohio,33954,Taxdeed,,6095017363,Mobile,6098469806,Land Line,tecaerospace1@comcast.net,Charlotte County Foreclosure
+6191,10/16/2023,Margarita,Tremblay,12410 CATALINA DR,PUNTA GORDA,Ohio,33955,Taxdeed,,4076163888,Mobile,4075742811,Land Line,margarita.tremblay@msn.com,Charlotte County Foreclosure
+6195,10/16/2023,George,Hilborn,11513 THIRD AVE,PUNTA GORDA,Ohio,33955,Taxdeed,,9414237375,Land Line,9414261735,Land Line,capteaglei@aol.com,Charlotte County Foreclosure
+6198,10/16/2023,Anita,Johnson,52 VINE CIR,PUNTA GORDA,Ohio,33982,Taxdeed,,6192706919,Mobile,9416270709,Land Line,,Charlotte County Foreclosure
+6199,10/16/2023,Clyde,Mclellon,29325 PEACE RIVER SHORES BLVD,PUNTA GORDA,Ohio,33982,Taxdeed,,7574660098,Land Line,2017929426,Land Line,pkaning@gmail.com,Charlotte County Foreclosure
+6201,10/16/2023,Theresa,Poggi,27265 NOTRE DAME BLVD,PUNTA GORDA,Ohio,33955,Taxdeed,,3862651560,Land Line,8154674687,Land Line,,Charlotte County Foreclosure
+6203,10/16/2023,Elizabeth,Sanderhoff,13349 VENANGO TER,PUNTA GORDA,Ohio,33955,Taxdeed,,7729795343,Mobile,7724664687,Land Line,,Charlotte County Foreclosure
+6208,10/16/2023,Maria,Wooldridge,27107 DEL PRADO PKWY,PUNTA GORDA,Ohio,33983,Taxdeed,,2099437224,Land Line,,,,Charlotte County Foreclosure
+6209,10/16/2023,MILLARD,STONE,1319 HICKORY AVE,PUNTA GORDA,Ohio,33950,Taxdeed,,9139088904,Land Line,9136858418,Land Line,JSTONEKC@GMAIL.COM,Charlotte County Foreclosure
+6211,10/16/2023,Morris,Naudts,1348 VENETIAN CT,PUNTA GORDA,Ohio,33983,Taxdeed,,8504782839,Land Line,3523513549,Land Line,margaretnaudts@excite.com,Charlotte County Foreclosure
+6212,10/16/2023,Thomas,Kotyk,14132 HANOVER AVE,PORT CHARLOTTE,Ohio,33953,Taxdeed,,7243443692,Mobile,7172400675,Land Line,,Charlotte County Foreclosure
+6214,10/16/2023,Amirah,Pollidore,14134 ALP AVE,PORT CHARLOTTE,Ohio,33953,Taxdeed,,5165464069,Land Line,7186934069,Land Line,amirah.enterprises@att.net,Charlotte County Foreclosure
+6215,10/16/2023,John,Bruck,27065 AMSTERDAM DR,PUNTA GORDA,Ohio,33983,Taxdeed,,6159697474,Mobile,6153090229,Land Line,stephanienorris5161@gmail.com,Charlotte County Foreclosure
+6216,10/16/2023,Julio,Osorio,3457 GAINSBORO ROAD,PORT CHARLOTTE,Ohio,33953,Taxdeed,,9418750736,Mobile,,,,Charlotte County Foreclosure
+6217,10/16/2023,Nancy,Webb,9316 MANDY STREET,PUNTA GORDA,Ohio,33982,Taxdeed,,9416370730,Land Line,9417373083,Mobile,nflamand@aol.com,Charlotte County Foreclosure
+6219,10/16/2023,Robert,Richman,3234 GABOR ST,PORT CHARLOTTE,Ohio,33948,Taxdeed,,3104295413,Mobile,2022344675,Land Line,robertrichman@comcast.net,Charlotte County Foreclosure
+6220,10/16/2023,Alfredo,Cabibbo,3255 LISA ST,PORT CHARLOTTE,Ohio,33948,Taxdeed,,8287732085,Mobile,5618474837,Land Line,acabibbo@gmail.com,Charlotte County Foreclosure
+6222,10/16/2023,Henry,Pinto,14001 PITTENGER AVE,PORT CHARLOTTE,Ohio,33953,Taxdeed,,5407520437,Land Line,5407525263,Land Line,firstofnine@adelphia.net,Charlotte County Foreclosure
+6226,10/16/2023,Elizabeth,Sdao,32866 OIL WELL RD,PUNTA GORDA,Ohio,33955,Taxdeed,,7162976839,Land Line,6154808940,Mobile,bmsdao@yahoo.com,Charlotte County Foreclosure
+6228,10/16/2023,Marc,Pristawa,9339 MIGUE CIR,PORT CHARLOTTE,Ohio,33981,Taxdeed,,6176801980,Mobile,6172682481,Land Line,jpristawa@yahoo.com,Charlotte County Foreclosure
+6230,10/16/2023,Barbara,Loughlin,108 REEF PL,ROTONDA WEST,Ohio,33947,Taxdeed,,3157375193,Land Line,3157378912,Land Line,barbaraloughlin@gmail.com,Charlotte County Foreclosure
+6231,10/16/2023,Michael,Schoeller,2161 COMO ST,PORT CHARLOTTE,Ohio,33948,Taxdeed,,2397774803,Mobile,2394555541,Land Line,,Charlotte County Foreclosure
+6233,10/16/2023,Shane,Warren,2101 CALLE BONITO,PUNTA GORDA,Ohio,33982,Taxdeed,,9416008438,Mobile,,,kaleemcnatt8991@gmail.com,Charlotte County Foreclosure
+6234,10/16/2023,Robert,Conley,6653 ORANGE BLOSSOM LANE,PUNTA GORDA,Ohio,33982,Taxdeed,,9374712392,Mobile,9416627762,Mobile,,Charlotte County Foreclosure
+6235,10/16/2023,Kimberly,Tavares,111 KINGS DRIVE,ROTONDA WEST,Ohio,33947,Taxdeed,,7812670161,Mobile,7813564852,Land Line,kimmytav73@gmail.com,Charlotte County Foreclosure
+6239,10/16/2023,Katrina,Mabry,2985 NE 146TH CT,SILVER SPRINGS,Florida,34488,Taxdeed,,3864814793,Mobile,3869856536,Land Line,i_am_katrina_070@yahoo.com,Marion County Taxdeed
+6251,10/16/2023,GANESH,ARORA,102 SE SANTA GARDENIA,PORT SAINT LUCIE,Florida,34984,Taxdeed,,3522910014,Land Line,3523329366,Land Line,FOLKENB@AOL.COM,St Lucie County Foreclosure
+6252,10/16/2023,BEVERLY,CARSON,790 SE ACADEMY LN,PORT SAINT LUCIE,Florida,34953,Taxdeed,,3013351442,Mobile,3018900639,Land Line,BEVERLY.CARSON@HOTMAIL.COM,St Lucie County Foreclosure
+6253,10/16/2023,Bruce,Dingwall,200 RIVER PALM DR,SAINT LUCIE COUNTY,Florida,34950,Taxdeed,,2484961946,Mobile,9893862800,Mobile,bruce.dingwall@gmail.com,St Lucie County Foreclosure
+6254,10/16/2023,Lauren,Oishi,130 SW BECKER RD,PORT SAINT LUCIE,Florida,34953,Taxdeed,,3215141752,Mobile,3215141102,Mobile,j.oishii@yahoo.com,St Lucie County Foreclosure
+6255,10/16/2023,Theodore,Balleras,1653 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6256,10/16/2023,Theodore,Balleras,1657 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6257,10/16/2023,Theodore,Balleras,1661 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6258,10/16/2023,Theodore,Balleras,1665 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6259,10/16/2023,Theodore,Balleras,1669 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6260,10/16/2023,Theodore,Balleras,1673 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6261,10/16/2023,Theodore,Balleras,1677 SW UMBRIA ST,PORT SAINT LUCIE,Florida,34953,Taxdeed,,7602078535,Mobile,7606030968,Land Line,tballeras@roadrunner.com,St Lucie County Foreclosure
+6262,10/16/2023,Harry,Lerner,1650 SW VIA ROSSA,PORT SAINT LUCIE,Florida,34953,Taxdeed,,8132690799,Land Line,8137603984,Mobile,hlerner@me.com,St Lucie County Foreclosure
+6263,10/16/2023,Harry,Lerner,1646 SW VIA ROSSA,PORT SAINT LUCIE,Florida,34953,Taxdeed,,8132690799,Land Line,8137603984,Mobile,hlerner@me.com,St Lucie County Foreclosure
+6264,10/16/2023,Harry,Lerner,1674 SW VIA ROSSA,PORT SAINT LUCIE,Florida,34953,Taxdeed,,8132690799,Land Line,8137603984,Mobile,hlerner@me.com,St Lucie County Foreclosure
+6357,10/16/2023,LEWIS,PETERS,6786 SW 89 TER,PINECREST,Florida,33156,Taxdeed,,3056650744,Land Line,,,,Miami Dade Foreclosure
+6358,10/16/2023,Max,Ford,14800 MIAMI LAKEWAY S,MIAMI LAKES,Florida,33014,Taxdeed,,3057760389,Mobile,3056201224,Land Line,max.ford@excite.com,Miami Dade Foreclosure
+6359,10/16/2023,HUMBERTO,CABRERA,5300 NW 87 AVE,DORAL,Florida,33178,Taxdeed,,3052449103,Mobile,7863291324,Mobile,HUMBERTOCABRERAR@GMAIL.COM,Miami Dade Foreclosure
+6360,10/16/2023,DENESE,WAITERS,1923 NW 48 ST,MIAMI,Florida,33142,Taxdeed,,3057752798,Mobile,3056250514,Land Line,DENESE.B.WAITERS@US.ARTHURANDERSEN.COM,Miami Dade Foreclosure
+6361,10/16/2023,Marcia,Figueiredo,2328 SW 62 AVE,MIAMI,Florida,33155,Taxdeed,,3052003444,Land Line,3052645052,Land Line,,Miami Dade Foreclosure
+6362,10/16/2023,TRACY,THOMPKINS,2570 NW 156 ST,MIAMI GARDENS,Florida,33054,Taxdeed,,3056217630,Land Line,3057428402,Mobile,TTHOMPKINS@LIVE.COM,Miami Dade Foreclosure
+6363,10/16/2023,MARY,RAWLS,5144 NW 32 AVE,MIAMI,Florida,33142,Taxdeed,,7863714333,Mobile,5618417620,Land Line,BATTLEBEAUTY@AOL.COM,Miami Dade Foreclosure
+6364,10/16/2023,Ana,Porras,4923 SW 127 PL,MIAMI,Florida,33175,Taxdeed,,7863435804,Mobile,3057972071,Mobile,ana.porras@cs.com,Miami Dade Foreclosure
+6365,10/16/2023,Ivonne,Granda,10010 HAMMOCKS BLVD,MIAMI,Florida,33196,Taxdeed,,7863801666,Mobile,7864267505,Mobile,ivoca53@hotmail.com,Miami Dade Foreclosure
+6366,10/16/2023,Milagros,Briceno,13367 SW 142 TER,MIAMI,Florida,33186,Taxdeed,,7864866085,Mobile,3053103800,Mobile,,Miami Dade Foreclosure
+6367,10/16/2023,Cliff,Bryan,29051 SW 177 AVE,MIAMI,Florida,33030,Taxdeed,,3407763010,Land Line,3053210035,Mobile,,Miami Dade Foreclosure
+6368,10/16/2023,Leya,Paransky,19390 COLLINS AVE,SUNNY ISLES BEACH,Florida,33160,Taxdeed,,3474293814,Mobile,3475872671,Land Line,apetlyar@aol.com,Miami Dade Foreclosure
+6413,10/16/2023,Olga,Pino,1471 SW 1 ST,MIAMI,Florida,33135,Taxdeed,,3054479221,Land Line,,,olgapino@usa.net,Miami Dade Foreclosure
+6414,10/16/2023,Betty,Davis,440 NW 214 ST,MIAMI GARDENS,Florida,33169,Taxdeed,,5614955184,Land Line,5615734796,Mobile,bdavis@tampabay.rr.com,Miami Dade Foreclosure
+6415,10/16/2023,PAOLA,LLANES,7812 NE MIAMI CT,MIAMI,Florida,33138,Taxdeed,,3058249792,Land Line,,,,Miami Dade Foreclosure
+6416,10/16/2023,Terrence,Smith,6260 NW 15 AVE,MIAMI,Florida,33147,Taxdeed,,3053036555,Mobile,3056915515,Land Line,,Miami Dade Foreclosure
+6417,10/16/2023,Nobirth,Burke,470 NW 135 ST,NORTH MIAMI,Florida,33168,Taxdeed,,3056334031,Land Line,7863266105,Mobile,,Miami Dade Foreclosure
+6418,10/16/2023,FELIX,SANCHEZ,836 NW 47 ST,MIAMI,Florida,33127,Taxdeed,,3055513291,Land Line,3052074973,Land Line,SANCHEZNOE@AOL.COM,Miami Dade Foreclosure
+6419,10/16/2023,Norka,Silverio,2601 SW 26 LN,MIAMI,Florida,33133,Taxdeed,,7864448343,Mobile,3058564876,Land Line,norka.silverio@msn.com,Miami Dade Foreclosure
+6421,10/16/2023,Md Group Real Estate,,101 SW 25 RD,MIAMI,Florida,33129,Taxdeed,,7862870005,Mobile,3058777509,Mobile,,Miami Dade Foreclosure
+6422,10/16/2023,Nkw Biscayne Investments Llc,,4770 BISCAYNE BLVD,MIAMI,Florida,33137,Taxdeed,,3055737690,Land Line,3055730833,Land Line,EGALBUT@IGTCARD.COM,Miami Dade Foreclosure
+6424,10/16/2023,JOSE,PEDRAZA,76 E 6 AVE,Hialeah,Florida,33010,Taxdeed,,7862290910,Mobile,7863290456,Mobile,JOCHYHANNYA7@HOTMAIL.COM,Miami Dade Foreclosure
+6425,10/16/2023,Daniel,Hayman,1310 NE 143 ST,NORTH MIAMI,Florida,33161,Taxdeed,,3054939533,Land Line,3057702599,Land Line,gug770@hotmail.com,Miami Dade Foreclosure
+6426,10/16/2023,Brian,Garcia,1300 W 53 ST,HIALEAH,Florida,33012,Taxdeed,,7864995342,Mobile,3058274244,Land Line,,Miami Dade Foreclosure
+6427,10/16/2023,Lazaro,Valderrama,12310 NW 7 TRL,MIAMI,Florida,33182,Taxdeed,,3053852678,Land Line,3057528373,Land Line,vderrama13@aol.com,Miami Dade Foreclosure
+6428,10/16/2023,JEAN,FAVEUR,11 NW 135 ST,MIAMI,Florida,33168,Taxdeed,,3054931117,Land Line,7868796870,Mobile,KATHLEENFAVEUR@HOTMAIL.COM,Miami Dade Foreclosure
+6429,10/16/2023,Jorge,Nunez,5601 COLLINS AVE,MIAMI BEACH,Florida,33140,Taxdeed,,3058648937,Land Line,7864527946,Land Line,,Miami Dade Foreclosure
+6430,10/16/2023,Trenton,Edwards,17181 SW 143 PL,MIAMI,Florida,33177,Taxdeed,,2565578647,Mobile,2569275440,Land Line,,Miami Dade Foreclosure
+6431,10/16/2023,June,Rogers,1436 NW 35 ST,MIAMI,Florida,33142,Taxdeed,,3056353065,Land Line,3523330319,Land Line,jln635@bellsouth.net,Miami Dade Foreclosure
+6433,10/16/2023,Maria,Oviedo,461 NW 33 AVE,MIAMI,Florida,33125,Taxdeed,,3052833523,Mobile,3056424064,Land Line,PMBBYME@YAHOO.COM,Miami Dade Foreclosure
+6434,10/16/2023,Joel,Altez,6545 INDIAN CREEK DR,MIAMI BEACH,Florida,33141,Taxdeed,,3056735969,Land Line,9174078771,Mobile,jaltez01@gmail.com,Miami Dade Foreclosure
+6435,10/16/2023,Jorge,Perez,6345 COLLINS AVE,MIAMI BEACH,Florida,33141,Taxdeed,,3055271685,Mobile,3054943107,Mobile,jperez@jmpfashions.com,Miami Dade Foreclosure
+6436,10/16/2023,Jose,Aleman,5555 COLLINS AVE,MIAMI BEACH,Florida,33140,Taxdeed,,3059623665,Mobile,3058618322,Land Line,alem3j@aol.com,Miami Dade Foreclosure
+6437,10/16/2023,Arnaldo,Soler,325 S BISCAYNE BLVD,MIAMI,Florida,33131,Taxdeed,,7186518010,Land Line,,,,Miami Dade Foreclosure
+6438,10/16/2023,Lorena,Feldman,19790 W DIXIE HWY,MIAMI,Florida,33180,Taxdeed,,7862945021,Mobile,,,,Miami Dade Foreclosure

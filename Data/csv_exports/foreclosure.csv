@@ -1,289 +1,421 @@
 id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
-5095,09/27/2023,John,Denvir,3006 65TH ST W,LEHIGH ACRES,Ohio,33971,Foreclosure,,8152541002,Land Line,8155568377,Land Line,catfishjtd@aol.com,Lee County Foreclosure
-5097,09/27/2023,Lenora,Burd,2815 SANTA BARBARA BLVD N,CAPE CORAL,Ohio,33993,Foreclosure,,3867407946,Land Line,3866246414,Land Line,,Lee County Foreclosure
-5098,09/27/2023,Craig,Caras,518/520 ALABAMA RD S,LEHIGH ACRES,Ohio,33974,Foreclosure,,3476727882,Mobile,7184387942,Land Line,craig@flemington.ws,Lee County Foreclosure
-5099,09/27/2023,Roy,Kinsley,1120 ECTONE ST E,LEHIGH ACRES,Ohio,33974,Foreclosure,,4102555510,Land Line,,,,Lee County Foreclosure
-5100,09/27/2023,Rickie,Evans,744 CHAPMAN AVE S,LEHIGH ACRES,Ohio,33974,Foreclosure,,5407728116,Land Line,7037728116,Mobile,quacked_1@msn.com,Lee County Foreclosure
-5101,09/27/2023,Margaret,Thompson,4223 NW 25TH ST,CAPE CORAL,Ohio,33993,Foreclosure,,7183469579,Land Line,7183469479,Land Line,,Lee County Foreclosure
-5102,09/27/2023,Larry,Dix,2419 NW 18TH PL,CAPE CORAL,Ohio,33993,Foreclosure,,9374273018,Land Line,,,lkay509@gmail.com,Lee County Foreclosure
-5103,09/27/2023,Mary,Bess,4552 SHORE LN,BOCA GRANDE,Ohio,33921,Foreclosure,,6503473786,Land Line,6504838531,Mobile,marybess@rocketmail.com,Lee County Foreclosure
-5106,09/27/2023,Marlon,Stewart,3102 CHIQUITA BLVD N,CAPE CORAL,Ohio,33993,Foreclosure,,8454525421,Land Line,8454541008,Land Line,shantinaystewart@yahoo.com,Lee County Foreclosure
-5107,09/27/2023,Roland,Brunner,2401/2403 QUENTIN AVE S,LEHIGH ACRES,Ohio,33973,Foreclosure,,5133857086,Land Line,4784710866,Land Line,,Lee County Foreclosure
-5108,09/27/2023,Roberto,Reyes,900 NW 15TH AVE,CAPE CORAL,Ohio,33993,Foreclosure,,5617462851,Land Line,2396000722,Mobile,,Lee County Foreclosure
-5109,09/27/2023,Bartholomew W Twardy Trust,,2416 EVEREST PKWY,CAPE CORAL,Ohio,33904,Foreclosure,,4794895427,Land Line,4703026207,Mobile,,Lee County Foreclosure
-5110,09/27/2023,Thomas,Schaeffer,1010 SE 5TH AVE,CAPE CORAL,Ohio,33990,Foreclosure,,2398413148,Mobile,9315423020,Land Line,thomas.schaeffer@aol.com,Lee County Foreclosure
-5111,09/27/2023,Mary,Smith,2 HEATH ASTER LN,LEHIGH ACRES,Ohio,33936,Foreclosure,,5408967510,Land Line,2393685911,Land Line,,Lee County Foreclosure
-5112,09/27/2023,Christopher,Kelly,10671 AQUA VISTA LN,NORTH FORT MYERS,Ohio,33917,Foreclosure,,8504507982,Mobile,2396451667,Mobile,,Lee County Foreclosure
-5113,09/27/2023,Thomas,Watson,713 GLACIER AVE,LEHIGH ACRES,Ohio,33974,Foreclosure,,8133404543,Mobile,8133149704,Land Line,,Lee County Foreclosure
-5114,09/27/2023,Elena,Carrillo,3914 9TH ST W,LEHIGH ACRES,Ohio,33971,Foreclosure,,3054760326,Land Line,3054769957,Land Line,,Lee County Foreclosure
-5117,09/27/2023,Robert,Critzer,2817 52ND ST W,LEHIGH ACRES,Ohio,33971,Foreclosure,,3029983027,Land Line,3029986741,Land Line,robert.critzer@erols.com,Lee County Foreclosure
-5119,09/27/2023,Barbara,Bourdages,551 SACRAMENTO ST,NORTH FORT MYERS,Ohio,33903,Foreclosure,,9548010997,Mobile,9547643819,Land Line,hero1412@hotmail.com,Lee County Foreclosure
-5120,09/27/2023,Helen,Armstrong,1503 CONGRESS AVE,LEHIGH ACRES,Ohio,33972,Foreclosure,,6144512095,Land Line,6142638685,Land Line,,Lee County Foreclosure
-5122,09/27/2023,Anna,Stacholy,3103 39TH ST SW,LEHIGH ACRES,Ohio,33976,Foreclosure,,7702655747,Mobile,6782972794,Land Line,astacholy@yahoo.com,Lee County Foreclosure
-5123,09/27/2023,Jose,Marrero,402 JOHNS AVE,LEHIGH ACRES,Ohio,33972,Foreclosure,,3058852381,Land Line,7865153810,Mobile,miranda971@hotmail.com,Lee County Foreclosure
-5125,09/27/2023,Holly,Barnhart,3012 TROPICANA PKWY W,CAPE CORAL,Ohio,33993,Foreclosure,,2392468828,Mobile,2398261046,Mobile,holly@gulfgatewayrealty.com,Lee County Foreclosure
-5126,09/27/2023,Jerome,Stanton,2164 WYANDOTTE AVE,ALVA,Ohio,33920,Foreclosure,,2393574337,Mobile,2393685529,Land Line,,Lee County Foreclosure
-5128,09/27/2023,Gloria,Hartenstein,3415 54TH ST W,LEHIGH ACRES,Ohio,33971,Foreclosure,,6084951217,Mobile,6084643372,Land Line,nicopau@geocities.com,Lee County Foreclosure
-5130,09/27/2023,William,Fallon,1009 GARNET AVE,LEHIGH ACRES,Ohio,33974,Foreclosure,,8456926730,Land Line,8456920827,Land Line,williamfallon@adelphia.net,Lee County Foreclosure
-5131,09/27/2023,Harriett,Hays,1808 NE 44TH ST,CAPE CORAL,Ohio,33909,Foreclosure,,2567763940,Land Line,,,,Lee County Foreclosure
-5132,09/27/2023,Bradley,Cozza,8707 CHATHAM ST,FORT MYERS,Ohio,33907,Foreclosure,,2398222833,Mobile,2392780028,Land Line,bradc7fla@juno.com,Lee County Foreclosure
-5133,09/27/2023,Helmut,Heiss,1929 GOLFSIDE VILLAGE DR,LEHIGH ACRES,Ohio,33936,Foreclosure,,2392337770,Mobile,2399368118,Land Line,hheiss@yahoo.com,Lee County Foreclosure
-5134,09/27/2023,KATHLEEN,CHESNUTT,25 HEATH ASTER LN,LEHIGH ACRES,Ohio,33936,Foreclosure,,2396916360,Mobile,8156743347,Mobile,KAYCHESNUTT@YAHOO.COM,Lee County Foreclosure
-5135,09/27/2023,Albert,Rometo,344 COLUMBUS BLVD,LEHIGH ACRES,Ohio,33974,Foreclosure,,4024234013,Land Line,4027305234,Mobile,albertrometo@bigfoot.com,Lee County Foreclosure
-5136,09/27/2023,Lois,Kinsey,3219 46TH ST W,LEHIGH ACRES,Ohio,33971,Foreclosure,,3303858700,Land Line,4789231534,Land Line,,Lee County Foreclosure
-5137,09/27/2023,DAVID,SIMONSON,337 SACRAMENTO ST,NORTH FORT MYERS,Ohio,33903,Foreclosure,,2392924184,Mobile,,,DAVIDASIMONSON.DAS@GMAIL.COM,Lee County Foreclosure
-5138,09/27/2023,Eloise,Dennison,447 SANTA CRUZ ST,NORTH FORT MYERS,Ohio,33903,Foreclosure,,2399956616,Land Line,,,,Lee County Foreclosure
-5140,09/27/2023,HUA,YANG,910 SE 27TH ST,CAPE CORAL,Ohio,33904,Foreclosure,,9177013388,Mobile,7189392954,Land Line,MIFONG@AOL.COM,Lee County Foreclosure
-5141,09/27/2023,Helen,Costigan,1020 LINCOLN AVE,LEHIGH ACRES,Ohio,33972,Foreclosure,,3862646305,Land Line,3048392003,Mobile,lmsunshine1@att.net,Lee County Foreclosure
-5143,09/27/2023,Maria,Holinski,318 PANORAMA AVE,LEHIGH ACRES,Ohio,33974,Foreclosure,,2398984611,Mobile,2394637467,Land Line,,Lee County Foreclosure
-5144,09/27/2023,Betty,Hang,322 PRESTON ST,LEHIGH ACRES,Ohio,33974,Foreclosure,,4012721636,Land Line,4017510012,Land Line,,Lee County Foreclosure
-5145,09/27/2023,Harriet,Ross,339 RAWLINGS AVE,LEHIGH ACRES,Ohio,33974,Foreclosure,,5169381096,Land Line,5166810420,Land Line,,Lee County Foreclosure
-5146,09/27/2023,Kenneth,Allen,371 PEERLESS ST,LEHIGH ACRES,Ohio,33974,Foreclosure,,2144518588,Mobile,8172998346,Land Line,krobertallen61@gmail.com,Lee County Foreclosure
-5147,09/27/2023,Latchmie,Bodenaraine,1017 GERALD AVE,LEHIGH ACRES,Ohio,33936,Foreclosure,,2396915022,Mobile,2393694205,Land Line,lmijangos@msn.com,Lee County Foreclosure
-5149,09/27/2023,Enith,Mahoney,1316 CORTEZ AVE,LEHIGH ACRES,Ohio,33972,Foreclosure,,9542266158,Mobile,9544326991,Land Line,tmahoney71@yahoo.com,Lee County Foreclosure
-5151,09/27/2023,Mark,Dorweiler,3422 SW 5TH PL,CAPE CORAL,Ohio,33914,Foreclosure,,2398398313,Mobile,2399457683,Land Line,mdorweiler@swfla.rr.com,Lee County Foreclosure
-5153,09/27/2023,Maureen,Davis,415 WESTERN AVE S,LEHIGH ACRES,Ohio,33974,Foreclosure,,9547312737,Land Line,9547478348,Land Line,ace_nl@hotmail.com,Lee County Foreclosure
-5154,09/27/2023,Michael,Marrinan,1043 MARATHON AVE S,LEHIGH ACRES,Ohio,33974,Foreclosure,,7188036364,Land Line,4103777508,Land Line,,Lee County Foreclosure
-5155,09/27/2023,Vincent,Charles,1037 GRAYSTONE AVE,LEHIGH ACRES,Ohio,33974,Foreclosure,,7183845309,Land Line,7187820203,Land Line,,Lee County Foreclosure
-5157,09/27/2023,Joseph,Foley,2517 59TH ST W,LEHIGH ACRES,Ohio,33971,Foreclosure,,2158845879,Land Line,2156598106,Land Line,,Lee County Foreclosure
-5159,09/27/2023,Tommy,O'bryan,1034 DANFORTH ST,LEHIGH ACRES,Ohio,33974,Foreclosure,,2517533058,Mobile,2515330375,Mobile,tommyobryan@gmail.com,Lee County Foreclosure
-5160,09/27/2023,Carlos,Cancio,627 LARK AVE S,LEHIGH ACRES,Ohio,33974,Foreclosure,,8472151306,Land Line,8475371628,Land Line,,Lee County Foreclosure
-5161,09/27/2023,Jermaine,Alston,249 LOADSTAR ST,FORT MYERS,Ohio,33913,Foreclosure,,7344973970,Mobile,8134439797,Land Line,afenech@juno.com,Lee County Foreclosure
-5162,09/27/2023,Anthony,Stanley,930 ALETHA AVE S,LEHIGH ACRES,Ohio,33974,Foreclosure,,4078839694,Mobile,2392207271,Mobile,anthonystanley1@gmail.com,Lee County Foreclosure
-5163,09/27/2023,Ines,Chamorro,1270 BLAINE AVE,FORT MYERS,Ohio,33913,Foreclosure,,2392820225,Land Line,7035272657,Land Line,,Lee County Foreclosure
-5164,09/27/2023,Antoinette,Fasan,480 CONLEE ST,LEHIGH ACRES,Ohio,33974,Foreclosure,,2483600335,Land Line,2483028547,Mobile,,Lee County Foreclosure
-5165,09/27/2023,Jayme,Broomhead,1138/1140 BELGRAVE ST,FORT MYERS,Ohio,33913,Foreclosure,,2399400311,Mobile,2395909474,Land Line,jbroomhead@concentric.net,Lee County Foreclosure
-5166,09/27/2023,Sylvia,Tennis,1228 BURBECK ST,FORT MYERS,Ohio,33913,Foreclosure,,4019445531,Land Line,6173042227,Mobile,,Lee County Foreclosure
-5167,09/27/2023,Gary,Singer,1024 NW 12TH TER,CAPE CORAL,Ohio,33993,Foreclosure,,5058972962,Land Line,5052595087,Mobile,,Lee County Foreclosure
-5168,09/27/2023,Socorro,Dominguez,1720 NW 12TH TER,CAPE CORAL,Ohio,33993,Foreclosure,,3059043507,Mobile,7867175128,Land Line,,Lee County Foreclosure
-5169,09/27/2023,Tonia,Piscitelli,1116 NW 21ST PL,CAPE CORAL,Ohio,33993,Foreclosure,,2397706275,Mobile,2399451873,Land Line,tpiscitelli89@yahoo.com,Lee County Foreclosure
-5170,09/27/2023,Brien,Garland,612/614 HANCOCK BRIDGE PKWY,CAPE CORAL,Ohio,33990,Foreclosure,,2398227669,Mobile,9046779466,Land Line,flyguybri38@aol.com,Lee County Foreclosure
-5171,09/27/2023,John,Ibbitson,2532 NW 18TH PL,CAPE CORAL,Ohio,33993,Foreclosure,,2392835110,Land Line,,,,Lee County Foreclosure
-5172,09/27/2023,Reshant,Jefferson,15335 WALL DR,FORT MYERS,Ohio,33908,Foreclosure,,3058966285,Mobile,7863568347,Mobile,reshantjefferson41@gmail.com,Lee County Foreclosure
-5173,09/27/2023,Clifford,Bodenhafer,441 CLARK ST,NORTH FORT MYERS,Ohio,33903,Foreclosure,,2396562911,Land Line,2392820058,Land Line,cliffordbodenhafer@sbcglobal.net,Lee County Foreclosure
-5174,09/27/2023,Jimmy,Aviram,970 MONTE CRISTO BLVD,TIERRA VERDE,Ohio,33715,Foreclosure,,7275104814,Mobile,4255057105,Mobile,ravitaviram@hotmail.com,Pinellas County Foreclosure
-5175,09/27/2023,RAYMOND,LALIBERTE,12501 ULMERTON RD # 213,LARGO,Ohio,33774,Foreclosure,,5085402773,Land Line,5085249122,Mobile,RLALIB123@AOL.COM,Pinellas County Foreclosure
-5176,09/27/2023,Frank,Freeman,4117 DAVENTRY LN,PALM HARBOR,Ohio,34685,Foreclosure,,8602371668,Mobile,8605681185,Land Line,ffreeman@sbcglobal.net,Pinellas County Foreclosure
-5177,09/27/2023,James,Harrington,1419 SUNNY PARK RD,CLEARWATER,Ohio,33756,Foreclosure,,7275955497,Land Line,7277983761,Mobile,jharrin327@aol.com,Pinellas County Foreclosure
-5178,09/27/2023,Rubens,Barbosa,2202 CITRUS HILL LN,PALM HARBOR,Ohio,34683,Foreclosure,,7277729346,Land Line,,,,Pinellas County Foreclosure
-5179,09/27/2023,HELEN,LARUE,2625 STATE ROAD 590 # 1932,CLEARWATER,Ohio,33759,Foreclosure,,7272886041,Mobile,7273857359,Mobile,BOULANGERIE4@AOL.COM,Pinellas County Foreclosure
-5180,09/27/2023,Misty,Howard,2111 OAK ST,JACKSONVILLE,Florida,32204,Foreclosure,,9042370221,Mobile,9046227613,Mobile,herbie3903@aol.com,Duval County Foreclosure
-5181,09/27/2023,ASHIK,PATEL,7671 FANNING DR,JACKSONVILLE,Florida,32244,Foreclosure,,9047701860,Mobile,,,PATELA2015@FAU.EDU,Duval County Foreclosure
-5182,09/27/2023,RAMONA,WILLIAMS,15738 JIM CT,JACKSONVILLE,Florida,32218,Foreclosure,,9042941516,Mobile,9043764282,Land Line,MONAWMS07@GMAIL.COM,Duval County Foreclosure
-5183,09/27/2023,DOROTHY,SAMPSON,1739 STAFFORD RD,JACKSONVILLE,Florida,32208,Foreclosure,,9042584865,Mobile,9046132956,Mobile,BERTIEBEE46@AOL.COM,Duval County Foreclosure
-5184,09/27/2023,Sandra,Wiggins,7866 MELVIN RD,JACKSONVILLE,Florida,32210,Foreclosure,,9044771856,Mobile,3056251626,Land Line,swiggins929@yahoo.com,Duval County Foreclosure
-5185,09/27/2023,Vanessa,Tremble,7082 KNOTTS DR,JACKSONVILLE,Florida,32210,Foreclosure,,9049820424,Mobile,9049821624,Mobile,,Duval County Foreclosure
-5186,09/27/2023,Sarah,Hiter,8305 CORALBERRY LN,JACKSONVILLE,Florida,32244,Foreclosure,,9046542484,Mobile,9047775095,Land Line,shiter@yahoo.com,Duval County Foreclosure
-5187,09/27/2023,Bettie,Hogan,1181 W 21ST ST,JACKSONVILLE,Florida,32209,Foreclosure,,9046625714,Mobile,9043300950,Land Line,bettiehogan@gmail.com,Duval County Foreclosure
-5188,09/27/2023,Sheepco Holdings Llc,,5930 E CAMARO DR,JACKSONVILLE,Florida,32244,Foreclosure,,4079235903,Mobile,9044445440,Mobile,,Duval County Foreclosure
-5189,09/27/2023,Pamela,Tibbs,1905 SEMINOLE RD,ATLANTIC BEACH,Florida,32233,Foreclosure,,9042499723,Land Line,9045348893,Mobile,ZHI70@HAPPYLITTLEBOY.COM,Duval County Foreclosure
-5190,09/27/2023,Christopher,Cheeks,3585 HARTSFIELD FOREST CIR,JACKSONVILLE,Florida,32277,Foreclosure,,6012592012,Mobile,7692348545,Mobile,akatiss1@yahoo.com,Duval County Foreclosure
-5191,09/27/2023,CANUTO,ACOSTA,2030 E STARWAN RD,JACKSONVILLE,Florida,32211,Foreclosure,,3055081908,Land Line,,,CANUTOAV05@GMAIL.COM,Duval County Foreclosure
-5192,09/27/2023,Jennifer,Bryson,5930 GILMORE DRIVE,FAIRFIELD,Ohio,45014,Foreclosure,,5134440449,Mobile,3302802836,Mobile,,Butler County Foreclosure
-5193,09/27/2023,Kitty,Shoemaker,2811 MORGAN ROSS ROAD,HAMILTON,Ohio,45013,Foreclosure,,5132758466,Mobile,5137381298,Land Line,kpmaker1@hotmail.com,Butler County Foreclosure
-5194,09/27/2023,Joseph,Bennett,108 STARR AVENUE,HAMILTON,Ohio,45011,Foreclosure,,5136177696,Mobile,5134621551,Mobile,lion8421@aol.com,Butler County Foreclosure
-5195,09/27/2023,Madge,Harp,223 YANKEE ROAD,MIDDLETOWN,Ohio,45044,Foreclosure,,9372389731,Mobile,5134245807,Land Line,p0tthead420@yahoo.com,Butler County Foreclosure
-5196,09/27/2023,Anthony,Bell,29 ELMONT AVENUE,HAMILTON,Ohio,45013,Foreclosure,,5135718017,Mobile,5138634442,Land Line,,Butler County Foreclosure
-5197,09/27/2023,Rodney,Linkous,1150 KAHN AVENUE,HAMILTON,Ohio,45011,Foreclosure,,5135438538,Mobile,5138677211,Land Line,rlinkous@cox.net,Butler County Foreclosure
-5198,09/27/2023,Diane,King,1208 HANOVER STREET,HAMILTON,Ohio,45011,Foreclosure,,5138967840,Land Line,5136046180,Mobile,diane.king@rcn.com,Butler County Foreclosure
-5199,09/27/2023,Steve,Schultz,2716 NORTH VERITY PARKWAY,MIDDLETOWN,Ohio,45042,Foreclosure,,5132176572,Land Line,,,,Butler County Foreclosure
-5200,09/27/2023,Richard,Jones,2362 FREEMAN AVENUE,HAMILTON,Ohio,45015,Foreclosure,,5138681972,Land Line,5138952752,Land Line,richardj4233@aol.com,Butler County Foreclosure
-5201,09/27/2023,TERRY,ADKINS,1606 CHIPPEWA DRIVE,HAMILTON,Ohio,45013,Foreclosure,,5136151176,Mobile,5138167338,Land Line,ADKINSPLUMBING@AOL.COM,Butler County Foreclosure
-5202,09/27/2023,Khiem,Nguyen,1749 GRAND BOULEVARD,HAMILTON,Ohio,45011,Foreclosure,,5138255244,Land Line,5138519747,Land Line,,Butler County Foreclosure
-5203,09/27/2023,Amy,Childers,4509 MANCHESTER ROAD,MIDDLETOWN,Ohio,45042,Foreclosure,,5135714511,Mobile,5132170734,Land Line,,Butler County Foreclosure
-5204,09/27/2023,TIMOTHY,WEBER,4697 SHADYLAWN TERR,Cincinnati,Ohio,,Foreclosure,,5134710427,Land Line,5132873087,Land Line,POPPYTW1954@GMAIL.COM,Hamilton County Sheriff Foreclosure
-5206,09/27/2023,William,Perez,197OAK LN,OCALA,Ohio,34472,Foreclosure,,3477527575,Mobile,7188355304,Land Line,willperez123@yahoo.com,Marion County Foreclosure
-5207,09/27/2023,Marjorie,Washington,9212 SW 109TH LN,OCALA,Ohio,34481,Foreclosure,,3528736183,Land Line,7344832515,Land Line,,Marion County Foreclosure
-5208,09/27/2023,Jesse,Alsieux,5331 NW 62ND PL,OCALA,Ohio,34482,Foreclosure,,3522865641,Mobile,2865645641,Mobile,,Marion County Foreclosure
-5209,09/27/2023,Paul,Pitter,8285 SW 106TH ST,OCALA,Ohio,34481,Foreclosure,,8622858817,Mobile,9738263212,Land Line,mrppitter@hotmail.com,Marion County Foreclosure
-5210,09/27/2023,Guillermo,Chumpitaz,2300 SW 43RD ST,GAINESVILLE,Florida,32607,Foreclosure,,3058036849,Mobile,3059402635,Land Line,vdrego@yahoo.com,Alachua County Foreclosure
-5211,09/27/2023,Kimberly,Ramsey,2311 SW 43RD PL,GAINESVILLE,Florida,32608,Foreclosure,,3523391234,Mobile,3523716516,Land Line,kimberly.ramsey@qwest.net,Alachua County Foreclosure
-5212,09/27/2023,Ryan,Nagel,5021 WEST UNIVERSITY AVE,GAINESVILLE,Florida,32607,Foreclosure,,9702615670,Mobile,5613582392,Mobile,,Alachua County Foreclosure
-5213,09/27/2023,Lawrence,Fama,3060 HOLIDAY SPRINGS BLVD,MARGATE,Florida,33063,Foreclosure,,5708560351,Mobile,6106818068,Land Line,lfama@aol.com,Broward County Foreclosure
-5214,09/27/2023,Maria,Rincon,1807 VICTORIA POINTE CIR,WESTON,Florida,33327,Foreclosure,,9543894997,Land Line,,,,Broward County Foreclosure
-5215,09/27/2023,SUSANA,HUNTER,4351 NE 15 TER,OAKLAND PARK,Florida,33334,Foreclosure,,9546611339,Mobile,9547679665,Land Line,SUSANA.HUNTER@GMAIL.COM,Broward County Foreclosure
-5216,09/27/2023,Luc,Germain,5101 SW 24 ST,WEST PARK,Florida,33023,Foreclosure,,3213076326,Mobile,4077541140,Land Line,sergo@cfl.rr.com,Broward County Foreclosure
-5217,09/27/2023,Benjamin,Ingram,8250 NW 52 ST,LAUDERHILL,Florida,33351,Foreclosure,,9548223321,Mobile,9545337999,Land Line,,Broward County Foreclosure
-5218,09/27/2023,Sheryll,Wilson,2720 SW 128 AVE,MIRAMAR,Florida,33027,Foreclosure,,9543943507,Mobile,9544316002,Land Line,privacy@wzukltd.com,Broward County Foreclosure
-5219,09/27/2023,Joel,Vicuna,17668 SW 20 ST,MIRAMAR,Florida,33029,Foreclosure,,7863448591,Mobile,9544502261,Land Line,jvicuna@netscape.net,Broward County Foreclosure
-5220,09/27/2023,Herode,Benjamin,1254 SW 71 TER,NORTH LAUDERDALE,Florida,33068,Foreclosure,,9549089043,Mobile,9542253257,Mobile,JULIE.B22@HOTMAIL.COM,Broward County Foreclosure
-5221,09/27/2023,Marvia,Smith,9542 NW 24 CT,CORAL SPRINGS,Florida,33065,Foreclosure,,3477209978,Mobile,3472514413,Mobile,marvia.smith@gmail.com,Broward County Foreclosure
-5222,09/27/2023,Dawn,Barnes,9230 NW 31 PL,SUNRISE,Florida,33351,Foreclosure,,9546387482,Mobile,9548397443,Mobile,,Broward County Foreclosure
-5223,09/27/2023,ELMER,WILLIAMS,16891 SW 49 CT,MIRAMAR,Florida,33027,Foreclosure,,4103226925,Mobile,9544374603,Land Line,,Broward County Foreclosure
-5224,09/27/2023,Valerie,Mortimer,6521 SW 8 ST,PEMBROKE PINES,Florida,33023,Foreclosure,,7548889571,Land Line,3059870642,Mobile,,Broward County Foreclosure
-5225,09/27/2023,Marie,Moise,7910 SW 8 CT,NORTH LAUDERDALE,Florida,33068,Foreclosure,,9545128719,Mobile,9545320818,Land Line,,Broward County Foreclosure
-5226,09/27/2023,Donna,Schulman,10132 NW 4 ST,PLANTATION,Florida,33317,Foreclosure,,9544525019,Land Line,9544521103,Land Line,dschulinc@aol.com,Broward County Foreclosure
-5227,09/27/2023,Jean,Brown,9625 NW 75 ST,TAMARAC,Florida,33321,Foreclosure,,9547223004,Land Line,5614967835,Land Line,abrownbklyn@aol.com,Broward County Foreclosure
-5228,09/27/2023,Sidney,Rosen,340 SUNSET DR,FORT LAUDERDALE,Florida,33301,Foreclosure,,9544672345,Land Line,3054672345,Mobile,,Broward County Foreclosure
-5229,09/27/2023,David,Natour,4421 THOMAS ST,HOLLYWOOD,Florida,33021,Foreclosure,,9549639265,Land Line,9544545962,Land Line,dnatour@msn.com,Broward County Foreclosure
-5230,09/27/2023,Warren,Macdougall,941 BLUEWOOD TER,WESTON,Florida,33327,Foreclosure,,3059702031,Mobile,9547273794,Land Line,wmacdougall@netscape.net,Broward County Foreclosure
-5231,09/27/2023,Odin,Martinez,9833 NW 9 CT,PLANTATION,Florida,33324,Foreclosure,,9544363413,Land Line,3059344330,Land Line,odinmartinez@yahoo.com,Broward County Foreclosure
-5232,09/27/2023,Charlene,Williams,4220 NW 21 ST,LAUDERHILL,Florida,33313,Foreclosure,,9544841260,Land Line,9547171946,Land Line,,Broward County Foreclosure
-5233,09/27/2023,Sandra,Bryant,3510 SW 32 ST,WEST PARK,Florida,33023,Foreclosure,,7865467938,Mobile,3055734912,Land Line,sandrabryant68@yahoo.com,Broward County Foreclosure
-5234,09/27/2023,Willie,Johnson,2701 NW 105 TER,CORAL SPRINGS,Florida,33065,Foreclosure,,7867097505,Mobile,3057690839,Land Line,,Broward County Foreclosure
-5236,09/27/2023,Pia,Marsh,14931 SW 18 ST,MIRAMAR,Florida,33027,Foreclosure,,9544328558,Land Line,9544306067,Land Line,tomiko@msn.com,Broward County Foreclosure
-5237,09/27/2023,Yindra,Lopez,5815 SW 58 CT,DAVIE,Florida,33314,Foreclosure,,3053314553,Mobile,9545856363,Land Line,yindralopez@yahoo.com,Broward County Foreclosure
-5238,09/27/2023,Brett,Van Dam,2459 GREENBRIER CT,WESTON,Florida,33327,Foreclosure,,9545521945,Mobile,3057962464,Mobile,,Broward County Foreclosure
-5291,09/27/2023,Kenneth,Robinson,1401 YATES ST,ORLANDO,Florida,32804,Foreclosure,,4075783804,Land Line,4072971784,Land Line,brhntr@msn.com,Orange County Foreclosure
-5292,09/27/2023,LUZ,LOPEZ RIVERA,1737 BUCKEYE FALLS WAY,ORLANDO,Florida,32824,Foreclosure,,7878942656,Land Line,,,,Orange County Foreclosure
-5293,09/27/2023,Ionie,Fisher,11432 VICOLO LOOP,WINDERMERE,Florida,34786,Foreclosure,,4072854432,Mobile,4072937967,Land Line,,Orange County Foreclosure
-5294,09/27/2023,Ivan,Graham,1368 COUNTRYRIDGE PL,ORLANDO,Florida,32835,Foreclosure,,3058122461,Mobile,4073850301,Land Line,1and1@djezi.com,Orange County Foreclosure
-5295,09/27/2023,Margarita,Curbelo,5325 MOXIE BLVD,ORLANDO,Florida,32839,Foreclosure,,4074528161,Mobile,3216896338,Mobile,,Orange County Foreclosure
-5296,09/27/2023,Taylor,Briggs,690 OSCEOLA AVE UNIT 210,WINTER PARK,Florida,32789,Foreclosure,,3525981331,Mobile,3525971331,Land Line,,Orange County Foreclosure
-5297,09/27/2023,Sin,Lee,6233 BELDON DR,MOUNT DORA,Florida,32757,Foreclosure,,9549632023,Land Line,9549376242,Mobile,sin.lee@yahoo.com,Orange County Foreclosure
-5298,09/27/2023,Luz,Velez,2546 WOODS EDGE CIR,ORLANDO,Florida,32817,Foreclosure,,4072821518,Land Line,4073820106,Land Line,eleny.velez@gmail.com,Orange County Foreclosure
-5299,09/27/2023,Joseph,Andreetti,1250 GLENMORE DR,APOPKA,Florida,32712,Foreclosure,,4075620174,Land Line,4077589578,Mobile,jandretti@yahoo.com,Orange County Foreclosure
-5300,09/27/2023,DAVID,CORBIN,2311 ASHLAND BLVD,ORLANDO,Florida,32808,Foreclosure,,4075955326,Mobile,4078102185,Mobile,DAVIDCORBIN@YAHOO.COM,Orange County Foreclosure
-5301,09/27/2023,Hilda,Mojica,5829 WILLOW LEAF CT,ORLANDO,Florida,32807,Foreclosure,,4077310056,Mobile,7182928898,Land Line,,Orange County Foreclosure
-5302,09/27/2023,Brooke,Axtell,418 COVERED BRIDGE DR,OCOEE,Florida,34761,Foreclosure,,4077588868,Mobile,4073734401,Mobile,brooke.winston@comcast.net,Orange County Foreclosure
-5303,09/27/2023,Antonio,Carmona,7651 RIO PINAR LAKES BLVD,ORLANDO,Florida,32822,Foreclosure,,4072733120,Land Line,2692205340,Land Line,antonio.carmona@bellsouth.net,Orange County Foreclosure
-5304,09/27/2023,Ametha,Charles,4201 LAKE LAWNE AVE,ORLANDO,Florida,32808,Foreclosure,,4075237601,Land Line,4075235256,Land Line,charlesametha@yahoo.com,Orange County Foreclosure
-5305,09/27/2023,Corey,Toombs,15689 GALBI DR,ORLANDO,Florida,32828,Foreclosure,,3213545462,Mobile,3059724255,Mobile,corey44@gamezonemail.com,Orange County Foreclosure
-5306,09/27/2023,Adrian,Whitney,1002 TILDEN AVE,APOPKA,Florida,32703,Foreclosure,,4074358288,Mobile,4078802201,Land Line,,Orange County Foreclosure
-5422,09/27/2023,Lisa,Oliveri,55 NW 204 ST 5,MIAMI GARDENS,Florida,33169,Foreclosure,,9547010104,Mobile,9542278896,Land Line,,Miami Dade Foreclosure
-5429,09/27/2023,Jose,Moline,15315 SW 76 TER 202,MIAMI,Florida,33193,Foreclosure,,3053885025,Land Line,3056767788,Land Line,moline27@aol.com,Miami Dade Foreclosure
-5436,09/27/2023,DALIA,ROTH,551 W 34 PL,HIALEAH,Florida,33012,Foreclosure,,7863893753,Mobile,7863168874,Mobile,,Miami Dade Foreclosure
-5441,09/27/2023,Ana,Diaz,11780 SW 18 ST 429-2,MIAMI,Florida,33175,Foreclosure,,7863713046,Mobile,3052272436,Land Line,cmoralejo1@msn.com,Miami Dade Foreclosure
-5442,09/27/2023,Madeline,Richmond,8275 NW 1 PL,MIAMI,Florida,33150,Foreclosure,,3059750681,Mobile,7145628522,Land Line,mimierichemond@hotmail.com,Miami Dade Foreclosure
-5443,09/27/2023,Andrea,Salinas,7811 CARLYLE AVE,MIAMI BEACH,Florida,33141,Foreclosure,,7862196583,Mobile,7863258783,Mobile,,Miami Dade Foreclosure
-5444,09/27/2023,Eric,Penichet,6310 SW 79 ST 7,SOUTH MIAMI,Florida,33143,Foreclosure,,7864649959,Land Line,7862562897,Mobile,epenichet@aol.com,Miami Dade Foreclosure
-5445,09/27/2023,Hector,Rodriguez,16125 SW 89 PL,MIAMI,Florida,33157,Foreclosure,,3055572773,Land Line,7863906202,Mobile,hector.rodr@gmail.com,Miami Dade Foreclosure
-5446,09/27/2023,Dwight,Leslie,11652 SW 142 CT,MIAMI,Florida,33186,Foreclosure,,3053852206,Land Line,3053876962,Land Line,dwightl2866@gmail.com,Miami Dade Foreclosure
-5447,09/27/2023,Francisco,Cata,1065 NE 41 TER,HOMESTEAD,Florida,33033,Foreclosure,,3052484141,Land Line,3053332647,Mobile,fmcata@adelphia.net,Miami Dade Foreclosure
-5448,09/27/2023,Nealice,Marshall,2950 NW 152 TER,MIAMI GARDENS,Florida,33054,Foreclosure,,3056882433,Land Line,3057108337,Mobile,nealice@yahoo.com,Miami Dade Foreclosure
-5449,09/27/2023,ALFRED,LOO,2132 SW 97 CT,MIAMI,Florida,33165,Foreclosure,,3058078300,Mobile,7863626622,Land Line,AFFREDSLOO3@HOTMAIL.COM,Miami Dade Foreclosure
-5450,09/27/2023,Daniel,Medina,2705 NW 22 AVE,MIAMI,Florida,33142,Foreclosure,,2393338424,Mobile,2392250786,Land Line,,Miami Dade Foreclosure
-5451,09/27/2023,RUBYE,BENBOW,22024 SW 113 PL,MIAMI,Florida,33170,Foreclosure,,3053381623,Mobile,7862180755,Mobile,PETE062742@YAHOO.COM,Miami Dade Foreclosure
-5452,09/27/2023,Mikhail,Beyzer,2801 NE 183 ST 317W,AVENTURA,Florida,33160,Foreclosure,,3059034738,Mobile,7862010552,Mobile,mikhailbeyzer@gmail.com,Miami Dade Foreclosure
-5453,09/27/2023,ERIC,ZURITA,14997 SW 32 LN,MIAMI,Florida,33185,Foreclosure,,7862814501,Mobile,7864649753,Land Line,EZURITA1@ME.COM,Miami Dade Foreclosure
-5454,09/27/2023,Eduardo,Alvarez,15721 NW 38 CT,MIAMI GARDENS,Florida,33054,Foreclosure,,3467731989,Mobile,7864406121,Land Line,,Miami Dade Foreclosure
-5455,09/27/2023,Maria,Teixeira,5077 NW 7 ST 1218,MIAMI,Florida,33126,Foreclosure,,3059680234,Mobile,3058570065,Land Line,,Miami Dade Foreclosure
-5456,09/27/2023,John,Hodgdon,7516 SW 190 ST,CUTLER BAY,Florida,33157,Foreclosure,,5617951469,Land Line,5613338983,Land Line,jhodgdon@tds.net,Miami Dade Foreclosure
-5457,09/27/2023,Calmeta,Williams,8330 NW 22 PL,MIAMI,Florida,33147,Foreclosure,,3054965196,Mobile,3056914605,Land Line,calmeta.williams@hotmail.com,Miami Dade Foreclosure
-5458,09/27/2023,Yasser,Medina,9375 FONTAINEBLEAU BLVD L-215,MIAMI,Florida,33172,Foreclosure,,7863877069,Mobile,7863576862,Mobile,dstinger2@msn.com,Miami Dade Foreclosure
-5459,09/27/2023,Emilys,Villalobos,2106 NE 40 RD,HOMESTEAD,Florida,33033,Foreclosure,,3054975963,Mobile,,,,Miami Dade Foreclosure
-5460,09/27/2023,Mariela,Stochetti,155 OCEAN LANE DR 804,KEY BISCAYNE,Florida,33149,Foreclosure,,7865566520,Mobile,7865542889,Mobile,,Miami Dade Foreclosure
-5461,09/27/2023,Alessandra,Veloso,2905 POINT EAST DR L-102,AVENTURA,Florida,33160,Foreclosure,,4072190474,Mobile,9417806396,Mobile,aleveloso2011@gmail.com,Miami Dade Foreclosure
-5462,09/27/2023,Est Of Antonio A Diaz,,439 E 16 ST,HIALEAH,Florida,33010,Foreclosure,,3056326548,Mobile,3055068291,Land Line,,Miami Dade Foreclosure
-5463,09/27/2023,William,Zalaquett,1535 MERIDIAN AVE 7,MIAMI BEACH,Florida,33139,Foreclosure,,7866067927,Mobile,3055329282,Land Line,,Miami Dade Foreclosure
-5464,09/27/2023,JAMES,GIBSON,1901 NW 129 ST,MIAMI,Florida,33167,Foreclosure,,3056212437,Land Line,3053920449,Land Line,,Miami Dade Foreclosure
-5465,09/27/2023,Jose,Alvarez,1035 W 77 ST 412,HIALEAH,Florida,33014,Foreclosure,,3057104863,Mobile,3058210792,Land Line,,Miami Dade Foreclosure
-5466,09/27/2023,George,Ramsauer,9105 SW 227 LN,CUTLER BAY,Florida,33190,Foreclosure,,3053080761,Mobile,8082543087,Land Line,gvd717@gmail.com,Miami Dade Foreclosure
-5467,09/27/2023,Marcos,Padron,2602 SW 110 CT,MIAMI,Florida,33165,Foreclosure,,3059624235,Mobile,3053568026,Land Line,kamawanai2015@gmail.com,Miami Dade Foreclosure
-5468,09/27/2023,Malinda,Boatwright,1301 NW 176 TER,MIAMI GARDENS,Florida,33169,Foreclosure,,7867070549,Mobile,7863123114,Mobile,dona@bellsouth.net,Miami Dade Foreclosure
-5469,09/27/2023,Josette,Archer,15936 SW 112 PL,MIAMI,Florida,33157,Foreclosure,,3053003426,Mobile,3052561432,Land Line,,Miami Dade Foreclosure
-5470,09/27/2023,Alfredo,Amezaga,9905 NW 52 LN,DORAL,Florida,33178,Foreclosure,,7862263244,Mobile,3053976062,Mobile,,Miami Dade Foreclosure
-5471,09/27/2023,Jose,Morales,15451 SW 177 TER,MIAMI,Florida,33187,Foreclosure,,3052511509,Land Line,3052512922,Land Line,sheyse@hotmail.com,Miami Dade Foreclosure
-5472,09/27/2023,Timothy,Gleason,16131 SW 42 TER,MIAMI,Florida,33185,Foreclosure,,3053800478,Land Line,3058150415,Mobile,timothyg4791@yahoo.com,Miami Dade Foreclosure
-5474,09/27/2023,Lonnie,Donaldson,12415 NW 21 CT,MIAMI,Florida,33167,Foreclosure,,3056859777,Land Line,3864282938,Land Line,,Miami Dade Foreclosure
-5475,09/27/2023,Romina,Dadlani,9891 NW 51 TER,DORAL,Florida,33178,Foreclosure,,3054968714,Mobile,3053335537,Mobile,,Miami Dade Foreclosure
-5697,09/27/2023,Lisa,Cantrell,141 MAPLECREST CIR,JUPITER,Florida,33458,Foreclosure,,5618041347,Land Line,5613090861,Mobile,lisac4150@yahoo.com,Palm Beach Foreclosure
-5698,09/27/2023,Jonathan,Maas,1095 MIAMI BLVD,DELRAY BEACH,Florida,33483,Foreclosure,,5612763328,Land Line,5613505804,Mobile,,Palm Beach Foreclosure
-5699,09/27/2023,Tomas,Flores,15164 71ST PL N,LOXAHATCHEE,Florida,33470,Foreclosure,,5613964207,Mobile,5615852920,Land Line,thomas.flores@email.com,Palm Beach Foreclosure
-5700,09/27/2023,John,Nies,15288 76TH RD N,LOXAHATCHEE,Florida,33470,Foreclosure,,9545205232,Mobile,5617988067,Land Line,johngnies@gmail.com,Palm Beach Foreclosure
-5701,09/27/2023,Faithlyn,Butu,10187 MANGROVE DR 201,BOYNTON BEACH,Florida,33437,Foreclosure,,5617320757,Land Line,5613757909,Land Line,fbutu@hotmail.com,Palm Beach Foreclosure
-5702,09/27/2023,Michael,Kompara,5024 LANTANA RD UNIT 3301,LAKE WORTH,Florida,33463,Foreclosure,,5619675522,Land Line,5615856732,Land Line,mikekompara@worldnet.att.net,Palm Beach Foreclosure
-5703,09/27/2023,Noelia,Olavarria,600 VILLAGE GREEN CT C-110,PALM SPRINGS,Florida,33461,Foreclosure,,5613960485,Mobile,5613960845,Mobile,,Palm Beach Foreclosure
-5704,09/27/2023,JAMES,SEIFERT,11 WILLOWBROOK LN 207,DELRAY BEACH,Florida,33446,Foreclosure,,5612554398,Mobile,5615858062,Land Line,,Palm Beach Foreclosure
-5705,09/27/2023,Willis,Williams,138 E 22ND CT,RIVIERA BEACH,Florida,33404,Foreclosure,,5618323496,Land Line,5618817772,Land Line,only1facelikme@yahoo.com,Palm Beach Foreclosure
-5707,09/27/2023,SYBIL,GERSON,6189 WOODCUTTER CT,PALM BEACH GARDENS,Florida,33418,Foreclosure,,5614459280,Mobile,5616268972,Land Line,ROBERT.GERSON@MSN.COM,Palm Beach Foreclosure
-5708,09/27/2023,George,Smith,437 PINE GLEN LN D1,GREENACRES,Florida,33463,Foreclosure,,5619651183,Land Line,9147884191,Land Line,,Palm Beach Foreclosure
-5709,09/27/2023,Brett,Mcgill,7666 SEABREEZE DRIVE,LAKE WORTH,Florida,33467,Foreclosure,,5613468865,Mobile,5614395423,Land Line,bmcgill9@bellsouth.net,Palm Beach Foreclosure
-5710,09/27/2023,Gaynor,Runcie,305 BERENGER WALK,ROYAL PALM BEACH,Florida,33414,Foreclosure,,9176816729,Mobile,5613512363,Mobile,rr_dunkins1@yahoo.com,Palm Beach Foreclosure
-5711,09/27/2023,Jude,Felix,727 W OCEAN AVE,BOYNTON BEACH,Florida,33426,Foreclosure,,5613058615,Mobile,5613051946,Mobile,,Palm Beach Foreclosure
-5712,09/27/2023,Francine,Walker,7317 WAILEA AVE,BOYNTON BEACH,Florida,33437,Foreclosure,,5617379228,Land Line,5612411416,Land Line,fwalker9228@gmail.com,Palm Beach Foreclosure
-5713,09/27/2023,Richard,Rossi,17935 MONTE VISTA DR,BOCA RATON,Florida,33496,Foreclosure,,5614793451,Land Line,5614790760,Land Line,rrichard020@gmail.com,Palm Beach Foreclosure
-5714,09/27/2023,Bonnie,Risley,10214 PINAFORE LN,ROYAL PALM BEACH,Florida,33411,Foreclosure,,5612361731,Mobile,5617914562,Land Line,gangstacorey4eva@aol.com,Palm Beach Foreclosure
-5715,09/27/2023,David,Meadows,2070 BONNIE ST,BOCA RATON,Florida,33486,Foreclosure,,9544483326,Mobile,5613930059,Land Line,dmeadows319@gmail.com,Palm Beach Foreclosure
-5716,09/27/2023,DAVID,MOSQUERA,2819 PILLSBURY WAY,WELLINGTON,Florida,33414,Foreclosure,,5613589460,Mobile,5618460626,Mobile,MATADOR1027@GMAIL.COM,Palm Beach Foreclosure
-5718,09/27/2023,Angel,Blazer,1200 MARINE WAY 805,NORTH PALM BEACH,Florida,33408,Foreclosure,,5616279462,Land Line,4076261328,Land Line,,Palm Beach Foreclosure
-5719,09/27/2023,Ray,Apton,7201 HEARTH STONE AVE,BOYNTON BEACH,Florida,33472,Foreclosure,,5617321579,Land Line,5617039364,Mobile,,Palm Beach Foreclosure
-5720,09/27/2023,Elizabeth,Eigelbach,975 SUMMIT LAKE DR,WEST PALM BEACH,Florida,33406,Foreclosure,,5615962737,Mobile,5615824184,Land Line,eeigelbach@centurytel.net,Palm Beach Foreclosure
-5722,09/27/2023,Lois,Wolpert,13 NORMANDY A,DELRAY BEACH,Florida,33484,Foreclosure,,9547538012,Land Line,5618652932,Land Line,lwolpert@msn.com,Palm Beach Foreclosure
-5723,09/27/2023,Alan,Mcbrearty,2851 S OCEAN BLVD 6V,BOCA RATON,Florida,33432,Foreclosure,,5613922708,Land Line,5616137770,Mobile,amcbrearty@gmail.com,Palm Beach Foreclosure
-5724,09/27/2023,Eddy,Delrio,11413 52ND RD N,ROYAL PALM BEACH,Florida,33411,Foreclosure,,5617042700,Mobile,5613851394,Mobile,,Palm Beach Foreclosure
-5725,09/27/2023,Kevin,Norusis,7635 OAKMONT DR,LAKE WORTH,Florida,33467,Foreclosure,,5613965642,Mobile,7036980180,Land Line,,Palm Beach Foreclosure
-5726,09/27/2023,Haley,Annese,719 W OCEAN AVE,LANTANA,Florida,33462,Foreclosure,,5613062348,Land Line,5614147194,Mobile,,Palm Beach Foreclosure
-5727,09/27/2023,GEOVANIA,REMY,143 SE 27TH WAY,BOYNTON BEACH,Florida,33435,Foreclosure,,5625233271,Mobile,5615732563,Mobile,,Palm Beach Foreclosure
-5728,09/27/2023,Mary,Patouhas,3500 S OCEAN BLVD 502,PALM BEACH,Florida,33480,Foreclosure,,9149671315,Land Line,9146326834,Land Line,marypatouhas@yahoo.com,Palm Beach Foreclosure
-5729,09/27/2023,Tenesley,Lovely,556 SW 10TH ST,BELLE GLADE,Florida,33430,Foreclosure,,5614495579,Mobile,5618400712,Land Line,tenesley.lovely@yahoo.com,Palm Beach Foreclosure
-5730,09/27/2023,Anna,Tolbert,625 NW 14TH ST,BELLE GLADE,Florida,33430,Foreclosure,,5613305753,Land Line,5619833152,Mobile,,Palm Beach Foreclosure
-5731,09/27/2023,Kyle,Boudreaux,11845 171ST LN N,JUPITER,Florida,33478,Foreclosure,,5615965281,Mobile,5617448213,Land Line,,Palm Beach Foreclosure
-5732,09/27/2023,Laurie,Horan,13964 ASTER AVENUE,WELLINGTON,Florida,33414,Foreclosure,,3046174373,Mobile,3048909001,Mobile,chikinlady6@aol.com,Palm Beach Foreclosure
-5733,09/27/2023,Reza,Aftabizadeh,550 OKEECHOBEE BLVD UN UPH-13,WEST PALM BEACH,Florida,33401,Foreclosure,,7405933281,Mobile,7405926136,Land Line,,Palm Beach Foreclosure
-5734,09/27/2023,Reza,Aftabizadeh,550 OKEECHOBEE BLVD UN LPH-12,WEST PALM BEACH,Florida,33401,Foreclosure,,7405933281,Mobile,7405926136,Land Line,,Palm Beach Foreclosure
-5735,09/27/2023,Azita,Niavarani,550 OKEECHOBEE BLVD UN LPH-18,WEST PALM BEACH,Florida,33401,Foreclosure,,4803189923,Mobile,4806205970,Mobile,,Palm Beach Foreclosure
-5736,09/27/2023,Teresa,Nelson,3137 AVENUE H E,RIVIERA BEACH,Florida,33404,Foreclosure,,5616679177,Mobile,5613557373,Land Line,lereshadoz@juno.com,Palm Beach Foreclosure
-5737,09/27/2023,Patrick,Gilmartin,4 WESTGATE LN 4C,BOYNTON BEACH,Florida,33436,Foreclosure,,3476805301,Mobile,7186728726,Land Line,liftkit@msn.com,Palm Beach Foreclosure
-5738,09/27/2023,Michael,Canterbury,10466 LEXINGTON CIR S,BOYNTON BEACH,Florida,33436,Foreclosure,,5616289155,Mobile,5617476605,Land Line,mcanterbury627@yahoo.com,Palm Beach Foreclosure
-5739,09/27/2023,Ingrid,White,1432 N MANGONIA DR,WEST PALM BEACH,Florida,33401,Foreclosure,,8139482513,Land Line,9157710419,Land Line,ihwhite@aol.com,Palm Beach Foreclosure
-5740,09/27/2023,Angela,Lohman,716 LA COSTA WAY,LANTANA,Florida,33462,Foreclosure,,5616761221,Mobile,5616761212,Mobile,ajlohman@yahoo.com,Palm Beach Foreclosure
-5741,09/27/2023,William,Tignor,8268 SUMMERBREEZE LN A,BOCA RATON,Florida,33496,Foreclosure,,5614878320,Land Line,5616768710,Mobile,wtignor@netzero.net,Palm Beach Foreclosure
-5743,09/27/2023,Juan,Restrepo,6815 MONMOUTH RD,WEST PALM BEACH,Florida,33413,Foreclosure,,5613134563,Mobile,9549801732,Mobile,,Palm Beach Foreclosure
-5744,09/27/2023,Robert,Cote,1221 SUSSEX ST,BOYNTON BEACH,Florida,33436,Foreclosure,,5615027639,Mobile,5618041009,Land Line,,Palm Beach Foreclosure
-5745,09/27/2023,Freddy,Espinoza,8216 AMBACH WAY,HYPOLUXO,Florida,33462,Foreclosure,,7325209224,Mobile,5612529782,Mobile,,Palm Beach Foreclosure
-5746,09/27/2023,Nicole,Cenat,1003 SPRINGDALE CIR #100-C,PALM SPRINGS,Florida,33461,Foreclosure,,5613051650,Mobile,7186130970,Land Line,ncenat1@aol.com,Palm Beach Foreclosure
-5747,09/27/2023,Cadette,Salomon,5828 STRAWBERRY LAKES CIR,LAKE WORTH,Florida,33463,Foreclosure,,5615746710,Mobile,5612424812,Land Line,,Palm Beach Foreclosure
-5748,09/27/2023,Irmantas,Zilinskis,11610 BRIARWOOD CIR # 4,BOYNTON BEACH,Florida,33437,Foreclosure,,6303626244,Mobile,6303626844,Mobile,,Palm Beach Foreclosure
-5749,09/27/2023,Mccue Marie J Est,,319 CHATHAM P,WEST PALM BEACH,Florida,33417,Foreclosure,,5616879562,Land Line,5616878709,Land Line,,Palm Beach Foreclosure
-5750,09/27/2023,Alanna,Sherman,404 WOODVIEW CIR,PALM BEACH GARDENS,Florida,33418,Foreclosure,,5612709368,Mobile,9547576956,Land Line,,Palm Beach Foreclosure
-5751,09/27/2023,Henry,Galan,610 SEA PINE WAY D1,GREENACRES,Florida,33415,Foreclosure,,5616592449,Mobile,5616703944,Mobile,rolitogringo2003@hotmail.com,Palm Beach Foreclosure
-5752,09/27/2023,Faith,Washington,22846 IRONWEDGE DR,BOCA RATON,Florida,33433,Foreclosure,,5617023986,Mobile,5613915694,Land Line,fstoy@aol.com,Palm Beach Foreclosure
-5753,09/27/2023,Donna,Sacoulas,880 HIGH POINT BLVD N D,DELRAY BEACH,Florida,33445,Foreclosure,,5612652185,Land Line,7245730497,Land Line,donnasacoulas@yahoo.com,Palm Beach Foreclosure
-5754,09/27/2023,BRADFORD,GEISEN,953 BANYAN DR,DELRAY BEACH,Florida,33483,Foreclosure,,5612894707,Mobile,5614798740,Mobile,BGEISEN@FORECLOSURE.COM,Palm Beach Foreclosure
-5755,09/27/2023,Mark,Faris,602 SEA OATS DR D-2,JUNO BEACH,Florida,33408,Foreclosure,,5616946571,Land Line,9542324471,Mobile,mfaris@hinshawlaw.com,Palm Beach Foreclosure
-5756,09/27/2023,Antonine,Maxime,5153 BRECKENRIDGE PL 39,WEST PALM BEACH,Florida,33417,Foreclosure,,5617956387,Land Line,5613733809,Mobile,amaxime@verizon.net,Palm Beach Foreclosure
-5757,09/27/2023,Shontell,Jackson,15345 LAKE WILDFLOWER RD,DELRAY BEACH,Florida,33484,Foreclosure,,6303735675,Mobile,7086150000,Mobile,shontellyoga4u@yahoo.com,Palm Beach Foreclosure
-5758,09/27/2023,Merlene,Whittingham,2196 WHITE PINE CIR C,GREENACRES,Florida,33415,Foreclosure,,5615771273,Mobile,5616672904,Mobile,mwhittingh@aol.com,Palm Beach Foreclosure
-5759,09/27/2023,Geraldine,Marshall,1480 W 31ST ST,RIVIERA BEACH,Florida,33404,Foreclosure,,5618013107,Mobile,5618450459,Land Line,,Palm Beach Foreclosure
-5760,09/27/2023,Luxemburg Land Trust,,4483 LUXEMBURG CT 105,LAKE WORTH,Florida,33467,Foreclosure,,8455866033,Land Line,7274413336,Land Line,TMLTD@YAHOO.COM,Palm Beach Foreclosure
-5761,09/27/2023,Jimmie,Foreman,335 CORNELL DR,LAKE WORTH,Florida,33460,Foreclosure,,8508925038,Land Line,5617298651,Mobile,,Palm Beach Foreclosure
-5762,09/27/2023,Leonie,Benel,5748 DEWITT PL,LAKE WORTH,Florida,33463,Foreclosure,,5613512554,Mobile,5619682698,Land Line,burmamines1@aol.com,Palm Beach Foreclosure
-5763,09/27/2023,Mcclendon Remy P Trust,,9175 BEDFORD DR,BOCA RATON,Florida,33434,Foreclosure,,5614655248,Land Line,5614889102,Land Line,,Palm Beach Foreclosure
-5764,09/27/2023,Richard,Himick,207 7TH ST,JUPITER,Florida,33458,Foreclosure,,5613463557,Mobile,5616021328,Mobile,,Palm Beach Foreclosure
-5765,09/27/2023,William,Friedman,10090 LEXINGTON ESTATES BLVD,BOCA RATON,Florida,33428,Foreclosure,,5612716646,Mobile,5614705795,Land Line,wfriedman@mchsi.com,Palm Beach Foreclosure
-5766,09/27/2023,GABRIEL,SANCHEZ,4804 LONGWATER WAY,TAMPA,Florida,33615,Foreclosure,,7277848828,Land Line,8138188150,Land Line,GS228@AOL.COM,Hillsborough Foreclosure
-5767,09/27/2023,Andrea,Zanter,3551 HIGH HAMPTON CIR,TAMPA,Florida,33610,Foreclosure,,8138387432,Mobile,8139864923,Land Line,azanter@hotmail.com,Hillsborough Foreclosure
-5768,09/27/2023,Laura,Dunn,18105 LAFAYETTE PL,LUTZ,Florida,33558,Foreclosure,,8139959790,Land Line,8132642983,Land Line,wendyjoe@aol.com,Hillsborough Foreclosure
-5769,09/27/2023,David,Baldwin,4907 GAMELOU LN,PLANT CITY,Florida,33565,Foreclosure,,8132677228,Mobile,8136219580,Land Line,adb28@yahoo.com,Hillsborough Foreclosure
-5770,09/27/2023,C,DIXON,7109 SUMMER HOLLY PL,RIVERVIEW,Florida,33578,Foreclosure,,2057927110,Mobile,2057503100,Land Line,SPC792@YAHOO.COM,Hillsborough Foreclosure
-5771,09/27/2023,Mary,Johnson,8314 PADDOCK AVE,TAMPA,Florida,33614,Foreclosure,,8135283918,Mobile,8138424055,Mobile,edith31145@aol.com,Hillsborough Foreclosure
-5772,09/27/2023,Ramon,Pichardo,16572 BRIGADOON DR,TAMPA,Florida,33618,Foreclosure,,8135978276,Mobile,8134587206,Mobile,,Hillsborough Foreclosure
-5773,09/27/2023,James,Macklin,441 LUCERNE AVE,TAMPA,Florida,33606,Foreclosure,,9167980857,Mobile,5308871240,Land Line,jimlmacklin@yahoo.com,Hillsborough Foreclosure
-5774,09/27/2023,YALILY,VILLAGOMEZ,2743 W CHESTNUT ST,TAMPA,Florida,33607,Foreclosure,,8135053229,Mobile,8134006406,Mobile,WT.CHOLA@GMAIL.COM,Hillsborough Foreclosure
-5775,09/27/2023,Reginald,Summers,9320 MERLOT CIR,SEFFNER,Florida,33584,Foreclosure,,3366817341,Mobile,3362934690,Land Line,,Hillsborough Foreclosure
-5776,09/27/2023,Dawn,Chancey,10231 GEORGE SMITH RD,LITHIA,Florida,33547,Foreclosure,,8137373299,Mobile,8133103146,Mobile,,Hillsborough Foreclosure
-5777,09/27/2023,Lina,Degro,1806 PEACEFUL PALM ST,RUSKIN,Florida,33570,Foreclosure,,8133253153,Mobile,8134768837,Mobile,lina0498@yahoo.com,Hillsborough Foreclosure
-5778,09/27/2023,THAO,VU,9060 MOONLIT MEADOWS LOOP,RIVERVIEW,Florida,33578,Foreclosure,,8138177586,Mobile,8139774915,Land Line,,Hillsborough Foreclosure
-5779,09/27/2023,Reginald,Bolden,10323 SOARING EAGLE DR,RIVERVIEW,Florida,33578,Foreclosure,,8138436994,Mobile,8139859515,Land Line,reginaldbolden@msn.com,Hillsborough Foreclosure
-5780,09/27/2023,Steven,Maas,10215 OSLIN ST,TAMPA,Florida,33615,Foreclosure,,8138890282,Land Line,8138890283,Land Line,topmaas@yahoo.com,Hillsborough Foreclosure
-5781,09/27/2023,Brenda,Rojas,2508 AYERS HILL CT,LUTZ,Florida,33559,Foreclosure,,8135453043,Mobile,8139491943,Land Line,brojas@ix.netcom.com,Hillsborough Foreclosure
-5782,09/27/2023,Karen,Ryan,419 S BROCKFIELD DR,SUN CITY CENTER,Florida,33573,Foreclosure,,9417442703,Land Line,3154462051,Land Line,karenryan@juno.com,Hillsborough Foreclosure
-5783,09/27/2023,Martin,Vaneerd,512 DONNA DR,BRANDON,Florida,33510,Foreclosure,,8133309274,Mobile,8138533104,Mobile,,Hillsborough Foreclosure
-5784,09/27/2023,Kevin,Johnson,502 HILLSIDE CT,BRANDON,Florida,33510,Foreclosure,,3027988182,Land Line,2024831667,Land Line,vjohn51399@msn.com,Hillsborough Foreclosure
-5785,09/27/2023,MATTHEW,TRUSSLER,9801 WHITE BARN WAY,RIVERVIEW,Florida,33569,Foreclosure,,7748230659,Mobile,4018165502,Land Line,MTRUSSLER@GMAIL.COM,Hillsborough Foreclosure
-5786,09/27/2023,Shuler Lovond Life Estate,,2316 E 111TH AVE,TAMPA,Florida,33612,Foreclosure,,8139929953,Mobile,8139820716,Land Line,,Hillsborough Foreclosure
-5787,09/27/2023,Daveta,Bailey,10868 STANDING STONE DR,WIMAUMA,Florida,33598,Foreclosure,,3018105617,Land Line,8134769404,Mobile,ltdlb0625@gmail.com,Hillsborough Foreclosure
-5788,09/27/2023,Ray,Strickland,4507 DEVONSHIRE RD,TAMPA,Florida,33634,Foreclosure,,8138862233,Land Line,,,,Hillsborough Foreclosure
-5789,09/27/2023,Karen,Bryan,10918 ANCIENT FUTURES DR,TAMPA,Florida,33592,Foreclosure,,3473586308,Mobile,8133943258,Mobile,sohoshoes@hotmail.com,Hillsborough Foreclosure
-5790,09/27/2023,Mandie,Velasquez,14444 HADDON MIST DR,WIMAUMA,Florida,33598,Foreclosure,,8138207905,Mobile,4133103770,Land Line,honeyface9507@yahoo.com,Hillsborough Foreclosure
-5791,09/27/2023,JOSEPH,MOLEY,7702 TANGLEWOOD LN,TAMPA,Florida,33615,Foreclosure,,8132635384,Mobile,7272773186,Mobile,JVMOLEY@HOTMAIL.COM,Hillsborough Foreclosure
-5792,09/27/2023,Bank Of New York Mellon,,5707 S 79TH ST,TAMPA,Florida,33619,Foreclosure,,8136771877,Land Line,9548059774,Mobile,,Hillsborough Foreclosure
-5793,09/27/2023,David,Smith,8408 FANTASIA PARK WAY,RIVERVIEW,Florida,33569,Foreclosure,,7654692643,Mobile,7654702774,Mobile,dasmth@verizon.net,Hillsborough Foreclosure
-5794,09/27/2023,David,Eckler,12823 MCINTOSH RD,THONOTOSASSA,Florida,33592,Foreclosure,,8134938939,Mobile,8135772020,Mobile,deckler@bellsouth.net,Hillsborough Foreclosure
-5795,09/27/2023,Ryan,Eason,7322 SEQUOIA DR,TAMPA,Florida,33637,Foreclosure,,8132465740,Land Line,8134869948,Mobile,deasonmd@aol.com,Hillsborough Foreclosure
-5796,09/27/2023,Martin,Rife,1813 E 109TH AVE,TAMPA,Florida,33612,Foreclosure,,8136851113,Land Line,8139719877,Land Line,mrife@verizon.net,Hillsborough Foreclosure
-5797,09/27/2023,Arianna,Russell,15427 FLORIDA BREEZE LOOP,WIMAUMA,Florida,33598,Foreclosure,,2166225882,Mobile,2165419604,Mobile,lexypooh2@yahoo.com,Hillsborough Foreclosure
-5798,09/27/2023,Samba,Sy,8718 MALLARD RESERVE DR 202,TAMPA,Florida,33614,Foreclosure,,3477253653,Land Line,7184390083,Land Line,,Hillsborough Foreclosure
-5799,09/27/2023,Tyler,Reeves,2319 TANBARK RIDGE PL,PLANT CITY,Florida,33563,Foreclosure,,2162925000,Land Line,8137160888,Mobile,tylertankreeves@aol.com,Hillsborough Foreclosure
-5800,09/27/2023,John,Melton,908 CAPE COD CIR,VALRICO,Florida,33594,Foreclosure,,8136514208,Land Line,3525961109,Land Line,johnm1939@att.net,Hillsborough Foreclosure
-5801,09/27/2023,Joanna,Rimes,11562 CAPTIVA KAY DR,RIVERVIEW,Florida,33569,Foreclosure,,8134771011,Mobile,7024354810,Land Line,joanna.mahoney@yahoo.com,Hillsborough Foreclosure
-5802,09/27/2023,Oscar,Hernandez,9332 N HIGHLAND AVE,TAMPA,Florida,33612,Foreclosure,,8139356183,Land Line,8179030534,Mobile,oscar12230@webtv.net,Hillsborough Foreclosure
-5803,09/27/2023,Jermaine,Hall,3312 E ELLICOTT ST,TAMPA,Florida,33610,Foreclosure,,8132556408,Mobile,8135263811,Mobile,jermaine.hall@gmail.com,Hillsborough Foreclosure
-5804,09/27/2023,Bonnie,Giuliani,19139 WHITE WING PL 33,TAMPA,Florida,33647,Foreclosure,,8139722923,Land Line,8137781019,Mobile,bgiuliani@verizon.net,Hillsborough Foreclosure
-5805,09/27/2023,William,Varney,805 N MERRIN ST,PLANT CITY,Florida,33563,Foreclosure,,8138488548,Mobile,4074434561,Mobile,wvarney@gmail.com,Hillsborough Foreclosure
-5806,09/27/2023,James,Devito,4002 W TYSON AVE,TAMPA,Florida,33611,Foreclosure,,8135163155,Mobile,8138394835,Land Line,,Hillsborough Foreclosure
-5807,09/27/2023,DOREEN,BARHAM,506 N WARNELL ST,PLANT CITY,Florida,33563,Foreclosure,,7862295042,Mobile,3052456032,Land Line,DBARHAM@GMAIL.COM,Hillsborough Foreclosure
-5808,09/27/2023,Ulysses,Ford,3206 28TH AVE,TAMPA,Florida,33605,Foreclosure,,8136214016,Land Line,,,sugarinacup@aol.com,Hillsborough Foreclosure
-5809,09/27/2023,Lisette,Johnson,11417 DONNEYMOOR DR,RIVERVIEW,Florida,33569,Foreclosure,,8137581827,Mobile,,,,Hillsborough Foreclosure
-5810,09/27/2023,Randy,Keske,8824 HAGADORN RD,RIVERVIEW,Florida,33569,Foreclosure,,8134772527,Mobile,8132369084,Land Line,rkeske@rcn.com,Hillsborough Foreclosure
+6096,10/16/2023,Brenda,Mullins,4008 GLENESTE-WITHAMSVILLE ROA,CINCINNATI,Ohio,45245,Foreclosure,,5135838495,Land Line,5134841810,Mobile,,Clermont County Sheriff Foreclosure
+6097,10/16/2023,Jacob,Stauss,4598 MUIRRIDGE COURT,BATAVIA,Ohio,45103,Foreclosure,,9376611338,Mobile,9374024323,Land Line,,Clermont County Sheriff Foreclosure
+6098,10/16/2023,Erin,Naylor,444 DARTMOUTH CIRCLE,CINCINNATI,Ohio,45244,Foreclosure,,5133743746,Mobile,9786234627,Land Line,erin.naylor@yahoo.com,Clermont County Sheriff Foreclosure
+6099,10/16/2023,Maria,Crafts,4908 38TH WAY S # 100,ST PETERSBURG,Ohio,33711,Foreclosure,,7278663523,Land Line,7278678441,Land Line,mariacrafts@mac.com,Pinellas County Foreclosure
+6100,10/16/2023,Dena,Mastrangelo,7355 62ND AVE,PINELLAS PARK,Ohio,33781,Foreclosure,,7273504387,Land Line,7275419031,Land Line,dmostrangelo@cs.com,Pinellas County Foreclosure
+6101,10/16/2023,Mychel,Mitchell,1039 N MISSOURI AVE,CLEARWATER,Ohio,33755,Foreclosure,,7279062665,Mobile,7274472620,Land Line,maunyohmitchell@yahoo.com,Pinellas County Foreclosure
+6102,10/16/2023,DOUGLAS,HENDRICKS,801 MISSOURI AVE,PALM HARBOR,Ohio,34683,Foreclosure,,2152975944,Land Line,2152975847,Land Line,SNODOG8@AOL.COM,Pinellas County Foreclosure
+6103,10/16/2023,ADRIENNE,FEDERICO,59 ACACIA ST,CLEARWATER,Ohio,33767,Foreclosure,,7276674807,Mobile,9042694412,Land Line,ADRIENNEFEDERICO@AOL.COM,Pinellas County Foreclosure
+6104,10/16/2023,DONNA,WILLIS,13225 101ST ST # 164,LARGO,Ohio,33773,Foreclosure,,6789254251,Mobile,7708220187,Land Line,DONNAMONT49@YAHOO.COM,Pinellas County Foreclosure
+6105,10/16/2023,Joseph,Loy,300 N WASHINGTON AVE,CLEARWATER,Ohio,33755,Foreclosure,,7274475698,Land Line,7274609894,Mobile,jloy@earthlink.net,Pinellas County Foreclosure
+6106,10/16/2023,JAMES,HOPKINS,200 COUNTRY CLUB DR # 1303,LARGO,Ohio,33771,Foreclosure,,7273014250,Mobile,2565720159,Mobile,MARC.HOPKINS@HOTMAIL.COM,Pinellas County Foreclosure
+6107,10/16/2023,Christian,Orbesen,3143 PHLOX DR,PALM HARBOR,Ohio,34684,Foreclosure,,7279354543,Land Line,8473581277,Land Line,christianorbesen@hotmail.com,Pinellas County Foreclosure
+6108,10/16/2023,PAUL,PAVESE,11251 80TH AVE # 307,SEMINOLE,Ohio,33772,Foreclosure,,4073462925,Mobile,4079324748,Land Line,PAVESEJ@OCPS.NET,Pinellas County Foreclosure
+6109,10/16/2023,Elaine,Blaser,358 KING PALM ST,LARGO,Ohio,33778,Foreclosure,,7275810682,Land Line,7275449310,Land Line,eblaser1@yahoo.com,Pinellas County Foreclosure
+6110,10/16/2023,Justin,Bauder,175 69TH AVE,ST PETERSBURG,Ohio,33702,Foreclosure,,7275267928,Mobile,7274792990,Mobile,,Pinellas County Foreclosure
+6111,10/16/2023,Donald,Small,3133 GILMORE ST,JACKSONVILLE,Florida,32205,Foreclosure,,8509732858,Land Line,9046518662,Mobile,donone@bellsouth.net,Duval County Foreclosure
+6112,10/16/2023,Carol,Lockwood,5259 AMAZON AVE,JACKSONVILLE,Florida,32254,Foreclosure,,9043587283,Land Line,,,,Duval County Foreclosure
+6114,10/16/2023,Quentrail,Carr,7000 E HUNTINGTON WOODS CIR,JACKSONVILLE,Florida,32244,Foreclosure,,9043799661,Land Line,9047387693,Land Line,qcarr@worldnet.att.net,Duval County Foreclosure
+6115,10/16/2023,Sammie,Davis,6165 POPE PL,JACKSONVILLE,Florida,32209,Foreclosure,,9046107687,Mobile,9046082992,Mobile,sammy.davis@yahoo.com,Duval County Foreclosure
+6116,10/16/2023,James,Spaits,6706 FLOPSY LN,JACKSONVILLE,Florida,32210,Foreclosure,,9047727855,Land Line,9047106224,Mobile,jspaits@sbcglobal.net,Duval County Foreclosure
+6117,10/16/2023,ROLAND,AUCLAIR,3586 PEBBLE PATH LN,JACKSONVILLE,Florida,32224,Foreclosure,,2397706526,Mobile,2397475897,Mobile,ROLANDA@ECOCONCEPTSUSA.COM,Duval County Foreclosure
+6118,10/16/2023,Joie,Barr,7604 S JANA LN,JACKSONVILLE,Florida,32210,Foreclosure,,9047784180,Land Line,,,joieb@hotmail.com,Duval County Foreclosure
+6119,10/16/2023,Barbara,Aderhold,1833 BAYARD PL,JACKSONVILLE,Florida,32205,Foreclosure,,9042079710,Mobile,8646429863,Land Line,abarbara@erols.com,Duval County Foreclosure
+6121,10/16/2023,Norman,Kelley,12695 CARON DR,JACKSONVILLE,Florida,32258,Foreclosure,,9042622456,Land Line,7342412525,Land Line,resolutee1@bellsouth.net,Duval County Foreclosure
+6122,10/16/2023,CYNTHIA,WILCOX,3637 PARIANA LN,JACKSONVILLE,Florida,32222,Foreclosure,,4073461277,Mobile,9802378496,Land Line,WILCOXMASTER@YAHOO.COM,Duval County Foreclosure
+6123,10/16/2023,Chila,Smith,6901 LANGFORD ST,JACKSONVILLE,Florida,32219,Foreclosure,,9044666192,Mobile,9043536832,Land Line,chilaj@bellsouth.net,Duval County Foreclosure
+6124,10/16/2023,RICARDO,BRIGHT,1518 FAIRFAX ST,JACKSONVILLE,Florida,32209,Foreclosure,,9047652549,Land Line,9047450710,Land Line,RICARDO.BRIGHT@AOL.COM,Duval County Foreclosure
+6125,10/16/2023,Gary,Learnard,6177 TOYOTA DR,JACKSONVILLE,Florida,32244,Foreclosure,,9046728191,Land Line,9047796394,Land Line,learnard@comcast.net,Duval County Foreclosure
+6126,10/16/2023,BILLIE,STEVENSON,6221 ASHWOOD LN,JACKSONVILLE,Florida,32277,Foreclosure,,8646380354,Land Line,,,BSTEVENSON@AOL.COM,Duval County Foreclosure
+6127,10/16/2023,Teresa,Hightower,16330 CROAKER RD,JACKSONVILLE,Florida,32226,Foreclosure,,9047352443,Mobile,9046967597,Land Line,teri_hightower@yahoo.com,Duval County Foreclosure
+6128,10/16/2023,Michael,Pirch,8116 AXSON ST,JACKSONVILLE,Florida,32221,Foreclosure,,9045361620,Mobile,9043882926,Land Line,mpirch@msn.com,Duval County Foreclosure
+6129,10/16/2023,PATRICIA,VINING,4810 CEDAR POINT RD,JACKSONVILLE,Florida,32226,Foreclosure,,9044424751,Mobile,9046961891,Land Line,PATTYVINING2016@GMAIL.COM,Duval County Foreclosure
+6130,10/16/2023,Rosalind,Lyde,11114 NORTH CAMPUS BLVD,JACKSONVILLE,Florida,32218,Foreclosure,,5622057689,Mobile,9047387755,Land Line,,Duval County Foreclosure
+6131,10/16/2023,Angela,Mann,5046 SEABOARD AVE,JACKSONVILLE,Florida,32210,Foreclosure,,8168865827,Land Line,9046546942,Mobile,git_r_done@comcast.net,Duval County Foreclosure
+6132,10/16/2023,Paul,Crofford,3408 PHOENIX AVE,JACKSONVILLE,Florida,32206,Foreclosure,,7628221563,Mobile,9124170330,Mobile,,Duval County Foreclosure
+6133,10/16/2023,Lee,Kirksey,6014 IRIS BLVD,JACKSONVILLE,Florida,32209,Foreclosure,,7068166655,Mobile,7068160361,Mobile,llkirksey@yahoo.com,Duval County Foreclosure
+6134,10/16/2023,Luis,Gallardo,3614 JACOB LOIS DR,JACKSONVILLE,Florida,32218,Foreclosure,,9047598249,Mobile,9042208726,Land Line,luisgallardo@hotmail.com,Duval County Foreclosure
+6135,10/16/2023,Gail,Figura,7621 LOOKOUT POINT DR,JACKSONVILLE,Florida,32210,Foreclosure,,9045994248,Mobile,9047830540,Land Line,gfigura@yahoo.com,Duval County Foreclosure
+6136,10/16/2023,Nathan,Sutton,6872 MISTY VIEW DR,JACKSONVILLE,Florida,32210,Foreclosure,,9045765228,Mobile,9044653696,Mobile,nathan.sutton@gmail.com,Duval County Foreclosure
+6137,10/16/2023,Dennis,Bennett,9780 ORR DR,JACKSONVILLE,Florida,32246,Foreclosure,,9045047677,Mobile,9049967270,Land Line,bennettjr.dennis@yahoo.com,Duval County Foreclosure
+6138,10/16/2023,VALERIE,PARRISH,10036 N DELANO DR,JACKSONVILLE,Florida,32257,Foreclosure,,9045717598,Mobile,9042626050,Land Line,VLPARRISH1@COMCAST.NET,Duval County Foreclosure
+6139,10/16/2023,Davis Lorenza A Estate,,3418 CAPITOLA ST,JACKSONVILLE,Florida,32209,Foreclosure,,9047039359,Mobile,9048687418,Mobile,LORENZA.DAVIS@MSN.COM,Duval County Foreclosure
+6140,10/16/2023,Joyce,Parsons,4938 S IRISH MOSS DR,JACKSONVILLE,Florida,32257,Foreclosure,,9042689801,Mobile,9043829801,Mobile,jparsons7@hotmail.com,Duval County Foreclosure
+6141,10/16/2023,John,Ingram,6237 SYRINGA LN,JACKSONVILLE,Florida,32211,Foreclosure,,9045020270,Mobile,9046105032,Mobile,,Duval County Foreclosure
+6142,10/16/2023,Sarah,Newsome,1895 E WILLESDON DR,JACKSONVILLE,Florida,32246,Foreclosure,,9046461578,Land Line,9046933072,Land Line,sarahknewsome@yahoo.com,Duval County Foreclosure
+6143,10/16/2023,Tanya,Vance,2001 GRAND BOULEVARD,HAMILTON,Ohio,45011,Foreclosure,,5138687152,Land Line,5132278167,Mobile,,Butler County Foreclosure
+6144,10/16/2023,Debbie,Lunsford,1074 OXFORD MIDDLETOWN ROAD,HAMILTON,Ohio,45013,Foreclosure,,5137264251,Land Line,5137261106,Land Line,debbie.lunsford@latinmail.com,Butler County Foreclosure
+6145,10/16/2023,Sherry,Coker,1177 SAINT CLAIR AVENUE,HAMILTON,Ohio,45015,Foreclosure,,6065212425,Mobile,6065213140,Mobile,,Butler County Foreclosure
+6146,10/16/2023,Thomas,Brock,2004 ERIE AVENUE,MIDDLETOWN,Ohio,45042,Foreclosure,,5134226771,Land Line,5133936950,Mobile,thomasbrock70@yahoo.com,Butler County Foreclosure
+6147,10/16/2023,Cheryl,Baker,151 WINSTON LANE,MONROE,Ohio,45050,Foreclosure,,5135719626,Mobile,5135392039,Land Line,cherylzbaker@gmail.com,Butler County Foreclosure
+6148,10/16/2023,Mary,Gross,921 SOUTH NINTH STREET,HAMILTON,Ohio,45011,Foreclosure,,5138638496,Land Line,8037080260,Land Line,mgross7980@aol.com,Butler County Foreclosure
+6150,10/16/2023,James,Middleton,2178 MIDDLETOWN EATON ROAD,MIDDLETOWN,Ohio,45042,Foreclosure,,9376723803,Mobile,9377469700,Land Line,jimmid8381@gmail.com,Butler County Foreclosure
+6151,10/16/2023,Constance,Gleason,110 KUMLER ROAD,SEVEN MILE,Ohio,45062,Foreclosure,,5138357263,Mobile,5133711041,Mobile,wildatheart10000@yahoo.com,Butler County Foreclosure
+6152,10/16/2023,Douglas,Mueller,7075 MULBERRY ST,Cincinnati,Ohio,,Foreclosure,,5132371340,Mobile,5139310144,Land Line,douglas.mueller@worldnet.att.net,Hamilton County Sheriff Foreclosure
+6153,10/16/2023,Calvin,Mccoy,2521 SEEGAR AVE,Cincinnati,Ohio,,Foreclosure,,5132519747,Land Line,2059869157,Land Line,,Hamilton County Sheriff Foreclosure
+6154,10/16/2023,Jack,Kidwell,1453 VERDALE DR,Cincinnati,Ohio,,Foreclosure,,5137395615,Mobile,5132328367,Land Line,jlk@zoomtown.com,Hamilton County Sheriff Foreclosure
+6155,10/16/2023,Laurence,Entsuah,7760 Cumberland Circle NW,Canal Winchester,Ohio,43110,Foreclosure,,6143714583,Mobile,6149209558,Land Line,lkobina@aol.com,Fairfield County Foreclosure
+6156,10/16/2023,Chaim,Lazarovitch,1981 Granville Pike NE,Lancaster,Ohio,43130,Foreclosure,,7185069560,Land Line,7322330656,Mobile,clazarovitch@yahoo.com,Fairfield County Foreclosure
+6157,10/16/2023,Connie,Miller,637 East Mulberry Street,Lancaster,Ohio,43130,Foreclosure,,7402746447,Mobile,7409833620,Land Line,connie.buell@msn.com,Fairfield County Foreclosure
+6158,10/16/2023,Marian,Richardson,17352 ROBINSON AVE,PORT CHARLOTTE,Ohio,33948,Foreclosure,,9417648129,Land Line,9413456223,Mobile,,Charlotte County Foreclosure
+6205,10/16/2023,Daryl,Brown,22230 AUGUSTA AVE,PORT CHARLOTTE,Ohio,33952,Foreclosure,,5712158792,Mobile,7039710435,Land Line,,Charlotte County Foreclosure
+6237,10/16/2023,Kellie,Matos,1 PINE COURSE RADL,OCALA,Ohio,34472,Foreclosure,,3522455375,Land Line,3525122852,Mobile,,Marion County Foreclosure
+6238,10/16/2023,JOHN,KEEFE,2925 SW 173RD PLACE RD,OCALA,Ohio,34473,Foreclosure,,3528176751,Mobile,9048142723,Mobile,HOTTUNALYLE@GMAIL.COM,Marion County Foreclosure
+6240,10/16/2023,JEFFREY,SOUSA,8030 NW 290TH AVE,ALACHUA,Florida,32615,Foreclosure,,3864625755,Land Line,3864624650,Land Line,ANDRADEJ1960@GMAIL.COM,Alachua County Foreclosure
+6241,10/16/2023,Bruce,Hollis,3609 NW 40TH ST,GAINESVILLE,Florida,32606,Foreclosure,,3523357050,Land Line,3522641671,Land Line,brucehollis@bellsouth.net,Alachua County Foreclosure
+6242,10/16/2023,Mark,Cox,7101 NW 218TH AVE,ALACHUA,Florida,32615,Foreclosure,,2606256574,Land Line,2603877141,Land Line,macj1236@yahoo.com,Alachua County Foreclosure
+6243,10/16/2023,Ronda,Petersen,6815 NW 105TH AVE,ALACHUA,Florida,32615,Foreclosure,,3527451698,Mobile,3864624916,Land Line,spete0925@aol.com,Alachua County Foreclosure
+6244,10/16/2023,Tanya,Hayes,901 NW 4TH PL,GAINESVILLE,Florida,32601,Foreclosure,,3522131188,Mobile,8132976262,Mobile,tykbtd@yahoo.com,Alachua County Foreclosure
+6245,10/16/2023,Jason,Hunt,6319 SW 37TH WAY,GAINESVILLE,Florida,32606,Foreclosure,,2566163554,Mobile,2702271570,Mobile,jmhuntmd@hotmail.com,Alachua County Foreclosure
+6246,10/16/2023,Irish,Hill,327 NW 8TH ST,GAINESVILLE,Florida,32601,Foreclosure,,3523360863,Land Line,3523764753,Land Line,ihill@att.net,Alachua County Foreclosure
+6247,10/16/2023,Anthony,Rizzotto,18741 NW 240TH ST,HIGH SPRINGS,Florida,32643,Foreclosure,,3523634965,Mobile,3523276859,Mobile,trizzotto@yahoo.com,Alachua County Foreclosure
+6248,10/16/2023,Josephine,Murray,1612 NW 19TH CIR,GAINESVILLE,Florida,32605,Foreclosure,,3523789850,Land Line,3523735542,Land Line,josephine.murray@att.net,Alachua County Foreclosure
+6249,10/16/2023,Wesley,Cummins,23518 NW COUNTY RD 239,ALACHUA,Florida,32615,Foreclosure,,8132640501,Land Line,8636461452,Land Line,lasalle40@comcast.com,Alachua County Foreclosure
+6265,10/16/2023,BRUCE,MURAT,6115 NW GINGER LN,PORT SAINT LUCIE,Florida,34986,Foreclosure,,5613365920,Land Line,5613980375,Mobile,BMURAT@HOTMAIL.COM,St Lucie County Foreclosure
+6266,10/16/2023,Dan,Maxwell,733 SE WHITE AVE,PORT SAINT LUCIE,Florida,34983,Foreclosure,,7728786138,Land Line,5618710380,Mobile,nmaxwell@peoplepc.com,St Lucie County Foreclosure
+6267,10/16/2023,Alexander,Ely,2101 SE RAINIER RD,PORT SAINT LUCIE,Florida,34953,Foreclosure,,7728286258,Mobile,7724663059,Land Line,yusun67890@gmail.com,St Lucie County Foreclosure
+6268,10/16/2023,GLORIA,DICKERSON,1117 AVENUE F,FORT PIERCE,Florida,34950,Foreclosure,,7729716307,Mobile,5614653549,Land Line,GLORIA.DICKERSON@NETSCAPE.NET,St Lucie County Foreclosure
+6269,10/16/2023,Francois,Marius,605 N 8TH ST,FORT PIERCE,Florida,34950,Foreclosure,,5612964953,Land Line,9543453000,Land Line,fmarius@yahoo.com,St Lucie County Foreclosure
+6270,10/16/2023,John,Conti,2508 NEWPORT DR,SAINT LUCIE COUNTY,Florida,34982,Foreclosure,,7728014748,Mobile,7724616452,Land Line,tourdrags90@cs.com,St Lucie County Foreclosure
+6271,10/16/2023,Eura,Washington,308 ESSEX DR,SAINT LUCIE COUNTY,Florida,34946,Foreclosure,,7724611182,Land Line,5614611182,Mobile,ewashington@comcast.net,St Lucie County Foreclosure
+6272,10/16/2023,CHRIS,HEIERMAN,2008 S 30TH ST,FORT PIERCE,Florida,34950,Foreclosure,,7724756928,Mobile,7722676171,Mobile,CHEIERMAN@JUNO.COM,St Lucie County Foreclosure
+6273,10/16/2023,DENNIS,BYTHEWAY,249 NW BENTLEY CIR,PORT SAINT LUCIE,Florida,34986,Foreclosure,,6054998660,Mobile,6054907407,Mobile,DENNISBYTHEWAY@YAHOO.COM,St Lucie County Foreclosure
+6275,10/16/2023,Mickey,Trouille,473402 MIDDLE RD,HILLIARD,Florida,32046,Foreclosure,,9122821914,Mobile,,,,Nassau County Foreclosure
+6276,10/16/2023,Travis,Wilson,86041 CAESARS AVE,YULEE,Florida,32097,Foreclosure,,6195409518,Mobile,9048497156,Land Line,,Nassau County Foreclosure
+6277,10/16/2023,Gary,Caraway,85324 LIL WILLIAM RD,FERNANDINA BEACH,Florida,32034,Foreclosure,,9042610094,Land Line,9044188713,Land Line,dorothydcar@usa.net,Nassau County Foreclosure
+6278,10/16/2023,Thomas,Keith,11003 CR 121,BRYCEVILLE,Florida,32009,Foreclosure,,3524781639,Mobile,9042006509,Mobile,exquisate2006@yahoo.com,Nassau County Foreclosure
+6279,10/16/2023,Brandi,Hatcher,281605 LAKE HAMPTON RD,HILLIARD,Florida,32046,Foreclosure,,9044625082,Land Line,9048454894,Land Line,bhatcher1@hotmail.com,Nassau County Foreclosure
+6280,10/16/2023,John,Diamond,85497 JOANN RD,YULEE,Florida,32097,Foreclosure,,9044039002,Mobile,9042259379,Land Line,,Nassau County Foreclosure
+6281,10/16/2023,Mary,Amos,2762 NW 5 ST,POMPANO BEACH,Florida,33069,Foreclosure,,9723328249,Land Line,2812926554,Land Line,maryamos@hotmail.com,Broward County Foreclosure
+6282,10/16/2023,Pauline,Posyton,7330 NW 18 ST 204,MARGATE,Florida,33063,Foreclosure,,9549077675,Mobile,9549770955,Land Line,starsprite62527@aol.com,Broward County Foreclosure
+6283,10/16/2023,Carlos,Escalante,16848 SW 16TH ST,PEMBROKE PINES,Florida,33027,Foreclosure,,3054013951,Mobile,9544411368,Land Line,caesca@bellsouth.net,Broward County Foreclosure
+6284,10/16/2023,Harriette,Cooper,3290 NW 13 ST,LAUDERHILL,Florida,33311,Foreclosure,,9542968976,Mobile,9545874806,Land Line,,Broward County Foreclosure
+6285,10/16/2023,Mary,Lamoureux,8010 NW 27 PL,SUNRISE,Florida,33322,Foreclosure,,9546750680,Mobile,9548621751,Land Line,mreiser@thecrexent.com,Broward County Foreclosure
+6286,10/16/2023,Barbara,Jenkins,2900 NW 9 ST,POMPANO BEACH,Florida,33069,Foreclosure,,9549720127,Land Line,9543032932,Mobile,bjenkins@houston.rr.com,Broward County Foreclosure
+6287,10/16/2023,Gene,Dodge,10901 NW 33 ST,CORAL SPRINGS,Florida,33065,Foreclosure,,9545929199,Mobile,9547529223,Land Line,GENE.DODGE@NETSCAPE.NET,Broward County Foreclosure
+6288,10/16/2023,Mary,Reynolds,449 SW 22 AVE,FORT LAUDERDALE,Florida,33312,Foreclosure,,9548829299,Mobile,9545839118,Land Line,chunkie60vince69@aol.com,Broward County Foreclosure
+6289,10/16/2023,Gina,Yacobellis,5752 HAMPTON HILLS BLVD,TAMARAC,Florida,33321,Foreclosure,,9547185976,Land Line,9542744781,Mobile,fegg@aol.com,Broward County Foreclosure
+6290,10/16/2023,Jorge,Chavez,17744 SW 47 ST,MIRAMAR,Florida,33029,Foreclosure,,9544415080,Land Line,3052283639,Land Line,jchavez4469@usa.net,Broward County Foreclosure
+6291,10/16/2023,Evelyn,Dolnick,7837 ASHMONT CIR,TAMARAC,Florida,33321,Foreclosure,,9547214713,Land Line,6315851731,Land Line,edolnick@yahoo.com,Broward County Foreclosure
+6292,10/16/2023,Tenise,Farrington,8620 WINDSOR DR,MIRAMAR,Florida,33025,Foreclosure,,9549550722,Mobile,7542444802,Mobile,lynette3700@gmail.com,Broward County Foreclosure
+6293,10/16/2023,Laverne,Tucker,4730 NW 10 CT,PLANTATION,Florida,33313,Foreclosure,,9546106374,Mobile,9547309459,Land Line,,Broward County Foreclosure
+6296,10/16/2023,Carina,Holmgren,1633 NW 5 AVE,FORT LAUDERDALE,Florida,33311,Foreclosure,,9547632205,Land Line,9542968760,Mobile,,Broward County Foreclosure
+6297,10/16/2023,William,Smith,981 HILLCREST CT,HOLLYWOOD,Florida,33021,Foreclosure,,4045187676,Mobile,4042964536,Land Line,ginamoonie817@yahoo.com,Broward County Foreclosure
+6298,10/16/2023,Vincent,Dimino,333 SUNSET DR 408,FORT LAUDERDALE,Florida,33301,Foreclosure,,7183738640,Land Line,9174461334,Mobile,vdimino@twcny.rr.com,Broward County Foreclosure
+6299,10/16/2023,ALAIN,HYPPOLITE,1201 NE 3 AVE,FORT LAUDERDALE,Florida,33304,Foreclosure,,5164690069,Mobile,5164696828,Mobile,HALAIN@RCN.COM,Broward County Foreclosure
+6300,10/16/2023,Marlent,Piedra,3548 SW 180 WAY,MIRAMAR,Florida,33029,Foreclosure,,9544013271,Mobile,9544361948,Land Line,mpeni@aol.com,Broward County Foreclosure
+6301,10/16/2023,Aidalina,Garcia,12723 SW 53 CT,MIRAMAR,Florida,33027,Foreclosure,,3058291433,Land Line,3056217525,Land Line,danmargb@hotmail.com,Broward County Foreclosure
+6302,10/16/2023,Errol,Ingram,5381 NW 12 ST,LAUDERHILL,Florida,33313,Foreclosure,,9547911639,Land Line,9545852263,Land Line,treker25@bellsouth.net,Broward County Foreclosure
+6303,10/16/2023,Jean,Etienne,4971 SW 8 ST,MARGATE,Florida,33068,Foreclosure,,7542351639,Mobile,9549567109,Land Line,,Broward County Foreclosure
+6304,10/16/2023,Richard,Garguilo,4920 SW 31 TER,DANIA BEACH,Florida,33312,Foreclosure,,9546003354,Mobile,9544049161,Land Line,regarguilo6@comcast.net,Broward County Foreclosure
+6305,10/16/2023,Sylvia,Abrams,2641 NW 21 ST,FORT LAUDERDALE,Florida,33311,Foreclosure,,9542972615,Mobile,9544841829,Land Line,,Broward County Foreclosure
+6306,10/16/2023,Jessica,Cubas,12112 ST ANDREWS PL 306,MIRAMAR,Florida,33025,Foreclosure,,9544373154,Land Line,9543620546,Land Line,hern9431@yahoo.com,Broward County Foreclosure
+6308,10/16/2023,Stephanie,Washington,883 N FIG TREE LN,PLANTATION,Florida,33317,Foreclosure,,7542440059,Mobile,7542440054,Mobile,mademan8732@yahoo.com,Broward County Foreclosure
+6309,10/16/2023,Thai,Van,1151 NW 112 AVE,PLANTATION,Florida,33323,Foreclosure,,7724190510,Mobile,2817787721,Land Line,caoyengmai@yahoo.com,Broward County Foreclosure
+6310,10/16/2023,Michael,Gary,3160 NE 11 AVE,POMPANO BEACH,Florida,33064,Foreclosure,,7543178252,Mobile,7542421068,Mobile,michaelgary588@yahoo.com,Broward County Foreclosure
+6311,10/16/2023,Christopher,Jochim,484 S DIXIE HWY W,POMPANO BEACH,Florida,33060,Foreclosure,,9545319633,Mobile,9543407192,Land Line,sunshineautocenter484@gmail.com,Broward County Foreclosure
+6313,10/16/2023,John,Gaviria,14639 GRAND COVE DR,ORLANDO,Florida,32837,Foreclosure,,4075755900,Mobile,7577718359,Mobile,jpgaviria08@gmail.com,Orange County Foreclosure
+6314,10/16/2023,Sylvia,Coleman,4515 SANTA CRUZ CT,ORLANDO,Florida,32808,Foreclosure,,4072928082,Land Line,3212457044,Land Line,blairdennis@hotmail.com,Orange County Foreclosure
+6315,10/16/2023,RICHARD,JOHNSON,1284 CRANE CREST WAY,ORLANDO,Florida,32825,Foreclosure,,9072526555,Mobile,9075673656,Land Line,DJOHNSON4672@CENTURYTEL.NET,Orange County Foreclosure
+6316,10/16/2023,Mary,Hardesty,4422 CAROUSEL RD,ORLANDO,Florida,32808,Foreclosure,,4072936899,Land Line,,,,Orange County Foreclosure
+6317,10/16/2023,Tamika,Ridley,6001 BEAU LN,ORLANDO,Florida,32808,Foreclosure,,3366019654,Mobile,3366013654,Mobile,tamika.ridley@att.net,Orange County Foreclosure
+6318,10/16/2023,Devin,Speicher,11550 WESTWOOD BLVD UNIT 1211,ORLANDO,Florida,32821,Foreclosure,,3306061762,Mobile,3306123985,Mobile,,Orange County Foreclosure
+6319,10/16/2023,Zina,Crump,2027 SUNBOW AVE,APOPKA,Florida,32703,Foreclosure,,7572407804,Mobile,4783336423,Land Line,zinas@worldnet.att.net,Orange County Foreclosure
+6320,10/16/2023,Lorna,Reidhart,814 PATRIOTS POINT DR,OCOEE,Florida,34761,Foreclosure,,4079055702,Land Line,4073425766,Mobile,lornar1569@att.net,Orange County Foreclosure
+6321,10/16/2023,SABRINA,ARY,3327 ROYAL ST,WINTER PARK,Florida,32792,Foreclosure,,3217329523,Mobile,4076779960,Land Line,SDARY@HOTMAIL.COM,Orange County Foreclosure
+6322,10/16/2023,Michael,Handy,3838 PLYMOUTH SORRENTO RD,APOPKA,Florida,32712,Foreclosure,,4078144111,Land Line,4074963687,Mobile,,Orange County Foreclosure
+6323,10/16/2023,CONNIE,FREIBURGER,1518 MELANIE DR,ORLANDO,Florida,32825,Foreclosure,,4072829010,Land Line,4072824568,Land Line,CFREIBURGER@CFL.RR.COM,Orange County Foreclosure
+6324,10/16/2023,Mary,Nguyen,8010 FIRENZE BLVD,ORLANDO,Florida,32836,Foreclosure,,4073636911,Land Line,4078735646,Mobile,,Orange County Foreclosure
+6325,10/16/2023,JODY,OROSZ,1510 SILVER STAR RD,ORLANDO,Florida,32804,Foreclosure,,4078953683,Land Line,4078953725,Land Line,,Orange County Foreclosure
+6326,10/16/2023,James,Wingate,7100 S ORANGE BLOSSOM TRL UNIT,ORLANDO,Florida,32809,Foreclosure,,8594042428,Mobile,6063361726,Mobile,,Orange County Foreclosure
+6327,10/16/2023,Sandra,Estrada,7866 BARDMOOR HILL CIR,ORLANDO,Florida,32835,Foreclosure,,3477779317,Land Line,3213203398,Mobile,sandrae3239@msn.com,Orange County Foreclosure
+6328,10/16/2023,Savitri,Bookram,12810 MOSS PARK RIDGE DR,ORLANDO,Florida,32832,Foreclosure,,4072827507,Land Line,6197268287,Mobile,sbookram@att.net,Orange County Foreclosure
+6329,10/16/2023,Ramnarais,Jiawan,1711 ADDIE AVE,ORLANDO,Florida,32818,Foreclosure,,4072925071,Land Line,4074357432,Mobile,anarox8@yahoo.com,Orange County Foreclosure
+6330,10/16/2023,Bernadine,Pierre,9038 DRY CREEK LN,ORLANDO,Florida,32832,Foreclosure,,4076973641,Mobile,,,,Orange County Foreclosure
+6331,10/16/2023,Angelina,Mcneil,407 KRUEGER ST,ORLANDO,Florida,32839,Foreclosure,,7033601792,Land Line,5712687552,Mobile,nyarroyo@aol.com,Orange County Foreclosure
+6332,10/16/2023,Anna,Aguila,8822 FORT JEFFERSON BLVD,ORLANDO,Florida,32822,Foreclosure,,4073811571,Land Line,4073815555,Land Line,annaaguila@msn.com,Orange County Foreclosure
+6333,10/16/2023,Doretha,Fedrick,2452 ATRIUM CIR,ORLANDO,Florida,32808,Foreclosure,,4072952558,Mobile,4075327735,Land Line,dfedrick@cfl.rr.com,Orange County Foreclosure
+6334,10/16/2023,Lillian,Hoover,2013 PINEWAY DR,ORLANDO,Florida,32839,Foreclosure,,4074917697,Mobile,4078551545,Land Line,lhoover@aol.com,Orange County Foreclosure
+6335,10/16/2023,CORAL,ALMODOVAR,12608 FOLKLORE LN,ORLANDO,Florida,32832,Foreclosure,,7873820780,Mobile,,,CORAL.NEGRON@OUTLOOK.COM,Orange County Foreclosure
+6336,10/16/2023,SIMON,MCLELLAND,5147 LA MANCHA CT UNIT 36,ORLANDO,Florida,32822,Foreclosure,,4077703614,Mobile,8507585714,Mobile,TURBOBLASTER@AOL.COM,Orange County Foreclosure
+6337,10/16/2023,Marisol,Melendez,9125 MONTEVELLO DR,ORLANDO,Florida,32818,Foreclosure,,4074856905,Mobile,4074126430,Land Line,marisol_blondie@hotmail.com,Orange County Foreclosure
+6338,10/16/2023,Donovan,Davis,3817 WHITE HERON DR,ORLANDO,Florida,32808,Foreclosure,,4074483665,Mobile,4072945243,Land Line,davisindustriesm@aol.com,Orange County Foreclosure
+6339,10/16/2023,Lillie,Garrett,48 DORCAS CT,ORLANDO,Florida,32811,Foreclosure,,4072944198,Land Line,4072545910,Land Line,,Orange County Foreclosure
+6340,10/16/2023,Richard,Brady,1314 STEARMAN CT UNIT 5,ORLANDO,Florida,32825,Foreclosure,,4072772989,Land Line,4076191433,Mobile,richardbrady@sprintpcs.com,Orange County Foreclosure
+6341,10/16/2023,N,GARCIA,177 WESCLIFF DR,OCOEE,Florida,34761,Foreclosure,,3219486474,Mobile,,,,Orange County Foreclosure
+6342,10/16/2023,Annie,Peters,219 MOSELEY AVE,MAITLAND,Florida,32751,Foreclosure,,4073424689,Mobile,,,asp2567@aol.com,Orange County Foreclosure
+6343,10/16/2023,Rosa,Gutierrez,833 SKY LAKE CIR UNIT A,ORLANDO,Florida,32809,Foreclosure,,7862104419,Mobile,3052071533,Land Line,,Orange County Foreclosure
+6344,10/16/2023,Henry,Kendrick,270 NE 191 ST 108,MIAMI,Florida,33179,Foreclosure,,3056889068,Land Line,3059898941,Mobile,henrykendrick@gmail.com,Miami Dade Foreclosure
+6345,10/16/2023,Jose,Jose,20056 NW 86 CT,MIAMI,Florida,33015,Foreclosure,,3058857089,Land Line,7865207690,Mobile,,Miami Dade Foreclosure
+6347,10/16/2023,Shauna,Moran,1434 NW 116 ST,MIAMI,Florida,33167,Foreclosure,,9195543961,Land Line,7046402127,Mobile,,Miami Dade Foreclosure
+6348,10/16/2023,MICHAEL,HENRIQUES,20320 NE 2 AVE 17,MIAMI GARDENS,Florida,33179,Foreclosure,,9548997308,Mobile,,,,Miami Dade Foreclosure
+6349,10/16/2023,Ann,Bitterman,3721 LE JEUNE RD,MIAMI,Florida,33146,Foreclosure,,5615951699,Mobile,7866605071,Mobile,nnbitterman@yahoo.com,Miami Dade Foreclosure
+6350,10/16/2023,Mehdi,Mazier,1200 WEST AVE 810,MIAMI BEACH,Florida,33139,Foreclosure,,7867184097,Mobile,3055320727,Land Line,,Miami Dade Foreclosure
+6351,10/16/2023,Ricardo,Becerra,9369 FONTAINEBLEAU BLVD J-209,MIAMI,Florida,33172,Foreclosure,,3054091175,Mobile,3052203124,Land Line,ricardo.moreno@comcast.com,Miami Dade Foreclosure
+6352,10/16/2023,Robert,Wood,8082 SW 173 TER,PALMETTO BAY,Florida,33157,Foreclosure,,3052162941,Mobile,7862936961,Land Line,rbjw@aol.com,Miami Dade Foreclosure
+6353,10/16/2023,Andres,Esis,11278 NW 88 TER,MIAMI,Florida,33178,Foreclosure,,7862011980,Mobile,3059272958,Mobile,lavc528@gmail.com,Miami Dade Foreclosure
+6354,10/16/2023,DEJANOVIC,MARKO,9930 SW 145 ST,MIAMI,Florida,33176,Foreclosure,,7865642213,Mobile,3052346002,Land Line,,Miami Dade Foreclosure
+6355,10/16/2023,James,Mohlhenrich,7304 SW 82 ST A206,MIAMI,Florida,33143,Foreclosure,,3052796965,Mobile,3056612692,Land Line,,Miami Dade Foreclosure
+6356,10/16/2023,Michelle,Patterson,13480 NE 6 AVE 306,NORTH MIAMI,Florida,33161,Foreclosure,,7865931768,Mobile,3054692971,Mobile,msneal01@adelphia.net,Miami Dade Foreclosure
+6370,10/16/2023,Herminia,Martinez,10621 SW 127 CT,MIAMI,Florida,33186,Foreclosure,,7867978209,Mobile,3052324805,Land Line,martinez9948@bellsouth.net,Miami Dade Foreclosure
+6371,10/16/2023,Dulce,Osle,201 178 DR 210,SUNNY ISLES BEACH,Florida,33160,Foreclosure,,3053890784,Mobile,3055536689,Land Line,dosle@charter.net,Miami Dade Foreclosure
+6372,10/16/2023,Theresa,Johnson,13722 SW 282 TER,HOMESTEAD,Florida,33033,Foreclosure,,9548251740,Mobile,9544972171,Land Line,teressaj1014@aol.com,Miami Dade Foreclosure
+6373,10/16/2023,Derrick,Spence,13761 SW 284 ST,MIAMI,Florida,33033,Foreclosure,,3052463027,Land Line,3052453554,Land Line,derricks2953@aol.com,Miami Dade Foreclosure
+6374,10/16/2023,GLORIA,PEREZ,5215 W 25 CT 804,HIALEAH,Florida,33016,Foreclosure,,3055223599,Mobile,3058259267,Land Line,,Miami Dade Foreclosure
+6375,10/16/2023,BEAUFORT,KINLEY,1344 NW 68 TER,MIAMI,Florida,33147,Foreclosure,,3056919236,Land Line,3056337158,Land Line,BEAUFORT@GMAIL.COM,Miami Dade Foreclosure
+6376,10/16/2023,Andrew,Lee,2110 NW 43 ST,MIAMI,Florida,33142,Foreclosure,,3056355159,Land Line,,,,Miami Dade Foreclosure
+6377,10/16/2023,FLOR,MASSEY,1810 W 56 ST 3406,HIALEAH,Florida,33012,Foreclosure,,6462490606,Mobile,6462708444,Mobile,FLORMASSEY33@GMAIL.COM,Miami Dade Foreclosure
+6378,10/16/2023,Amparo,Rodriguez,5961 SW 13 ST,WEST MIAMI,Florida,33144,Foreclosure,,3052663023,Land Line,,,rdelamo@cs.com,Miami Dade Foreclosure
+6379,10/16/2023,OLA,MILLER,2471 NW 81 TER,MIAMI,Florida,33147,Foreclosure,,7869535929,Land Line,3056938558,Land Line,DEIDRA.MILLER@YAHOO.COM,Miami Dade Foreclosure
+6380,10/16/2023,Ileana,Vila,2130 SW 122 CT,MIAMI,Florida,33175,Foreclosure,,7863669863,Mobile,,,,Miami Dade Foreclosure
+6381,10/16/2023,Willia,Fletcher,830 NE 199 ST B208,MIAMI,Florida,33179,Foreclosure,,9542748555,Mobile,,,wflet840@juno.com,Miami Dade Foreclosure
+6382,10/16/2023,EDUARDO,FUENTES,15660 SW 82 CIRCLE LN 6-2,MIAMI,Florida,33193,Foreclosure,,3053870169,Land Line,3057523333,Land Line,DOSFNTS@AOL.COM,Miami Dade Foreclosure
+6383,10/16/2023,Eduardo,Fuentes,15665 SW 82 CIRCLE LN 4-10,MIAMI,Florida,33193,Foreclosure,,3057523333,Land Line,3053870169,Land Line,eduardo.fuentes@yahoo.com,Miami Dade Foreclosure
+6384,10/16/2023,Keteline,Voltaire,14140 NE 9 AVE,NORTH MIAMI,Florida,33161,Foreclosure,,7862872371,Mobile,7862878723,Mobile,kerrynn02@yahoo.com,Miami Dade Foreclosure
+6385,10/16/2023,Oscar,Morales,10900 SW 216 ST,MIAMI,Florida,33170,Foreclosure,,7864487542,Mobile,3054795572,Mobile,,Miami Dade Foreclosure
+6386,10/16/2023,Marlene,Dorta,20520 NW 21 AVE,MIAMI GARDENS,Florida,33056,Foreclosure,,3059045825,Mobile,3525121006,Mobile,alwaysintransitlog@aol.com,Miami Dade Foreclosure
+6388,10/16/2023,Maria,Calvar,891 SE 3 PL,HIALEAH,Florida,33010,Foreclosure,,7865981987,Mobile,3055469438,Mobile,ladylaw.cfe@comcast.net,Miami Dade Foreclosure
+6389,10/16/2023,Angela,Martinez,19800 SW 180 AVE 280,MIAMI,Florida,33187,Foreclosure,,3059728752,Mobile,7862345101,Mobile,angiesusini@gmail.com,Miami Dade Foreclosure
+6390,10/16/2023,Elizabeth,Damico,842 84 ST,MIAMI BEACH,Florida,33141,Foreclosure,,3058610560,Land Line,,,elizabethdamico@hotmail.com,Miami Dade Foreclosure
+6391,10/16/2023,Frank,Verde,2821 N MIAMI BEACH BLVD 4J,NORTH MIAMI BEACH,Florida,33160,Foreclosure,,3054968302,Mobile,3059489795,Land Line,djtoker@msn.com,Miami Dade Foreclosure
+6392,10/16/2023,Angel,Acevedo,7237 SW 158 AVE,MIAMI,Florida,33193,Foreclosure,,3058795990,Mobile,7863556928,Mobile,angel24163@gmail.com,Miami Dade Foreclosure
+6393,10/16/2023,Mario,Bianchi,1521 SE 16 AVE,HOMESTEAD,Florida,33035,Foreclosure,,7868976682,Mobile,7866019329,Land Line,,Miami Dade Foreclosure
+6394,10/16/2023,Lademia,Albury,941 LITTLE RIVER DR,MIAMI,Florida,33150,Foreclosure,,3053310833,Mobile,3055825939,Mobile,,Miami Dade Foreclosure
+6395,10/16/2023,Maria,Haramboure,606 W 81 ST 423,HIALEAH,Florida,33014,Foreclosure,,7864683477,Mobile,3058215499,Land Line,ollantay50@gmail.com,Miami Dade Foreclosure
+6396,10/16/2023,MERCEDES,MARTIN,2429 NW 34 ST,MIAMI,Florida,33142,Foreclosure,,3056342711,Land Line,7077248514,Land Line,CUBAAZUCA@YAHOO.COM,Miami Dade Foreclosure
+6397,10/16/2023,Johanne,Sauveur,300 SE 37 TER,HOMESTEAD,Florida,33033,Foreclosure,,3057997457,Mobile,3057527857,Land Line,jsauveur@comcast.net,Miami Dade Foreclosure
+6398,10/16/2023,Arthur B Ambrose Est Of,,16605 SW 104 CT,MIAMI,Florida,33157,Foreclosure,,3052526798,Land Line,7864291085,Land Line,,Miami Dade Foreclosure
+6399,10/16/2023,Malvina,Vogel,3500 MYSTIC POINTE DR 2704,AVENTURA,Florida,33180,Foreclosure,,3059333333,Mobile,3057927451,Land Line,editor65@aol.com,Miami Dade Foreclosure
+6400,10/16/2023,Mohammed,Islam,774 81 ST,MIAMI BEACH,Florida,33141,Foreclosure,,7863033407,Mobile,3058648040,Land Line,mohammad.islam@erols.com,Miami Dade Foreclosure
+6401,10/16/2023,Kimberly,Thomas,13946 SW 259 WAY,HOMESTEAD,Florida,33032,Foreclosure,,7863184151,Mobile,3052523698,Land Line,knottage@ncl.com,Miami Dade Foreclosure
+6403,10/16/2023,Eduardo,Hernandez,24366 SW 109 CT,HOMESTEAD,Florida,33032,Foreclosure,,7862770737,Mobile,7862680742,Land Line,hernandez3975@bellsouth.net,Miami Dade Foreclosure
+6404,10/16/2023,Adela,Munro,4026 SW 9 TER,MIAMI,Florida,33134,Foreclosure,,7862519484,Mobile,3054467107,Land Line,munroenterprises@hotmail.com,Miami Dade Foreclosure
+6406,10/16/2023,Sidclem,Colling,1551 MERIDIAN AVE 102,MIAMI BEACH,Florida,33139,Foreclosure,,5618278045,Mobile,9544675751,Land Line,silmenegon2@aol.com,Miami Dade Foreclosure
+6407,10/16/2023,Derrick,Moffatt,2025 NE 164 ST 216,NORTH MIAMI BEACH,Florida,33162,Foreclosure,,3473550443,Mobile,9543092995,Mobile,,Miami Dade Foreclosure
+6408,10/16/2023,ARELIS,CUELLO LOPEZ,14260 NW 22 PL,OPA-LOCKA,Florida,33054,Foreclosure,,7863805438,Mobile,,,CURELIS2012@GMAIL.COM,Miami Dade Foreclosure
+6409,10/16/2023,LUIS,ZUNIGA,3369 W 105 TER,HIALEAH,Florida,33018,Foreclosure,,7862613279,Mobile,,,LUISZUNIGA24@HOTMAIL.COM,Miami Dade Foreclosure
+6410,10/16/2023,Estrella,Collazo,220 NW 131 ST,NORTH MIAMI,Florida,33168,Foreclosure,,3057939849,Mobile,3058645812,Land Line,6estrella.collazo6@peoplepc.com,Miami Dade Foreclosure
+6411,10/16/2023,Miguel,Ramirez,7445 SW 188 LN,CUTLER BAY,Florida,33157,Foreclosure,,3055462040,Mobile,3055671152,Land Line,miguel.ramirez@address.com,Miami Dade Foreclosure
+6412,10/16/2023,Alan,Benmergui,5005 COLLINS AVE PH05,MIAMI BEACH,Florida,33140,Foreclosure,,7185514113,Mobile,7328862550,Land Line,ahron84benmergui@gmail.com,Miami Dade Foreclosure
+6439,10/16/2023,Miguel,Diaz,8440 NW 4 AVE 8440,MIAMI,Florida,33150,Foreclosure,,3055411223,Land Line,3055416953,Land Line,,Miami Dade Foreclosure
+6440,10/16/2023,Nicholas,Nunez,7924 SW 194 ST,CUTLER BAY,Florida,33157,Foreclosure,,3057533899,Mobile,3053784906,Land Line,,Miami Dade Foreclosure
+6441,10/16/2023,Laurent,Benzaquen,20191 E COUNTRY CLUB DR 403,AVENTURA,Florida,33180,Foreclosure,,3059051305,Mobile,3057215549,Mobile,alongrimberg@gmail.com,Miami Dade Foreclosure
+6442,10/16/2023,Prince,Reid,3840 NW 168 TER,MIAMI GARDENS,Florida,33055,Foreclosure,,3059653970,Mobile,3056249609,Land Line,QUEENTLAMB@GMAIL.COM,Miami Dade Foreclosure
+6443,10/16/2023,LILLIAN,STAES,19010 BEL AIRE DR,CUTLER BAY,Florida,33157,Foreclosure,,3052352668,Land Line,3056618326,Land Line,LSTAES@EARTHLINK.NET,Miami Dade Foreclosure
+6444,10/16/2023,Guillermo,Galvan,8472 NW 168 TER,MIAMI LAKES,Florida,33016,Foreclosure,,3057750632,Mobile,3055576780,Land Line,,Miami Dade Foreclosure
+6445,10/16/2023,WILLIE,DAVIS,15404 SW 104 AVE,MIAMI,Florida,33157,Foreclosure,,3059999532,Land Line,7863031988,Mobile,,Miami Dade Foreclosure
+6446,10/16/2023,Andres,Alvarino,4627 SW 128 CT,MIAMI,Florida,33175,Foreclosure,,3052264863,Land Line,7862184279,Mobile,ealvarino@comcast.net,Miami Dade Foreclosure
+6447,10/16/2023,Liliana,Sanchez,13900 SW 148 PL,MIAMI,Florida,33196,Foreclosure,,3058126864,Mobile,7862388384,Mobile,,Miami Dade Foreclosure
+6448,10/16/2023,Freddy,Perez,75 E 41 ST,HIALEAH,Florida,33013,Foreclosure,,3055425666,Mobile,3058234864,Land Line,tlperez@worldnet.att.net,Miami Dade Foreclosure
+6449,10/16/2023,Jesus D,Maura,1221 BIARRITZ DR,MIAMI BEACH,Florida,33141,Foreclosure,,3058651242,Land Line,5308651242,Land Line,,Miami Dade Foreclosure
+6450,10/16/2023,Fernando,Pruna,2920 SW 37 CT,MIAMI,Florida,33134,Foreclosure,,3056086813,Mobile,3054422069,Land Line,fpruna@yahoo.com,Miami Dade Foreclosure
+6451,10/16/2023,Orlando,Bos,10125 SW 139 PL,MIAMI,Florida,33186,Foreclosure,,3059513676,Mobile,3057526429,Land Line,,Miami Dade Foreclosure
+6452,10/16/2023,Ivan,Perez,5470 W 8 LN,HIALEAH,Florida,33012,Foreclosure,,3057932563,Mobile,7863253349,Mobile,,Miami Dade Foreclosure
+6453,10/16/2023,Estela,Puentes,1865 79 STREET CSWY 3I,NORTH BAY VILLAGE,Florida,33141,Foreclosure,,3058654596,Land Line,7865467437,Mobile,estellap2377@yahoo.com,Miami Dade Foreclosure
+6454,10/16/2023,Toi,Baker,2016 NW 71 ST,MIAMI,Florida,33147,Foreclosure,,7869424737,Mobile,7864691451,Mobile,,Miami Dade Foreclosure
+6455,10/16/2023,Annise,Roberson,9402 SW 77 AVE L8,MIAMI,Florida,33156,Foreclosure,,7868008978,Mobile,3052733652,Land Line,anniseroberson@yahoo.com,Miami Dade Foreclosure
+6456,10/16/2023,Kimberly,Navas,11212 SW 243 TER,MIAMI,Florida,33032,Foreclosure,,3056061545,Mobile,7867123555,Mobile,,Miami Dade Foreclosure
+6457,10/16/2023,Miguel,Diaz,1519 SW 19 ST,MIAMI,Florida,33145,Foreclosure,,7862181889,Mobile,3054284543,Land Line,webslinger33@aliceinchains.com,Miami Dade Foreclosure
+6458,10/16/2023,Alberta,Millings,28015 SW 139 CT,MIAMI,Florida,33033,Foreclosure,,3059280478,Mobile,,,,Miami Dade Foreclosure
+6459,10/16/2023,Antoine Constant Est Of,,11250 NE 2 PL,MIAMI,Florida,33161,Foreclosure,,3058998491,Land Line,3059675499,Mobile,,Miami Dade Foreclosure
+6460,10/16/2023,David,Sode,17803 NW 7 AVE,MIAMI,Florida,33169,Foreclosure,,7864447969,Mobile,3056517867,Mobile,davsod07@msn.com,Miami Dade Foreclosure
+6461,10/16/2023,Clinton,Mccor,3812 WEST 152ND STREET,CLEVELAND,Ohio,44111,Foreclosure,,4403314176,Land Line,2168623326,Land Line,,Cuyahoga County Foreclosure
+6462,10/16/2023,Robert,Barrett,1387 EAST 187TH STREET,CLEVELAND,Ohio,44110,Foreclosure,,2168488017,Mobile,2167619846,Mobile,,Cuyahoga County Foreclosure
+6463,10/16/2023,Phat,Ly,6507 HIDDEN WOODS TRAIL,MAYFIELD HEIGHTS,Ohio,44143,Foreclosure,,4406551863,Mobile,,,NORTHRANGER12345@YAHOO.COM,Cuyahoga County Foreclosure
+6464,10/16/2023,Allen,Talley,7415 LIBERTY AVENUE,PARMA,Ohio,44129,Foreclosure,,5858131579,Mobile,4196683853,Land Line,brisngrfanatic@gmail.com,Cuyahoga County Foreclosure
+6465,10/16/2023,James,Jogan,7683 HOERTZ ROAD,PARMA,Ohio,44134,Foreclosure,,4408870837,Land Line,2162737219,Land Line,james.jogan@gmail.com,Cuyahoga County Foreclosure
+6466,10/16/2023,Sabrina,Jones,23823 BANBURY ROAD,WARRENVILLE HTS,Ohio,44128,Foreclosure,,2163424367,Land Line,2168826397,Mobile,sabrinajones@juno.com,Cuyahoga County Foreclosure
+6467,10/16/2023,BARBARA,NOTASH,18 PEPPER RIDGE ROAD,PEPPER PIKE,Ohio,44124,Foreclosure,,9173317772,Mobile,2166887757,Mobile,BNOTASH@GMAIL.COM,Cuyahoga County Foreclosure
+6468,10/16/2023,DARLA,PETERSON,3410 EAST 137TH STREET,CLEVELAND,Ohio,44120,Foreclosure,,2168603629,Mobile,2167382563,Land Line,DARLAPETERSON58@GMAIL.COM,Cuyahoga County Foreclosure
+6469,10/16/2023,Joseph,Waken,13017 WILTON AVENUE,CLEVELAND,Ohio,44135,Foreclosure,,2164331558,Land Line,,,kathybrown507@yahoo.com,Cuyahoga County Foreclosure
+6470,10/16/2023,Kristine,Horan,4960 EAST 81ST STREET,GARFIELD HEIGHTS,Ohio,44125,Foreclosure,,2169059228,Mobile,2168831344,Land Line,kristinehoran@gmail.com,Cuyahoga County Foreclosure
+6471,10/16/2023,Karen,Pamer,18614 BUCCANEER CREEK,STRONGSVILLE,Ohio,44136,Foreclosure,,4404636036,Mobile,4408784770,Land Line,,Cuyahoga County Foreclosure
+6472,10/16/2023,James,Brown,3218 EAST 117TH STREET,CLEVELAND,Ohio,44120,Foreclosure,,2169218465,Land Line,2162951901,Land Line,,Cuyahoga County Foreclosure
+6473,10/16/2023,Helen,Russell,13513 BARTLETT AVENUE,CLEVELAND,Ohio,44120,Foreclosure,,7278190755,Land Line,8655238895,Land Line,joharrin@bellsouth.net,Cuyahoga County Foreclosure
+6474,10/16/2023,HAROLD,WHITE,3613 RAYMONT BLVD,UNIVERSITY HEIGHTS,Ohio,44118,Foreclosure,,4049169164,Mobile,2162884717,Mobile,HAROLD.WHITE@HOTMAIL.COM,Cuyahoga County Foreclosure
+6475,10/16/2023,Wanda,Hicks,3518 EAST 139TH STREET,CLEVELAND,Ohio,44120,Foreclosure,,2169702034,Mobile,2168626638,Land Line,,Cuyahoga County Foreclosure
+6476,10/16/2023,Andrew,Crump,4871 BANBURY COURT,WARRENSVILLE HEIGHTS,Ohio,44128,Foreclosure,,2545891966,Mobile,3304685449,Land Line,lion_sinclair@yahoo.com,Cuyahoga County Foreclosure
+6477,10/16/2023,CAROL,MURPHY,5087 EAST 86TH STREET,GARFIELD HEIGHTS,Ohio,44125,Foreclosure,,2164414192,Land Line,6148649370,Land Line,,Cuyahoga County Foreclosure
+6478,10/16/2023,Brenda,Evix,17300 LIBBY ROAD,MAPLE HEIGHTS,Ohio,44137,Foreclosure,,2168042642,Mobile,2163988400,Land Line,beavvy@gmail.com,Cuyahoga County Foreclosure
+6479,10/16/2023,SHAWN,CRAWFORD,3856 WEST 23RD STREET,CLEVELAND,Ohio,44109,Foreclosure,,2168829961,Mobile,,,SHAWNSHIRAZI9@GMAIL.COM,Cuyahoga County Foreclosure
+6480,10/16/2023,Angela,Lewis,2413 EAST 63RD STREET,CLEVELAND,Ohio,44104,Foreclosure,,2168601708,Land Line,2162351875,Mobile,angelalewis2990@gmail.com,Cuyahoga County Foreclosure
+6481,10/16/2023,Philip,Fedrowisch,20431 GOLLER AVENUE,EUCLID,Ohio,44119,Foreclosure,,2164818773,Land Line,2164818850,Land Line,pfedrowisc@aol.com,Cuyahoga County Foreclosure
+6482,10/16/2023,Jack,Schmid,21 BAKER STREET,BEREA,Ohio,44017,Foreclosure,,4407859037,Mobile,4406250752,Land Line,jack.schmid@yahoo.com,Cuyahoga County Foreclosure
+6483,10/16/2023,Gwendolyn,Martin,948 EAST 147TH STREET,CLEVELAND,Ohio,44110,Foreclosure,,2163039207,Land Line,2165414077,Land Line,clmdk@yahoo.com,Cuyahoga County Foreclosure
+6484,10/16/2023,Charity,Pollard,BELVOIR,SOUTH EUCLID,Ohio,44121,Foreclosure,,3173065507,Mobile,3175710278,Land Line,pparrothead26@yahoo.com,Cuyahoga County Foreclosure
+6485,10/16/2023,Marvin,Jones,16511 KIPLING AVENUE,CLEVELAND,Ohio,44110,Foreclosure,,2163133711,Mobile,2163560698,Mobile,marvindjones@yahoo.com,Cuyahoga County Foreclosure
+6486,10/16/2023,Montez,Van,744 EAST 165TH STREET,CLEVELAND,Ohio,44110,Foreclosure,,3132216325,Mobile,,,,Cuyahoga County Foreclosure
+6487,10/16/2023,Michael,Collins,4090 EAST 82ND STREET,CLEVELAND,Ohio,44105,Foreclosure,,2165339087,Mobile,7325726897,Land Line,,Cuyahoga County Foreclosure
+6488,10/16/2023,Tammy,Messer,6605 UNION AVENUE,CLEVELAND,Ohio,44127,Foreclosure,,2164414601,Land Line,2164173894,Land Line,,Cuyahoga County Foreclosure
+6489,10/16/2023,EDMANUEL,NAVARRO,3633 EAST 53RD STREET,CLEVELAND,Ohio,44105,Foreclosure,,4407230622,Mobile,4407230206,Mobile,EDMANUELSOSA2@GMAIL.COM,Cuyahoga County Foreclosure
+6490,10/16/2023,WILLIE,MILES,18919 NOTTINGHAM RD,CLEVELAND,Ohio,44110,Foreclosure,,4404394235,Land Line,2166923248,Land Line,BILL.MILES@INFOCUS.COM,Cuyahoga County Foreclosure
+6491,10/16/2023,Tara,Jones,3727 W. 41 ST,CLEVELAND,Ohio,44109,Foreclosure,,4407168690,Land Line,2163986477,Land Line,tarajonesemail@yahoo.com,Cuyahoga County Foreclosure
+6492,10/16/2023,Michael,Williams,16920 ENDORA RD,CLEVELAND,Ohio,44112,Foreclosure,,2163971335,Land Line,2164403347,Mobile,talk2clow60@yahoo.com,Cuyahoga County Foreclosure
+6493,10/16/2023,ANTHONY,HARRIS,631 EAST 120TH STREET,CLEVELAND,Ohio,44108,Foreclosure,,2162955413,Land Line,2166810266,Land Line,HARRISDEE0123@GMAIL.COM,Cuyahoga County Foreclosure
+6494,10/16/2023,CRYSTAL,ADKINS,2951 EAST 126TH ST,CLEVELAND,Ohio,44120,Foreclosure,,2163894182,Mobile,2166308108,Mobile,CRYSTAL.ADKINS@BIGFOOT.COM,Cuyahoga County Foreclosure
+6495,10/16/2023,Brian,Stark,3126 W. 43RD STREET,CLEVELAND,Ohio,44109,Foreclosure,,2163101470,Mobile,2164268400,Land Line,,Cuyahoga County Foreclosure
+6496,10/16/2023,Jacqueline,Jastes,V/L EAST 114TH STREET,CLEVELAND,Ohio,44106,Foreclosure,,2167213699,Land Line,2167914638,Land Line,jbjastes@attb1.com,Cuyahoga County Foreclosure
+6497,10/16/2023,Andriene,Carr-pickett,3254 EAST 125TH STREET,CLEVELAND,Ohio,44120,Foreclosure,,7162598363,Land Line,2162543592,Mobile,,Cuyahoga County Foreclosure
+6498,10/16/2023,Beverly,Brown,5902 UTICA AVENUE,CLEVELAND,Ohio,44103,Foreclosure,,4407867178,Land Line,2165811089,Land Line,,Cuyahoga County Foreclosure
+6500,10/16/2023,Jamal,Allen,8408 BEMAN STREET,CLEVELAND,Ohio,44105,Foreclosure,,2165613749,Land Line,4195252869,Land Line,jallen925@yahoo.com,Cuyahoga County Foreclosure
+6501,10/16/2023,Frederick,Brooks,4606 E 147 ST,CLEVELAND,Ohio,44128,Foreclosure,,2164759498,Land Line,2167516585,Land Line,,Cuyahoga County Foreclosure
+6502,10/16/2023,JOHN,CASTROS,1088 EAST 79TH STREET,CLEVELAND,Ohio,44103,Foreclosure,,4402327826,Land Line,4404396260,Land Line,JOHNCASTROS@HOTMAIL.COM,Cuyahoga County Foreclosure
+6503,10/16/2023,MYLION,WAITE,1680 HOWER AVE,EAST CLEVELAND,Ohio,44112,Foreclosure,,2169321521,Land Line,2169321354,Land Line,MYLIONWAITE@ATT.NET,Cuyahoga County Foreclosure
+6504,10/16/2023,Eugene,Abrams,12317 EDMONTON AVE,CLEVELAND,Ohio,44108,Foreclosure,,2165875131,Land Line,2169259202,Mobile,eugene.abrams@gmail.com,Cuyahoga County Foreclosure
+6506,10/16/2023,George,Nutter,6901 LAWN AVENUE,CLEVELAND,Ohio,44102,Foreclosure,,4406365231,Land Line,4404280000,Land Line,snutt1966@gmail.com,Cuyahoga County Foreclosure
+6509,10/16/2023,Patricia,Kwast,V/L ORCHARD PARK DRIVE,PARMA,Ohio,44129,Foreclosure,,9282798020,Mobile,9285650851,Mobile,,Cuyahoga County Foreclosure
+6510,10/16/2023,Velma,Smith,12537 LANCELOT AVE,CLEVELAND,Ohio,44108,Foreclosure,,2163825770,Land Line,2164089611,Mobile,velma.smith@netzero.net,Cuyahoga County Foreclosure
+6511,10/16/2023,Orlando,Mccall,4211 SACKETT AVE,CLEVELAND,Ohio,44109,Foreclosure,,2169615742,Land Line,2166518799,Land Line,orlandomccall25@yahoo.com,Cuyahoga County Foreclosure
+6512,10/16/2023,Hal,Lastery,13513 ALVIN AVE.,GARFIELD HEIGHTS,Ohio,44105,Foreclosure,,2166639509,Land Line,2162497588,Land Line,hlasteryjr@aol.com,Cuyahoga County Foreclosure
+6515,10/16/2023,Sterling,Neal,9203 BESSEMER AVENUE,CLEVELAND,Ohio,44104,Foreclosure,,2162311505,Land Line,2164914965,Land Line,,Cuyahoga County Foreclosure
+6516,10/16/2023,Larry,Massey,2708 WOODBRIDGE AVE.,CLEVELAND,Ohio,44109,Foreclosure,,2167496447,Land Line,2163920180,Mobile,1daddysgirl@earthlink.net,Cuyahoga County Foreclosure
+6517,10/16/2023,Melvin,Dixon,3042 EAST 130TH STREET,CLEVELAND,Ohio,44120,Foreclosure,,2168003183,Mobile,2164919969,Land Line,,Cuyahoga County Foreclosure
+6518,10/16/2023,Yvonne,Hinton,3961 EAST 176 STREET,CLEVELAND,Ohio,44128,Foreclosure,,6103302951,Land Line,6105591195,Land Line,billyvon@msn.com,Cuyahoga County Foreclosure
+6519,10/16/2023,SHANELLE,CAMPBELL,2835 E 117 ST,CLEVELAND,Ohio,44120,Foreclosure,,2676488328,Mobile,2672594238,Mobile,SLCAMPBELL59@GMAIL.COM,Cuyahoga County Foreclosure
+6520,10/16/2023,Matthew,Camerino,7920 SPAFFORD ROAD,CLEVELAND,Ohio,44105,Foreclosure,,9143843878,Mobile,9142275440,Mobile,mattcamerino@yahoo.com,Cuyahoga County Foreclosure
+6521,10/16/2023,WINFRED,STELZER,3540 WEST 63RD STREET,CLEVELAND,Ohio,44102,Foreclosure,,6149610424,Mobile,6149610123,Mobile,WINSTELZER321@YAHOO.COM,Cuyahoga County Foreclosure
+6522,10/16/2023,Tammy,Shephard,4500 GRANADA BLVD,WARRENSVILLE HTS,Ohio,44128,Foreclosure,,2162098143,Mobile,2168826755,Mobile,tammydshep02@yahoo.com,Cuyahoga County Foreclosure
+6523,10/16/2023,FAWZIA,SAMIALLAH,663 PARKWOOD DR,CLEVELAND,Ohio,44108,Foreclosure,,2166815173,Land Line,,,FLTCONSTRUCTION@YAHOO.COM,Cuyahoga County Foreclosure
+6524,10/16/2023,Anointed Enterprise Llc,,443 EAST 156TH STREET,CLEVELAND,Ohio,44110,Foreclosure,,2158283346,Mobile,2672427677,Mobile,KIMCRAWFORD1@GMAIL.COM,Cuyahoga County Foreclosure
+6525,10/16/2023,DUANE,CARLSON,1423 COIT RD,EAST CLEVELAND,Ohio,44112,Foreclosure,,5152973517,Mobile,7123481844,Mobile,DUANE2472@MSN.COM,Cuyahoga County Foreclosure
+6526,10/16/2023,Matthew,Kraniske,9738 GRIST MILL RUN,OLMSTED FALLS,Ohio,44138,Foreclosure,,4404942796,Mobile,2163773681,Land Line,mkraniske@cs.com,Cuyahoga County Foreclosure
+6527,10/16/2023,Laura,Vanjo,24249 CHARDON ROAD,RICHMOND HEIGHTS,Ohio,44143,Foreclosure,,4409432608,Land Line,4409435037,Land Line,lauravanjo@aol.com,Cuyahoga County Foreclosure
+6528,10/16/2023,Michael,Kucera,3470 WEST 118TH STREET,CLEVELAND,Ohio,44111,Foreclosure,,2166717743,Land Line,2164061401,Mobile,,Cuyahoga County Foreclosure
+6529,10/16/2023,MILKA,PERIC,17308 GROVEWOOD AVENUE,CLEVELAND,Ohio,44119,Foreclosure,,4409464860,Land Line,,,,Cuyahoga County Foreclosure
+6530,10/16/2023,Marijan,Peric,429 EAST 158TH STREET,CLEVELAND,Ohio,44110,Foreclosure,,2163769038,Mobile,4403233317,Land Line,,Cuyahoga County Foreclosure
+6531,10/16/2023,Milka,Peric,921 EAST 224TH STREET,EUCLID,Ohio,44123,Foreclosure,,4409464860,Land Line,6784421384,Land Line,,Cuyahoga County Foreclosure
+6532,10/16/2023,Rachel,Witowski,4454 COLUMBIA ROAD,NORTH OLMSTED,Ohio,44070,Foreclosure,,4408924200,Land Line,4409607960,Land Line,tink_pixie_girl@yahoo.com,Cuyahoga County Foreclosure
+6533,10/16/2023,Marianne,Rinaldo,6145 WEST 54TH STREET,PARMA,Ohio,44129,Foreclosure,,4408457245,Land Line,4408823670,Land Line,,Cuyahoga County Foreclosure
+6534,10/16/2023,Peggy,Syvertsen,34695 LAKEVIEW DRIVE,SOLON,Ohio,44139,Foreclosure,,3309634321,Land Line,4402481674,Land Line,psyvertsen@peoplepc.com,Cuyahoga County Foreclosure
+6535,10/16/2023,Rie,Fortin,13407 LARCHMERE BLVD.,SHAKER HEIGHTS,Ohio,44120,Foreclosure,,4402895220,Mobile,4406170326,Land Line,,Cuyahoga County Foreclosure
+6536,10/16/2023,Rose,Johnson,14513 KINGSFORD AVENUE,CLEVELAND,Ohio,44128,Foreclosure,,2169216520,Land Line,2162468070,Mobile,,Cuyahoga County Foreclosure
+6537,10/16/2023,Patricia,Vujtech,24868 GESSNER ROAD,NORTH OLMSTED,Ohio,44070,Foreclosure,,4407778970,Land Line,4407248481,Mobile,pvujtech@gmail.com,Cuyahoga County Foreclosure
+6538,10/16/2023,Nicholas,Bonanno,7475 SELWICK DRIVE,PARMA,Ohio,44129,Foreclosure,,4408888404,Land Line,4406674038,Mobile,nbonanno@excite.com,Cuyahoga County Foreclosure
+6539,10/16/2023,Ravi,Patel,3257 MAYFIELD ROAD,CLEVELAND HEIGHTS,Ohio,44124,Foreclosure,,2162691971,Mobile,5705868225,Mobile,drravi2@yahoo.com,Cuyahoga County Foreclosure
+6540,10/16/2023,MARALA,WHITE,11714 PARKVIEW AVENUE,CLEVELAND,Ohio,44120,Foreclosure,,2162294913,Land Line,2167070657,Land Line,CHARLES_WHITE8367@ATT.NET,Cuyahoga County Foreclosure
+6541,10/16/2023,Andrea,Patton,15224 MAPLE PARK DRIVE,MAPLE HEIGHTS,Ohio,44137,Foreclosure,,2166627529,Land Line,,,,Cuyahoga County Foreclosure
+6542,10/16/2023,DAVID,KOROSI,2233 ARTHUR AVENUE,LAKEWOOD,Ohio,44107,Foreclosure,,2162358764,Mobile,2162210427,Land Line,DKOROSI@GMAIL.COM,Cuyahoga County Foreclosure
+6543,10/16/2023,Anibal,Suarez,20312 LORAIN ROAD,FAIRVIEW PARK,Ohio,44126,Foreclosure,,2166241293,Mobile,2162148010,Mobile,msuarezii@yahoo.com,Cuyahoga County Foreclosure
+6544,10/16/2023,Patsy,Wynter,23708 MCCANN STREET,WARRENSVILLE HEIGHTS,Ohio,44128,Foreclosure,,2165872846,Land Line,2166623874,Land Line,pwynter@cs.com,Cuyahoga County Foreclosure
+6545,10/16/2023,Stanford,Crumb,14311 MILES AVENUE,CLEVELAND,Ohio,44128,Foreclosure,,2167040133,Mobile,2162830463,Land Line,oxtails26@gmail.com,Cuyahoga County Foreclosure
+6546,10/16/2023,Phillip,Beebe,696 EAST 260TH STREET,EUCLID,Ohio,44132,Foreclosure,,2162892113,Land Line,,,phillipb2056@optonline.net,Cuyahoga County Foreclosure
+6547,10/16/2023,CLINTON,HOUSE,16504 LAVERNE AVENUE,CLEVELAND,Ohio,44135,Foreclosure,,2165514054,Mobile,2164761563,Land Line,HPOF6@WORLDNET.ATT.NET,Cuyahoga County Foreclosure
+6548,10/16/2023,Charlene,Rice,3396 EAST 147TH STREET,CLEVELAND,Ohio,44120,Foreclosure,,2163373655,Mobile,2169326481,Land Line,charlene.rice@ix.netcom.com,Cuyahoga County Foreclosure
+6549,10/16/2023,Richard,Adams,258 EAST 272ND STREET,EUCLID,Ohio,44132,Foreclosure,,2163609622,Land Line,2167310156,Land Line,,Cuyahoga County Foreclosure
+6550,10/16/2023,Georges,Mattar,1611 RIDGEWOOD AVENUE,LAKEWOOD,Ohio,44107,Foreclosure,,4402129241,Mobile,4405060228,Mobile,,Cuyahoga County Foreclosure
+6551,10/16/2023,Jason,Spadaro,23221 GAY STREET,EUCLID,Ohio,44123,Foreclosure,,2168704005,Mobile,2162612436,Land Line,jspadaro@comcast.net,Cuyahoga County Foreclosure
+6552,10/16/2023,David,Perry,13301 LITTLETON ROAD,GARFIELD HEIGHTS,Ohio,44125,Foreclosure,,2162052508,Mobile,2163247109,Mobile,ms.sweeti77@gmail.com,Cuyahoga County Foreclosure
+6553,10/16/2023,Irma,Freiman,5876 REGAL GLEN DR 106,BOYNTON BEACH,Florida,33437,Foreclosure,,5614993640,Land Line,,,HIRMA77@COMCAST.NET,Palm Beach Foreclosure
+6554,10/16/2023,Ermelando,Ramos,5518 PARK CIR W,WEST PALM BEACH,Florida,33405,Foreclosure,,5618918598,Mobile,5615417611,Mobile,ermelando@yahoo.com,Palm Beach Foreclosure
+6555,10/16/2023,Priscilla,Willingham,4549 HIGHGATE DR A,DELRAY BEACH,Florida,33445,Foreclosure,,5619014217,Mobile,5612784647,Land Line,priscillawillingham@att.net,Palm Beach Foreclosure
+6556,10/16/2023,Davina,Clarke,8165 CANTABRIA FALLS DR,BOYNTON BEACH,Florida,33473,Foreclosure,,9546297184,Mobile,5617393638,Land Line,,Palm Beach Foreclosure
+6557,10/16/2023,Saralee,Weinstein,10828 ROYAL CARIBBEAN CIR,BOYNTON BEACH,Florida,33437,Foreclosure,,5617334403,Land Line,5614871432,Land Line,allanweinstein@bellsouth.net,Palm Beach Foreclosure
+6558,10/16/2023,Mario,Corleto,248 GREENBRIER DR,LAKE WORTH,Florida,33461,Foreclosure,,5613850064,Mobile,5618537979,Mobile,marioncm@live.com,Palm Beach Foreclosure
+6559,10/16/2023,Dyliana,Figueroa,8092 VIALE MATERA,LAKE WORTH,Florida,33467,Foreclosure,,9545510931,Mobile,9545510930,Mobile,,Palm Beach Foreclosure
+6560,10/16/2023,Nerlande,Oragene,1296 WATERWAY COVE,WEST PALM BEACH,Florida,33414,Foreclosure,,5612439804,Land Line,5613963729,Mobile,nbienaime@juno.com,Palm Beach Foreclosure
+6561,10/16/2023,KENNETH,BOWERS,2109 PINEHURST DR,WEST PALM BEACH,Florida,33407,Foreclosure,,5613967969,Mobile,5618451236,Land Line,FLORIDATERP561@GMAIL.COM,Palm Beach Foreclosure
+6562,10/16/2023,Samuel,Torres,337 PINEHURST RD,PALM SPRINGS,Florida,33461,Foreclosure,,5617192143,Mobile,5619652537,Land Line,puertoricanbabi@yahoo.com,Palm Beach Foreclosure
+6563,10/16/2023,Robert,Mooney,860 SW 22ND ST,BOCA RATON,Florida,33486,Foreclosure,,5613947432,Land Line,5617899303,Mobile,bob.mooney@erudite.net,Palm Beach Foreclosure
+6564,10/16/2023,Jones Edna A Est,,5023 SOCIETY PL E UNIT H,WEST PALM BEACH,Florida,33415,Foreclosure,,5614293396,Land Line,5612364991,Mobile,,Palm Beach Foreclosure
+6565,10/16/2023,MICHAEL,ROSE,128 MONTEREY WAY,ROYAL PALM BEACH,Florida,33411,Foreclosure,,5617926763,Land Line,5612949258,Mobile,DJCELLS87@YAHOO.COM,Palm Beach Foreclosure
+6566,10/16/2023,Jimmy,Millan,7328 NAUTICA WAY,LAKE WORTH,Florida,33467,Foreclosure,,5615436801,Mobile,5613080457,Mobile,papomillan@live.com,Palm Beach Foreclosure
+6567,10/16/2023,Josephine,Lucca,232 TIMBERWALK TRL,JUPITER,Florida,33458,Foreclosure,,5617485911,Land Line,5617473736,Land Line,jlucca@gmail.com,Palm Beach Foreclosure
+6568,10/16/2023,Marie,Hilaire,222 CYPRESS DR,LAKE PARK,Florida,33403,Foreclosure,,5618895291,Mobile,5616936919,Land Line,marie30564@prodigy.net,Palm Beach Foreclosure
+6569,10/16/2023,George,Hernandez,1626 PLANTATION DR,WEST PALM BEACH,Florida,33417,Foreclosure,,5618432624,Mobile,8605182867,Mobile,,Palm Beach Foreclosure
+6570,10/16/2023,Vladimir,Villalobo,3002 FRENCH AVE,LAKE WORTH,Florida,33461,Foreclosure,,5619327879,Mobile,,,,Palm Beach Foreclosure
+6571,10/16/2023,Davina,Webb,4058 LAKE TAHOE CIRCLE,WEST PALM BEACH,Florida,33409,Foreclosure,,5613890900,Mobile,5618763129,Mobile,davina_reid@yahoo.com,Palm Beach Foreclosure
+6572,10/16/2023,Hartley,Jameau,14527 BONAIRE BLVD 406,DELRAY BEACH,Florida,33446,Foreclosure,,5615967908,Mobile,5616743156,Mobile,,Palm Beach Foreclosure
+6573,10/16/2023,EDITH,LIPSON,5617 LAKEVIEW MEWS CT,BOYNTON BEACH,Florida,33437,Foreclosure,,5859647363,Land Line,5612713483,Mobile,,Palm Beach Foreclosure
+6574,10/16/2023,Sitrena,Candela,4020 E LOUISIANA AVE,TAMPA,Florida,33610,Foreclosure,,8136200000,Land Line,8136309563,Land Line,CANDELASITRENA@YAHOO.COM,Hillsborough Foreclosure
+6576,10/16/2023,CHARLES,ALFONSO,1215 WINDSOR CIR,BRANDON,Florida,33510,Foreclosure,,8132371533,Land Line,8135168011,Mobile,ALFONSONILDA@YAHOO.COM,Hillsborough Foreclosure
+6577,10/16/2023,Roberto,Rivera,12713 FOREST HILLS DR,TAMPA,Florida,33612,Foreclosure,,8137879505,Mobile,8139322051,Land Line,papito102167@yahoo.com,Hillsborough Foreclosure
+6578,10/16/2023,George,Gessner,8102 TURTLEDOVE CV,PLANT CITY,Florida,33567,Foreclosure,,8137565084,Land Line,8132035870,Mobile,georgegessner@bellsouth.net,Hillsborough Foreclosure
+6579,10/16/2023,Amanda,Force,11508 WHISPER RIDGE CT,RIVERVIEW,Florida,33569,Foreclosure,,8136952220,Mobile,2404160352,Mobile,forceisland@netscape.com,Hillsborough Foreclosure
+6580,10/16/2023,Michael,Farrell,1000 S HARBOUR ISLAND BLVD 260,TAMPA,Florida,33602,Foreclosure,,7188598366,Land Line,8132223485,Land Line,,Hillsborough Foreclosure
+6581,10/16/2023,RACHEL,RUTHERFORD,5527 KINGLETHILL DR,LITHIA,Florida,33547,Foreclosure,,8132930707,Mobile,8136812921,Land Line,ANGEL6978@AOL.COM,Hillsborough Foreclosure
+6585,10/16/2023,Alvin,Johnson,13210 ARBOR ISLE DR 102,TEMPLE TERRACE,Florida,33637,Foreclosure,,9162188367,Mobile,5105340778,Land Line,rjsweet99@yahoo.com,Hillsborough Foreclosure
+6587,10/16/2023,Hicks Lettie S Estate Of,,301 SLIGH AVE,SEFFNER,Florida,33584,Foreclosure,,8136621696,Land Line,8136898188,Land Line,JAMES.BOWDEN@COMCAST.NET,Hillsborough Foreclosure
+6588,10/16/2023,Devin,Brenner,1405 RUSHGROVE CIR,DOVER,Florida,33527,Foreclosure,,8636613177,Mobile,8135976785,Mobile,devin.brenner@gmail.com,Hillsborough Foreclosure
+6589,10/16/2023,Albert,Hersh,401 MORNINGSIDE DR,VALRICO,Florida,33594,Foreclosure,,8133158883,Land Line,8135044180,Mobile,,Hillsborough Foreclosure
+6590,10/16/2023,Audrey,Wilson,1321 W ARCH ST,TAMPA,Florida,33607,Foreclosure,,8134360838,Land Line,8138081788,Mobile,,Hillsborough Foreclosure
+6591,10/16/2023,Charline,Stumpf,1210 PELOTE CEMETERY RD,LITHIA,Florida,33547,Foreclosure,,7275648600,Mobile,8136817626,Land Line,stepsxascending@yahoo.com,Hillsborough Foreclosure
+6592,10/16/2023,Sandy,Miller,3128 AZALEA BLOSSOM DR,PLANT CITY,Florida,33567,Foreclosure,,8137192029,Land Line,8137192829,Land Line,sandyjmiller66@aol.com,Hillsborough Foreclosure
+6593,10/16/2023,James,Novak,7123 MERLOT SIENNA AVE,GIBSONTON,Florida,33534,Foreclosure,,7275046842,Mobile,7275448540,Land Line,,Hillsborough Foreclosure
+6594,10/16/2023,AKIMA,JAMES,963 SUNLIT CORAL ST,RUSKIN,Florida,33570,Foreclosure,,8133800636,Mobile,,,KIKKI2729@GMAIL.COM,Hillsborough Foreclosure
+6595,10/16/2023,Janise,Armstrong,4207 S DALE MABRY HWY 1210,TAMPA,Florida,33611,Foreclosure,,9043294291,Land Line,9042534142,Mobile,janise.armstrong@earthlink.net,Hillsborough Foreclosure
+6596,10/16/2023,KAREN,FOLEY,15602 INDIAN QUEEN DR,ODESSA,Florida,33556,Foreclosure,,8139268477,Land Line,8133104271,Mobile,LOSTLUNCHBOXELF@AOL.COM,Hillsborough Foreclosure
+6597,10/16/2023,Scott,Storms,14608 BROGAN CASTLE PL,WIMAUMA,Florida,33598,Foreclosure,,8136447595,Land Line,8138315872,Land Line,craneman3501@charter.net,Hillsborough Foreclosure
+6598,10/16/2023,CASSANDRA,TINSELY,3716 E GENESEE ST,TAMPA,Florida,33610,Foreclosure,,8133743963,Land Line,8132340979,Land Line,CASSANDRATINSLEY@GMAIL.COM,Hillsborough Foreclosure
+6599,10/16/2023,Derreck,Blaisdell,5101 SPITFIRE LN,WIMAUMA,Florida,33598,Foreclosure,,8132402163,Mobile,,,,Hillsborough Foreclosure
+6600,10/16/2023,Juan,Zavala,1604 N SHANNON AVE,PLANT CITY,Florida,33563,Foreclosure,,8134785761,Mobile,8134785763,Mobile,juan.zavala4@comcast.net,Hillsborough Foreclosure
+6601,10/16/2023,DEANNA,LEWIS,4213 S COVINA CIR,TAMPA,Florida,33617,Foreclosure,,8139925136,Mobile,7273484242,Mobile,LEWISROB2@NETSCAPE.NET,Hillsborough Foreclosure
+6602,10/16/2023,Toni,Pelagio,8804 TEMPLE PARK DR,TAMPA,Florida,33637,Foreclosure,,8138027725,Mobile,8133777055,Mobile,,Hillsborough Foreclosure
+6603,10/16/2023,Natasha,Malpeli,2004 LEXIE LN,PLANT CITY,Florida,33566,Foreclosure,,8638778638,Mobile,8133120128,Mobile,nmalpeli@aol.com,Hillsborough Foreclosure
+6604,10/16/2023,Robert,Haught,11016 HOLLY CONE DR,RIVERVIEW,Florida,33569,Foreclosure,,3049911004,Mobile,8133349859,Mobile,robert.haught@aol.com,Hillsborough Foreclosure
+6605,10/16/2023,Ai Land Investments Llc,,4024 DREAM OAK PL 103,TAMPA,Florida,33613,Foreclosure,,8134933213,Mobile,8139855211,Land Line,,Hillsborough Foreclosure
+6606,10/16/2023,Robert,Farrington,1523 W MOHAWK AVE,TAMPA,Florida,33603,Foreclosure,,8132317136,Land Line,8132998488,Mobile,robertfarrington@live.com,Hillsborough Foreclosure
+6607,10/16/2023,Mark,Casey,4712 DOVER CLIFF CT,DOVER,Florida,33527,Foreclosure,,8133952360,Mobile,8136853143,Land Line,cole1casey@yahoo.com,Hillsborough Foreclosure
+6608,10/16/2023,Herbert,Jacobs,4122 GRADSTONE PL,TAMPA,Florida,33617,Foreclosure,,8139848423,Land Line,8137671998,Mobile,hjacobs@mailcity.com,Hillsborough Foreclosure
+6609,10/16/2023,Keith,Ashbaugh,1908 E MCBERRY ST,TAMPA,Florida,33610,Foreclosure,,8138315653,Land Line,8137193876,Land Line,,Hillsborough Foreclosure
+6610,10/16/2023,Beverly,Spark,512 VILLAGIO LOOP,POINCIANA,Florida,34759,Foreclosure,,8634960842,Land Line,8503090631,Land Line,sparkb@bellsouth.net,Polk Foreclosure
+6611,10/16/2023,MARCUS,BARTON,812 GILA WAY,POINCIANA,Florida,34759,Foreclosure,,3214386611,Mobile,4074964545,Mobile,DA3_OFUS@YAHOO.COM,Polk Foreclosure
+6612,10/16/2023,Richard,Leipply,1465 THOUSAND ROSES DR,LAKE WALES,Florida,33853,Foreclosure,,8636053577,Mobile,3306529141,Land Line,richardleipply@yahoo.com,Polk Foreclosure
+6613,10/16/2023,Eriberto,Guzman,1257 MERRIMACK DR,DAVENPORT,Florida,33837,Foreclosure,,8634223461,Land Line,8632563549,Land Line,przrikanbabie@hotmail.com,Polk Foreclosure
+6614,10/16/2023,STEVEN,PEREZ,5850 FOREST RIDGE DR,WINTER HAVEN,Florida,33881,Foreclosure,,8638377555,Mobile,8639348740,Mobile,MRPEREZ1981@YAHOO.COM,Polk Foreclosure
+6615,10/16/2023,LEO,GORDON,6374 TORRINGTON CIR,LAKELAND,Florida,33811,Foreclosure,,8137868124,Mobile,8635572714,Mobile,15ALEX@GTE.NET,Polk Foreclosure
+6616,10/16/2023,Vernon,Tatum,135 CLEARWATER AVE,POLK CITY,Florida,33868,Foreclosure,,8639342607,Mobile,8634092334,Mobile,bigvern@yahoo.com,Polk Foreclosure
+6617,10/16/2023,Wilton,Morris,4424 FOXTOWN N,POLK CITY,Florida,33868,Foreclosure,,8139518116,Mobile,8639844561,Land Line,sunnystoffl@aol.com,Polk Foreclosure
+6618,10/16/2023,ROBERT,SCHNEIDER,4631 DAKEMAN RD,LAKELAND,Florida,33813,Foreclosure,,8636020988,Mobile,4236393652,Land Line,RSCHNEIDER@PEOPLEPC.COM,Polk Foreclosure
+6619,10/16/2023,Courtney,Cassie,7810 COUNTRY CHASE AVE,LAKELAND,Florida,33810,Foreclosure,,8637770309,Mobile,8638029361,Land Line,,Polk Foreclosure
+6620,10/16/2023,Jerarda,Hernandez,36 BROADWAY ST W,FORT MEADE,Florida,33841,Foreclosure,,8638047302,Mobile,8635349545,Land Line,jlyliahdz@hotmail.com,Polk Foreclosure
+6621,10/16/2023,Priscilla,Aguirre,1002 LOWRY AVE,LAKELAND,Florida,33801,Foreclosure,,8132173783,Mobile,,,,Polk Foreclosure
+6622,10/16/2023,Lena,White,258 TERRANOVA BLVD,WINTER HAVEN,Florida,33880,Foreclosure,,5164138653,Mobile,5167423785,Land Line,,Polk Foreclosure
+6623,10/16/2023,ELIZABET,AVELAR,1344 E EDGEWOOD DR,LAKELAND,Florida,33803,Foreclosure,,8636079764,Land Line,8636697236,Mobile,LIZAVELAR863@GMAIL.COM,Polk Foreclosure
+6624,10/16/2023,Iva,Bircheat,35 S FOX LAKE RD,WINTER HAVEN,Florida,33884,Foreclosure,,8633243479,Land Line,9413243479,Mobile,cmbircheat@gmail.com,Polk Foreclosure
+6625,10/16/2023,ROBIN,EKER,201 VALENCIA DR,AUBURNDALE,Florida,33823,Foreclosure,,8636185037,Mobile,8632885531,Mobile,REKER@AOL.COM,Polk Foreclosure
+6626,10/16/2023,Bridget,Wade,2626 SHINER DR,LAKE WALES,Florida,33898,Foreclosure,,8634394020,Land Line,8634556403,Mobile,wade1987.bmw@gmail.com,Polk Foreclosure
+6627,10/16/2023,Deann,Frazier,349 LAKE DAVENPORT CIR,DAVENPORT,Florida,33837,Foreclosure,,5747722418,Land Line,2193249973,Land Line,dritchie-frazier@excite.com,Polk Foreclosure
+6628,10/16/2023,Donald,Kleckner,212 GLENWOOD DR,LAKE WALES,Florida,33898,Foreclosure,,8634387433,Land Line,8634398344,Land Line,jkleckner@mail.com,Polk Foreclosure
+6629,10/16/2023,DEBRA,VIGUIE,308 WHIRLAWAY DR,DAVENPORT,Florida,33837,Foreclosure,,7146308035,Land Line,,,,Polk Foreclosure
+6630,10/16/2023,W,Maddox,1153 LAKE LOWERY RD,HAINES CITY,Florida,33844,Foreclosure,,8635574267,Mobile,,,,Polk Foreclosure
+6631,10/16/2023,Jeffrey,Williams,3001 SANDERLING ST,HAINES CITY,Florida,33844,Foreclosure,,8638384773,Mobile,8634992655,Land Line,jew1williams@yahoo.com,Polk Foreclosure
+6632,10/16/2023,Arturo,Alicea,633 FISHER CT,POINCIANA,Florida,34759,Foreclosure,,2125683807,Land Line,2127404961,Land Line,mmijs@yahoo.com,Polk Foreclosure
+6633,10/16/2023,Joseph,Doyle,506 PEACE WAY,POINCIANA,Florida,34759,Foreclosure,,4435538094,Mobile,4077153412,Mobile,joedoyle1962@yahoo.com,Polk Foreclosure
+6634,10/16/2023,Lawrence,Mcneil,2800 WATKINS RD,HAINES CITY,Florida,33844,Foreclosure,,8632072418,Mobile,8634228441,Land Line,falcon225@aol.com,Polk Foreclosure
+6635,10/16/2023,SONIA,VELAZQUEZ,316 ANDALUSIA LOOP,DAVENPORT,Florida,33837,Foreclosure,,8634211631,Land Line,5163583621,Land Line,SMOOTH965@AOL.COM,Polk Foreclosure
+6636,10/16/2023,Nathan,Denslinger,131 VIA MARIEL EAST DR,DAVENPORT,Florida,33896,Foreclosure,,8639692023,Mobile,4253272094,Mobile,nathan.denslinger@gmail.com,Polk Foreclosure
+6637,10/16/2023,THOMAS,MCGHEE,4735 DETER RD,LAKELAND,Florida,33813,Foreclosure,,8633021185,Land Line,8636074052,Land Line,REDNECKMUDDER@MSN.COM,Polk Foreclosure
+6638,10/16/2023,AMBROSE,GAINES,1558 DREXEL AVE NE,WINTER HAVEN,Florida,33881,Foreclosure,,8632989487,Land Line,4078042548,Land Line,AMBROSE.GAINES@ALLTEL.NET,Polk Foreclosure
+6639,10/16/2023,Alexxis,Cox,7286 CEDARCREST BLVD,LAKELAND,Florida,33810,Foreclosure,,8632059062,Mobile,8635337430,Land Line,,Polk Foreclosure
+6640,10/16/2023,Kimberly,Davis,2231 DEVONSHIRE PL,WINTER HAVEN,Florida,33880,Foreclosure,,8636408285,Mobile,8638165346,Land Line,,Polk Foreclosure
+6641,10/16/2023,Chamberlin Marilyn J Estate Of,,3250 PEBBLE BEND DR,LAKELAND,Florida,33810,Foreclosure,,8638593979,Land Line,8636604716,Mobile,,Polk Foreclosure
+6642,10/16/2023,JANNETT,MATTHEWS,3025 PATTERSON GROVES DR,HAINES CITY,Florida,33844,Foreclosure,,7187125159,Land Line,4078591142,Land Line,JANNMATT@GMAIL.COM,Polk Foreclosure
+6643,10/16/2023,Lanthrip Mary E Estate Of,,314 SKYBLUE LN,AUBURNDALE,Florida,33823,Foreclosure,,8632800134,Mobile,8638757846,Land Line,ELANTHRIP@YAHOO.COM,Polk Foreclosure
+6644,10/16/2023,KEILAN,BAINE,6050 CITRUS HIGHLANDS DR N,BARTOW,Florida,33830,Foreclosure,,8634406554,Mobile,8634406557,Mobile,KEILANBAINE@GMAIL.COM,Polk Foreclosure
+6645,10/16/2023,Rohn,Gardin,8141 BRISTOL BAY AVE,LAKELAND,Florida,33810,Foreclosure,,8636703163,Mobile,8638582595,Land Line,edumirandam@hotmail.com,Polk Foreclosure
+6646,10/16/2023,JERRY,BERBA,795 SQUIRREL CT,POINCIANA,Florida,34759,Foreclosure,,9045543262,Mobile,9192340581,Land Line,BERRBAWENDY1103@GMAIL.COM,Polk Foreclosure
+6647,10/16/2023,Shaffer Harry F Estate Of,,3619 PIONEER TRLS,LAKELAND,Florida,33810,Foreclosure,,8636872119,Land Line,8636320240,Mobile,,Polk Foreclosure
+6648,10/16/2023,Carlos,Zamora,322 BRIAR PATCH LOOP,DAVENPORT,Florida,33896,Foreclosure,,4079959338,Mobile,4072181376,Mobile,egycarlos@yahoo.com,Polk Foreclosure
+6649,10/16/2023,Barbara,Davis,448 MARKET SQ E,LAKELAND,Florida,33813,Foreclosure,,8638388742,Mobile,8636472838,Land Line,bdavis2178@aol.com,Polk Foreclosure
+6650,10/16/2023,ROB,SPANGLER,247 JEFFERSON ST,LAKE WALES,Florida,33859,Foreclosure,,7275284329,Land Line,7275263107,Land Line,LIVINGFORTHENEXTDAY@GMAIL.COM,Polk Foreclosure
+6651,10/16/2023,Betty,Doles,2451 MARY JEWETT CIR NE,WINTER HAVEN,Florida,33881,Foreclosure,,8132945683,Mobile,8632945683,Land Line,betty.doles@comcast.net,Polk Foreclosure
+6652,10/16/2023,David,Hieber,306 PINEY AVE,LAKE WALES,Florida,33853,Foreclosure,,8632064407,Mobile,4409645295,Land Line,,Polk Foreclosure
+6653,10/16/2023,GERALD,DEAL,1530 RITTER RD,LAKELAND,Florida,33810,Foreclosure,,8637093374,Mobile,8636442425,Land Line,GODEAL@JUNO.COM,Polk Foreclosure
+6654,10/16/2023,Octavious,Freeman,232 WILLIAMSON DR,DAVENPORT,Florida,33897,Foreclosure,,4078214206,Mobile,4073411510,Mobile,,Polk Foreclosure
+6655,10/16/2023,PEDRO,RAMOS,757 CARIBOU DR,POINCIANA,Florida,34759,Foreclosure,,7872151629,Mobile,7872836676,Land Line,,Polk Foreclosure
+6656,10/16/2023,Jose,Guzman,805 WILLIAM WAY,HAINES CITY,Florida,33844,Foreclosure,,4076246724,Mobile,4077332111,Mobile,jguzmanmartinez@hotmail.com,Polk Foreclosure
+6657,10/16/2023,Roxanne,Webb,6010 LAKE LUTHER RD,LAKELAND,Florida,33809,Foreclosure,,8634302521,Mobile,4075952415,Mobile,silentwalker06@aol.com,Polk Foreclosure
+6658,10/16/2023,Derek,Cristwell,2406 AVENUE B NW,WINTER HAVEN,Florida,33880,Foreclosure,,4073509574,Mobile,8632997962,Land Line,timellee@aol.com,Polk Foreclosure
+6659,10/16/2023,CHRISTIAN,ALBALADEJO,116 LAKE TRACY CT,HAINES CITY,Florida,33844,Foreclosure,,8634199773,Land Line,,,,Polk Foreclosure
+6660,10/16/2023,Michelle,Mcpherson,254 GROUPER CT,POINCIANA,Florida,34759,Foreclosure,,9177909060,Mobile,7185285381,Land Line,,Polk Foreclosure
+6662,10/16/2023,ABNER,TORRES,3636 MADBURY CIR,LAKELAND,Florida,33810,Foreclosure,,8637382459,Mobile,2014131909,Land Line,abdiel.torres@nc.rr.com,Polk Foreclosure
+6663,10/16/2023,John,Thomas,129 EAGLEVIEW LOOP,DAVENPORT,Florida,33837,Foreclosure,,3215013097,Mobile,4074044450,Mobile,jthomasikon@yahoo.com,Polk Foreclosure
+6664,10/16/2023,Vicente,Guerra,2525 CRESAP ST,LAKELAND,Florida,33815,Foreclosure,,8636144362,Mobile,8636604462,Mobile,vicente.guerra@yahoo.com,Polk Foreclosure
+6665,10/16/2023,Michael,Phillips,780 W FROSTPROOF RD,FROSTPROOF,Florida,33843,Foreclosure,,8634436782,Mobile,8635126672,Mobile,mphillips25@comcast.net,Polk Foreclosure
+6666,10/16/2023,BRANDON,PATE,7612 MUSCOVY DR,LAKELAND,Florida,33810,Foreclosure,,8632556431,Mobile,8639377204,Land Line,DPATE61@TAMPABAY.RR.COM,Polk Foreclosure
+6667,10/16/2023,Timothy,Steorts,4740 WATER OAK TRL,LAKE WALES,Florida,33898,Foreclosure,,8636961908,Land Line,8632590077,Mobile,,Polk Foreclosure
+6668,10/16/2023,Troy,Godshall,8547 CHERRY HILL DR,LAKELAND,Florida,33810,Foreclosure,,8639373625,Land Line,8638995286,Mobile,tgodshall@mediaone.net,Polk Foreclosure
+6669,10/16/2023,Alex,Gregory,1217 HENDON LOOP,DAVENPORT,Florida,33837,Foreclosure,,4073193181,Mobile,3217469454,Mobile,gregory160@financier.com,Polk Foreclosure
+6670,10/16/2023,Mitzie,Cortes,3560 CORTLAND DR,DAVENPORT,Florida,33837,Foreclosure,,8634240794,Land Line,8638083576,Mobile,cortesjasmin@aol.com,Polk Foreclosure
+6671,10/16/2023,Lori,Headley,541 JOSH REYNOLDS RD,LAKELAND,Florida,33801,Foreclosure,,8638087250,Mobile,8634122745,Mobile,loriheadley@bellsouth.net,Polk Foreclosure

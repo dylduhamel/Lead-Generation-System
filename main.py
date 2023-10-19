@@ -2,6 +2,7 @@ import time
 import datetime
 import logging
 import inspect
+import traceback
 from datetime import date
 from dateutil.relativedelta import relativedelta
 from selenium import webdriver
@@ -10,7 +11,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Utility.lead_database import Lead, Session
-from Utility.lead_database_operations import json_to_database, remove_duplicates
+from Utility.lead_database_operations import json_to_database, remove_duplicates, export_to_csv
 from Utility.util import status_print
 from Utility.twilio_api import email_csv
 from Utility.visited_calendar_leads import (
@@ -50,6 +51,8 @@ from Scrapers.Ohio.cuyahoga_county_foreclosure import CuyahogaCountyForeclosure
 from Scrapers.Florida.volusia_county_taxdeed import VolusiaCountyTaxdeed
 from Scrapers.Florida.palm_beach_foreclosure import PalmBeachForeclosure
 from Scrapers.Florida.hillsborough_county_foreclosure import HillsboroughCountyForeclosure
+from Scrapers.Florida.polk_county_foreclosure import PolkCountyForeclosure
+from Scrapers.Florida.palm_beach_taxdeed import PalmBeachTaxdeed
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -143,12 +146,21 @@ if __name__ == "__main__":
     # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
     # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
     # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
-    run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
+    # run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
     # run_scraper("VolusiaCountyTaxdeed", VolusiaCountyTaxdeed, end_date=end_date)
     # run_scraper("PalmBeachForeclosure", PalmBeachForeclosure, end_date=end_date)
     # run_scraper("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure, end_date=end_date)
+    # run_scraper("PolkCountyForeclosure", PolkCountyForeclosure, end_date=end_date)
+    # run_scraper("PalmBeachTaxdeed", PalmBeachTaxdeed, end_date=end_date)
 
-    remove_duplicates()
+    # remove_duplicates()
+
+    try:
+        export_to_csv()
+    except:
+        print("Issue exporting csv")
+        traceback.print_exc()
+
 
     # try:
     #     skiptrace_leads()

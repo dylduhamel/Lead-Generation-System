@@ -514,3 +514,44 @@ if os.path.exists(hillsborugh_filename):
 def save_global_list_hillsborugh():
     with open(hillsborugh_filename, "wb") as f:
         pickle.dump(hillsborugh_county_visited_leads, f)
+
+
+
+"""
+Polk County foreclosure
+"""
+# Specify the filename to be used for the pickled data
+polk_foreclosure_filename = "./Data/Visited_calendar_leads/global_list_polk_foreclosure.pkl"
+
+# Initialize an empty list
+polk_foreclosure_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(polk_foreclosure_filename):
+    with open(polk_foreclosure_filename, "rb") as f:
+        polk_foreclosure_visited_leads = pickle.load(f)
+
+
+def save_global_list_polk_foreclosure():
+    with open(polk_foreclosure_filename, "wb") as f:
+        pickle.dump(polk_foreclosure_visited_leads, f)
+
+
+"""
+Palm Beach Taxdeed
+"""
+# Specify the filename to be used for the pickled data
+palm_beach_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_palm_beach_taxdeed.pkl"
+
+# Initialize an empty list
+palm_beach_taxdeed_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(palm_beach_taxdeed_filename):
+    with open(palm_beach_taxdeed_filename, "rb") as f:
+        palm_beach_taxdeed_visited_leads = pickle.load(f)
+
+
+def save_global_list_palm_beach_taxdeed():
+    with open(palm_beach_taxdeed_filename, "wb") as f:
+        pickle.dump(palm_beach_taxdeed_visited_leads, f)

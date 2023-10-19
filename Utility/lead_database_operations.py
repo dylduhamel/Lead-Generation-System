@@ -1,9 +1,8 @@
-import os
-import requests
+import csv
 import json
 import logging
 import pandas as pd
-from sqlalchemy import update, text
+from sqlalchemy import update, text, or_
 from Utility.lead_database import Lead, Session
 from Utility.util import curr_date, status_print
 
@@ -107,3 +106,28 @@ def remove_duplicates():
     session.commit()
 
     status_print("Duplicates removed successfully.")
+
+
+def export_to_csv(filename="output.csv"):
+    session = Session()
+
+    today = curr_date()
+    # Uncomment below if you want to set a specific date
+    # today = "09/27/2023"
+
+    # Query database using session.query
+    #code_enforcement_leads = session.query(Lead).filter(Lead.date_added == today).all()
+    code_enforcement_leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/18/2023")).all()
+
+    # Open a CSV file and write the queried data
+    with open(filename, "w", newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        
+        # Writing the header
+        writer.writerow(["property_address", "property_city", "property_state", "property_zipcode"])
+
+        # Writing the data rows
+        for lead in code_enforcement_leads:
+            writer.writerow([lead.property_address, lead.property_city, lead.property_state, lead.property_zipcode])
+
+    session.close()
