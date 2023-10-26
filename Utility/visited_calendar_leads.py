@@ -555,3 +555,79 @@ if os.path.exists(palm_beach_taxdeed_filename):
 def save_global_list_palm_beach_taxdeed():
     with open(palm_beach_taxdeed_filename, "wb") as f:
         pickle.dump(palm_beach_taxdeed_visited_leads, f)
+
+
+"""
+Summit County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+summit_filename = "./Data/Visited_calendar_leads/global_list_summit.pkl"
+summit_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(summit_filename):
+    with open(summit_filename, "rb") as f:
+        summit_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_summit():
+    with open(summit_filename, "wb") as f:
+        pickle.dump(summit_county_visited_leads, f)
+
+
+"""
+Montgomery County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+montgomery_filename = "./Data/Visited_calendar_leads/global_list_montgomery.pkl"
+montgomery_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(montgomery_filename):
+    with open(montgomery_filename, "rb") as f:
+        montgomery_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_montgomery():
+    with open(montgomery_filename, "wb") as f:
+        pickle.dump(montgomery_county_visited_leads, f)
+
+
+"""
+Mahoning County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+mahoning_filename = "./Data/Visited_calendar_leads/global_list_mahoning.pkl"
+mahoning_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(mahoning_filename):
+    with open(mahoning_filename, "rb") as f:
+        mahoning_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_mahoning():
+    with open(mahoning_filename, "wb") as f:
+        pickle.dump(mahoning_county_visited_leads, f)
+
+
+"""
+Lucas County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+lucas_filename = "./Data/Visited_calendar_leads/global_list_lucas.pkl"
+lucas_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(lucas_filename):
+    with open(lucas_filename, "rb") as f:
+        lucas_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_lucas():
+    with open(lucas_filename, "wb") as f:
+        pickle.dump(lucas_county_visited_leads, f)

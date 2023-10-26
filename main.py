@@ -53,6 +53,9 @@ from Scrapers.Florida.palm_beach_foreclosure import PalmBeachForeclosure
 from Scrapers.Florida.hillsborough_county_foreclosure import HillsboroughCountyForeclosure
 from Scrapers.Florida.polk_county_foreclosure import PolkCountyForeclosure
 from Scrapers.Florida.palm_beach_taxdeed import PalmBeachTaxdeed
+from Scrapers.Ohio.summit_county_foreclosure import SummitCountyForeclosure
+from Scrapers.Ohio.montgomery_county_foreclosure import MontgomeryCountyForeclosure
+from Scrapers.Ohio.mahoning_county_foreclosure import MahoningCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -152,14 +155,18 @@ if __name__ == "__main__":
     # run_scraper("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure, end_date=end_date)
     # run_scraper("PolkCountyForeclosure", PolkCountyForeclosure, end_date=end_date)
     # run_scraper("PalmBeachTaxdeed", PalmBeachTaxdeed, end_date=end_date)
+    # run_scraper("SummitCountyForeclosure", SummitCountyForeclosure, end_date=end_date)
+    # run_scraper("MontgomeryCountyForeclosure", MontgomeryCountyForeclosure, end_date=end_date)
+    # run_scraper("MahoningCountyForeclosure", MahoningCountyForeclosure, end_date=end_date)
+
 
     # remove_duplicates()
 
-    try:
-        export_to_csv()
-    except:
-        print("Issue exporting csv")
-        traceback.print_exc()
+    # try:
+    #     export_to_csv()
+    # except:
+    #     print("Issue exporting csv")
+    #     traceback.print_exc()
 
 
     # try:
@@ -168,7 +175,7 @@ if __name__ == "__main__":
     # except Exception as e:
     #     logging.error(f"Error during skiptrace or json processing: {str(e)}")
 
-    # Change so that json returns a result so we dont email prematurely.
+    # # Change so that json returns a result so we dont email prematurely.
 
     # try:
     #     email_csv()
