@@ -1,1 +1,4 @@
-
+id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
+7274,10/26/2023,Rosalia,Walker,509 MANILLA LN,WINTER HAVEN,Florida,33880,Taxdeed,,3052457565,Land Line,,,,Polk County Taxdeed
+7275,10/26/2023,HEATHER,GIRARDOT,105 NORTH BLVD E,DAVENPORT,Florida,33837,Taxdeed,,4192664129,Mobile,4198871881,Land Line,HEATHERGIRARDOT@YAHOO.COM,Polk County Taxdeed
+7276,10/26/2023,Shaneka,Calhoun,512 3RD ST N,HAINES CITY,Florida,33844,Taxdeed,,8632423914,Mobile,8636468699,Land Line,shaneka.calhoun@gci.net,Polk County Taxdeed

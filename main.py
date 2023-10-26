@@ -56,6 +56,8 @@ from Scrapers.Florida.palm_beach_taxdeed import PalmBeachTaxdeed
 from Scrapers.Ohio.summit_county_foreclosure import SummitCountyForeclosure
 from Scrapers.Ohio.montgomery_county_foreclosure import MontgomeryCountyForeclosure
 from Scrapers.Ohio.mahoning_county_foreclosure import MahoningCountyForeclosure
+from Scrapers.Ohio.lucas_county_foreclosure import LucasCountyForeclosure
+from Scrapers.Ohio.lorain_county_foreclosure import LorainCountyForeclosure
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
 from dateutil.rrule import rrule, DAILY
@@ -158,7 +160,8 @@ if __name__ == "__main__":
     # run_scraper("SummitCountyForeclosure", SummitCountyForeclosure, end_date=end_date)
     # run_scraper("MontgomeryCountyForeclosure", MontgomeryCountyForeclosure, end_date=end_date)
     # run_scraper("MahoningCountyForeclosure", MahoningCountyForeclosure, end_date=end_date)
-
+    # run_scraper("LucasCountyForeclosure", LucasCountyForeclosure, end_date=end_date)
+    # run_scraper("LorainCountyForeclosure", LorainCountyForeclosure, end_date=end_date)
 
     # remove_duplicates()
 
@@ -177,10 +180,10 @@ if __name__ == "__main__":
 
     # # Change so that json returns a result so we dont email prematurely.
 
-    # try:
-    #     email_csv()
-    # except Exception as e:
-    #     logging.error(f"Error during email_csv: {str(e)}")
+    try:
+        email_csv()
+    except Exception as e:
+        logging.error(f"Error during email_csv: {str(e)}")
 
     end_time = time.time()
     execution_time = end_time - start_time

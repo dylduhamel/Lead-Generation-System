@@ -1,1 +1,169 @@
-
+id,date_added,first_name_owner,last_name_owner,property_address,property_city,property_state,property_zipcode,document_type,document_subtype,phone_number_1,phone_number_1_type,phone_number_2,phone_number_2_type,email,county_website
+7222,10/25/2023,Rebecca,Armbruster,13030 S STAFFORDSHIRE DR,JACKSONVILLE,Florida,32225,Foreclosure,,9045730883,Land Line,9042921776,Land Line,becca210@comcast.net,Duval County Foreclosure
+7223,10/25/2023,Tiffany,Snyder,7920 MERRILL RD 1205,JACKSONVILLE,Florida,32277,Foreclosure,,9048749401,Mobile,3072625461,Mobile,tiffany.snyder20@yahoo.com,Duval County Foreclosure
+7224,10/25/2023,Daryl,Strickland,2403 W FALLEN TREE DR,JACKSONVILLE,Florida,32246,Foreclosure,,9046072888,Mobile,9044636875,Mobile,strickland.daryl@gmail.com,Duval County Foreclosure
+7225,10/25/2023,Harry,James,2305 S BARRY DR,JACKSONVILLE,Florida,32208,Foreclosure,,9047686845,Land Line,9047121179,Land Line,,Duval County Foreclosure
+7226,10/25/2023,Cheryle,Jones,12259 EMBLEM CT,JACKSONVILLE,Florida,32218,Foreclosure,,9042520719,Mobile,9043293683,Land Line,jonescheryle@yahoo.com,Duval County Foreclosure
+7227,10/25/2023,Carmelita,Ubas,6119 MORSE GLEN CT,JACKSONVILLE,Florida,32244,Foreclosure,,9043338920,Mobile,9047773022,Land Line,cubas@cfl.rr.com,Duval County Foreclosure
+7229,10/25/2023,Arline,Hardy,3500 SW 150TH LANE RD,OCALA,Ohio,34473,Foreclosure,,3523471838,Land Line,3523474488,Land Line,laurrudy21@hotmail.com,Marion County Foreclosure
+7230,10/25/2023,Otelia,Arnold,10101 NW 4TH PL,GAINESVILLE,Florida,32607,Foreclosure,,3522194013,Mobile,3523788133,Land Line,otearnold@gru.net,Alachua County Foreclosure
+7231,10/25/2023,MELISSA,SMITH,45080 EULA B RD,CALLAHAN,Florida,32011,Foreclosure,,4322487227,Mobile,4329245005,Mobile,STORMY9618@GMAIL.COM,Nassau County Foreclosure
+7232,10/25/2023,Conner John W Est,,95275 MARC ANTHONY RD,FERNANDINA BEACH,Florida,32034,Foreclosure,,9042616930,Land Line,9043211194,Land Line,,Nassau County Foreclosure
+7233,10/25/2023,James,Cole,54536 HURST RD,CALLAHAN,Florida,32011,Foreclosure,,9047082331,Mobile,9047082473,Mobile,,Nassau County Foreclosure
+7234,10/25/2023,LYS,CARBAJALES,9135 SW 36 MNR,MIRAMAR,Florida,33025,Foreclosure,,3057931397,Mobile,3058299083,Land Line,LYSRXDOC@GMAIL.COM,Broward County Foreclosure
+7235,10/25/2023,ROBERT,DILLON,2763 NW 108 TER,SUNRISE,Florida,33322,Foreclosure,,9549143324,Mobile,9548181644,Mobile,ARMADILLON13@GMAIL.COM,Broward County Foreclosure
+7236,10/25/2023,JEFFREY,MAYFIELD,2915 SW 15 AVE,FORT LAUDERDALE,Florida,33315,Foreclosure,,7707958834,Land Line,,,,Broward County Foreclosure
+7238,10/25/2023,Julie,Rodenhuis,6019 BAYVIEW DR,FORT LAUDERDALE,Florida,33308,Foreclosure,,5127672486,Mobile,8059046111,Land Line,BLONDEHARE1@GMAIL.COM,Broward County Foreclosure
+7239,10/25/2023,Philene,Alexander,218 NW 29 AVE,FT LAUDERDALE,Florida,33311,Foreclosure,,9548165163,Mobile,9544953102,Mobile,galexander89@yahoo.com,Broward County Foreclosure
+7240,10/25/2023,Tim,Voight,1200 SE 5 CT,FORT LAUDERDALE,Florida,33301,Foreclosure,,9547604626,Land Line,9546838948,Mobile,jvoight1@tds.net,Broward County Foreclosure
+7241,10/25/2023,Linda,Carella,4404 NW 46 WAY,TAMARAC,Florida,33319,Foreclosure,,9547310704,Land Line,3102736066,Land Line,lmcflorida@aol.com,Broward County Foreclosure
+7242,10/25/2023,David,Martinez,5721 NW 54 LN,TAMARAC,Florida,33319,Foreclosure,,9546528556,Mobile,9547189947,Land Line,,Broward County Foreclosure
+7244,10/25/2023,CORA,STREETER,920 NW 201 ST,MIAMI GARDENS,Florida,33169,Foreclosure,,3057704308,Land Line,3056523371,Land Line,1995BOSSLANE@GMAIL.COM,Miami Dade Foreclosure
+7245,10/25/2023,Capoilo Concrete Corp,,16101 NW 28 PL,MIAMI GARDENS,Florida,33054,Foreclosure,,9543801585,Mobile,3058919307,Land Line,,Miami Dade Foreclosure
+7246,10/25/2023,George,Landin,17720 N BAY RD 703,SUNNY ISLES BEACH,Florida,33160,Foreclosure,,7865537845,Mobile,3059374979,Land Line,g_latbic@bellsouth.net,Miami Dade Foreclosure
+7247,10/25/2023,DOROTHY,EDWARDS,4710 NW 25 AVE,MIAMI,Florida,33142,Foreclosure,,3056513371,Land Line,3056337144,Land Line,TBRAIDER@HOTMAIL.COM,Miami Dade Foreclosure
+7248,10/25/2023,BARBARA,CAYTON,3879 WEST 136TH STREET,CLEVELAND,Ohio,44111,Foreclosure,,2166880304,Land Line,2164070582,Mobile,,Cuyahoga County Foreclosure
+7249,10/25/2023,Charles,Asher,5963 DRYDEN RD,WEST PALM BEACH,Florida,33415,Foreclosure,,5619327746,Mobile,7724642584,Land Line,leena476@yahoo.com,Palm Beach Foreclosure
+7250,10/25/2023,Ronald,Silvestri,9148 BAMBOO DR,PALM BEACH GARDENS,Florida,33410,Foreclosure,,5614013641,Mobile,5616946876,Land Line,slomonomor9316@earthlink.net,Palm Beach Foreclosure
+7251,10/25/2023,SVEA,NYSTROM,100 SHORE CT 310,NORTH PALM BEACH,Florida,33408,Foreclosure,,5613124274,Mobile,5618457217,Land Line,SNYSTROM@PEOPLEPC.COM,Palm Beach Foreclosure
+7252,10/25/2023,Debra,Vipperman,928 32ND ST,WEST PALM BEACH,Florida,33407,Foreclosure,,5616441184,Mobile,5618443293,Land Line,drc_debbie@msn.com,Palm Beach Foreclosure
+7253,10/25/2023,Timothy,Libby,10075 SANDY RUN RD,JUPITER,Florida,33478,Foreclosure,,5617413323,Land Line,5615439784,Mobile,tim_libby@yahoo.com,Palm Beach Foreclosure
+7254,10/25/2023,Debra,Decarlo,5139 FLORIA WAY P,BOYNTON BEACH,Florida,33437,Foreclosure,,2019256513,Mobile,2012624354,Land Line,,Palm Beach Foreclosure
+7255,10/25/2023,Juan,Zavala,508 E CALHOUN ST,PLANT CITY,Florida,33563,Foreclosure,,8134785761,Mobile,8638597995,Land Line,juan.zavala4@comcast.net,Hillsborough Foreclosure
+7256,10/25/2023,Garwacki Daniel J Estate Of,,4630 GLENSIDE CIR,TAMPA,Florida,33624,Foreclosure,,8139689101,Land Line,8132641554,Land Line,JGARWACKI@YAHOO.COM,Hillsborough Foreclosure
+7257,10/25/2023,REBECCA,VANDAME,18421 DORMAN RD,LITHIA,Florida,33547,Foreclosure,,8133158840,Land Line,3306535420,Land Line,BECKY@BECKYVANDAME.COM,Hillsborough Foreclosure
+7258,10/25/2023,Raymundo,Flores,10116 VERN ST,GIBSONTON,Florida,33534,Foreclosure,,8136817187,Land Line,8136726147,Land Line,,Hillsborough Foreclosure
+7259,10/25/2023,Shavonne,Roberts,12909 BRANT TREE DR,RIVERVIEW,Florida,33579,Foreclosure,,8136711260,Land Line,8138928755,Mobile,,Hillsborough Foreclosure
+7260,10/25/2023,Jose,Medina,263 LAKE LUCERNE WAY,WINTER HAVEN,Florida,33881,Foreclosure,,8575447518,Mobile,6177856914,Mobile,jamedinaiii@gmail.com,Polk Foreclosure
+7261,10/25/2023,Ennis,Davis,2157 ONTARIO WAY,LAKELAND,Florida,33805,Foreclosure,,8048402477,Mobile,,,,Polk Foreclosure
+7262,10/25/2023,JOSEPH,MESSINA,460 NESBITT PARK AVE,DAVENPORT,Florida,33897,Foreclosure,,8633077243,Mobile,8633077245,Mobile,JMESS4@YAHOO.COM,Polk Foreclosure
+7263,10/25/2023,Emer,Farrelly,2588 CUT ACROSS SHORTY RD,HAINES CITY,Florida,33844,Foreclosure,,4074374011,Mobile,4073314367,Land Line,,Polk Foreclosure
+7264,10/25/2023,BOBBY,HALL,639 SHORE ACRES DR,LAKELAND,Florida,33801,Foreclosure,,8634095544,Mobile,8634504971,Land Line,BOBBYHALL@GMAIL.COM,Polk Foreclosure
+7265,10/25/2023,JEFFREY,KLINE,6434 JACARANDA AVE NE,WINTER HAVEN,Florida,33881,Foreclosure,,3155392084,Land Line,3155753425,Mobile,JFFY_KLINE@YAHOO.COM,Polk Foreclosure
+7266,10/25/2023,GREGORY,CRUMBLY,6904 PINETREE LN E,LAKELAND,Florida,33811,Foreclosure,,4127730100,Mobile,8133821189,Mobile,GCRUMBLY@TAMPABAY.RR.COM,Polk Foreclosure
+7267,10/26/2023,Noel,Hester,1942 W 11TH ST,JACKSONVILLE,Florida,32209,Foreclosure,,9043557564,Land Line,9047594488,Mobile,jesusislove515@gmail.com,Duval County Foreclosure
+7268,10/26/2023,Marian,Carson,435 W TABOR DR,JACKSONVILLE,Florida,32216,Foreclosure,,9047257782,Land Line,,,marian.carson@cs.com,Duval County Foreclosure
+7269,10/26/2023,Matthew,Sisco,1118 Green Meadow Avenue,Lancaster,Ohio,43130,Foreclosure,,7403042215,Mobile,7409740271,Mobile,james22602@verizon.net,Fairfield County Foreclosure
+7271,10/26/2023,Sean,Hyland,1065 RIVER BIRCH ST,HOLLYWOOD,Florida,33019,Foreclosure,,9549207908,Land Line,3059207908,Mobile,internationalwed@bellsouth.net,Broward County Foreclosure
+7272,10/26/2023,Leslie,Mangali,5612 ROCK ISLAND RD,TAMARAC,Florida,33319,Foreclosure,,3212176361,Mobile,4078523198,Land Line,lmangali@bellsouth.net,Broward County Foreclosure
+7273,10/26/2023,Mohamed,Ahmed,1215 SW 83 AVE,NORTH LAUDERDALE,Florida,33068,Foreclosure,,9548221898,Mobile,9544712305,Mobile,,Broward County Foreclosure
+7277,10/26/2023,Maria,Rodriguez,3836 NEWARKAVENUE,CLEVELAND,Ohio,44109,Foreclosure,,2168623731,Land Line,,,,Cuyahoga County Foreclosure
+7278,10/26/2023,Ivory,Stokes,1133 OXFORD ROAD,CLEVELAND HTS,Ohio,44121,Foreclosure,,2162559770,Land Line,2162140512,Mobile,ivorystokes@hotmail.com,Cuyahoga County Foreclosure
+7279,10/26/2023,TIFFANY,BRYANT,281 EAST 262ND STREET,EUCLID,Ohio,44132,Foreclosure,,2163365910,Mobile,2162917357,Land Line,TIFFANY44108@PEOPLEPC.COM,Cuyahoga County Foreclosure
+7280,10/26/2023,Rosa,Wilson,12808 GUARDIAN BOULEVARD,CLEVELAND,Ohio,44135,Foreclosure,,7704058720,Land Line,6782394779,Land Line,rosa_wilson62@yahoo.com,Cuyahoga County Foreclosure
+7281,10/26/2023,Dawn,Kraus,5605 FLOWERDALE AVENUE,CLEVELAND,Ohio,44144,Foreclosure,,2167896829,Mobile,2167391000,Land Line,,Cuyahoga County Foreclosure
+7282,10/26/2023,Cleo,Basinger,27171 PARKWOOD DRIVE,EUCLID,Ohio,44132,Foreclosure,,2162892423,Land Line,7703381399,Land Line,bigjason89@aol.com,Cuyahoga County Foreclosure
+7283,10/26/2023,Adam,Summers,303 AUSTIN STREET,BEREA,Ohio,44017,Foreclosure,,4409737229,Land Line,4405321610,Mobile,jjsummers26@yahoo.com,Cuyahoga County Foreclosure
+7284,10/26/2023,Christine,White,1739 CATALPA ROAD,CLEVELAND,Ohio,44112,Foreclosure,,2164861759,Land Line,2167044696,Mobile,christinewhite97@yahoo.com,Cuyahoga County Foreclosure
+7285,10/26/2023,Eddie,Robinson,4209 EAST 189TH STREET,CLEVELAND,Ohio,44122,Foreclosure,,2165611282,Land Line,2165611287,Land Line,eddierobinson@gmail.com,Cuyahoga County Foreclosure
+7286,10/26/2023,Joann,Vaughn,3356 BEREA ROAD,CLEVELAND,Ohio,44111,Foreclosure,,4407234900,Mobile,2162526959,Land Line,joann.vaughn@hotmail.com,Cuyahoga County Foreclosure
+7287,10/26/2023,JOSEPH,CROCKETT,2190 WEST 105TH STREET,CLEVELAND,Ohio,44102,Foreclosure,,2169700648,Mobile,4403429798,Mobile,JOSEPH.CROCKETT@MSN.COM,Cuyahoga County Foreclosure
+7289,10/26/2023,VALERIE,MURPHY,709 WILLOW DRIVE,EUCLID,Ohio,44132,Foreclosure,,2166243461,Mobile,2169656348,Mobile,VALERIEMURPHY558@YAHOO.COM,Cuyahoga County Foreclosure
+7290,10/26/2023,ANTHONY,GARIFALL,6806 MEMPHIS AVENUE,CLEVELAND,Ohio,44144,Foreclosure,,2163514247,Land Line,,,,Cuyahoga County Foreclosure
+7291,10/26/2023,Anthony,Reilly,343 ROYAL OAK BOULEVARD,RICHMOND HEIGHTS,Ohio,44143,Foreclosure,,2164865693,Land Line,,,,Cuyahoga County Foreclosure
+7292,10/26/2023,Bobby,Bradford,445 CLEVELAND ROAD,CLEVELAND,Ohio,44108,Foreclosure,,2168625911,Land Line,2165410426,Mobile,bobby.bradford@aol.com,Cuyahoga County Foreclosure
+7293,10/26/2023,DANERIS,LUCIANO,2418 PRINCETON ROAD,CLEVELAND HEIGHTS,Ohio,44118,Foreclosure,,4843407236,Mobile,6107912078,Land Line,DZEJADA@YAHOO.COM,Cuyahoga County Foreclosure
+7294,10/26/2023,Jose,Perez,1512 WEST SCHAAF ROAD,CLEVELAND,Ohio,44109,Foreclosure,,2168200114,Mobile,2166612901,Land Line,josep3168@hotmail.com,Cuyahoga County Foreclosure
+7295,10/26/2023,Jeffrey,Horton,466 BABBITT ROAD,EUCLID,Ohio,44123,Foreclosure,,2167894073,Mobile,,,,Cuyahoga County Foreclosure
+7296,10/26/2023,Timothy,Jones,1210 BONNIE LANE,MAYFIELD HEIGHTS,Ohio,44124,Foreclosure,,2163573339,Land Line,2163168681,Mobile,tjones3461@comcast.net,Cuyahoga County Foreclosure
+7298,10/26/2023,Kenneth,Eggers,928 SOUTH GREEN ROAD,SOUTH EUCLID,Ohio,44121,Foreclosure,,2167444987,Mobile,2164969662,Mobile,,Cuyahoga County Foreclosure
+7299,10/26/2023,Verna,Tillman,6545 ROYCROFT DRIVE,PARMA,Ohio,44129,Foreclosure,,4408844299,Land Line,,,,Cuyahoga County Foreclosure
+7300,10/26/2023,Leslie,Mcqueen,1109 MOUNT VERNON BOULEVARD,CLEVELAND HEIGHTS,Ohio,44112,Foreclosure,,2163970328,Land Line,2163758540,Mobile,lmcqueen@geocities.com,Cuyahoga County Foreclosure
+7301,10/26/2023,IRENE,DANIELS,3180 MONTICELLO BOULEVARD,CLEVELAND HEIGHTS,Ohio,44118,Foreclosure,,2164291345,Land Line,2164292242,Land Line,IRENEDANIELS@CABLEONE.NET,Cuyahoga County Foreclosure
+7302,10/26/2023,Jana,Minevich,16300 MCCRACKEN BLVD.,MAPLE HTS.,Ohio,44128,Foreclosure,,3237910443,Mobile,8184781391,Land Line,,Cuyahoga County Foreclosure
+7303,10/26/2023,Emily,Daum,1621 GALION AVENUE,CLEVELAND,Ohio,44115,Foreclosure,,2163728585,Mobile,5167393083,Land Line,emilydaum@yahoo.com,Cuyahoga County Foreclosure
+7304,10/26/2023,Karen,Patton,8101 OXFORD DRIVE,PARMA,Ohio,44129,Foreclosure,,4406230897,Mobile,4405432056,Land Line,kpatton@rcn.com,Cuyahoga County Foreclosure
+7305,10/26/2023,Edward,Kolar,4000 EAST 52ND STREET,NEWBURGH HEIGHTS,Ohio,44105,Foreclosure,,2163414272,Land Line,2164414140,Land Line,edwardkolar@verizon.net,Cuyahoga County Foreclosure
+7306,10/26/2023,Anne,Pietrzak,5660 DUNHAM ROAD,MAPLE HEIGHTS,Ohio,44137,Foreclosure,,2166886074,Mobile,2166623407,Land Line,,Cuyahoga County Foreclosure
+7307,10/26/2023,Gary,Adkins,8310 VINEYARD AVENUE,CLEVELAND,Ohio,44105,Foreclosure,,2162716173,Land Line,2162760483,Mobile,,Cuyahoga County Foreclosure
+7309,10/26/2023,Joshua,Baxter,4901 GROVE MANOR CT,PLANT CITY,Florida,33566,Foreclosure,,8136577995,Land Line,8136892417,Land Line,,Hillsborough Foreclosure
+7310,10/26/2023,Kelly,Keith,8302 W POCAHONTAS AVE,TAMPA,Florida,33615,Foreclosure,,7274855184,Mobile,7275267866,Land Line,lellasabino@juno.com,Hillsborough Foreclosure
+7311,10/26/2023,Adam,Belhaj,8328 ARCHWOOD CIR,TAMPA,Florida,33615,Foreclosure,,8132459970,Mobile,7862564032,Mobile,,Hillsborough Foreclosure
+7312,10/26/2023,NICOLE,BUTLER,209 W 108TH AVE,TAMPA,Florida,33612,Foreclosure,,8132608440,Mobile,8132474362,Land Line,NICOLEB49@MSN.COM,Hillsborough Foreclosure
+7313,10/26/2023,David,Lusk,812 SMITH BAY DR,BRANDON,Florida,33510,Foreclosure,,8138433328,Mobile,8133682848,Mobile,zacklusk99@hotmail.com,Hillsborough Foreclosure
+7314,10/26/2023,Robert,Hales,3208 OAK GREEN WAY,TAMPA,Florida,33611,Foreclosure,,8133409696,Mobile,8133262903,Mobile,,Hillsborough Foreclosure
+7315,10/26/2023,Barbara,Figie,711 VALENCIA WOODS CT,SEFFNER,Florida,33584,Foreclosure,,8137195018,Mobile,8136812610,Land Line,bcfigie@aol.com,Hillsborough Foreclosure
+7316,10/26/2023,Kari,Barrett,4094 DINNER LAKE WAY,LAKE WALES,Florida,33859,Foreclosure,,6093047217,Mobile,8632936086,Land Line,,Polk Foreclosure
+7318,10/26/2023,Jennifer,Wetshtein,1616 JOHNS ROAD,CLINTON,Ohio,44216,Foreclosure,,3308823238,Land Line,3308823148,Land Line,jwetshtein@aol.com,Summit County Foreclosure
+7319,10/26/2023,Amanda,Davis,570 LAKE AVENUE,BARBERTON,Ohio,44203,Foreclosure,,4406661982,Mobile,3309076141,Mobile,softballsweetie@angelfire.com,Summit County Foreclosure
+7320,10/26/2023,Susan,Lang,2601 NESMITH LAKE BLVD,AKRON,Ohio,44314,Foreclosure,,3307537835,Land Line,3307454930,Land Line,derek.lang@hotmail.com,Summit County Foreclosure
+7321,10/26/2023,David,Hall,1086 CANYON VIEW ROAD #1004-G,NORTHFIELD,Ohio,44067,Foreclosure,,2162191616,Mobile,3305283463,Land Line,davidrosshall@yahoo.com,Summit County Foreclosure
+7322,10/26/2023,Margaret,Vincent,576 VALLEY CREST DRIVE,AKRON,Ohio,44319,Foreclosure,,3305292020,Land Line,3307459234,Land Line,margaret.vincent@ole.com,Summit County Foreclosure
+7323,10/26/2023,William,Brant,4485 REX LAKE DRIVE,AKRON,Ohio,44319,Foreclosure,,3306446925,Land Line,3306870351,Mobile,brandysoho2@sbcglobal.net,Summit County Foreclosure
+7324,10/26/2023,Mary,Sparks,1728 HAMPTON ROAD,AKRON,Ohio,44305,Foreclosure,,3307333625,Land Line,3307333336,Land Line,katiebunch57@aol.com,Summit County Foreclosure
+7325,10/26/2023,Tena,Cross,805 GOUGLER ROAD,AKRON,Ohio,44319,Foreclosure,,3307147015,Mobile,3306715590,Mobile,,Summit County Foreclosure
+7326,10/26/2023,Robert,Harrison,2148 BRACE PLACE,CUYAHOGA FALLS,Ohio,44221,Foreclosure,,2163966446,Mobile,2162806198,Mobile,,Summit County Foreclosure
+7327,10/26/2023,Mark,North,795 MOHAWK AVE,AKRON,Ohio,44305,Foreclosure,,3307039447,Mobile,3307949608,Land Line,mail1@marknorth.com,Summit County Foreclosure
+7328,10/26/2023,Patricia,Wade,451 EVERS STREET,AKRON,Ohio,44310,Foreclosure,,3303765835,Land Line,3303760000,Land Line,,Summit County Foreclosure
+7329,10/26/2023,Joi,Mills,1021 SNYDER STREET,AKRON,Ohio,44307,Foreclosure,,3307016279,Mobile,3304340198,Land Line,joimills@hotmail.com,Summit County Foreclosure
+7330,10/26/2023,Daniel,Kelly,252 LOOKOUT AVE,AKRON,Ohio,44310,Foreclosure,,3308611182,Land Line,3309454886,Land Line,danplactic@aol.com,Summit County Foreclosure
+7331,10/26/2023,Frances,Frank,1606 MULTONOMA AVE,AKRON,Ohio,44305,Foreclosure,,3307846879,Land Line,3306038830,Mobile,frances.frank@verizon.net,Summit County Foreclosure
+7332,10/26/2023,CHRISTOPHER,ARDELIAN,916 DAVIES AVENUE,AKRON,Ohio,44306,Foreclosure,,3309421989,Mobile,,,CHRISMARK1992@AOL.COM,Summit County Foreclosure
+7333,10/26/2023,TIMOTHY,FALOR,2318 21ST STREET,CUYAHOGA FALLS,Ohio,44223,Foreclosure,,3308427651,Mobile,,,FALORTIMOTHY@GMAIL.COM,Summit County Foreclosure
+7334,10/26/2023,JACQUELYN,KYLE,4122 IDLEBROOK DR,AKRON,Ohio,44333,Foreclosure,,4406665725,Mobile,3306665725,Land Line,STRAHAN@BELLSOUTH.NET,Summit County Foreclosure
+7335,10/26/2023,Samuel,Barbone,2461 WRENS DRIVE,STOW,Ohio,44224,Foreclosure,,3308490631,Mobile,2165660931,Land Line,sbarbone59@gmail.com,Summit County Foreclosure
+7336,10/26/2023,MAIREN,BAKER,701 KLING STREET,AKRON,Ohio,44311,Foreclosure,,3307223264,Land Line,,,,Summit County Foreclosure
+7337,10/26/2023,Mallory,Jenkins,2637 LELAND AVENUE,AKRON,Ohio,44312,Foreclosure,,9376312930,Mobile,9376290817,Land Line,,Summit County Foreclosure
+7338,10/26/2023,ERNEST,SMITH,1106 WELTON AVENUE,AKRON,Ohio,44306,Foreclosure,,2347599331,Mobile,3306344448,Mobile,ERNESTSMITH1120@GMAIL.COM,Summit County Foreclosure
+7339,10/26/2023,Stephen,Dabney,3020 13TH STREET,CUYAHOGA FALLS,Ohio,44223,Foreclosure,,4409152190,Mobile,3305658809,Mobile,trouts2009@gmail.com,Summit County Foreclosure
+7340,10/26/2023,James,Redd,3384 ALBRECHT AVENUE,AKRON,Ohio,44312,Foreclosure,,3306283084,Land Line,3307010831,Mobile,jredd1@comcast.net,Summit County Foreclosure
+7341,10/26/2023,TERRY,NEAVILLE,1128 CHAUCER CIRCLE,LAKEMORE,Ohio,44312,Foreclosure,,3308483925,Land Line,3306283995,Land Line,,Summit County Foreclosure
+7342,10/26/2023,Edgar,Kuhns,2668 30TH ST SW,AKRON,Ohio,44314,Foreclosure,,3307846495,Land Line,,,,Summit County Foreclosure
+7343,10/26/2023,TABITHA,TACKOVICH,676 LAKE AVE,BARBERTON,Ohio,44203,Foreclosure,,3308108798,Mobile,3303108891,Mobile,TRICIAANN61@GMAIL.COM,Summit County Foreclosure
+7344,10/26/2023,Dustin,Laflin,6244 STONE ROAD,HUDSON,Ohio,44236,Foreclosure,,3307300397,Mobile,3306735811,Land Line,dustin.laflin@msn.com,Summit County Foreclosure
+7345,10/26/2023,Cotrina,Russell,196 OLIVET AVENUE,AKRON,Ohio,44319,Foreclosure,,3306086646,Mobile,3306450572,Land Line,cotrina87462russell@yahoo.com,Summit County Foreclosure
+7346,10/26/2023,TINA,SMITH,559 EDITH AVENUE,AKRON,Ohio,44312,Foreclosure,,3302569155,Mobile,3302080345,Land Line,NOHIOGAL@SBCGLOBAL.NET,Summit County Foreclosure
+7347,10/26/2023,Michael,Benton,2200 HILLSIDE STREET,CUYAHOGA FALLS,Ohio,44221,Foreclosure,,2169730719,Mobile,2168709093,Mobile,nrdftb@netscape.net,Summit County Foreclosure
+7348,10/26/2023,Todd,Irons,439 BREWER AVENUE,AKRON,Ohio,44305,Foreclosure,,3306871788,Mobile,3307335640,Land Line,,Summit County Foreclosure
+7349,10/26/2023,Deborah,Evans,7765 TIMBERCREST DR,HUBER HEIGHTS,Ohio,45424,Foreclosure,,9372323331,Mobile,9372353464,Land Line,,Montgomery County Foreclosure
+7350,10/26/2023,Velvis,Priest,9715 MILE ROAD,NEW LEBANON,Ohio,45345,Foreclosure,,9373619112,Mobile,9378355008,Land Line,,Montgomery County Foreclosure
+7351,10/26/2023,ASEN,KRISTOFF,5584 COBBLEGATE DRIVE,DAYTON,Ohio,45449,Foreclosure,,9378180115,Mobile,9379389546,Land Line,SKRISTOFF6@GMAIL.COM,Montgomery County Foreclosure
+7352,10/26/2023,Nicole,Webster,3937 BRADWOOD DR,DAYTON,Ohio,45405,Foreclosure,,9372709621,Mobile,9372316348,Mobile,,Montgomery County Foreclosure
+7353,10/26/2023,Philip,Vorherr,10748 CREEK STONE,DAYTON,Ohio,45458,Foreclosure,,9378853229,Mobile,9378860724,Land Line,vorherr@earthlink.net,Montgomery County Foreclosure
+7354,10/26/2023,JOSEPHINE,SIMS,215 N WILLIAMS STREET,DAYTON,Ohio,45402,Foreclosure,,9372220174,Land Line,,,,Montgomery County Foreclosure
+7355,10/26/2023,Julia,Hammer,1409 BEAVERTON DRIVE,KETTERING,Ohio,45429,Foreclosure,,9372993419,Land Line,9372992469,Land Line,jhammer@hospiceofdayton.org,Montgomery County Foreclosure
+7356,10/26/2023,Earl,Passmore,2045 ROSINA DRIVE,MIAMISBURG,Ohio,45342,Foreclosure,,5136491664,Mobile,5137270547,Land Line,bigern582001@yahoo.com,Montgomery County Foreclosure
+7357,10/26/2023,CONNIE,WILSON,440 ASTOR AVENUE,WEST CARROLLTON,Ohio,45449,Foreclosure,,9378567493,Mobile,9379923958,Mobile,WILCONSU@HOTMAIL.COM,Montgomery County Foreclosure
+7358,10/26/2023,Khabibulla,Tursunov,1112 LINDEN AVE,DAYTON,Ohio,45410,Foreclosure,,9377504575,Mobile,8022446807,Land Line,,Montgomery County Foreclosure
+7359,10/26/2023,Joseph,Childers,513 WYNORA AVE,DAYTON,Ohio,45404,Foreclosure,,9372316703,Mobile,9372311678,Mobile,childers.joseph@yahoo.com,Montgomery County Foreclosure
+7360,10/26/2023,Candice,Westbrook,140 KELLY AVENUE,DAYTON,Ohio,45404,Foreclosure,,4435009652,Mobile,4108748622,Land Line,,Montgomery County Foreclosure
+7361,10/26/2023,Jimmy,Burton,752 CRESTMORE AVE,DAYTON,Ohio,45402,Foreclosure,,9378377542,Land Line,9372763002,Land Line,,Montgomery County Foreclosure
+7362,10/26/2023,Fig 20 Llc,,266 S FINDLAY ST,DAYTON,Ohio,45403,Foreclosure,,8184857512,Mobile,8188305102,Land Line,EALDANA@ADELPHIA.NET,Montgomery County Foreclosure
+7363,10/26/2023,Jimmy,Burton,756 CRESTMORE AVE,DAYTON,Ohio,45402,Foreclosure,,9378377542,Land Line,9372763002,Land Line,,Montgomery County Foreclosure
+7364,10/26/2023,Norma,Earls,4333 SAYLOR ST,DAYTON,Ohio,45416,Foreclosure,,9372786636,Land Line,9376983645,Land Line,,Montgomery County Foreclosure
+7365,10/26/2023,Deborah,George,3544 TRAIL ON RD,MORAINE,Ohio,45439,Foreclosure,,9376542339,Mobile,9372470561,Land Line,,Montgomery County Foreclosure
+7366,10/26/2023,Charena,Camacho,4706 W HILLCREST AVE,DAYTON,Ohio,45406,Foreclosure,,2542149291,Mobile,2543664236,Mobile,,Montgomery County Foreclosure
+7367,10/26/2023,Gene,Mckinley,8555 CODY COURT,DAYTON,Ohio,45424,Foreclosure,,9376084491,Mobile,9378670448,Land Line,mckinleyg@earthlink.net,Montgomery County Foreclosure
+7368,10/26/2023,L,Pettis,4830 FLAGSTONE COURT,DAYTON,Ohio,45424,Foreclosure,,9379859774,Land Line,9372359620,Land Line,,Montgomery County Foreclosure
+7371,10/26/2023,Joseph,Mazzotta,4742 TAIT CIRCLE ROAD,DAYTON,Ohio,45429,Foreclosure,,9372995439,Land Line,9378857615,Land Line,,Montgomery County Foreclosure
+7372,10/26/2023,ROBERT,BUMPUS,2517 BAYWOOD ST,DAYTON,Ohio,45406,Foreclosure,,9372683346,Land Line,,,RBEIMPUS1@NETZERO.NET,Montgomery County Foreclosure
+7373,10/26/2023,Steven,Taylor,4918 POWELL ROAD,DAYTON,Ohio,45424,Foreclosure,,9376049138,Mobile,9379386472,Land Line,the5taylors@earthlink.com,Montgomery County Foreclosure
+7374,10/26/2023,JULIE,HERBST,2904 GRACE AVENUE,DAYTON,Ohio,45420,Foreclosure,,9375435688,Land Line,,,JULIE_HERBST@YAHOO.COM,Montgomery County Foreclosure
+7375,10/26/2023,Jazzmine,Piggue,1935 GREENWOOD AVENUE,TOLEDO,Ohio,43605,Foreclosure,,4198700423,Mobile,4196981145,Land Line,,Lucas County Foreclosure
+7376,10/26/2023,John,Theriac,322 PALMER,TOLEDO,Ohio,43608,Foreclosure,,4198220428,Land Line,4196937783,Land Line,jtheriac@gmail.com,Lucas County Foreclosure
+7377,10/26/2023,Glenn,Rabb,1658 BROWNSTONE BLVD #122,TOLEDO,Ohio,43614,Foreclosure,,4198654516,Land Line,6144699907,Land Line,jacquelin.brown@adelphia.net,Lucas County Foreclosure
+7378,10/26/2023,Jason,Rybka,3002 W BANCROFT ST,TOLEDO,Ohio,43606,Foreclosure,,4193541149,Land Line,4197870973,Mobile,jsenxcel@yahoo.com,Lucas County Foreclosure
+7379,10/26/2023,SONG,MIZER,4729 OAK GLEN DR,TOLEDO,Ohio,43613,Foreclosure,,4199442780,Land Line,4194743960,Land Line,,Lucas County Foreclosure
+7380,10/26/2023,Marco,Lojewski,746 PROUTY,TOLEDO,Ohio,43609,Foreclosure,,4192972215,Mobile,4194811319,Mobile,joehauling@aol.com,Lucas County Foreclosure
+7381,10/26/2023,Mitchell,Moore,1950 METZ AVENUE,OREGON,Ohio,43616,Foreclosure,,4198701135,Mobile,4196065485,Mobile,psychodad333@sbcglobal.net,Lucas County Foreclosure
+7382,10/26/2023,Deborah,Gilbert,37310 ROYALTON ROAD,GRAFTON,Ohio,44044,Foreclosure,,4403153555,Mobile,4407483279,Land Line,,Lorain County Foreclosure
+7383,10/26/2023,Daniel,Smola,11038 WHITE AVENUE,ELYRIA,Ohio,44035,Foreclosure,,4403238991,Land Line,4404782330,Mobile,,Lorain County Foreclosure
+7384,10/26/2023,Don,Richmond,939 ROSEWOOD DRIVE,ELYRIA,Ohio,44035,Foreclosure,,4403666219,Land Line,2162286261,Land Line,donjayrichmond@gmail.com,Lorain County Foreclosure
+7385,10/26/2023,Daralyn,Kniceley,4411 TACOMA AVENUE,LORAIN,Ohio,44055,Foreclosure,,2162777508,Land Line,,,a.kniceley@gmail.com,Lorain County Foreclosure
+7386,10/26/2023,John,Thompson,124 LONGFORD AVENUE,ELYRIA,Ohio,44035,Foreclosure,,4403665443,Land Line,4403660000,Land Line,jtrails@aol.com,Lorain County Foreclosure
+7387,10/26/2023,John,Buderer,910 WEST 14TH ST,LORAIN,Ohio,44052,Foreclosure,,4403207026,Mobile,4407148492,Mobile,johnb5028@bellsouth.net,Lorain County Foreclosure
+7388,10/26/2023,Brian,Prospal,478 9TH STREET,ELYRIA,Ohio,44035,Foreclosure,,4405222776,Mobile,7192267924,Land Line,scottprospal@gmail.com,Lorain County Foreclosure
+7389,10/26/2023,Bernice,Baughman,1242 WEST 38TH STREET,LORAIN,Ohio,44053,Foreclosure,,4404581489,Mobile,4405708129,Mobile,,Lorain County Foreclosure
+7390,10/26/2023,Steven,Bodi,239 COLUMBUS STREET,ELYRIA,Ohio,44035,Foreclosure,,4404539715,Mobile,4402420210,Land Line,,Lorain County Foreclosure
+7391,10/26/2023,Laura,Smith,360 TAYLOR STREET,AMHERST,Ohio,44001,Foreclosure,,4405416509,Mobile,4402416775,Mobile,smith1948@bellsouth.net,Lorain County Foreclosure
+7392,10/26/2023,Thomas,Bell,545 EAST BROAD STREET,ELYRIA,Ohio,44035,Foreclosure,,4408656040,Mobile,4408649389,Mobile,tbell3@msn.com,Lorain County Foreclosure
+7393,10/26/2023,Christopher,Fregetto,414 OHIO STREET,ELYRIA,Ohio,44035,Foreclosure,,4403233448,Land Line,4403244367,Land Line,cfregeto@aol.com,Lorain County Foreclosure
+7394,10/26/2023,Jeremiah,Pennington,5211 BROADWAY,LORAIN,Ohio,44052,Foreclosure,,4403201122,Mobile,4405419245,Mobile,j.pennington88@yahoo.com,Lorain County Foreclosure
+7395,10/26/2023,Richard,Kearns,246 ROWLAND ROAD,VERMILION,Ohio,44089,Foreclosure,,4409670285,Land Line,5634590384,Land Line,rjkjr1015@gmail.com,Lorain County Foreclosure
+7396,10/26/2023,James,Bodnar,5403 WILLIAMSBURG DRIVE,LORAIN,Ohio,44053,Foreclosure,,4405525430,Mobile,2162828592,Land Line,jsbodnar@aol.com,Lorain County Foreclosure
+7397,10/26/2023,Judy,Hannum,241 HAWTHORNE STREET,ELYRIA,Ohio,44035,Foreclosure,,4407876289,Mobile,4402818351,Land Line,hannumjudy@gmail.com,Lorain County Foreclosure
+7398,10/26/2023,Mason,Murphy,1216 WEST 8TH STREET,LORAIN,Ohio,44052,Foreclosure,,4404537168,Mobile,4405525778,Mobile,,Lorain County Foreclosure
+7399,10/26/2023,Emerida,Lopez,121 EAST 32ND STREET,LORAIN,Ohio,44055,Foreclosure,,4405417783,Mobile,4402454048,Land Line,allie4ever2001@hotmail.com,Lorain County Foreclosure
+7400,10/26/2023,Joan,Meyer,891 PARK AVENUE,AMHERST,Ohio,44001,Foreclosure,,4409889846,Land Line,4409499273,Mobile,,Lorain County Foreclosure
+7401,10/26/2023,James,Burgess,5502 LINN DRIVE,AMHERST,Ohio,44001,Foreclosure,,4402539459,Land Line,4402826836,Land Line,james.burgess@att.net,Lorain County Foreclosure
+7402,10/26/2023,Jennifer,Johnson,113 MONROE STREET,ELYRIA,Ohio,44035,Foreclosure,,4405228486,Mobile,4197080878,Mobile,johnsonja@tiffin.edu,Lorain County Foreclosure

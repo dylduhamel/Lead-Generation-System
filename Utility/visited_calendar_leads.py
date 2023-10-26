@@ -631,3 +631,22 @@ if os.path.exists(lucas_filename):
 def save_global_list_lucas():
     with open(lucas_filename, "wb") as f:
         pickle.dump(lucas_county_visited_leads, f)
+
+
+"""
+Lorain County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+lorain_filename = "./Data/Visited_calendar_leads/global_list_lorain.pkl"
+lorain_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(lorain_filename):
+    with open(lorain_filename, "rb") as f:
+        lorain_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_lorain():
+    with open(lorain_filename, "wb") as f:
+        pickle.dump(lorain_county_visited_leads, f)

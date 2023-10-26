@@ -9,7 +9,7 @@ Saves as skiptraced JSON file
 import os
 import requests
 import json
-from sqlalchemy import update
+from sqlalchemy import update, or_
 from Utility.lead_database import Lead, Session
 from Utility.util import curr_date
 
@@ -67,6 +67,7 @@ def skiptrace_leads():
     #today = "09/27/2023" # If you want to skiptrace date other than today 
 
     leads = session.query(Lead).filter(Lead.date_added == today).all()
+    #leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/25/2023")).all()
 
     # Make a single API call for all leads
     results = api_call(leads)

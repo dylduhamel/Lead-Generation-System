@@ -11,8 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from Utility.visited_calendar_leads import (
-    save_global_list_lucas,
-    lucas_county_visited_leads,
+    save_global_list_lorain,
+    lorain_county_visited_leads,
 )
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
@@ -23,7 +23,7 @@ logging.basicConfig(
 )
 
 
-class LucasCountyForeclosure:
+class LorainCountyForeclosure:
     def __init__(self):
         # Initialization
 
@@ -31,8 +31,8 @@ class LucasCountyForeclosure:
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "lucas_county_foreclosure.py"
-        self.county_website = "Lucas County Foreclosure"
+        self.scraper_name = "lorain_county_foreclosure.py"
+        self.county_website = "Lorain County Foreclosure"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -49,7 +49,7 @@ class LucasCountyForeclosure:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f"https://lucas.sheriffsaleauction.ohio.gov/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
+            self.url = f"https://lorain.sheriffsaleauction.ohio.gov/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
@@ -140,7 +140,7 @@ class LucasCountyForeclosure:
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in lucas_county_visited_leads
+                        and property_address not in lorain_county_visited_leads
                     ):
                         # Create new lead
                         lead = Lead()
@@ -169,8 +169,8 @@ class LucasCountyForeclosure:
                         session.add(lead)
 
                         # Add to visited list
-                        lucas_county_visited_leads.append(property_address)
-                        save_global_list_lucas()
+                        lorain_county_visited_leads.append(property_address)
+                        save_global_list_lorain()
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
