@@ -1,3 +1,4 @@
+
 import time
 import datetime
 import logging
@@ -12,8 +13,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from Utility.visited_calendar_leads import (
-    save_global_list_palm_beach_taxdeed,
-    palm_beach_taxdeed_visited_leads,
+    save_global_list_pasco,
+    pasco_county_visited_leads,
 )
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
@@ -21,7 +22,7 @@ from Utility.util import curr_date, status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
-class PalmBeachTaxdeed:
+class PascoCountyTaxdeed:
     def __init__(self):
         # Initialization
 
@@ -29,8 +30,8 @@ class PalmBeachTaxdeed:
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "palm_beach_taxdeed.py"
-        self.county_website = "Palm Beach Taxdeed"
+        self.scraper_name = "pasco_county_taxdeed.py"
+        self.county_website = "Pasco County Taxdeed"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -47,7 +48,7 @@ class PalmBeachTaxdeed:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f"https://palmbeach.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
+            self.url = f"https://pasco.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
@@ -132,7 +133,7 @@ class PalmBeachTaxdeed:
                     try:
                         if city_zip_data is not None and "FL-" in city_zip_data:
                             city, zip_code = map(str.strip, city_zip_data.split(","))
-                            zip_code = zip_code.split("- ")[1]
+                            zip_code = zip_code.split("FL- ")[1]
                         else:
                             raise ValueError("City zip data is None")
                     except ValueError as e:
@@ -150,7 +151,7 @@ class PalmBeachTaxdeed:
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in palm_beach_taxdeed_visited_leads
+                        and property_address not in pasco_county_visited_leads
                     ):
                         # Check if the first segment of the address (before the first space) is a full number
                         first_segment = property_address.split(" ")[0]
@@ -172,9 +173,9 @@ class PalmBeachTaxdeed:
 
                         # City and State
                         lead.property_city = city
-
+                        
                         if zip_code is not None:
-                            lead.property_zipcode = zip_code[:5]
+                            lead.property_zipcode = zip_code
 
                         lead.property_state = "Florida"
 
@@ -188,8 +189,8 @@ class PalmBeachTaxdeed:
                         session.add(lead)
 
                         # Add to visited list
-                        palm_beach_taxdeed_visited_leads.append(property_address)
-                        save_global_list_palm_beach_taxdeed()
+                        pasco_county_visited_leads.append(property_address)
+                        save_global_list_pasco()
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on: {e}")

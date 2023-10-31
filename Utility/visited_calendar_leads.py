@@ -650,3 +650,177 @@ if os.path.exists(lorain_filename):
 def save_global_list_lorain():
     with open(lorain_filename, "wb") as f:
         pickle.dump(lorain_county_visited_leads, f)
+
+
+"""
+Lake County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+lake_filename = "./Data/Visited_calendar_leads/global_list_lake.pkl"
+lake_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(lake_filename):
+    with open(lake_filename, "rb") as f:
+        lake_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_lake():
+    with open(lake_filename, "wb") as f:
+        pickle.dump(lake_county_visited_leads, f)
+
+
+"""
+Huron County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+huron_filename = "./Data/Visited_calendar_leads/global_list_huron.pkl"
+huron_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(huron_filename):
+    with open(huron_filename, "rb") as f:
+        huron_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_huron():
+    with open(huron_filename, "wb") as f:
+        pickle.dump(huron_county_visited_leads, f)
+
+
+"""
+Seminole County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+seminole_filename = "./Data/Visited_calendar_leads/global_list_seminole.pkl"
+seminole_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(seminole_filename):
+    with open(seminole_filename, "rb") as f:
+        seminole_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_seminole():
+    with open(seminole_filename, "wb") as f:
+        pickle.dump(seminole_county_visited_leads, f)
+
+
+"""
+Volusia County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+volusia_filename = "./Data/Visited_calendar_leads/global_list_volusia.pkl"
+volusia_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(volusia_filename):
+    with open(volusia_filename, "rb") as f:
+        volusia_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_volusia():
+    with open(volusia_filename, "wb") as f:
+        pickle.dump(volusia_county_visited_leads, f)
+
+
+"""
+Pasco County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+pasco_filename = "./Data/Visited_calendar_leads/global_list_pasco.pkl"
+pasco_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(pasco_filename):
+    with open(pasco_filename, "rb") as f:
+        pasco_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_pasco():
+    with open(pasco_filename, "wb") as f:
+        pickle.dump(pasco_county_visited_leads, f)
+
+
+"""
+Escambia County Foreclosure
+"""
+# Initialize an empty list
+# Specify the filename to be used for the pickled data
+escambia_filename = "./Data/Visited_calendar_leads/global_list_escambia.pkl"
+escambia_county_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(escambia_filename):
+    with open(escambia_filename, "rb") as f:
+        escambia_county_visited_leads = pickle.load(f)
+
+
+def save_global_list_escambia():
+    with open(escambia_filename, "wb") as f:
+        pickle.dump(escambia_county_visited_leads, f)
+
+
+"""
+Bay County Taxdeed
+"""
+# Specify the filename to be used for the pickled data
+bay_county_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_bay_county_taxdeed.pkl"
+
+# Initialize an empty list
+bay_county_taxdeed_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(bay_county_taxdeed_filename):
+    with open(bay_county_taxdeed_filename, "rb") as f:
+        bay_county_taxdeed_visited_leads = pickle.load(f)
+
+
+def save_global_list_bay_county_taxdeed():
+    with open(bay_county_taxdeed_filename, "wb") as f:
+        pickle.dump(bay_county_taxdeed_visited_leads, f)
+
+
+"""
+Brevard County Taxdeed
+"""
+# Specify the filename to be used for the pickled data
+brevard_county_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_brevard_county_taxdeed.pkl"
+
+# Initialize an empty list
+brevard_county_taxdeed_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(brevard_county_taxdeed_filename):
+    with open(brevard_county_taxdeed_filename, "rb") as f:
+        brevard_county_taxdeed_visited_leads = pickle.load(f)
+
+
+def save_global_list_brevard_county_taxdeed():
+    with open(brevard_county_taxdeed_filename, "wb") as f:
+        pickle.dump(brevard_county_taxdeed_visited_leads, f)
+
+
+"""
+Hillsborough County Taxdeed
+"""
+# Specify the filename to be used for the pickled data
+hillsborough_county_taxdeed_filename = "./Data/Visited_calendar_leads/global_list_hillsborough_county_taxdeed.pkl"
+
+# Initialize an empty list
+hillsborough_county_taxdeed_visited_leads = []
+
+# If the file exists (i.e., if the program has been run before), load the data from it
+if os.path.exists(hillsborough_county_taxdeed_filename):
+    with open(hillsborough_county_taxdeed_filename, "rb") as f:
+        hillsborough_county_taxdeed_visited_leads = pickle.load(f)
+
+
+def save_global_list_hillsborough_county_taxdeed():
+    with open(hillsborough_county_taxdeed_filename, "wb") as f:
+        pickle.dump(hillsborough_county_taxdeed_visited_leads, f)

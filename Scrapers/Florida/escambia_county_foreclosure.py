@@ -12,16 +12,19 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from Utility.visited_calendar_leads import (
-    save_global_list_palm_beach_taxdeed,
-    palm_beach_taxdeed_visited_leads,
+    save_global_list_escambia,
+    escambia_county_visited_leads,
 )
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
-logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
+logging.basicConfig(
+    filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
+)
 
-class PalmBeachTaxdeed:
+
+class EscambiaCountyForeclosure:
     def __init__(self):
         # Initialization
 
@@ -29,8 +32,8 @@ class PalmBeachTaxdeed:
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "palm_beach_taxdeed.py"
-        self.county_website = "Palm Beach Taxdeed"
+        self.scraper_name = "escambia_county_foreclosure.py"
+        self.county_website = "Escambia County Foreclosure"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -47,7 +50,7 @@ class PalmBeachTaxdeed:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f"https://palmbeach.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
+            self.url = f"https://escambia.realforeclose.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
@@ -117,14 +120,11 @@ class PalmBeachTaxdeed:
                     property_address = data.get("Property Address:", None)
                     appraised_value = data.get("Appraised Value:", None)
 
-                    # Find city and zip code
+                   # Find city and zip code
                     for i, row in enumerate(rows):
                         if row.th.get_text(strip=True) == "Property Address:":
-                            try:
-                                city_zip_data = rows[i + 1].td.get_text(strip=True)
-                                break
-                            except:
-                                print("No row after Property Address.")
+                            city_zip_data = rows[i + 1].td.get_text(strip=True)
+                            break
                     else:
                         city_zip_data = None
 
@@ -150,7 +150,7 @@ class PalmBeachTaxdeed:
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in palm_beach_taxdeed_visited_leads
+                        and property_address not in escambia_county_visited_leads
                     ):
                         # Check if the first segment of the address (before the first space) is a full number
                         first_segment = property_address.split(" ")[0]
@@ -165,17 +165,14 @@ class PalmBeachTaxdeed:
                         lead.date_added = time_stamp
 
                         # Document type
-                        lead.document_type = "Taxdeed"
+                        lead.document_type = "Foreclosure"
 
                         # Address
                         lead.property_address = property_address
 
                         # City and State
                         lead.property_city = city
-
-                        if zip_code is not None:
-                            lead.property_zipcode = zip_code[:5]
-
+                        lead.property_zipcode = zip_code[:5]
                         lead.property_state = "Florida"
 
                         # Website tracking
@@ -188,11 +185,11 @@ class PalmBeachTaxdeed:
                         session.add(lead)
 
                         # Add to visited list
-                        palm_beach_taxdeed_visited_leads.append(property_address)
-                        save_global_list_palm_beach_taxdeed()
+                        escambia_county_visited_leads.append(property_address)
+                        save_global_list_escambia()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on: {e}")
+                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
                 traceback.print_exc()
 
         # Add new session to DB

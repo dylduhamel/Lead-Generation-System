@@ -1,7 +1,6 @@
 import time
 import datetime
 import logging
-import traceback
 from dateutil.rrule import rrule, DAILY
 from dateutil.parser import parse
 from selenium import webdriver
@@ -12,25 +11,28 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from Utility.visited_calendar_leads import (
-    save_global_list_palm_beach_taxdeed,
-    palm_beach_taxdeed_visited_leads,
+    save_global_list_lake,
+    lake_county_visited_leads,
 )
 from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import add_lead_to_database
 from Utility.util import curr_date, status_print
 
-logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
+logging.basicConfig(
+    filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
+)
 
-class PalmBeachTaxdeed:
+
+class LakeCountyForeclosure:
     def __init__(self):
         # Initialization
 
-        # Webdriver
+        # Chrome driver
         self.driver = webdriver.Chrome()
 
         # This is used for status tracking
-        self.scraper_name = "palm_beach_taxdeed.py"
-        self.county_website = "Palm Beach Taxdeed"
+        self.scraper_name = "lake_county_foreclosure.py"
+        self.county_website = "Lake County Foreclosure"
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -47,7 +49,7 @@ class PalmBeachTaxdeed:
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f"https://palmbeach.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
+            self.url = f"https://lake.sheriffsaleauction.ohio.gov/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
@@ -113,51 +115,33 @@ class PalmBeachTaxdeed:
                         for row in rows
                     }
 
-                    auction_type = data.get("Auction Type:", None)
+                    case_status = data.get("Case Status:", None)
                     property_address = data.get("Property Address:", None)
                     appraised_value = data.get("Appraised Value:", None)
 
                     # Find city and zip code
                     for i, row in enumerate(rows):
                         if row.th.get_text(strip=True) == "Property Address:":
-                            try:
-                                city_zip_data = rows[i + 1].td.get_text(strip=True)
-                                break
-                            except:
-                                print("No row after Property Address.")
+                            city_zip_data = rows[i + 1].td.get_text(strip=True)
+                            break
                     else:
                         city_zip_data = None
 
                     # Getting city and zip data extracted
                     try:
-                        if city_zip_data is not None and "FL-" in city_zip_data:
+                        if city_zip_data is not None:
                             city, zip_code = map(str.strip, city_zip_data.split(","))
-                            zip_code = zip_code.split("- ")[1]
                         else:
                             raise ValueError("City zip data is None")
                     except ValueError as e:
                         print(f"Error splitting city and zip data: '{e}'")
                         city, zip_code = None, None
 
-                    # Find Auction type [Document type]
-                    for i, row in enumerate(rows):
-                        if row.th.get_text(strip=True) == "Auction Type:":
-                            self.auction_type_data = rows[i].td.get_text(strip=True)
-                            break
-                    else:
-                        self.auction_type_data = f"N/A - {self.county_website}"
-
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in palm_beach_taxdeed_visited_leads
+                        and property_address not in lake_county_visited_leads
                     ):
-                        # Check if the first segment of the address (before the first space) is a full number
-                        first_segment = property_address.split(" ")[0]
-                        if not first_segment.isdigit():
-                            # It's not a valid address, so skip this iteration of the loop
-                            continue
-
                         # Create new lead
                         lead = Lead()
 
@@ -165,18 +149,15 @@ class PalmBeachTaxdeed:
                         lead.date_added = time_stamp
 
                         # Document type
-                        lead.document_type = "Taxdeed"
+                        lead.document_type = "Foreclosure"
 
                         # Address
                         lead.property_address = property_address
 
                         # City and State
                         lead.property_city = city
-
-                        if zip_code is not None:
-                            lead.property_zipcode = zip_code[:5]
-
-                        lead.property_state = "Florida"
+                        lead.property_zipcode = zip_code[:5]
+                        lead.property_state = "Ohio"
 
                         # Website tracking
                         lead.county_website = self.county_website
@@ -188,12 +169,11 @@ class PalmBeachTaxdeed:
                         session.add(lead)
 
                         # Add to visited list
-                        palm_beach_taxdeed_visited_leads.append(property_address)
-                        save_global_list_palm_beach_taxdeed()
+                        lake_county_visited_leads.append(property_address)
+                        save_global_list_lake()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on: {e}")
-                traceback.print_exc()
+                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
 
         # Add new session to DB
         session.commit()
