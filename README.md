@@ -40,4 +40,4 @@ For any issues, questions, or comments, please contact the Acuritas team [team@a
 
 ## License
 
-This tool is proprietary software owned by Acuritas. Unauthorized use, modification or distribution of this software is strictly prohibited.
+This tool is proprietary software owned by Acuritas. Unauthorized use, modification, or distribution of this software is strictly prohibited.
