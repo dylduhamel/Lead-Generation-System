@@ -109,26 +109,31 @@ def remove_duplicates():
     status_print("Duplicates removed successfully.")
 
 
-def export_to_csv(filename="output.csv"):
+def export_to_csv():
     session = Session()
 
     today = curr_date()
     # Uncomment below if you want to set a specific date
     # today = "09/27/2023"
 
+    filename = f"email-marketing-{today.replace('/', '-')}.csv"
+
     # Query database using session.query
-    #code_enforcement_leads = session.query(Lead).filter(Lead.date_added == today).all()
-    code_enforcement_leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/18/2023")).all()
+    leads = session.query(Lead).filter(Lead.date_added == today,
+                                       Lead.first_name_owner != None, 
+                                       Lead.email != None).all()
+    
+    # leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/18/2023")).all()
 
     # Open a CSV file and write the queried data
     with open(filename, "w", newline='') as csvfile:
         writer = csv.writer(csvfile)
         
         # Writing the header
-        writer.writerow(["property_address", "property_city", "property_state", "property_zipcode"])
+        writer.writerow(["date_added", "property_address", "first_name_owner", "last_name_owner", "email"])
 
         # Writing the data rows
-        for lead in code_enforcement_leads:
-            writer.writerow([lead.property_address, lead.property_city, lead.property_state, lead.property_zipcode])
+        for lead in leads:
+            writer.writerow([lead.date_added, lead.property_address, lead.first_name_owner.capitalize(), lead.last_name_owner.capitalize(), lead.email])
 
     session.close()
