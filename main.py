@@ -1,8 +1,7 @@
 import time
-import datetime
-import logging
 import inspect
 import traceback
+import logging
 from datetime import date
 from dateutil.relativedelta import relativedelta
 from selenium import webdriver
@@ -14,66 +13,11 @@ from Utility.lead_database import Lead, Session
 from Utility.lead_database_operations import json_to_database, remove_duplicates, export_to_csv
 from Utility.util import status_print
 from Utility.sendgrid_api import email_csv
-from Utility.visited_calendar_leads import (
-    lee_county_visited_leads,
-    clermont_county_visited_leads,
-)
-from Scrapers.Florida.lee_county import LeeCountyScraper
-from Scrapers.Florida.lee_county_code_enf import LeeCountyCodeEnf
-from Scrapers.Ohio.cinci_code_enf_API import CinciCodeEnfAPI
-from Scrapers.Ohio.cinci_code_enf import CinciCodeEnf
-from Scrapers.Florida.orange_county_code_enf import OrangeCountyCodeEnf
-from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
-from Scrapers.Ohio.clermont_county_foreclosure import ClermontCountyForeclosure
-from Scrapers.Florida.lee_county_foreclosure import LeeCountyForeclosure
-from Scrapers.Ohio.franklin_county_foreclosure import FranklinCountyForeclosure
-from Scrapers.Ohio.hamilton_county_foreclosure import HamiltonCountyForeclosure
-from Scrapers.Florida.pinellas_county_foreclosure import PinellasCountyForeclosure
-from Scrapers.Ohio.butler_county_foreclosure import ButlerCountyForeclosure
-from Scrapers.Florida.duval_county_foreclosure import DuvalCountyForeclosure
-from Scrapers.Ohio.fairfield_county_foreclosure import FairfieldCountyForeclosure
-from Scrapers.Florida.charlotte_county_foreclosure import CharlotteCountyForeclosure
-from Scrapers.Florida.marion_county_foreclosure import MarionCountyForeclosure
-from Scrapers.Florida.fort_myers_code_enf import FortMeyersEnf
-from Scrapers.Florida.alachua_county_foreclosure import AlachuaCountyForeclosure
-from Scrapers.Florida.st_lucie_county_foreclosure import StLucieCountyForeclosure
-from Scrapers.Florida.sarasota_county_taxdeed import SarasotaCountyTaxdeed
-from Scrapers.Florida.marion_county_taxdeed import MarionCountyTaxdeed
-from Scrapers.Florida.nassau_county_foreclosure import NassauCountyForeclosure
-from Scrapers.Florida.nassau_county_taxdeed import NassauCountyTaxdeed
-from Scrapers.Florida.broward_county_foreclosure import BrowardCountyForeclosure
-from Scrapers.Florida.orange_county_foreclosure import OrangeCountyForeclosure
-from Scrapers.Florida.miami_dade_foreclosure import MiamiDadeForeclosure
-from Scrapers.Florida.polk_county_taxdeed import PolkCountyTaxdeed
-from Scrapers.Florida.lee_county_taxdeed import LeeCountyTaxdeed
-from Scrapers.Florida.duval_county_taxdeed import DuvalCountyTaxdeed
-from Scrapers.Ohio.cuyahoga_county_foreclosure import CuyahogaCountyForeclosure
-from Scrapers.Florida.volusia_county_taxdeed import VolusiaCountyTaxdeed
-from Scrapers.Florida.palm_beach_foreclosure import PalmBeachForeclosure
-from Scrapers.Florida.hillsborough_county_foreclosure import HillsboroughCountyForeclosure
-from Scrapers.Florida.polk_county_foreclosure import PolkCountyForeclosure
-from Scrapers.Florida.palm_beach_taxdeed import PalmBeachTaxdeed
-from Scrapers.Ohio.summit_county_foreclosure import SummitCountyForeclosure
-from Scrapers.Ohio.montgomery_county_foreclosure import MontgomeryCountyForeclosure
-from Scrapers.Ohio.mahoning_county_foreclosure import MahoningCountyForeclosure
-from Scrapers.Ohio.lucas_county_foreclosure import LucasCountyForeclosure
-from Scrapers.Ohio.lorain_county_foreclosure import LorainCountyForeclosure
-from Scrapers.Ohio.lake_county_foreclosure import LakeCountyForeclosure
-from Scrapers.Ohio.huron_county_foreclosure import HuronCountyForeclosure
-from Scrapers.Florida.seminole_county_foreclosure import SeminoleCountyForeclosure
-from Scrapers.Florida.volusia_county_foreclosure import VolusiaCountyForeclosure
-from Scrapers.Florida.pasco_county_foreclosure import PascoCountyForeclosure
-from Scrapers.Florida.escambia_county_foreclosure import EscambiaCountyForeclosure
-from Scrapers.Florida.brevard_county_taxdeed import BrevardCountyTaxdeed
-from Scrapers.Florida.hillsborough_county_taxdeed import HillsboroughCountyTaxdeed
-from Scrapers.Florida.pasco_county_taxdeed import PascoCountyTaxdeed
-from Scrapers.Florida.bay_county_taxdeed import BayCountyTaxdeed
-from Scrapers.Florida.manatee_county_foreclosure import ManateeCountyForeclosure
-from Scrapers.Florida.puntam_county_taxdeed import PuntamCountyTaxdeed
 from BatchData_services.skiptrace import skiptrace_leads
 from BatchData_services.skiptrace import skiptrace_leads
-from dateutil.rrule import rrule, DAILY
-from dateutil.parser import parse
+
+from Scrapers.Florida import *
+from Scrapers.Ohio import *
 
 logging.basicConfig(
     filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
@@ -134,7 +78,7 @@ if __name__ == "__main__":
     # Running each scraper
     # Code Enforcement
     run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
-    run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)print(lead)
+    run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
     # Get the date two months from today
     future_date = date.today() + relativedelta(months=1)
     # # Convert it to the "mm/dd/yyyy" format
@@ -232,7 +176,6 @@ if __name__ == "__main__":
     run_scraper("ManateeCountyForeclosure", ManateeCountyForeclosure, end_date=end_date)
     run_scraper("PuntamCountyTaxdeed", PuntamCountyTaxdeed, end_date=end_date)
 
-    remove_duplicates()
     remove_duplicates()
 
     try:
