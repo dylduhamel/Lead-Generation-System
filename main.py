@@ -9,20 +9,14 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Utility.lead_database import Lead, Session
-from Utility.lead_database_operations import json_to_database, remove_duplicates, export_to_csv
-from Utility.util import status_print
-from Utility.sendgrid_api import email_csv
 from BatchData_services.skiptrace import skiptrace_leads
-from BatchData_services.skiptrace import skiptrace_leads
-
+from Utility import *
 from Scrapers.Florida import *
 from Scrapers.Ohio import *
 
 logging.basicConfig(
     filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
 )
-
 
 def run_scraper(name, scraper_class, days=1, end_date=None):
     scraper = scraper_class()
@@ -183,18 +177,8 @@ if __name__ == "__main__":
     except:
         print("Issue exporting csv")
         traceback.print_exc()
-    try:
-        export_to_csv()
-    except:
-        print("Issue exporting csv")
-        traceback.print_exc()
 
 
-    try:
-        skiptrace_leads()
-        json_to_database()
-    except Exception as e:
-        logging.error(f"Error during skiptrace or json processing: {str(e)}")
     try:
         skiptrace_leads()
         json_to_database()
