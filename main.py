@@ -133,8 +133,8 @@ if __name__ == "__main__":
 
     # Running each scraper
     # Code Enforcement
-    # run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
-    # run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)print(lead)
+    run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
+    run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)print(lead)
     # # Get the date two months from today
     future_date = date.today() + relativedelta(months=1)
     # # Convert it to the "mm/dd/yyyy" format
@@ -189,25 +189,25 @@ if __name__ == "__main__":
 
     remove_duplicates()
 
-    # try:
-    #     export_to_csv()
-    # except:
-    #     print("Issue exporting csv")
-    #     traceback.print_exc()
+    try:
+        export_to_csv()
+    except:
+        print("Issue exporting csv")
+        traceback.print_exc()
 
 
-    # try:
-    #     skiptrace_leads()
-    #     json_to_database()
-    # except Exception as e:
-    #     logging.error(f"Error during skiptrace or json processing: {str(e)}")
+    try:
+        skiptrace_leads()
+        json_to_database()
+    except Exception as e:
+        logging.error(f"Error during skiptrace or json processing: {str(e)}")
 
-    # Change so that json returns a result so we dont email prematurely.
+    #Change so that json returns a result so we dont email prematurely.
 
-    # try:
-    #     email_csv()
-    # except Exception as e:
-    #     logging.error(f"Error during email_csv: {str(e)}")
+    try:
+        email_csv()
+    except Exception as e:
+        logging.error(f"Error during email_csv: {str(e)}")
 
     end_time = time.time()
     execution_time = end_time - start_time
