@@ -4,15 +4,18 @@ import traceback
 import logging
 from datetime import date
 from dateutil.relativedelta import relativedelta
+
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 from BatchData_services.skiptrace import skiptrace_leads
 from Utility import *
 from Scrapers.Florida import *
 from Scrapers.Ohio import *
+
 
 logging.basicConfig(
     filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
@@ -69,16 +72,12 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
 if __name__ == "__main__":
     start_time = time.time()
 
-    # Running each scraper
-    # Code Enforcement
     run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
     run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
-    # Get the date two months from today
+
     future_date = date.today() + relativedelta(months=1)
-    # # Convert it to the "mm/dd/yyyy" format
     end_date = future_date.strftime("%m/%d/%Y")
 
-    # Foreclosure and Taxdeed
     run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
     run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
     run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
@@ -173,19 +172,10 @@ if __name__ == "__main__":
     remove_duplicates()
 
     try:
-        export_to_csv()
-    except:
-        print("Issue exporting csv")
-        traceback.print_exc()
-
-
-    try:
         skiptrace_leads()
         json_to_database()
     except Exception as e:
         logging.error(f"Error during skiptrace or json processing: {str(e)}")
-
-    #Change so that json returns a result so we dont email prematurely.
 
     try:
         email_csv()
