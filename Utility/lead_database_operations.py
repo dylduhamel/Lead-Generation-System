@@ -95,9 +95,9 @@ def remove_duplicates():
 
     # Query to find duplicate rows
     query = f"""
-    DELETE t1 FROM leads t1
-    INNER JOIN leads t2 
-    WHERE t1.id > t2.id AND t1.property_address = t2.property_address
+    DELETE t1 FROM LEAD_DB_STANDARD.LEAD t1
+    INNER JOIN LEAD_DB_STANDARD.LEAD t2 
+    WHERE t1.LEAD_ID > t2.LEAD_ID AND t1.PROPERTY_ADDRESS = t2.PROPERTY_ADDRESS
     """
 
     # Execute the DELETE query

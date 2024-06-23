@@ -10,11 +10,10 @@ load_dotenv()
 
 Base = declarative_base()
 
-
 ## Database structure
 class Lead(Base):
     # The name of the database
-    __tablename__ = "leads"
+    __tablename__ = "LEAD"
 
     id = Column(Integer, primary_key=True)
     date_added = Column(String(100))

@@ -10,8 +10,7 @@ import os
 import requests
 import json
 from sqlalchemy import update, or_
-from Utility.lead_database import Lead, Session
-from Utility.util import curr_date
+from Utility import *
 
 def skiptrace_leads():
     # API call function

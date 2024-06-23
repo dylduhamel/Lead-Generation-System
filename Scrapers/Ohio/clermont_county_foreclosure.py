@@ -22,7 +22,9 @@ class ClermontCountyForeclosure:
         # Initialization
 
         # Chrome driver
-        self.driver = webdriver.Chrome()
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(options=options)
 
         # This is used for status tracking
         self.scraper_name = "clermont_county_foreclosure.py"
