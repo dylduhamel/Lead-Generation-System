@@ -24,8 +24,10 @@ class NassauCountyTaxdeed:
     def __init__(self):
         # Initialization
 
-        # Webdriver
-        self.driver = webdriver.Chrome()
+        # Chrome driver
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(options=options)
 
         # This is used for status tracking
         self.scraper_name = "nassau_county_taxdeed.py"
@@ -191,7 +193,7 @@ class NassauCountyTaxdeed:
                         save_global_list_nassau_taxdeed()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on.")
 
         # Add new session to DB
         session.commit()

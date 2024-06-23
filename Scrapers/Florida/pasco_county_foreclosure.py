@@ -28,8 +28,10 @@ class PascoCountyForeclosure:
     def __init__(self):
         # Initialization
 
-        # Webdriver
-        self.driver = webdriver.Chrome()
+        # Chrome driver
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(options=options)
 
         # This is used for status tracking
         self.scraper_name = "pasco_county_foreclosure.py"
@@ -189,7 +191,7 @@ class PascoCountyForeclosure:
                         save_global_list_pasco()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on.")
                 traceback.print_exc()
 
         # Add new session to DB

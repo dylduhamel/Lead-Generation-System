@@ -195,7 +195,7 @@ class BrowardCountyForeclosure:
                         save_global_list_broward_foreclosure()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on.")
 
         # Add new session to DB
         session.commit()

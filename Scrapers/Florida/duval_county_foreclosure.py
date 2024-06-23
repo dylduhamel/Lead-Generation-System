@@ -21,8 +21,10 @@ class DuvalCountyForeclosure:
     def __init__(self):
         # Initialization
 
-        # Webdriver
-        self.driver = webdriver.Chrome()
+        # Chrome driver
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(options=options)
 
         # This is used for status tracking
         self.scraper_name = "duval_county_foreclosure.py"
@@ -152,7 +154,7 @@ class DuvalCountyForeclosure:
                         save_global_list_duval()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on.")
 
         # Add new session to DB
         session.commit()

@@ -196,7 +196,7 @@ class OrangeCountyForeclosure:
                         save_global_list_orange_foreclosure()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on.")
 
         # Add new session to DB
         session.commit()

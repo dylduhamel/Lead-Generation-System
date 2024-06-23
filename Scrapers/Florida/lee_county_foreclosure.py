@@ -21,8 +21,10 @@ class LeeCountyForeclosure:
     def __init__(self):
         # Initialization
 
-        # Webdriver
-        self.driver = webdriver.Chrome()
+        # Chrome driver
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(options=options)
 
         # This is used for status tracking
         self.scraper_name = "lee_county_foreclosure.py"
@@ -44,7 +46,7 @@ class LeeCountyForeclosure:
         for date in dates:
             # Get URL with current date
             self.url = f'https://lee.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
-             # Initialize driver
+            # Initialize driver
             self.driver.get(self.url)
 
             try:
@@ -95,11 +97,11 @@ class LeeCountyForeclosure:
                     details_table = item.find(class_='AUCTION_DETAILS')
                     rows = details_table.find_all('tr')
                     data = {row.th.get_text(strip=True): row.td.get_text(strip=True) for row in rows}
-                    
+
                     case_status = data.get('Case Status:', None)
                     property_address = data.get('Property Address:', None)
                     appraised_value = data.get('Appraised Value:', None)
-                    
+
                     # Find city and zip code
                     for i, row in enumerate(rows):
                         if row.th.get_text(strip=True) == 'Property Address:':
@@ -118,7 +120,7 @@ class LeeCountyForeclosure:
                     except ValueError as e:
                         print(f"Error splitting city and zip data: '{e}'")
                         city, zip_code = None, None
-                    
+
                     # Check if it has been seen before
                     if property_address is not None and property_address not in lee_county_visited_leads:
                         # Create new lead
@@ -152,7 +154,7 @@ class LeeCountyForeclosure:
                         save_global_list_lee()
 
             except Exception as e:
-                print(f"AUCTION_ITEM element not found. Moving on. {str(e)}")
+                print(f"AUCTION_ITEM element not found. Moving on.")
 
         # Add new session to DB
         session.commit()
@@ -161,7 +163,5 @@ class LeeCountyForeclosure:
 
         # Relinquish resources
         self.driver.quit()
-        
+
         status_print(f"DB committed -- {self.scraper_name}")
-
-

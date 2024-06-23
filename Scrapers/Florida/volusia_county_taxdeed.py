@@ -24,8 +24,10 @@ class VolusiaCountyTaxdeed:
     def __init__(self):
         # Initialization
 
-        # Webdriver
-        self.driver = webdriver.Chrome()
+        # Chrome driver
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(options=options)
 
         # This is used for status tracking
         self.scraper_name = "volusia_county_taxdeed.py"
