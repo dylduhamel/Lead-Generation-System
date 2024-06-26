@@ -3,8 +3,8 @@ import json
 import logging
 import pandas as pd
 from sqlalchemy import update, text, or_
-from Utility.lead_database import Lead, Session
-from Utility.util import curr_date, status_print
+from utility.lead_database import Lead, Session
+from utility.util import curr_date, status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 

@@ -1,9 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from Utility.visited_calendar_leads import save_global_list_hamilton, hamilton_county_visited_leads
-from Utility.lead_database import Lead, Session
-from Utility.util import curr_date, status_print
+from utility.visited_calendar_leads import save_global_list_hamilton, hamilton_county_visited_leads
+from utility.lead_database import Lead, Session
+from utility.util import curr_date, status_print
 
 class HamiltonCountyForeclosure():
     def __init__(self):

@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Utility.lead_database import Lead, Session
+from utility.lead_database import Lead, Session
 
 class LeeCountyScraper():
      def __init__(self, url, curr_date, past_date):

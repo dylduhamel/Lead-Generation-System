@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 import pandas as pd
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType
-from Utility.lead_database import Session, Lead
-from Utility.util import curr_date
+from utility.lead_database import Session, Lead
+from utility.util import curr_date
 from sqlalchemy import or_
 
 def email_csv():

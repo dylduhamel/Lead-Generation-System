@@ -14,9 +14,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from Utility import *
-from Scrapers.Florida import *
-from Scrapers.Ohio import *
+from utility import *
+from scrapers.Florida import *
+from scrapers.Ohio import *
 
 
 logging.basicConfig(
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     remove_duplicates()
 
     # try:
-         skiptrace_leads()
+    #     skiptrace_leads()
     #     json_to_database()
     # except Exception as e:
     #     logging.error(f"Error during skiptrace or json processing: {str(e)}")

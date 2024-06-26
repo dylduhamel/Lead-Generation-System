@@ -10,13 +10,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from Utility.visited_calendar_leads import (
+from utility.visited_calendar_leads import (
     save_global_list_manatee_foreclosure,
     manatee_foreclosure_county_visited_leads,
 )
-from Utility.lead_database import Lead, Session
-from Utility.lead_database_operations import add_lead_to_database
-from Utility.util import curr_date, status_print
+from utility.lead_database import Lead, Session
+from utility.lead_database_operations import add_lead_to_database
+from utility.util import curr_date, status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 

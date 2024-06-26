@@ -10,9 +10,9 @@ import pandas as pd
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from Utility.lead_database import Lead, Session
-from Utility.lead_database_operations import add_lead_to_database
-from Utility.util import status_print, curr_date, get_address_from_lat_lng
+from utility.lead_database import Lead, Session
+from utility.lead_database_operations import add_lead_to_database
+from utility.util import status_print, curr_date, get_address_from_lat_lng
 
 class CinciCodeEnfAPI():
     def __init__(self):

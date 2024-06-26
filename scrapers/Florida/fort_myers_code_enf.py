@@ -10,9 +10,9 @@ import logging
 from sodapy import Socrata
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-from Utility.lead_database import Lead, Session
-from Utility.lead_database_operations import add_lead_to_database
-from Utility.util import get_zipcode, curr_date, status_print, clean_string
+from utility.lead_database import Lead, Session
+from utility.lead_database_operations import add_lead_to_database
+from utility.util import get_zipcode, curr_date, status_print, clean_string
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
