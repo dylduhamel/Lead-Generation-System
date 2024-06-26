@@ -1,9 +1,7 @@
 # Dylan Duhamel
-#
 
 import time
 import inspect
-import traceback
 import logging
 from datetime import date
 from dateutil.relativedelta import relativedelta
@@ -14,7 +12,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from utility import *
+from utils import *
 from scrapers.Florida import *
 from scrapers.Ohio import *
 
@@ -81,10 +79,10 @@ if __name__ == "__main__":
     end_date = future_date.strftime("%m/%d/%Y")
 
     #run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
-    run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
+    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
     # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
     # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
-    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
+    run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
     # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
     # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
     # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
