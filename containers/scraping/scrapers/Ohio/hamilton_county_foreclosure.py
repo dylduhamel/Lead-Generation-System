@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from utils.visited_calendar_leads import save_global_list_hamilton, hamilton_county_visited_leads
 from utils.lead_database import Lead, Session
 from utils.util import curr_date, status_print
 
@@ -56,38 +55,29 @@ class HamiltonCountyForeclosure():
 
         # Iterate over the DataFrame and print each row's values
         for index, row in df.iterrows():
-            if row["Address"] not in hamilton_county_visited_leads:
-                # Create new lead
-                lead = Lead()
-
+            # Create new lead
+            lead = Lead()
                
-                defendant_name = row["Defendant Name"]
-                last_name, first_name = defendant_name.split(', ')
-                lead.first_name_owner = first_name
-                lead.last_name_owner = last_name
+            defendant_name = row["Defendant Name"]
+            last_name, first_name = defendant_name.split(', ')
+            lead.first_name_owner = first_name
+            lead.last_name_owner = last_name
+            
+            # Document type
+            lead.document_type = "Foreclosure"
 
-                # Document type
-                lead.document_type = "Foreclosure"
+            # Address
+            lead.property_address = row["Address"]
 
-                # Address
-                lead.property_address = row["Address"]
+            # City and State
+            lead.property_city = "Cincinnati"
+            lead.property_state = "Ohio"
 
-                # City and State
-                lead.property_city = "Cincinnati"
-                lead.property_state = "Ohio"
+            # Website tracking
+            lead.county_website = self.county_website
 
-                # Website tracking
-                lead.county_website = self.county_website
-
-                # print(lead)
-                # print("\n")
-
-                # Add lead to db
-                self.session.add(lead)
-
-                # Add to visited list
-                hamilton_county_visited_leads.append(row["Address"])
-                save_global_list_hamilton()
+            # Add lead to db
+            self.session.add(lead)
         
         # Add new session to DB
         self.session.commit()

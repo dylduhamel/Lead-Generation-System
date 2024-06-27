@@ -10,10 +10,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from utils.visited_calendar_leads import (
-    save_global_list_broward_foreclosure,
-    broward_foreclosure_county_visited_leads,
-)
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
 from utils.util import curr_date, status_print
@@ -150,8 +146,7 @@ class BrowardCountyForeclosure:
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in broward_foreclosure_county_visited_leads
-                    ):
+                                            ):
                         # Check if the first segment of the address (before the first space) is a full number
                         first_segment = property_address.split(" ")[0]
                         if not first_segment.isdigit():
@@ -188,8 +183,6 @@ class BrowardCountyForeclosure:
                         session.add(lead)
 
                         # Add to visited list
-                        broward_foreclosure_county_visited_leads.append(property_address)
-                        save_global_list_broward_foreclosure()
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on.")

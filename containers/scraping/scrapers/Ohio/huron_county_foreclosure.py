@@ -10,10 +10,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from utils.visited_calendar_leads import (
-    save_global_list_huron,
-    huron_county_visited_leads,
-)
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
 from utils.util import curr_date, status_print
@@ -140,8 +136,7 @@ class HuronCountyForeclosure:
                     # Check if it has been seen before
                     if (
                         property_address is not None
-                        and property_address not in huron_county_visited_leads
-                    ):
+                                            ):
                         # Create new lead
                         lead = Lead()                       
 
@@ -164,10 +159,6 @@ class HuronCountyForeclosure:
 
                         # Add lead to db
                         #session.add(lead)
-
-                        # Add to visited list
-                        #huron_county_visited_leads.append(property_address)
-                        #save_global_list_huron()
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on.")
