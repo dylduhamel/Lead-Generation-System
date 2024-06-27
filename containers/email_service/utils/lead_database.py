@@ -1,7 +1,7 @@
 import os
-from sqlalchemy import create_engine
+from sqlalchemy import Column, Integer, String, create_engine, DateTime
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import Column, Integer, String
+from sqlalchemy.sql import func
 from sqlalchemy.ext.declarative import declarative_base
 from dotenv import load_dotenv
 
@@ -16,21 +16,21 @@ class Lead(Base):
     __tablename__ = "LEAD"
 
     id = Column(Integer, primary_key=True)
-    date_added = Column(String(100))
-    first_name_owner = Column(String(100))
-    last_name_owner = Column(String(100))
-    property_address = Column(String(200))
-    property_city = Column(String(200))
-    property_state = Column(String(200))
-    property_zipcode = Column(String(200))
+    date_added = Column(DateTime, default=func.current_timestamp) 
+    first_name_owner = Column(String(45))
+    last_name_owner = Column(String(45))
+    property_address = Column(String(45))
+    property_city = Column(String(45))
+    property_state = Column(String(45))
+    property_zipcode = Column(String(20))
     document_type = Column(String(250))
-    document_subtype = Column(String(150))
-    phone_number_1 = Column(String(100))
-    phone_number_1_type = Column(String(100))
-    phone_number_2 = Column(String(100))
-    phone_number_2_type = Column(String(100))
-    email = Column(String(200))
-    county_website = Column(String(100))
+    document_subtype = Column(String(45))
+    phone_number_1 = Column(String(20))
+    phone_number_1_type = Column(String(20))
+    phone_number_2 = Column(String(20))
+    phone_number_2_type = Column(String(20))
+    email = Column(String(20))
+    county_website = Column(String(255))
 
     # Printing representation for testing
     def __repr__(self):
