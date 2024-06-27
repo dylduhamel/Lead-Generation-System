@@ -1,4 +1,6 @@
 # Dylan Duhamel
+import sys
+sys.path.append('..')
 
 import time
 import inspect
@@ -72,17 +74,14 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
 if __name__ == "__main__":
     start_time = time.time()
 
-    #run_scraper("CinciCodeEnf", CinciCodeEnf, days=1)
-    #run_scraper("CinciCodeEnfAPI", CinciCodeEnfAPI, days=1)
-
     future_date = date.today() + relativedelta(months=1)
     end_date = future_date.strftime("%m/%d/%Y")
 
-    #run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
+    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
     # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
     # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
     # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
-    run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
+    # un_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
     # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
     # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
     # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
@@ -90,7 +89,7 @@ if __name__ == "__main__":
     # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
     # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
     # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
-    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
+    run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
     # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
     # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
     # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
@@ -168,19 +167,6 @@ if __name__ == "__main__":
     # run_scraper("PascoCountyTaxdeed", PascoCountyTaxdeed, end_date=end_date)
     # run_scraper("ManateeCountyForeclosure", ManateeCountyForeclosure, end_date=end_date)
     # run_scraper("PuntamCountyTaxdeed", PuntamCountyTaxdeed, end_date=end_date)
-
-    remove_duplicates()
-
-    # try:
-    #     skiptrace_leads()
-    #     json_to_database()
-    # except Exception as e:
-    #     logging.error(f"Error during skiptrace or json processing: {str(e)}")
-
-    # try:
-    #     email_csv()
-    # except Exception as e:
-    #     logging.error(f"Error during email_csv: {str(e)}")
 
     end_time = time.time()
     execution_time = end_time - start_time
