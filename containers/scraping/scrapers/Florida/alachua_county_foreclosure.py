@@ -132,10 +132,7 @@ class AlachuaCountyForeclosure:
                     # Check if it has been seen before
                     if property_address is not None and property_address not in alachua_county_visited_leads:
                         # Create new lead
-                        lead = Lead()
-
-                        time_stamp = curr_date()
-                        lead.date_added = time_stamp
+                        lead = Lead()                       
 
                         # Document type
                         lead.document_type = "Foreclosure" if self.auction_type_data == "FORECLOSURE" else "Taxdeed" if self.auction_type_data == "TAXDEED" else self.auction_type_data

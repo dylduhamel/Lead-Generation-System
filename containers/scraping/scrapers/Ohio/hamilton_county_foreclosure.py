@@ -60,10 +60,7 @@ class HamiltonCountyForeclosure():
                 # Create new lead
                 lead = Lead()
 
-                # Date added to DB
-                time_stamp = curr_date()
-                lead.date_added = time_stamp
-
+               
                 defendant_name = row["Defendant Name"]
                 last_name, first_name = defendant_name.split(', ')
                 lead.first_name_owner = first_name

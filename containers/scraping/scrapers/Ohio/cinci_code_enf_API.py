@@ -75,11 +75,7 @@ class CinciCodeEnfAPI():
             # Create new lead
             lead = Lead()
 
-            # Date added to DB
-            time_stamp = curr_date()
-            lead.date_added = time_stamp
-
-            # Get property address from google api
+                        # Get property address from google api
             full_address = get_address_from_lat_lng(record["latitude"], record["longitude"])
             try:
                 street_address = full_address.split(',')[0].strip()

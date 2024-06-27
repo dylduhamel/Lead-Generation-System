@@ -247,11 +247,7 @@ class FortMeyersEnf():
             # Create new lead
             lead = Lead()
 
-            # Date added to DB
-            time_stamp = curr_date()
-            lead.date_added = time_stamp
-
-            # Document type
+                        # Document type
             lead.document_type = "Code Enforcement"
 
             # Document subtype & description

@@ -143,10 +143,7 @@ class LorainCountyForeclosure:
                         and property_address not in lorain_county_visited_leads
                     ):
                         # Create new lead
-                        lead = Lead()
-
-                        time_stamp = curr_date()
-                        lead.date_added = time_stamp
+                        lead = Lead()                       
 
                         # Document type
                         lead.document_type = "Foreclosure"

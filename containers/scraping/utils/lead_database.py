@@ -1,8 +1,7 @@
 import os
 from sqlalchemy import Column, Integer, String, create_engine, DateTime
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.sql import func
-from sqlalchemy.ext.declarative import declarative_base
 from dotenv import load_dotenv
 
 ## Load environment variables from .env file
@@ -16,7 +15,7 @@ class Lead(Base):
     __tablename__ = "LEAD"
 
     id = Column(Integer, primary_key=True)
-    date_added = Column(DateTime, default=func.current_timestamp) 
+    date_added = Column(DateTime, default=func.current_timestamp()) 
     first_name_owner = Column(String(45))
     last_name_owner = Column(String(45))
     property_address = Column(String(45))
