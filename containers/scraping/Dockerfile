@@ -36,4 +36,4 @@ RUN useradd -u 1001 -m -s /bin/bash nonroot && \
 
 USER nonroot
 
-CMD ["python3", "src/scrape.py"]
+CMD [ "python3", "src/scrape.py" ]

@@ -1,12 +1,16 @@
+import sys
+sys.path.append('..')
+
 import os
 import base64
-from dotenv import load_dotenv
 import pandas as pd
+from datetime import datetime, timedelta
+from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType
-from utils.lead_database import Session, Lead
-from utils.util import curr_date
+from utils import *
 from sqlalchemy import or_
+
 
 def email_csv():
     # Load .env file
@@ -15,40 +19,64 @@ def email_csv():
     # Initialize the session
     session = Session()
 
-    # Query for values added today
-    today = curr_date()
-    #today = "09/27/2023" # If you want to skiptrace date other than today 
+    # Define todays date range
+    today = datetime.now().date()
+    tomorrow = today + timedelta(days=1)
 
     # Query database using session.query
-    code_enforcement_leads = session.query(Lead).filter(Lead.date_added == today, 
-                                             Lead.first_name_owner != None, 
-                                             Lead.first_name_owner != '', 
-                                             Lead.phone_number_1 != None, 
-                                             Lead.phone_number_1 != '', 
-                                             Lead.document_type == "Taxdeed").all()
+    code_enforcement_leads = (
+        session.query(Lead)
+        .filter(
+            Lead.date_added >= today,
+            Lead.date_added < tomorrow,
+            Lead.first_name_owner != None,
+            Lead.first_name_owner != "",
+            Lead.phone_number_1 != None,
+            Lead.phone_number_1 != "",
+            Lead.document_type == "Taxdeed",
+        )
+        .all()
+    )
 
-    tax_and_foreclosure_leads = session.query(Lead).filter(Lead.date_added == today, 
-                                             Lead.first_name_owner != None, 
-                                             Lead.first_name_owner != '', 
-                                             Lead.phone_number_1 != None, 
-                                             Lead.phone_number_1 != '', 
-                                             Lead.document_type == "Foreclosure").all()
+    tax_and_foreclosure_leads = (
+        session.query(Lead)
+        .filter(
+            Lead.date_added >= today,
+            Lead.date_added < tomorrow,
+            Lead.first_name_owner != None,
+            Lead.first_name_owner != "",
+            Lead.phone_number_1 != None,
+            Lead.phone_number_1 != "",
+            Lead.document_type == "Foreclosure",
+        )
+        .all()
+    )
 
     # Convert query results to dataframes
-    df1 = pd.DataFrame([{column: getattr(lead, column) for column in Lead.__table__.columns.keys()} for lead in code_enforcement_leads])
-    df2 = pd.DataFrame([{column: getattr(lead, column) for column in Lead.__table__.columns.keys()} for lead in tax_and_foreclosure_leads])
+    df1 = pd.DataFrame(
+        [
+            {column: getattr(lead, column) for column in Lead.__table__.columns.keys()}
+            for lead in code_enforcement_leads
+        ]
+    )
+    df2 = pd.DataFrame(
+        [
+            {column: getattr(lead, column) for column in Lead.__table__.columns.keys()}
+            for lead in tax_and_foreclosure_leads
+        ]
+    )
 
     if not df1.empty:
         # Get the list of current column names
         cols = list(df1.columns)
 
         # Remove 'first_name_owner' and 'last_name_owner' from their current positions in the list
-        cols.remove('first_name_owner')
-        cols.remove('last_name_owner')
+        cols.remove("first_name_owner")
+        cols.remove("last_name_owner")
 
         # Add 'first_name_owner' and 'last_name_owner' at the desired positions
-        cols.insert(2, 'first_name_owner')  # at index 2 
-        cols.insert(3, 'last_name_owner')   # at index 3
+        cols.insert(2, "first_name_owner")  # at index 2
+        cols.insert(3, "last_name_owner")  # at index 3
 
         # Reorder the dataframe according to the modified list of column names
         df1 = df1[cols]
@@ -58,19 +86,19 @@ def email_csv():
         cols = list(df2.columns)
 
         # Remove 'first_name_owner' and 'last_name_owner' from their current positions in the list
-        cols.remove('first_name_owner')
-        cols.remove('last_name_owner')
+        cols.remove("first_name_owner")
+        cols.remove("last_name_owner")
 
         # Add 'first_name_owner' and 'last_name_owner' at the desired positions
-        cols.insert(2, 'first_name_owner')  # at index 2 
-        cols.insert(3, 'last_name_owner')   # at index 3
+        cols.insert(2, "first_name_owner")  # at index 2
+        cols.insert(3, "last_name_owner")  # at index 3
 
         # Reorder the dataframe according to the modified list of column names
         df2 = df2[cols]
 
     # Convert DataFrames to CSV and save
-    csv_filepath1 = "./Data/csv_exports/taxdeed.csv"
-    csv_filepath2 = "./Data/csv_exports/foreclosure.csv"
+    csv_filepath1 = "/app/temp/taxdeed.csv"
+    csv_filepath2 = "/app/temp/foreclosure.csv"
     csv_filename1 = "taxdeed.csv"
     csv_filename2 = "foreclosure.csv"
     df1.to_csv(csv_filepath1, index=False)
@@ -78,8 +106,8 @@ def email_csv():
 
     # Load SendGrid API key and email addresses
     SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
-    FROM_EMAIL = os.getenv("FROM_EMAIL") 
-    TO_EMAIL = os.getenv("TO_EMAIL")  
+    FROM_EMAIL = os.getenv("FROM_EMAIL")
+    TO_EMAIL = os.getenv("TO_EMAIL")
     TO_EMAIL_SELF = os.getenv("TO_EMAIL_SELF")
 
     # Read CSV data and convert to Base64
@@ -90,22 +118,18 @@ def email_csv():
 
     # Create attachments
     attachment1 = Attachment(
-        FileContent(data1),
-        FileName(csv_filename1),
-        FileType('text/csv')
+        FileContent(data1), FileName(csv_filename1), FileType("text/csv")
     )
     attachment2 = Attachment(
-        FileContent(data2),
-        FileName(csv_filename2),
-        FileType('text/csv')
+        FileContent(data2), FileName(csv_filename2), FileType("text/csv")
     )
 
     # Create message
     message = Mail(
         from_email=FROM_EMAIL,
-        to_emails=(TO_EMAIL, TO_EMAIL_SELF),
-        subject='Sending CSV Data',
-        plain_text_content='Hey Gents,\n\n\tHere is all of the data pulled in the last 24 hours.'
+        to_emails=(TO_EMAIL),
+        subject="Sending CSV Data",
+        plain_text_content="Hi,\n\n\tHere is all of the data pulled in the last 24 hours.",
     )
 
     message.attachment = [attachment1, attachment2]

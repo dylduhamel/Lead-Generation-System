@@ -14,7 +14,7 @@ class Lead(Base):
     # The name of the database
     __tablename__ = "LEAD"
 
-    id = Column(Integer, primary_key=True)
+    lead_id = Column(Integer, primary_key=True)
     date_added = Column(DateTime, default=func.current_timestamp()) 
     first_name_owner = Column(String(45))
     last_name_owner = Column(String(45))
