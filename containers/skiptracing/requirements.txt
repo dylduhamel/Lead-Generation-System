@@ -1,5 +1,8 @@
 boto==2.49.0
+PyMySQL==1.1.1
 pytz==2021.1
 SQLAlchemy==2.0.16
 python-dotenv==1.0.0
 pandas==2.0.3
+numpy==1.25.1
+requests==2.31.0
