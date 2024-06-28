@@ -1,5 +1,3 @@
-import csv
-import json
 import logging
 import pandas as pd
 from sqlalchemy import update, text, or_
