@@ -3,9 +3,9 @@ from sqlalchemy import Column, Integer, String, create_engine, DateTime
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.sql import func
 from dotenv import load_dotenv
+from get_env import get_secret
 
-## Load environment variables from .env file
-load_dotenv()
+secrets = get_secret("prod/lead_scraper/db")
 
 Base = declarative_base()
 
@@ -53,10 +53,10 @@ class Lead(Base):
 
 
 ## Database credentials
-db_endpoint = os.getenv("DB_ENDPOINT")
-db_name = os.getenv("DB_NAME")
-username = os.getenv("DB_USERNAME")
-password = os.getenv("DB_PASSWORD")
+db_endpoint = secrets["host"]
+db_name = "LEAD_DB" 
+username = secrets["username"] 
+password = secrets["password"]
 
 engine = create_engine(f"mysql+pymysql://{username}:{password}@{db_endpoint}/{db_name}")
 Base.metadata.create_all(engine)

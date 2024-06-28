@@ -8,12 +8,6 @@ import logging
 from datetime import date
 from dateutil.relativedelta import relativedelta
 
-from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 from utils import *
 from scrapers.Florida import *
 from scrapers.Ohio import *
@@ -89,13 +83,13 @@ if __name__ == "__main__":
     # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
     # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
     # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
-    run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
+    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
     # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
     # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
     # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
     # run_scraper("BrowardCountyForeclosure", BrowardCountyForeclosure, end_date=end_date)
     # run_scraper("OrangeCountyFoeclosure", OrangeCountyForeclosure, end_date=end_date)
-    # run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
+    run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
     # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
     # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
     # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
