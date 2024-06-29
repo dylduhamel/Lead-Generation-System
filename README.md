@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a proprietary tool developed for Acuritas Consulting by Dylan Duhamel. The tool is designed to automate the process of finding and processing property leads by scraping multiple public web sources using Selenium. It gathers information, enriches the data by skiptracing, and then saves all pertinent details to a database for further use by the Acuritas team.
+This is a proprietary tool developed by Dylan Duhamel at Acuritas Consulting. The tool is designed to automate the process of finding and processing property leads by scraping multiple public web sources using Selenium. It gathers information, enriches the data by skiptracing, and then saves all pertinent details to a database for further use by the Acuritas team.
 
 **NOTE: This tool is only intended for use by Acuritas employees. Unauthorized use is strictly prohibited.**
 
