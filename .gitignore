@@ -9,5 +9,3 @@ processing.log
 # Data privacy
 Data/csv_exports/
 Data/Skiptrace
-
-Makefile
