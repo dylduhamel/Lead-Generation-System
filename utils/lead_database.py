@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, String, create_engine, DateTime
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.sql import func
 from dotenv import load_dotenv
-from get_env import get_secret
+from utils.get_env import get_secret
 
 secrets = get_secret("prod/lead_scraper/db")
 

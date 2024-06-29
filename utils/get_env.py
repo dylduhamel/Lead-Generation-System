@@ -1,6 +1,6 @@
+import json
 import boto3
 from botocore.exceptions import ClientError
-
 
 def get_secret(secret_name):
     region_name = "us-east-1"
@@ -21,5 +21,6 @@ def get_secret(secret_name):
         # https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
         raise e
 
-    secret = get_secret_value_response['SecretString']
-    return secret
+    # Parse the JSON string into a dictionary
+    secret_dict = json.loads(get_secret_value_response['SecretString'])
+    return secret_dict

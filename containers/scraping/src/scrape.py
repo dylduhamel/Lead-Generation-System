@@ -1,6 +1,8 @@
-# Dylan Duhamel
+# @author Dylan Duhamel {duhadm19@alumni.wfu.edu}
+# @date Feb. 10, 2024
+
 import sys
-sys.path.append('..')
+sys.path.append("..")
 
 import time
 import inspect
@@ -11,7 +13,6 @@ from dateutil.relativedelta import relativedelta
 from utils import *
 from scrapers.Florida import *
 from scrapers.Ohio import *
-
 
 logging.basicConfig(
     filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     end_date = future_date.strftime("%m/%d/%Y")
 
     # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
-    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
+    run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
     # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
     # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
     # un_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
@@ -89,7 +90,7 @@ if __name__ == "__main__":
     # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
     # run_scraper("BrowardCountyForeclosure", BrowardCountyForeclosure, end_date=end_date)
     # run_scraper("OrangeCountyFoeclosure", OrangeCountyForeclosure, end_date=end_date)
-    run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
+    # run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
     # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
     # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
     # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
