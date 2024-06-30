@@ -4,15 +4,17 @@ Complete
 Notes: Can also pull cinci building inspections 
 '''
 
-import os
 import math
-import pandas as pd
-from sodapy import Socrata
+import os
 from datetime import datetime, timedelta
+
+import pandas as pd
 from dotenv import load_dotenv
+from sodapy import Socrata
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
-from utils.util import status_print, curr_date, get_address_from_lat_lng
+from utils.util import curr_date, get_address_from_lat_lng, status_print
+
 
 class CinciCodeEnfAPI():
     def __init__(self):

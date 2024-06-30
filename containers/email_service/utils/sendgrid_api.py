@@ -1,15 +1,18 @@
 import sys
+
 sys.path.append('..')
 
-import os
 import base64
-import pandas as pd
+import os
 from datetime import datetime, timedelta
+
+import pandas as pd
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType
-from utils import *
+from sendgrid.helpers.mail import (Attachment, FileContent, FileName, FileType,
+                                   Mail)
 from sqlalchemy import or_
+from utils import *
 
 
 def email_csv():

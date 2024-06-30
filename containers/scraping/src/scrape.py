@@ -2,17 +2,18 @@
 # @date Feb. 10, 2024
 
 import sys
+
 sys.path.append("..")
 
-import time
 import inspect
 import logging
+import time
 from datetime import date
-from dateutil.relativedelta import relativedelta
 
-from utils import *
+from dateutil.relativedelta import relativedelta
 from scrapers.Florida import *
 from scrapers.Ohio import *
+from utils import *
 
 logging.basicConfig(
     filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"

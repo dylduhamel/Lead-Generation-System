@@ -1,11 +1,14 @@
 import csv
 import json
 import logging
-from sqlalchemy import update, text, or_
+
+from sqlalchemy import or_, text, update
+
 from utils.lead_database import Lead, Session
 from utils.util import curr_date, status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
+
 
 def add_lead_to_database(lead):
     session = Session()
@@ -14,16 +17,11 @@ def add_lead_to_database(lead):
         session.add(lead)
         session.commit()
     except Exception as e:
-        logging.error(f"Not able to add lead to database. An error has occoured: {e}")
+        logging.error(
+            f"Not able to add lead to database. An error has occoured: {e}")
         session.rollback()
     finally:
         session.close()
-
-
-"""
-Function to add all skiptraced data to DB
-Only adds data to the leads who have date_added == curr_date()
-"""
 
 
 def json_to_database():
@@ -32,7 +30,7 @@ def json_to_database():
 
     # Query for values added today
     today = curr_date()
-    #today = "09/27/2023" # If you want to skiptrace date other than today 
+    # today = "09/27/2023" # If you want to skiptrace date other than today
 
     leads = session.query(Lead).filter(Lead.date_added == today).all()
     # leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/25/2023")).all()
@@ -64,7 +62,8 @@ def json_to_database():
             ) = phone_number_2 = phone_number_2_type = None
 
         email = (
-            result.get("emails", [{}])[0].get("email") if result.get("emails") else None
+            result.get("emails", [{}])[0].get(
+                "email") if result.get("emails") else None
         )
 
         # Update the fields in the database
@@ -119,20 +118,22 @@ def export_to_csv():
 
     # Query database using session.query
     leads = session.query(Lead).filter(Lead.date_added == today,
-                                       Lead.first_name_owner != None, 
+                                       Lead.first_name_owner != None,
                                        Lead.email != None).all()
-    
+
     # leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/18/2023")).all()
 
     # Open a CSV file and write the queried data
     with open(filename, "w", newline='') as csvfile:
         writer = csv.writer(csvfile)
-        
+
         # Writing the header
-        writer.writerow(["date_added", "property_address", "first_name_owner", "last_name_owner", "email"])
+        writer.writerow(["date_added", "property_address",
+                        "first_name_owner", "last_name_owner", "email"])
 
         # Writing the data rows
         for lead in leads:
-            writer.writerow([lead.date_added, lead.property_address, lead.first_name_owner.capitalize(), lead.last_name_owner.capitalize(), lead.email])
+            writer.writerow([lead.date_added, lead.property_address, lead.first_name_owner.capitalize(
+            ), lead.last_name_owner.capitalize(), lead.email])
 
     session.close()

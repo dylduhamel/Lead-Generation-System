@@ -1,5 +1,6 @@
 # Dylan Duhamel
 import sys
+
 sys.path.append('..')
 
 from utils import remove_duplicates

@@ -1,9 +1,10 @@
 import os
-from sqlalchemy import Column, Integer, String, create_engine, DateTime
+
+from dotenv import load_dotenv
+from sqlalchemy import Column, DateTime, Integer, String, create_engine
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import func
-from sqlalchemy.ext.declarative import declarative_base
-from dotenv import load_dotenv
 
 ## Load environment variables from .env file
 load_dotenv()

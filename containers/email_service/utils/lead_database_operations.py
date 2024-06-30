@@ -1,8 +1,9 @@
 import csv
 import json
 import logging
+
 import pandas as pd
-from sqlalchemy import update, text, or_
+from sqlalchemy import or_, text, update
 from utils.lead_database import Lead, Session
 from utils.util import curr_date, status_print
 

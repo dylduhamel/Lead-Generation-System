@@ -1,6 +1,7 @@
 import logging
+
 import pandas as pd
-from sqlalchemy import update, text, or_
+from sqlalchemy import or_, text, update
 from utils import *
 from utils.util import status_print
 

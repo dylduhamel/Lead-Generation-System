@@ -4,24 +4,24 @@ Complete
 Note: This does not return the zipcode. Only the street, city, state
 '''
 
+import logging
+import math
 import os
 import time
-import math
-import pandas as pd
-import logging
-from sodapy import Socrata
 from datetime import datetime, timedelta
+
+import pandas as pd
 from dotenv import load_dotenv
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from sodapy import Socrata
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
-from utils.util import get_zipcode, curr_date, status_print, clean_string
-from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.chrome.options import Options
+from utils.util import clean_string, curr_date, get_zipcode, status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 

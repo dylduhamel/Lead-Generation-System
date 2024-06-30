@@ -6,13 +6,15 @@ Queries for only those values with "date_added" == curr_date()
 Saves as skiptraced JSON file
 """
 import sys
+
 sys.path.append('..')
 
-import os
-import requests
 import json
+import os
 from datetime import datetime, timedelta
-from sqlalchemy import update, or_
+
+import requests
+from sqlalchemy import or_, update
 from utils import *
 
 

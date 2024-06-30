@@ -1,17 +1,18 @@
 
-import time
 import datetime
 import logging
+import time
 import traceback
-from dateutil.rrule import rrule, DAILY
+
+from bs4 import BeautifulSoup
 from dateutil.parser import parse
+from dateutil.rrule import DAILY, rrule
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
-from bs4 import BeautifulSoup
+from selenium.webdriver.support.ui import WebDriverWait
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
 from utils.util import curr_date, status_print

@@ -1,8 +1,9 @@
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 from utils.lead_database import Lead, Session
 from utils.util import curr_date, status_print
+
 
 class HamiltonCountyForeclosure():
     def __init__(self):

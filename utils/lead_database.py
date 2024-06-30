@@ -1,8 +1,10 @@
 import os
-from sqlalchemy import Column, Integer, String, create_engine, DateTime
-from sqlalchemy.orm import sessionmaker, declarative_base
-from sqlalchemy.sql import func
+
 from dotenv import load_dotenv
+from sqlalchemy import Column, DateTime, Integer, String, create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy.sql import func
+
 from utils.get_env import get_secret
 
 secrets = get_secret("prod/lead_scraper/db")
