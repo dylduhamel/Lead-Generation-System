@@ -1,6 +1,11 @@
 # Ignore Python bytecode files
 **/__pycache__/
+
 .env
 todo.txt
 output_redirect.log
 processing.log
+
+# Data privacy
+Data/csv_exports/
+Data/Skiptrace
