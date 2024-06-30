@@ -1,21 +1,14 @@
-FROM python:3.9.19-slim
+FROM public.ecr.aws/lambda/python:3.9
 
-WORKDIR /app
-
-COPY requirements.txt .
+# Copy requirements.txt
+COPY containers/remove_duplicates/requirements.txt ${LAMBDA_TASK_ROOT}
 
 # Install Python packages without cache
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r ${LAMBDA_TASK_ROOT}/requirements.txt
 
-COPY . .
+# Copy function code
+COPY containers/remove_duplicates/lambda_function.py ${LAMBDA_TASK_ROOT}
+COPY utils ${LAMBDA_TASK_ROOT}/utils
 
-# Set correct PYTHONPATH
-ENV PYTHONPATH "${PYTHONPATH}:/app"
-
-# Create a non-root user with a home directory and set permissions
-RUN useradd -u 1001 -m -s /bin/bash nonroot && \
-    chown -R nonroot:nonroot /app
-
-USER nonroot
-
-CMD [ "python3", "src/remove_duplicates.py" ]
+# Pass the name of the function handler as an argument to the runtime
+CMD [ "lambda_function.handler" ]

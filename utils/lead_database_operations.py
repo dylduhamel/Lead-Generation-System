@@ -1,13 +1,10 @@
 import csv
 import json
-import logging
 
 from sqlalchemy import or_, text, update
 
 from utils.lead_database import Lead, Session
 from utils.util import curr_date, status_print
-
-logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 
 def add_lead_to_database(lead):
@@ -17,8 +14,7 @@ def add_lead_to_database(lead):
         session.add(lead)
         session.commit()
     except Exception as e:
-        logging.error(
-            f"Not able to add lead to database. An error has occoured: {e}")
+        print(f"Not able to add lead to database. An error has occoured: {e}")
         session.rollback()
     finally:
         session.close()
@@ -93,8 +89,8 @@ def remove_duplicates():
 
     # Query to find duplicate rows
     query = f"""
-    DELETE t1 FROM LEAD_DB_STANDARD.LEAD t1
-    INNER JOIN LEAD_DB_STANDARD.LEAD t2 
+    DELETE t1 FROM LEAD_DB.LEAD t1
+    INNER JOIN LEAD_DB.LEAD t2 
     WHERE t1.LEAD_ID > t2.LEAD_ID AND t1.PROPERTY_ADDRESS = t2.PROPERTY_ADDRESS
     """
 
