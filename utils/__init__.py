@@ -4,6 +4,7 @@ from .lead_database_operations import (export_to_csv, json_to_database,
                                        remove_duplicates)
 from .util import status_print
 from .skiptrace import skiptrace_leads
+from .sendgrid_api import email_csv
 
 __all__ = [
     "Lead",
@@ -13,5 +14,6 @@ __all__ = [
     "export_to_csv",
     "status_print",
     "get_secret",
-    "skiptrace_leads"
+    "skiptrace_leads",
+    "email_csv"
 ]

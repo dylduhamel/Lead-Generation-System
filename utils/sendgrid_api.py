@@ -7,18 +7,16 @@ import os
 from datetime import datetime, timedelta
 
 import pandas as pd
-from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import (Attachment, FileContent, FileName, FileType,
                                    Mail)
 from sqlalchemy import or_
 from utils import *
+from utils.get_env import get_secret
 
+secrets = get_secret("prod/email/sendgrid")
 
 def email_csv():
-    # Load .env file
-    load_dotenv()
-
     # Initialize the session
     session = Session()
 
@@ -100,18 +98,17 @@ def email_csv():
         df2 = df2[cols]
 
     # Convert DataFrames to CSV and save
-    csv_filepath1 = "/app/temp/taxdeed.csv"
-    csv_filepath2 = "/app/temp/foreclosure.csv"
+    csv_filepath1 = "/tmp/taxdeed.csv"
+    csv_filepath2 = "/tmp/foreclosure.csv"
     csv_filename1 = "taxdeed.csv"
     csv_filename2 = "foreclosure.csv"
     df1.to_csv(csv_filepath1, index=False)
     df2.to_csv(csv_filepath2, index=False)
 
     # Load SendGrid API key and email addresses
-    SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
-    FROM_EMAIL = os.getenv("FROM_EMAIL")
-    TO_EMAIL = os.getenv("TO_EMAIL")
-    TO_EMAIL_SELF = os.getenv("TO_EMAIL_SELF")
+    SENDGRID_API_KEY = secrets["API-KEY"]
+    FROM_EMAIL = secrets["FROM-EMAIL"]
+    TO_EMAIL = secrets["TO-EMAIL"]
 
     # Read CSV data and convert to Base64
     with open(csv_filepath1, "rb") as f:
@@ -143,4 +140,4 @@ def email_csv():
     # Send email
     response = sg.send(message)
 
-    print(response.status_code)
+    print(f"Email sent to {TO_EMAIL}: {response.status_code}")

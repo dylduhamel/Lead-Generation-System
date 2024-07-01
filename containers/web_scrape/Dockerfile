@@ -3,7 +3,7 @@ FROM python:3.9.19-slim as builder
 
 WORKDIR /app
 
-COPY containers/scraping/requirements.txt .
+COPY containers/web_scrape/requirements.txt .
 
 # Install Python packages without cache
 RUN pip install --no-cache-dir -r requirements.txt
@@ -34,8 +34,8 @@ WORKDIR /app
 COPY --from=builder /usr/local/lib/python3.9 /usr/local/lib/python3.9
 COPY --from=builder /usr/bin/google-chrome /usr/bin/google-chrome
 COPY --from=builder /usr/lib /usr/lib 
-COPY containers/scraping/src/ ./src
-COPY containers/scraping/scrapers/ ./scrapers
+COPY containers/web_scrape/src/ ./src
+COPY containers/web_scrape/scrapers/ ./scrapers
 COPY utils ./utils
 
 # Set correct PYTHONPATH

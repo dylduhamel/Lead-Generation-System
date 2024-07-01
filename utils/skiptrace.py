@@ -72,7 +72,7 @@ def skiptrace_leads():
 
     # Make a single API call for all leads
     # results = api_call(leads)
-    results = leads
+    results = []
     print(results)
 
     # Export json to Skiptraced_data directory
