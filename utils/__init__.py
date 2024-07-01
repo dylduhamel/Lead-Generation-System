@@ -3,6 +3,7 @@ from .lead_database import Lead, Session
 from .lead_database_operations import (export_to_csv, json_to_database,
                                        remove_duplicates)
 from .util import status_print
+from .skiptrace import skiptrace_leads
 
 __all__ = [
     "Lead",
@@ -11,5 +12,6 @@ __all__ = [
     "remove_duplicates",
     "export_to_csv",
     "status_print",
-    "get_secret"
+    "get_secret",
+    "skiptrace_leads"
 ]

@@ -1,8 +1,14 @@
+import sys
+
+sys.path.append('..')
+
 import csv
 import json
+import logging
+from datetime import datetime, timedelta
 
+import pandas as pd
 from sqlalchemy import or_, text, update
-
 from utils.lead_database import Lead, Session
 from utils.util import curr_date, status_print
 
@@ -24,18 +30,18 @@ def json_to_database():
     # Create a session
     session = Session()
 
-    # Query for values added today
-    today = curr_date()
-    # today = "09/27/2023" # If you want to skiptrace date other than today
+    # Define todays date range
+    today = datetime.now().date()
+    tomorrow = today + timedelta(days=1)
 
-    leads = session.query(Lead).filter(Lead.date_added == today).all()
-    # leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/25/2023")).all()
-
-    # UNIX filename issues
-    today = today.replace("/", "-")
+    leads = (
+        session.query(Lead)
+        .filter(Lead.date_added >= today, Lead.date_added < tomorrow)
+        .all()
+    )
 
     # Load the results from a json file instead of making an API call
-    with open(f"./Data/Skiptrace/skiptrace_{today}.json", "r") as file:
+    with open(f"/tmp/skiptrace_{today}.json", "r") as file:
         results = json.load(file)
 
     for lead, result in zip(leads, results):
@@ -58,8 +64,7 @@ def json_to_database():
             ) = phone_number_2 = phone_number_2_type = None
 
         email = (
-            result.get("emails", [{}])[0].get(
-                "email") if result.get("emails") else None
+            result.get("emails", [{}])[0].get("email") if result.get("emails") else None
         )
 
         # Update the fields in the database
@@ -81,6 +86,7 @@ def json_to_database():
 
     # Commit the changes
     session.commit()
+    status_print("JSON-DB - Committed.")
 
 
 def remove_duplicates():

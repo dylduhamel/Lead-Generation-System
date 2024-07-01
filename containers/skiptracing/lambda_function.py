@@ -1,13 +1,14 @@
-from utils import remove_duplicates
+from utils import json_to_database, skiptrace_leads
 
 # Lambda function entry point
 def handler(event, context):
     try:
-        remove_duplicates()
+        skiptrace_leads()
+        json_to_database()
 
         return {
             'statusCode': 200,
-            'body': 'Duplicates removed successfully.'
+            'body': 'Data skiptraced successfully.'
         }
     except Exception as e:
         return {

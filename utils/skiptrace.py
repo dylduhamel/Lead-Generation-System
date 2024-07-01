@@ -1,14 +1,3 @@
-"""
-Function to skiptrace data from SQL DB
-
-Queries for only those values with "date_added" == curr_date()
-
-Saves as skiptraced JSON file
-"""
-import sys
-
-sys.path.append('..')
-
 import json
 import os
 from datetime import datetime, timedelta
@@ -87,7 +76,7 @@ def skiptrace_leads():
     print(results)
 
     # Export json to Skiptraced_data directory
-    with open(f"/app/temp/skiptrace_{today}.json", "w") as file:
+    with open(f"/tmp/skiptrace_{today}.json", "w") as file:
         json.dump(results, file)
 
     status_print("Skiptrace - Written.")
