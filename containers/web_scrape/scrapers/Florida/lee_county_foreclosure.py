@@ -124,10 +124,31 @@ class LeeCountyForeclosure:
                         print(f"Error splitting city and zip data: '{e}'")
                         city, zip_code = None, None
 
-                    # Check if it has been seen before
-                    if property_address is not None:                         # Create new lead
-                        lead = Lead()                        # Document type
+                    if property_address is not None:
+                        lead = Lead()
                         lead.document_type = "Foreclosure"
+
+                        """
+                        Here is where we will 
+                        1. Make full address
+                        2. Parse w/ API call
+                            Concurrency issues?
+                        3. Is the address in the DB
+                        4. Add lead to the DB
+                            Concurrency? What happens if two processes check same address and its not there so they both add it?
+                        """
+
+                        # Compute full address
+                        full_address = ' '.join(property_address, city, zip_code[:5], "Ohio")
+
+                        response = "api call on full address @ POST Parse"
+                        {
+                            'house_number': '1234',
+                            'road': '30th st',
+                            'city': 'richmond',
+                            'state': 'virginia',
+                            'postcode': '10000'
+                        }
 
                         # Address
                         lead.property_address = property_address
