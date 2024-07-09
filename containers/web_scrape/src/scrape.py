@@ -6,33 +6,18 @@ import sys
 sys.path.append("..")
 
 import inspect
-import logging
 import time
+import threading
 from datetime import date
-
 from dateutil.relativedelta import relativedelta
+
 from scrapers.Florida import *
 from scrapers.Ohio import *
 from utils import *
 
-logging.basicConfig(
-    filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
-)
+def run_scraper(name, scraper_class, lock, days=1, end_date=None):
+    scraper = scraper_class(lock)
 
-def run_scraper(name, scraper_class, days=1, end_date=None):
-    scraper = scraper_class()
-
-    # Check if methods exist and then introspect for accepted parameters
-    download_dataset_accepts_days = (
-        "days" in inspect.signature(scraper.download_dataset).parameters
-        if hasattr(scraper, "download_dataset")
-        else False
-    )
-    download_dataset_accepts_end_date = (
-        "end_date" in inspect.signature(scraper.download_dataset).parameters
-        if hasattr(scraper, "download_dataset")
-        else False
-    )
     start_accepts_days = (
         "days" in inspect.signature(scraper.start).parameters
         if hasattr(scraper, "start")
@@ -44,17 +29,6 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
         else False
     )
 
-    if hasattr(scraper, "download_dataset"):
-        try:
-            if download_dataset_accepts_days:
-                scraper.download_dataset(days=days)
-            elif download_dataset_accepts_end_date:
-                scraper.download_dataset(end_date=end_date)
-            else:
-                scraper.download_dataset()
-        except Exception as e:
-            logging.error(f"Error in {name}: {str(e)}")
-
     if hasattr(scraper, "start"):
         try:
             if start_accepts_days:
@@ -64,8 +38,7 @@ def run_scraper(name, scraper_class, days=1, end_date=None):
             else:
                 scraper.start()
         except Exception as e:
-            logging.error(f"Error in {name}: {str(e)}")
-
+            print(f"Error in {name}: {str(e)}")
 
 if __name__ == "__main__":
     start_time = time.time()
@@ -73,11 +46,29 @@ if __name__ == "__main__":
     future_date = date.today() + relativedelta(months=1)
     end_date = future_date.strftime("%m/%d/%Y")
 
-    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
-    run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
-    # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
-    # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
-    # un_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
+    # Create a lock for managing database access
+    lock = threading.Lock()
+
+    # Create threads for each scraper
+    threads = [
+        threading.Thread(target=run_scraper, args=("ClermontCountyForeclosure", ClermontCountyForeclosure, lock, 1, end_date)),
+        threading.Thread(target=run_scraper, args=("LeeCountyForeclosure", LeeCountyForeclosure, lock, 1, end_date)),
+        threading.Thread(target=run_scraper, args=("FranklinCountyForeclosure", FranklinCountyForeclosure, lock, 1, end_date)),
+        threading.Thread(target=run_scraper, args=("PinellasCountyForeclosure", PinellasCountyForeclosure, lock, 1, end_date))
+    ]
+
+    # Start all threads
+    for thread in threads:
+        thread.start()
+
+    # Wait for all threads to complete
+    for thread in threads:
+        thread.join()
+
+    print("All scrapers have finished execution.")
+
+
+    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
     # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
     # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
     # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)

@@ -18,17 +18,18 @@ from utils.util import status_print
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
 class PinellasCountyForeclosure:
-    def __init__(self):
-        # Initialization
-
+    def __init__(self, lock=None):
         # Chrome driver
         options = webdriver.ChromeOptions()
         options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
         self.driver = webdriver.Chrome(options=options)
 
-        # This is used for status tracking
         self.scraper_name = "pinellas_county_foreclosure.py"
         self.county_website = "Pinellas County Foreclosure"
+        self.lock = lock
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -38,9 +39,6 @@ class PinellasCountyForeclosure:
         end_date = parse(end_date)
         # Generate a list of all dates from start_date to end_date
         dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
-
-        # Create new database session
-        session = Session()
 
         # Iterate over the dates CLERMONT
         for date in dates:
@@ -121,37 +119,25 @@ class PinellasCountyForeclosure:
                         print(f"Error splitting city and zip data: '{e}'")
                         city, zip_code = None, None
                     
-                    # Check if it has been seen before
-                    if property_address is not None:                         # Create new lead
-                        lead = Lead()                       
+                    # Attempt to add property data to db
+                    if property_address is not None:
+                        full_addr = {
+                            "full_address": " ".join(
+                                [property_address, city, zip_code[:5], "ohio"]
+                            )
+                        }
 
-                        # Document type
-                        lead.document_type = "Foreclosure"
-
-                        # Address
-                        lead.property_address = property_address
-
-                        # City and State
-                        lead.property_city = city
-                        lead.property_zipcode = zip_code[:5]
-                        lead.property_state = "Ohio"
-
-                        # Website tracking
-                        lead.county_website = self.county_website
-
-                        # print(lead)
-                        # print("\n")
-
-                        # Add lead to db
-                        session.add(lead)
+                        try:
+                            if self.lock:
+                                with self.lock:
+                                    add_lead_to_database(full_addr, "Foreclosure")
+                            else:
+                                add_lead_to_database(full_addr, "Foreclosure")
+                        except Exception as e:
+                            print(f"Unable to add {self.county_website} to db: {e}")
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on.")
-
-        # Add new session to DB
-        session.commit()
-        # Relinquish resources
-        session.close()
 
         # Relinquish resources
         self.driver.quit()

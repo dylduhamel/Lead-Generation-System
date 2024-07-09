@@ -11,27 +11,28 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from utils.lead_database import Lead, Session
+from utils.lead_database import Session
 from utils.lead_database_operations import add_lead_to_database
 from utils.util import status_print
 
-logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
+logging.basicConfig(
+    filename="processing.log", level=logging.ERROR, format="%(asctime)s - %(message)s"
+)
+
 
 class LeeCountyForeclosure:
-    def __init__(self):
-        # Initialization
-
+    def __init__(self, lock=None):
         # Chrome driver
         options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--disable-gpu')
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
         self.driver = webdriver.Chrome(options=options)
 
-        # This is used for status tracking
         self.scraper_name = "lee_county_foreclosure.py"
         self.county_website = "Lee County Foreclosure"
+        self.lock = lock
 
         status_print(f"Initialized variables -- {self.scraper_name}")
 
@@ -42,28 +43,29 @@ class LeeCountyForeclosure:
         # Generate a list of all dates from start_date to end_date
         dates = list(rrule(DAILY, dtstart=start_date, until=end_date))
 
-        # Create new database session
-        session = Session()
-
         # Iterate over the dates CLERMONT
         for date in dates:
             # Get URL with current date
-            self.url = f'https://lee.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}'
+            self.url = f"https://lee.realtaxdeed.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={date}"
             # Initialize driver
             self.driver.get(self.url)
 
             try:
                 # Wait until an auction item is present in the webpage
-                WebDriverWait(self.driver, 1.0).until(EC.presence_of_element_located((By.CLASS_NAME, "AUCTION_ITEM")))
+                WebDriverWait(self.driver, 1.0).until(
+                    EC.presence_of_element_located((By.CLASS_NAME, "AUCTION_ITEM"))
+                )
 
                 # Wait if the element is loading the waiting records
-                WebDriverWait(self.driver, 10).until_not(EC.presence_of_element_located((By.CLASS_NAME, 'Loading')))
+                WebDriverWait(self.driver, 10).until_not(
+                    EC.presence_of_element_located((By.CLASS_NAME, "Loading"))
+                )
 
                 html_doc = self.driver.page_source
-                soup = BeautifulSoup(html_doc, 'html.parser')
+                soup = BeautifulSoup(html_doc, "html.parser")
 
                 # Check number of pages
-                max_pages_elem = soup.find(id='maxWA')
+                max_pages_elem = soup.find(id="maxWA")
                 if max_pages_elem:
                     try:
                         max_pages = int(max_pages_elem.get_text(strip=True))
@@ -77,38 +79,47 @@ class LeeCountyForeclosure:
                 for current_page in range(1, max_pages + 1):
                     if current_page > 1:
                         # If it's not the first page, click the next page button
-                        WebDriverWait(self.driver, 1.0).until(EC.presence_of_element_located((By.CLASS_NAME, "PageRight")))
-                        next_page_btn = self.driver.find_element(By.CLASS_NAME, "PageRight")
+                        WebDriverWait(self.driver, 1.0).until(
+                            EC.presence_of_element_located((By.CLASS_NAME, "PageRight"))
+                        )
+                        next_page_btn = self.driver.find_element(
+                            By.CLASS_NAME, "PageRight"
+                        )
                         next_page_btn.click()
 
                         # Wait until an auction item is present in the webpage
                         time.sleep(2)
 
                         # Wait for the page to load
-                        WebDriverWait(self.driver, 10).until_not(EC.presence_of_element_located((By.CLASS_NAME, 'Loading')))
+                        WebDriverWait(self.driver, 10).until_not(
+                            EC.presence_of_element_located((By.CLASS_NAME, "Loading"))
+                        )
 
                         # Parse the new page source
                         html_doc = self.driver.page_source
-                        soup = BeautifulSoup(html_doc, 'html.parser')
+                        soup = BeautifulSoup(html_doc, "html.parser")
 
                     # Extract items
-                    head_w_div = soup.find(class_='Head_W')
-                    items = head_w_div.find_all(class_='AUCTION_ITEM')
+                    head_w_div = soup.find(class_="Head_W")
+                    items = head_w_div.find_all(class_="AUCTION_ITEM")
                     all_items.extend(items)
 
                 for item in all_items:
-                    details_table = item.find(class_='AUCTION_DETAILS')
-                    rows = details_table.find_all('tr')
-                    data = {row.th.get_text(strip=True): row.td.get_text(strip=True) for row in rows}
+                    details_table = item.find(class_="AUCTION_DETAILS")
+                    rows = details_table.find_all("tr")
+                    data = {
+                        row.th.get_text(strip=True): row.td.get_text(strip=True)
+                        for row in rows
+                    }
 
-                    case_status = data.get('Case Status:', None)
-                    property_address = data.get('Property Address:', None)
-                    appraised_value = data.get('Appraised Value:', None)
+                    case_status = data.get("Case Status:", None)
+                    property_address = data.get("Property Address:", None)
+                    appraised_value = data.get("Appraised Value:", None)
 
                     # Find city and zip code
                     for i, row in enumerate(rows):
-                        if row.th.get_text(strip=True) == 'Property Address:':
-                            city_zip_data = rows[i+1].td.get_text(strip=True)
+                        if row.th.get_text(strip=True) == "Property Address:":
+                            city_zip_data = rows[i + 1].td.get_text(strip=True)
                             break
                     else:
                         city_zip_data = None
@@ -116,8 +127,8 @@ class LeeCountyForeclosure:
                     # Getting city and zip data extracted
                     try:
                         if city_zip_data is not None:
-                            city, zip_code = map(str.strip, city_zip_data.split(','))
-                            zip_code = zip_code.split('- ')[1]
+                            city, zip_code = map(str.strip, city_zip_data.split(","))
+                            zip_code = zip_code.split("- ")[1]
                         else:
                             raise ValueError("City zip data is None")
                     except ValueError as e:
@@ -127,11 +138,17 @@ class LeeCountyForeclosure:
                     # Attempt to add property data to db
                     if property_address is not None:
                         full_addr = {
-                            "full_address": ' '.join([property_address, city, zip_code[:5], "ohio"])
+                            "full_address": " ".join(
+                                [property_address, city, zip_code[:5], "ohio"]
+                            )
                         }
 
                         try:
-                            add_lead_to_database(full_addr, "Foreclosure")
+                            if self.lock:
+                                with self.lock:
+                                    add_lead_to_database(full_addr, "Foreclosure")
+                            else:
+                                add_lead_to_database(full_addr, "Foreclosure")
                         except Exception as e:
                             print(f"Unable to add {self.county_website} to db: {e}")
 
