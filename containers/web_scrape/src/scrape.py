@@ -57,11 +57,9 @@ if __name__ == "__main__":
         threading.Thread(target=run_scraper, args=("PinellasCountyForeclosure", PinellasCountyForeclosure, lock, 1, end_date))
     ]
 
-    # Start all threads
     for thread in threads:
         thread.start()
 
-    # Wait for all threads to complete
     for thread in threads:
         thread.join()
 
