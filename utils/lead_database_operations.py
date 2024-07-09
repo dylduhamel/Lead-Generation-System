@@ -46,7 +46,6 @@ def add_lead_to_database(full_addr, doc_type):
             session.close()
         # unlock
 
-
 def json_to_database():
     # Create a session
     session = Session()
@@ -109,27 +108,6 @@ def json_to_database():
     session.commit()
     status_print("JSON-DB - Committed.")
 
-
-def remove_duplicates():
-    # Initialize the session
-    session = Session()
-
-    # Query to find duplicate rows
-    query = f"""
-    DELETE t1 FROM LEAD_DB.LEAD t1
-    INNER JOIN LEAD_DB.LEAD t2 
-    WHERE t1.LEAD_ID > t2.LEAD_ID AND t1.PROPERTY_ADDRESS = t2.PROPERTY_ADDRESS
-    """
-
-    # Execute the DELETE query
-    session.execute(text(query))
-
-    # Commit the changes
-    session.commit()
-
-    status_print("Duplicates removed successfully.")
-
-
 def export_to_csv():
     session = Session()
 
@@ -159,7 +137,11 @@ def export_to_csv():
         writer.writerow(
             [
                 "date_added",
-                "property_address",
+                "property_number",
+                "property_street",
+                "property_city",
+                "property_state",
+                "property_zipcode",
                 "first_name_owner",
                 "last_name_owner",
                 "email",
@@ -171,7 +153,10 @@ def export_to_csv():
             writer.writerow(
                 [
                     lead.date_added,
-                    lead.property_address,
+                    lead.property_number,
+                    lead.property_street,
+                    lead.property_state,
+                    lead.property_zipcode,
                     lead.first_name_owner.capitalize(),
                     lead.last_name_owner.capitalize(),
                     lead.email,

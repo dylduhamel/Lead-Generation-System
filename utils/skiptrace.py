@@ -24,7 +24,8 @@ def skiptrace_leads():
             data_object = {
                 "propertyAddress": {
                     "city": lead.property_city,
-                    "street": lead.property_address,
+                    "number": lead.property_number,
+                    "street": lead.property_street,
                     "state": lead.property_state,
                 }
             }

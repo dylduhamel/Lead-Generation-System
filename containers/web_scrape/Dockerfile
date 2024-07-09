@@ -3,11 +3,6 @@ FROM python:3.9.19-slim as builder
 
 WORKDIR /app
 
-COPY containers/web_scrape/requirements.txt .
-
-# Install Python packages without cache
-RUN pip install --no-cache-dir -r requirements.txt
-
 # Install Chrome and other dependencies
 RUN apt-get update && apt-get install -y wget unzip gnupg curl && \
     wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
@@ -24,6 +19,10 @@ RUN CHROME_DRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_R
     chown root:root /usr/local/bin/chromedriver && \
     chmod 0755 /usr/local/bin/chromedriver
 
+COPY containers/web_scrape/requirements.txt .
+
+# Install Python packages without cache
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Runtime Stage
 FROM python:3.9.19-slim
@@ -36,7 +35,10 @@ COPY --from=builder /usr/bin/google-chrome /usr/bin/google-chrome
 COPY --from=builder /usr/lib /usr/lib 
 COPY containers/web_scrape/src/ ./src
 COPY containers/web_scrape/scrapers/ ./scrapers
-COPY utils ./utils
+COPY utils/get_env.py ./utils/get_env.py
+COPY utils/lead_database_operations.py ./utils/lead_database_operations.py
+COPY utils/lead_database.py ./utils/lead_database.py
+COPY utils/util.py ./utils/util.py
 
 # Set correct PYTHONPATH
 ENV PYTHONPATH "${PYTHONPATH}:/app"

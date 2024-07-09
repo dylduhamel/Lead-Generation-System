@@ -13,7 +13,8 @@ from dateutil.relativedelta import relativedelta
 
 from scrapers.Florida import *
 from scrapers.Ohio import *
-from utils import *
+from utils.util import status_print
+
 
 def run_scraper(name, scraper_class, lock, days=1, end_date=None):
     scraper = scraper_class(lock)
@@ -40,6 +41,72 @@ def run_scraper(name, scraper_class, lock, days=1, end_date=None):
         except Exception as e:
             print(f"Error in {name}: {str(e)}")
 
+
+def run_scraper_batch(scraper_batch, lock, end_date):
+    for name, scraper_class in scraper_batch:
+        run_scraper(name, scraper_class, lock, 1, end_date)
+
+
+def partition_scrapers(seq, num):
+    avg = len(seq) / float(num)
+    out = []
+    last = 0.0
+
+    while last < len(seq):
+        out.append(seq[int(last) : int(last + avg)])
+        last += avg
+
+    return out
+
+
+scrapers = [
+    ("ClermontCountyForeclosure", ClermontCountyForeclosure),
+    ("LeeCountyForeclosure", LeeCountyForeclosure),
+    ("FranklinCountyForeclosure", FranklinCountyForeclosure),
+    ("PinellasCountyForeclosure", PinellasCountyForeclosure),
+    # ("DuvalCountyForeclosure", DuvalCountyForeclosure),
+    # ("ButlerCountyForeclosure", ButlerCountyForeclosure),
+    # ("HamiltonCountyForeclosure", HamiltonCountyForeclosure),
+    # ("FairfieldCountyForeclosure", FairfieldCountyForeclosure),
+    # ("CharlotteCountyForeclosure", CharlotteCountyForeclosure),
+    # ("MarionCountyForeclosure", MarionCountyForeclosure),
+    # ("MarionCountyTaxdeed", MarionCountyTaxdeed),
+    # ("AlachuaCountyForeclosure", AlachuaCountyForeclosure),
+    # ("StLucieCountyForeclosure", StLucieCountyForeclosure),
+    # ("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed),
+    # ("NassauCountyForeclosure", NassauCountyForeclosure),
+    # ("NassauCountyTaxdeed", NassauCountyTaxdeed),
+    # ("BrowardCountyForeclosure", BrowardCountyForeclosure),
+    # ("OrangeCountyForeclosure", OrangeCountyForeclosure),
+    # ("MiamiDadeForeclosure", MiamiDadeForeclosure),
+    # ("PolkCountyTaxdeed", PolkCountyTaxdeed),
+    # ("LeeCountyTaxdeed", LeeCountyTaxdeed),
+    # ("DuvalCountyTaxdeed", DuvalCountyTaxdeed),
+    # ("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure),
+    # ("VolusiaCountyTaxdeed", VolusiaCountyTaxdeed),
+    # ("PalmBeachForeclosure", PalmBeachForeclosure),
+    # ("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure),
+    # ("PolkCountyForeclosure", PolkCountyForeclosure),
+    # ("PalmBeachTaxdeed", PalmBeachTaxdeed),
+    # ("SummitCountyForeclosure", SummitCountyForeclosure),
+    # ("MontgomeryCountyForeclosure", MontgomeryCountyForeclosure),
+    # ("MahoningCountyForeclosure", MahoningCountyForeclosure),
+    # ("LucasCountyForeclosure", LucasCountyForeclosure),
+    # ("LorainCountyForeclosure", LorainCountyForeclosure),
+    # ("LakeCountyForeclosure", LakeCountyForeclosure),
+    # ("HuronCountyForeclosure", HuronCountyForeclosure),
+    # ("SeminoleCountyForeclosure", SeminoleCountyForeclosure),
+    # ("VolusiaCountyForeclosure", VolusiaCountyForeclosure),
+    # ("PascoCountyForeclosure", PascoCountyForeclosure),
+    # ("EscambiaCountyForeclosure", EscambiaCountyForeclosure),
+    # ("BayCountyTaxdeed", BayCountyTaxdeed),
+    # ("BrevardCountyTaxdeed", BrevardCountyTaxdeed),
+    # ("HillsboroughCountyTaxdeed", HillsboroughCountyTaxdeed),
+    # ("PascoCountyTaxdeed", PascoCountyTaxdeed),
+    # ("ManateeCountyForeclosure", ManateeCountyForeclosure),
+    # ("PutnamCountyTaxdeed", PuntamCountyTaxdeed),
+]
+
 if __name__ == "__main__":
     start_time = time.time()
 
@@ -49,109 +116,21 @@ if __name__ == "__main__":
     # Create a lock for managing database access
     lock = threading.Lock()
 
-    # Create threads for each scraper
-    threads = [
-        threading.Thread(target=run_scraper, args=("ClermontCountyForeclosure", ClermontCountyForeclosure, lock, 1, end_date)),
-        threading.Thread(target=run_scraper, args=("LeeCountyForeclosure", LeeCountyForeclosure, lock, 1, end_date)),
-        threading.Thread(target=run_scraper, args=("FranklinCountyForeclosure", FranklinCountyForeclosure, lock, 1, end_date)),
-        threading.Thread(target=run_scraper, args=("PinellasCountyForeclosure", PinellasCountyForeclosure, lock, 1, end_date))
-    ]
+    # Partition scrapers for number of threads
+    scraper_batches = partition_scrapers(scrapers, 4)
 
-    for thread in threads:
+    threads = []
+    for batch in scraper_batches:
+        thread = threading.Thread(
+            target=run_scraper_batch, args=(batch, lock, end_date)
+        )
+        threads.append(thread)
         thread.start()
 
     for thread in threads:
         thread.join()
 
     print("All scrapers have finished execution.")
-
-
-    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
-    # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
-    # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
-    # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
-    # run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
-    # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
-    # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
-    # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
-    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
-    # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
-    # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
-    # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
-    # run_scraper("BrowardCountyForeclosure", BrowardCountyForeclosure, end_date=end_date)
-    # run_scraper("OrangeCountyFoeclosure", OrangeCountyForeclosure, end_date=end_date)
-    # run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
-    # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
-    # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
-    # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
-    # run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
-    # run_scraper("VolusiaCountyTaxdeed", VolusiaCountyTaxdeed, end_date=end_date)
-    # run_scraper("PalmBeachForeclosure", PalmBeachForeclosure, end_date=end_date)
-    # run_scraper("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure, end_date=end_date)
-    # run_scraper("PolkCountyForeclosure", PolkCountyForeclosure, end_date=end_date)
-    # run_scraper("PalmBeachTaxdeed", PalmBeachTaxdeed, end_date=end_date)
-    # run_scraper("SummitCountyForeclosure", SummitCountyForeclosure, end_date=end_date)
-    # run_scraper("MontgomeryCountyForeclosure", MontgomeryCountyForeclosure, end_date=end_date)
-    # run_scraper("MahoningCountyForeclosure", MahoningCountyForeclosure, end_date=end_date)
-    # run_scraper("LucasCountyForeclosure", LucasCountyForeclosure, end_date=end_date)
-    # run_scraper("LorainCountyForeclosure", LorainCountyForeclosure, end_date=end_date)
-    # run_scraper("LakeCountyForeclosure", LakeCountyForeclosure, end_date=end_date)
-    # run_scraper("HuronCountyForeclosure", HuronCountyForeclosure, end_date=end_date)
-    # run_scraper("SeminoleCountyForeclosure", SeminoleCountyForeclosure, end_date=end_date)
-    # run_scraper("VolusiaCountyForeclosure", VolusiaCountyForeclosure, end_date=end_date)
-    # run_scraper("PascoCountyForeclosure", PascoCountyForeclosure, end_date=end_date)
-    # run_scraper("EscambiaCountyForeclosure", EscambiaCountyForeclosure, end_date=end_date)
-    # run_scraper("BayCountyTaxdeed", BayCountyTaxdeed, end_date=end_date)
-    # run_scraper("BrevardCountyTaxdeed", BrevardCountyTaxdeed, end_date=end_date)
-    # run_scraper("HillsboroughCountyTaxdeed", HillsboroughCountyTaxdeed, end_date=end_date)
-    # run_scraper("PascoCountyTaxdeed", PascoCountyTaxdeed, end_date=end_date)
-    # run_scraper("ManateeCountyForeclosure", ManateeCountyForeclosure, end_date=end_date)
-    # run_scraper("PuntamCountyTaxdeed", PuntamCountyTaxdeed, end_date=end_date)
-    # run_scraper("ClermontCountyForeclosure", ClermontCountyForeclosure, end_date=end_date)
-    # run_scraper("LeeCountyForeclosure", LeeCountyForeclosure, end_date=end_date)
-    # run_scraper("FranklinCountyForeclosure", FranklinCountyForeclosure, end_date=end_date)
-    # run_scraper("PinellasCountyForeclosure", PinellasCountyForeclosure, end_date=end_date)
-    # run_scraper("DuvalCountyForeclosure", DuvalCountyForeclosure, end_date=end_date)
-    # run_scraper("ButlerCountyForeclosure", ButlerCountyForeclosure, end_date=end_date)
-    # run_scraper("HamiltonCountyForeclosure", HamiltonCountyForeclosure)
-    # run_scraper("FairfieldCountyForeclosure", FairfieldCountyForeclosure, end_date=end_date)
-    # run_scraper("CharlotteCountyForeclosure", CharlotteCountyForeclosure, end_date=end_date)
-    # run_scraper("MarionCountyForeclosure", MarionCountyForeclosure, end_date=end_date)
-    # run_scraper("MarionCountyTaxdeed", MarionCountyTaxdeed, end_date=end_date)
-    # run_scraper("AlachuaCountyForeclosure", AlachuaCountyForeclosure, end_date=end_date)
-    # run_scraper("StLucieCountyForeclosure", StLucieCountyForeclosure, end_date=end_date)
-    # run_scraper("SarasotaCountyTaxdeed", SarasotaCountyTaxdeed, end_date=end_date)
-    # run_scraper("NassauCountyForeclosure", NassauCountyForeclosure, end_date=end_date)
-    # run_scraper("NassauCountyTaxdeed", NassauCountyTaxdeed, end_date=end_date)
-    # run_scraper("BrowardCountyForeclosure", BrowardCountyForeclosure, end_date=end_date)
-    # run_scraper("OrangeCountyFoeclosure", OrangeCountyForeclosure, end_date=end_date)
-    # run_scraper("MiamiDadeForeclosure", MiamiDadeForeclosure, end_date=end_date)
-    # run_scraper("PolkCountyTaxdeed", PolkCountyTaxdeed, end_date=end_date)
-    # run_scraper("LeeCountyTaxdeed", LeeCountyTaxdeed, end_date=end_date)
-    # run_scraper("DuvalCountyTaxdeed", DuvalCountyTaxdeed, end_date=end_date)
-    # run_scraper("CuyahogaCountyForeclosure", CuyahogaCountyForeclosure, end_date=end_date)
-    # run_scraper("VolusiaCountyTaxdeed", VolusiaCountyTaxdeed, end_date=end_date)
-    # run_scraper("PalmBeachForeclosure", PalmBeachForeclosure, end_date=end_date)
-    # run_scraper("HillsboroughCountyForeclosure", HillsboroughCountyForeclosure, end_date=end_date)
-    # run_scraper("PolkCountyForeclosure", PolkCountyForeclosure, end_date=end_date)
-    # run_scraper("PalmBeachTaxdeed", PalmBeachTaxdeed, end_date=end_date)
-    # run_scraper("SummitCountyForeclosure", SummitCountyForeclosure, end_date=end_date)
-    # run_scraper("MontgomeryCountyForeclosure", MontgomeryCountyForeclosure, end_date=end_date)
-    # run_scraper("MahoningCountyForeclosure", MahoningCountyForeclosure, end_date=end_date)
-    # run_scraper("LucasCountyForeclosure", LucasCountyForeclosure, end_date=end_date)
-    # run_scraper("LorainCountyForeclosure", LorainCountyForeclosure, end_date=end_date)
-    # run_scraper("LakeCountyForeclosure", LakeCountyForeclosure, end_date=end_date)
-    # run_scraper("HuronCountyForeclosure", HuronCountyForeclosure, end_date=end_date)
-    # run_scraper("SeminoleCountyForeclosure", SeminoleCountyForeclosure, end_date=end_date)
-    # run_scraper("VolusiaCountyForeclosure", VolusiaCountyForeclosure, end_date=end_date)
-    # run_scraper("PascoCountyForeclosure", PascoCountyForeclosure, end_date=end_date)
-    # run_scraper("EscambiaCountyForeclosure", EscambiaCountyForeclosure, end_date=end_date)
-    # run_scraper("BayCountyTaxdeed", BayCountyTaxdeed, end_date=end_date)
-    # run_scraper("BrevardCountyTaxdeed", BrevardCountyTaxdeed, end_date=end_date)
-    # run_scraper("HillsboroughCountyTaxdeed", HillsboroughCountyTaxdeed, end_date=end_date)
-    # run_scraper("PascoCountyTaxdeed", PascoCountyTaxdeed, end_date=end_date)
-    # run_scraper("ManateeCountyForeclosure", ManateeCountyForeclosure, end_date=end_date)
-    # run_scraper("PuntamCountyTaxdeed", PuntamCountyTaxdeed, end_date=end_date)
 
     end_time = time.time()
     execution_time = end_time - start_time
