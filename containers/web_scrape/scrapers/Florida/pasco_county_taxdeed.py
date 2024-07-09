@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
-from utils.util import curr_date, status_print
+from utils.util import status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 

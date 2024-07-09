@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from utils.lead_database import Lead, Session
-from utils.util import curr_date, status_print
+from utils.util import status_print
 
 
 class HamiltonCountyForeclosure():

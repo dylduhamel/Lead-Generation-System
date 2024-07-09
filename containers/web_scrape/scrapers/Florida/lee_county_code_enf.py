@@ -22,7 +22,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from sodapy import Socrata
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
-from utils.util import clean_string, curr_date, get_zipcode, status_print
+from utils.util import clean_string, status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 

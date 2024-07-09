@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from sodapy import Socrata
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
-from utils.util import curr_date, get_address_from_lat_lng, status_print
+from utils.util import get_address_from_lat_lng, status_print
 
 
 class CinciCodeEnfAPI():

@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append('..')
+sys.path.append("..")
 
 import csv
 import json
@@ -10,20 +10,39 @@ from datetime import datetime, timedelta
 import pandas as pd
 from sqlalchemy import or_, text, update
 from utils.lead_database import Lead, Session
-from utils.util import curr_date, status_print
+from utils.util import status_print, call_api
 
 
-def add_lead_to_database(lead):
-    session = Session()
+def add_lead_to_database(full_addr, doc_type):
+    parsed_addr = call_api("parse", method="post", data=full_addr)
 
-    try:
-        session.add(lead)
-        session.commit()
-    except Exception as e:
-        print(f"Not able to add lead to database. An error has occoured: {e}")
-        session.rollback()
-    finally:
-        session.close()
+    addr_object = {
+        "property_number": parsed_addr["house_number"],
+        "property_street": parsed_addr["road"],
+        "property_city": parsed_addr["city"],
+        "property_state": parsed_addr["state"],
+        "property_zipcode": parsed_addr["postcode"],
+    }
+
+    res = call_api("check-duplicate", method="post", data=addr_object)
+    if not res["is_duplicate"]:
+        lead = Lead()
+        lead.document_type = doc_type
+        lead.property_number = parsed_addr["house_number"]
+        lead.property_street = parsed_addr["road"]
+        lead.property_city = parsed_addr["city"]
+        lead.property_state = parsed_addr["state"]
+        lead.property_zipcode = parsed_addr["postcode"]
+
+        session = Session()
+        try:
+            session.add(lead)
+            session.commit()
+        except Exception as e:
+            print(f"Not able to add lead to database. An error has occoured: {e}")
+            session.rollback()
+        finally:
+            session.close()
 
 
 def json_to_database():
@@ -59,9 +78,9 @@ def json_to_database():
                 phone_number_2 = phone_numbers[1].get("number")
                 phone_number_2_type = phone_numbers[1].get("type")
         else:
-            phone_number_1 = (
-                phone_number_1_type
-            ) = phone_number_2 = phone_number_2_type = None
+            phone_number_1 = phone_number_1_type = phone_number_2 = (
+                phone_number_2_type
+            ) = None
 
         email = (
             result.get("emails", [{}])[0].get("email") if result.get("emails") else None
@@ -112,30 +131,49 @@ def remove_duplicates():
 def export_to_csv():
     session = Session()
 
-    today = curr_date()
-    # Uncomment below if you want to set a specific date
-    # today = "09/27/2023"
+    # Define todays date range
+    today = datetime.now().date()
+    tomorrow = today + timedelta(days=1)
 
     filename = f"email-marketing-{today.replace('/', '-')}.csv"
 
     # Query database using session.query
-    leads = session.query(Lead).filter(Lead.date_added == today,
-                                       Lead.first_name_owner != None,
-                                       Lead.email != None).all()
-
-    # leads = session.query(Lead).filter(or_(Lead.date_added == today, Lead.date_added == "10/18/2023")).all()
+    leads = (
+        session.query(Lead)
+        .filter(
+            Lead.date_added >= today,
+            Lead.date_added < tomorrow,
+            Lead.first_name_owner != None,
+            Lead.email != None,
+        )
+        .all()
+    )
 
     # Open a CSV file and write the queried data
-    with open(filename, "w", newline='') as csvfile:
+    with open(filename, "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
         # Writing the header
-        writer.writerow(["date_added", "property_address",
-                        "first_name_owner", "last_name_owner", "email"])
+        writer.writerow(
+            [
+                "date_added",
+                "property_address",
+                "first_name_owner",
+                "last_name_owner",
+                "email",
+            ]
+        )
 
         # Writing the data rows
         for lead in leads:
-            writer.writerow([lead.date_added, lead.property_address, lead.first_name_owner.capitalize(
-            ), lead.last_name_owner.capitalize(), lead.email])
+            writer.writerow(
+                [
+                    lead.date_added,
+                    lead.property_address,
+                    lead.first_name_owner.capitalize(),
+                    lead.last_name_owner.capitalize(),
+                    lead.email,
+                ]
+            )
 
     session.close()

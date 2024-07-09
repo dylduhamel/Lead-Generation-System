@@ -55,7 +55,7 @@ class Lead(Base):
         )
 
 
-## Database credentials
+# Database credentials
 db_endpoint = secrets["host"]
 db_name = "LEAD_DB" 
 username = secrets["username"] 

@@ -2,7 +2,6 @@
 
 from .butler_county_foreclosure import ButlerCountyForeclosure
 from .cinci_code_enf import CinciCodeEnf
-from .cinci_code_enf_API import CinciCodeEnfAPI
 from .clermont_county_foreclosure import ClermontCountyForeclosure
 from .cuyahoga_county_foreclosure import CuyahogaCountyForeclosure
 from .fairfield_county_foreclosure import FairfieldCountyForeclosure
@@ -17,7 +16,6 @@ from .montgomery_county_foreclosure import MontgomeryCountyForeclosure
 from .summit_county_foreclosure import SummitCountyForeclosure
 
 __all__ = [
-    "CinciCodeEnfAPI",
     "CinciCodeEnf",
     "ClermontCountyForeclosure",
     "FranklinCountyForeclosure",

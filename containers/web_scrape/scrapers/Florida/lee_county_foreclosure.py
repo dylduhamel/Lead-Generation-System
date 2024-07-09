@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from utils.lead_database import Lead, Session
 from utils.lead_database_operations import add_lead_to_database
-from utils.util import curr_date, status_print
+from utils.util import status_print
 
 logging.basicConfig(filename="processing.log", level=logging.ERROR, format='%(asctime)s - %(message)s')
 
@@ -124,58 +124,19 @@ class LeeCountyForeclosure:
                         print(f"Error splitting city and zip data: '{e}'")
                         city, zip_code = None, None
 
+                    # Attempt to add property data to db
                     if property_address is not None:
-                        lead = Lead()
-                        lead.document_type = "Foreclosure"
-
-                        """
-                        Here is where we will 
-                        1. Make full address
-                        2. Parse w/ API call
-                            Concurrency issues?
-                        3. Is the address in the DB
-                        4. Add lead to the DB
-                            Concurrency? What happens if two processes check same address and its not there so they both add it?
-                        """
-
-                        # Compute full address
-                        full_address = ' '.join(property_address, city, zip_code[:5], "Ohio")
-
-                        response = "api call on full address @ POST Parse"
-                        {
-                            'house_number': '1234',
-                            'road': '30th st',
-                            'city': 'richmond',
-                            'state': 'virginia',
-                            'postcode': '10000'
+                        full_addr = {
+                            "full_address": ' '.join([property_address, city, zip_code[:5], "ohio"])
                         }
 
-                        # Address
-                        lead.property_address = property_address
-
-                        # City and State
-                        lead.property_city = city
-                        lead.property_zipcode = zip_code[:5]
-                        lead.property_state = "Ohio"
-
-                        # Website tracking
-                        lead.county_website = self.county_website
-
-                        # print(lead)
-                        # print("\n")
-
-                        # Add lead to db
-                        session.add(lead)
-
-                        # Add to visited list
+                        try:
+                            add_lead_to_database(full_addr, "Foreclosure")
+                        except Exception as e:
+                            print(f"Unable to add {self.county_website} to db: {e}")
 
             except Exception as e:
                 print(f"AUCTION_ITEM element not found. Moving on.")
-
-        # Add new session to DB
-        session.commit()
-        # Relinquish resources
-        session.close()
 
         # Relinquish resources
         self.driver.quit()
