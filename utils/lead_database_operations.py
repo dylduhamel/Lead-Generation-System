@@ -34,17 +34,15 @@ def add_lead_to_database(full_addr, doc_type):
         lead.property_state = parsed_addr["state"]
         lead.property_zipcode = parsed_addr["postcode"]
 
-        # lock
         session = Session()
         try:
             session.add(lead)
             session.commit()
         except Exception as e:
-            print(f"Not able to add lead to database. An error has occoured: {e}")
+            print(f"Not able to add lead to database. An error has occurred: {e}")
             session.rollback()
         finally:
             session.close()
-        # unlock
 
 def json_to_database():
     # Create a session
