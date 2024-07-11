@@ -34,7 +34,6 @@ def add_lead_to_database(full_addr, doc_type):
         lead.property_state = parsed_addr["state"]
         lead.property_zipcode = parsed_addr["postcode"]
 
-        # lock
         session = Session()
         try:
             session.add(lead)
@@ -44,7 +43,6 @@ def add_lead_to_database(full_addr, doc_type):
             session.rollback()
         finally:
             session.close()
-        # unlock
 
 def json_to_database():
     # Create a session
