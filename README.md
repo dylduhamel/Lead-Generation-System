@@ -4,7 +4,6 @@
 
 This is a containerized distributed system developed by Dylan Duhamel at Acuritas Consulting. The tool is designed to automate the process of finding and processing property leads by scraping multiple public web sources using Selenium. It gathers information, enriches the data by skiptracing, and then saves all pertinent details to a database for further use by the Acuritas team.
 
-
 ## Features
 
 - Automates the process of property lead generation.
